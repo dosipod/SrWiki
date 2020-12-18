@@ -45,4 +45,4 @@ Line-in signals are typically much lower than that of some of the microphones. R
 ### Problems Encountered
 We've often seen spikes when using an analog microphone in conjunction with WLED. Here's an article that should shed light on the issue:
 
-![ESP32 microcontroller generates noise on microphone](https://electronics.stackexchange.com/questions/368867/esp32-microcontroller-generates-noise-on-microphone)
+[ESP32 microcontroller generates noise on microphone](https://electronics.stackexchange.com/questions/368867/esp32-microcontroller-generates-noise-on-microphone)
