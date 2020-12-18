@@ -41,3 +41,7 @@ The volume reactive routines (starting with a single *), support a squelch or ba
 
 ### Gain
 Line-in signals are typically much lower than that of some of the microphones. Rather than use an auto gain function, you can manually adjust the gain from 0 to 255, which translate to a 1.0 gain up to a 5.0 gain for the volume reactive routines (only).
+
+### Problems Encountered
+We've often seen spikes when using an analog microphone in conjunction with WLED. Here's an article that should shed light on the issue:
+https://electronics.stackexchange.com/questions/368867/esp32-microcontroller-generates-noise-on-microphone
