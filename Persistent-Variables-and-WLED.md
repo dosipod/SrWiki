@@ -137,7 +137,8 @@ As an exercise, let's just allocate a single floating point variable:
 
 We should now be able to use the persistent floating point variable 'expAdj' with our routine and it should work with ALL segments indepently of each other.
 
-```  expAdj = 1.2345;
+```
+  expAdj = 1.2345;
 ```
 
 
