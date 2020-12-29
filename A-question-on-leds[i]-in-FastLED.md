@@ -35,4 +35,6 @@ If the latter, would that not be very inefficient, and if inefficient, would it 
 
 That being said, an associate with embedded system support says that dynamic memory allocation is NOT a good thing to perform on embedded systems.
 
-Thoughts?  
+Thoughts?
+
+In the meantime, and I quote: "When allocating memory the danger is always that that memory isn't deallocated properly, and thus leaks memory. Running out of RAM happens very fast on embedded devices that's why it's discouraged."
