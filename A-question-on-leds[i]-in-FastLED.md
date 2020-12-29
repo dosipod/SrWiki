@@ -15,9 +15,7 @@ This works with SEGMENTS in that two different animations don't clash. The quest
 * Am I lucky that they don't clash, in that maybe one routine just overwrites the other in the same memory space?
 * Or are we creating a new array of [MAX_LEDS] for each segment.
 
-If the latter, would that not be very inefficient?
-
-If inefficient, would it not make more sense to use:
+If the latter, would that not be very inefficient?, and if inefficient, would it not make more sense to use:
 
 ```
  if (!SEGENV.allocateData(sizeof(CRGB)*SEGLEN)) return mode_static(); //Allocates based on the size of a CRGB
