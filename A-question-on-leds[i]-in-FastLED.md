@@ -4,7 +4,7 @@ In order to be able to use leds[i] in WLED, we add the following global variable
 uint32_t ledData[MAX_LEDS];                 // See const.h for a value of 1500.
 ```
 
-In the routines, we are adding:
+In many routines, we are adding the following code so that we don't have lossy data when copying led information from one element to the next:
 
 ```
   CRGB *leds = (CRGB*) ledData;
