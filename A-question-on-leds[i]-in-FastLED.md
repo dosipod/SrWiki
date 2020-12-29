@@ -8,7 +8,13 @@ In the routines, we are adding:
 
 ```
   CRGB *leds = (CRGB*) ledData;
+
+  // leds[i] code in here
+
+  setPixels(leds);
+  return FRAMETIME;
 ```
+
 
 This works with SEGMENTS in that two different animations don't clash. The questions I have are:
 
