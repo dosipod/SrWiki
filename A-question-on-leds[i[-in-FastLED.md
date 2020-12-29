@@ -20,7 +20,7 @@ If the latter, would that not be very inefficient?
 If inefficient, would it not make more sense to use:
 
 ```
- if (!SEGENV.allocateData(sizeof(CRGB)*SEGLEN)) return mode_static(); //Allocates based on the size of 8 uint16_t variables
+ if (!SEGENV.allocateData(sizeof(CRGB)*SEGLEN)) return mode_static(); //Allocates based on the size of a CRGB
   CRGB* leds = reinterpret_cast<CRGB*>(SEGENV.data);
 
   // leds[i] code in here
