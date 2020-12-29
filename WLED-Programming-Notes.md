@@ -159,10 +159,21 @@ Already declared in FX.cpp:
 
 ### Display the CRGB Array
 
-```C
+First, define a function and add to FX.h
+```
+void WS2812FX::setPixels(CRGB* leds) {
    for (int i=0; i<SEGLEN; i++) {
-      setPixelColor(i, leds[i].red, leds[i].green, led[i].blue);
-   }
+      setPixelColor(i, leds[i].red, leds[i].green, leds[i].blue);
+   }  
+}
+```
+You can now us FastLED address methods, AND it works with segments.
+
+Then, you can call this function at the end of your routine as follows:
+```
+  setPixels(leds);
+  return FRAMETIME;
+} // End of your routine.
 ```
 
 ### Proposed - Using CHSV Colour Space
