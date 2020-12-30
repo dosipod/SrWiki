@@ -34,6 +34,7 @@ Some of the 2D routines require 256 LED's in a 16x16 matrix.
 | **Freqwave | See below. | See below
 | **Gravfreq | VU Meter from center. Log of frequency is index to center colour. | Speed: Speed: Rate of fall<br /> Intensity: Sensitivity
 | **Noisemove | Using perlin noise as movement for different frequency bins. |Speed: Speed of perlin movement <br /> Intensity: Fade rate
+| **Waterfall | FFT version of a Waterfall.| Speed: Speed <br /> Intensity: Adjust colour
 <br />
 
 ## FFT Routines for ESP32 Notes
