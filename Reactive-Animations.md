@@ -5,7 +5,7 @@ Effects beginning with '**' use FFT (Fast Fourier Transforms) for frequency dete
 
 
 | Effect | Description | Sliders
-| :------------- | --- | ---
+| :------------------ | --- | ---
 | * Gravcenter | Volume reactive vu-meter from center with gravity and perlin noise. | Speed: Rate of fall <br /> Intensity: Sensitivity
 | * Gravcentric |  Volume reactive vu-meter from center with gravity. Volume provides index to (time rotating) palette colour. | Speed: Rate of fall <br /> Intensity: Sensitivity
 | * Gravimeter | Volume reactive vu-meter with gravity and perlin noise. | Speed: Rate of fall <br /> Intensity: Sensitivity
