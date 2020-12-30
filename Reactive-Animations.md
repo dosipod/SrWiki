@@ -28,8 +28,6 @@ Effects beginning with '**' use FFT (Fast Fourier Transforms) for frequency dete
 | ** Gravfreq | VU Meter from center. Log of frequency is index to center colour. | Speed: Speed: Rate of fall<br /> Intensity: Sensitivity
 | **_Noisemove | Using perlin sound as movement for 3 different frequency bins. |Speed: Speed of perlin movement <br /> Intensity: Fade rate
 | ** Noisepeak | Blast/fade a single frequency assigned limited palette of perlin noise to the beat (err, really detected peak). | Speed: Adjust fade rate<br /> Intensity: Adjust colour
-| ** Spectral | See below. | See below
-
 <br />
 
 ## FFT Routines for ESP32 Notes
@@ -56,14 +54,4 @@ The temporal tail for this animation starts at the beginning of the Segment rath
 1. FFT Low: The low cut off for the FFT bins. Values range from 0-100. Good values are from 0 to 10
 1. FFT High: High cut off for the FFT bins. Values range from 0-100. This is important because every type of music is different and what is considered a high note in one type of music is not the case in others. 
 1. FFT Custom: This slider works similarly to a **"pre-amp"** for the input signal. The possible values for this slider are 1-10. A good starting point for this is around 2-3.
-
-### Spectral
-Asound12 delivers a _spectral "analysis"_ of the audio signal, compressed into 16 bins, which are supposed to be at least halfway similar log (human ear is log as well).
- 
-This effect is best displayed on strips in multiples of 16 LEDs (and only in multiples of 16), you can use it on strips shorter than 16 LEDs but then the higher frequency bins will be cut off.
-
-**Sliders used:** Brightness
-
-**FFT Sliders:** 
-1. FFT3 (custom): This acts as a form of squelch. As long as the FFT output is below the threshold that can be set with FFT3 there will be no lights. (Setting this lower will result in more lights while setting this higher will result in less lights)
 
