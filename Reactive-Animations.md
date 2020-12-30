@@ -8,33 +8,33 @@ Some of the 2D routines require 256 LED's in a 16x16 matrix.
 
 | Effect | Description | Sliders
 | :------------------ | --- | ---
-| * Gravcenter | Volume reactive vu-meter from center with gravity and perlin noise. | Speed: Rate of fall <br /> Intensity: Sensitivity
-| * Gravcentric |  Volume reactive vu-meter from center with gravity. Volume provides index to (time rotating) palette colour. | Speed: Rate of fall <br /> Intensity: Sensitivity
-| * Gravimeter | Volume reactive vu-meter with gravity and perlin noise. | Speed: Rate of fall <br /> Intensity: Sensitivity
-| * Juggles | Juggling balls.| Speed: Yes <br /> Intensity: # of balls
-| * Matripix | Similar to Matrix. | Speed: yes <br /> Intensity: Brightness
-| * Midnoise | Perlin noise emanating from center.| Speed: Fade rate <br /> Intensity: Maximum length
-| * Noisefire | A perlin noise based volume reactive fire routine. | n/a
-| * Noisemeter | Volume reactive vu-meter. | Speed: Fade rate <br /> Intensity: Width
-| * Pixels | Random pixels. | Intensity: # of pixels
-| * Pixelwave | Pixels emanating from center. | Speed: yes <br /> Intensity: Sensitivity
-| * Plasmoid | Sine wave based plasma. | Intensity: # of pixels
-| * Puddlepeak | Blast coloured puddles randomly up and down the strand with the 'beat'. |Speed: Adjust fade rate.<br /> Intensity: Size of puddles.
-| * Puddles | Blast coloured puddles based on volume.| Speed: Fade rate <br /> Intensity: Size of puddle
-| * Ripple Peak | Peak detection triggers ripples. | Intensity: Max number of ripples.
-| * Waterfall | A volume AND FFT version of a Waterfall.| Speed: Speed <br /> Intensity: Adjust colour
-| ** 2D CenterBars | A 16x16 spectral analysis routine emanating from the center | None.
-| ** 2D DJLight | A 16x16 Matrix like effect using spectrum. | Speed: Speed
-| ** 2D Funky Plank | A 16x16 cool routine.
-| **  2D GEQ | A 16x16 graphic equalizer.
-| ** Binmap | Map bins 3-255 throughout the length of the LEDs.<br />Values are not normalized.| Intensity: Max volume 
-| ** Freqmap | Map the loudest frequency throughout the length of the LED's.| Speed: Fade rate<br /> Intensity: Starting colour 
-| ** Freqmatrix | See below. | See below
-| ** Freqpixels | Random pixels coloured by frequency. | Speed: Fade rate<br /> Intensity: Starting colour
-| ** Freqwave | See below. | See below
-| ** Gravfreq | VU Meter from center. Log of frequency is index to center colour. | Speed: Speed: Rate of fall<br /> Intensity: Sensitivity
-| ** Noisemove | Using perlin sound as movement for 3 different frequency bins. |Speed: Speed of perlin movement <br /> Intensity: Fade rate
-| ** Noisepeak | Blast/fade a single frequency assigned limited palette of perlin noise to the beat (err, really detected peak). | Speed: Adjust fade rate<br /> Intensity: Adjust colour
+| *Gravcenter | Volume reactive vu-meter from center with gravity and perlin noise. | Speed: Rate of fall <br /> Intensity: Sensitivity
+| *Gravcentric |  Volume reactive vu-meter from center with gravity. Volume provides index to (time rotating) palette colour. | Speed: Rate of fall <br /> Intensity: Sensitivity
+| *Gravimeter | Volume reactive vu-meter with gravity and perlin noise. | Speed: Rate of fall <br /> Intensity: Sensitivity
+| *Juggles | Juggling balls.| Speed: Yes <br /> Intensity: # of balls
+| *Matripix | Similar to Matrix. | Speed: yes <br /> Intensity: Brightness
+| *Midnoise | Perlin noise emanating from center.| Speed: Fade rate <br /> Intensity: Maximum length
+| *Noisefire | A perlin noise based volume reactive fire routine. | n/a
+| *Noisemeter | Volume reactive vu-meter. | Speed: Fade rate <br /> Intensity: Width
+| *Pixels | Random pixels. | Intensity: # of pixels
+| *Pixelwave | Pixels emanating from center. | Speed: yes <br /> Intensity: Sensitivity
+| *Plasmoid | Sine wave based plasma. | Intensity: # of pixels
+| *Puddlepeak | Blast coloured puddles randomly up and down the strand with the 'beat'. |Speed: Adjust fade rate.<br /> Intensity: Size of puddles.
+| *Puddles | Blast coloured puddles based on volume.| Speed: Fade rate <br /> Intensity: Size of puddle
+| *Ripple Peak | Peak detection triggers ripples. | Intensity: Max number of ripples.
+| *Waterfall | A volume AND FFT version of a Waterfall.| Speed: Speed <br /> Intensity: Adjust colour
+| **2D CenterBars | A 16x16 spectral analysis routine emanating from the center | None.
+| **2D DJLight | A 16x16 Matrix like effect using spectrum. | Speed: Speed
+| **2D Funky Plank | A 16x16 cool routine.
+| **2D GEQ | A 16x16 graphic equalizer.
+| **Binmap | Map bins 3-255 throughout the length of the LEDs.<br />Values are not normalized.| Intensity: Max volume 
+| **Freqmap | Map the loudest frequency throughout the length of the LED's.| Speed: Fade rate<br /> Intensity: Starting colour 
+| **Freqmatrix | See below. | See below
+| **Freqpixels | Random pixels coloured by frequency. | Speed: Fade rate<br /> Intensity: Starting colour
+| **Freqwave | See below. | See below
+| **Gravfreq | VU Meter from center. Log of frequency is index to center colour. | Speed: Speed: Rate of fall<br /> Intensity: Sensitivity
+| **Noisemove | Using perlin sound as movement for 3 different frequency bins. |Speed: Speed of perlin movement <br /> Intensity: Fade rate
+| **Noisepeak | Blast/fade a single frequency assigned limited palette of perlin noise to the beat (err, really detected peak). | Speed: Adjust fade rate<br /> Intensity: Adjust colour
 <br />
 
 ## FFT Routines for ESP32 Notes
