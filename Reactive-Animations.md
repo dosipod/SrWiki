@@ -30,7 +30,7 @@ Some of the 2D routines require 256 LED's in a 16x16 matrix.
 | ** Binmap | Map bins 3-255 throughout the length of the LEDs.<br />Values are not normalized.| Intensity: Max volume 
 | ** Freqmap | Map the loudest frequency throughout the length of the LED's.| Speed: Fade rate<br /> Intensity: Starting colour 
 | ** Freqmatrix | See below. | See below
-| ** Freqpixels | Random pixels by frequency. | Speed: Fade rate<br /> Intensity: Starting colour
+| ** Freqpixels | Random pixels coloured by frequency. | Speed: Fade rate<br /> Intensity: Starting colour
 | ** Freqwave | See below. | See below
 | ** Gravfreq | VU Meter from center. Log of frequency is index to center colour. | Speed: Speed: Rate of fall<br /> Intensity: Sensitivity
 | **_Noisemove | Using perlin sound as movement for 3 different frequency bins. |Speed: Speed of perlin movement <br /> Intensity: Fade rate
