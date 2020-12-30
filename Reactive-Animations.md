@@ -21,6 +21,10 @@ Effects beginning with '**' use FFT (Fast Fourier Transforms) for frequency dete
 | * Puddles | Blast coloured puddles based on volume.| Speed: Fade rate <br /> Intensity: Size of puddle
 | * Ripple Peak | Peak detection triggers ripples. | None.
 | * Waterfall | A volume AND FFT version of a Waterfall.| Speed: Speed <br /> Intensity: Adjust colour
+| ** 2D CenterBars | A 16x16 spectral analysis routine emanating from the center | None.
+| ** 2D DJLight | A 16x16 Matrix like effect using spectrum. | Speed: Speed
+| ** 2D Funky Plank | A 16x16 cool routine.
+| **  2D GEQ | A 16x16 graphic equalizer.
 | ** Binmap | This routine maps bins 3-255 throughout the length of the LEDs.<br />Values are not normalized.| Intensity: Max volume
 | ** Freqmatrix | See below. | See below
 | ** Freqpixel | Random pixels by frequency. | Speed: Adjust fade rate<br /> Intensity: Adjust colour
