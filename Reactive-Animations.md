@@ -6,9 +6,9 @@ Effects beginning with '**' use FFT (Fast Fourier Transforms) for frequency dete
 
 | Effect | Description | Sliders
 | :------------- | --- | ---
-| * Gravimeter | Volume reactive vu-meter with gravity and perlin noise. | Speed: Rate of fall <br /> Intensity: Sensitivity
 | * Gravcenter | Volume reactive vu-meter from center with gravity and perlin noise. | Speed: Rate of fall <br /> Intensity: Sensitivity
 | * Gravcentric |  Volume reactive vu-meter from center with gravity. Volume provides index to (time rotating) palette colour. | Speed: Rate of fall <br /> Intensity: Sensitivity
+| * Gravimeter | Volume reactive vu-meter with gravity and perlin noise. | Speed: Rate of fall <br /> Intensity: Sensitivity
 | * Juggles | Juggling balls.| Speed: Yes <br /> Intensity: # of balls
 | * Matripix | Similar to Matrix. | Speed: yes <br /> Intensity: Brightness
 | * Midnoise | Perlin noise emanating from center.| Speed: Fade rate <br /> Intensity: Maximum length
