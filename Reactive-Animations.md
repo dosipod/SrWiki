@@ -28,7 +28,7 @@ Some of the 2D routines require 256 LED's in a 16x16 matrix.
 | ** 2D Funky Plank | A 16x16 cool routine.
 | **  2D GEQ | A 16x16 graphic equalizer.
 | ** Binmap | Map bins 3-255 throughout the length of the LEDs.<br />Values are not normalized.| Intensity: Max volume 
-| ** Freqmap | Map the loudest frequency through the length of the LED's.| Speed: Fade rate<br /> Intensity: Starting colour 
+| ** Freqmap | Map the loudest frequency throughout the length of the LED's.| Speed: Fade rate<br /> Intensity: Starting colour 
 | ** Freqmatrix | See below. | See below
 | ** Freqpixel | Random pixels by frequency. | Speed: Adjust fade rate<br /> Intensity: Adjust colour
 | ** Freqwave | See below. | See below
