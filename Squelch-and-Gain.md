@@ -16,7 +16,7 @@ The sound reactive fork of WLED supports several different types of inputs. In a
 3. Increase gain to a high value, let's say 25 (or higher) and set the squelch to '0' and save.
 4. You should now see the led's flashing.
 5. Increase and save the squelch in a quiet setting until the lights are no longer flashing.
-6. Once that's done, make noise appropriate to your 'noisy' environment, and adjust/save the gain so that the led's are responding appropriately.
+6. Once that's done, make noise appropriate to your 'noisy' environment and number of leds. Then adjust/save the gain so that the led's are responding appropriately.
 7. Note that some of the animations allow further sensitivity adjustment with the 'Intensity' setting.
 8. Check out the '[Sound Reactive Animations](https://github.com/atuline/WLED/wiki/Reactive-Animations)' page to see what controls are available for each animation.
 
