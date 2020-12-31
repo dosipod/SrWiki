@@ -22,7 +22,7 @@ The sound reactive fork of WLED supports several different types of inputs. In a
 
 
 ## Voltage Fluctuation
-I've found that bright LED's can sometimes affect the microphone levels, and I suspect this is from voltage fluctuation of the power supply, possibly USB power. In order to minimize that, I had to reduce the maximum current draw on that setup.
+I've found that bright LED's can sometimes affect the microphone levels, especially with analog microphones. This can be as a result of using the WiFi, especially in AP mode, the noise it creates, and its draw on the power supply. Digital microphones such as the INMP441, the ICS-43434 or a line-in provide the best results.
 
 ## Tables of Approximate Values
 
