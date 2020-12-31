@@ -22,7 +22,7 @@ The sound reactive fork of WLED supports several different types of inputs. In a
 
 
 ## Voltage Fluctuation
-I've found that bright LED's can sometimes affect the microphone levels, especially with analog microphones. This can be as a result of using the WiFi, especially in AP mode, the noise it creates, and its draw on the power supply. Digital microphones such as the INMP441, the ICS-43434 or a line-in provide the best results.
+From faulty microphones to flaky wiring, the ESP8266, getting reliable and spike free sound sampling with WLED and in particular analog microphones has been a challenge. This can be as a result of using the WiFi, especially in AP mode, with the noise it creates, and its draw on the power supply. Digital microphones such as the INMP441, the ICS-43434 or a line-in provide the best results.
 
 ## Tables of Approximate Values
 
