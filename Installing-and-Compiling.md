@@ -21,6 +21,8 @@ See: https://www.youtube.com/watch?v=4EXefD6INos
 
 ## Compiling from a fresh install of the Arduino IDE
 
+**Note:** Around October 2020, library version issues made it more difficult to compile with the Arduino IDE. Your best bet is to use VS Code with Platform IO. In the meantime, here's the old Arduino IDE instructions:
+
 1. Download and install the Arduino IDE from [arduino.cc](https://www.arduino.cc/en/Main/Software). Defaults are OK.
 1. Start the Arduino IDE and add ESP8266/ESP32 board support by going to "File | Preferences" ("Arduino | Preferences" for macOS (⌘,))
 1. In the "Additional Boards Manager URLs" section, copy these URL's and add: https://arduino.esp8266.com/stable/package_esp8266com_index.json for an ESP8266 and https://dl.espressif.com/dl/package_esp32_index.json for an ESP32. You can add both by separating them with a comma. 
