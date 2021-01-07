@@ -11,7 +11,7 @@ The sound reactive version of WLED provides all of the functionality of WLED wit
 * Grounding may also be a problem. For example, my line-in setup picked up a lot of noise when my ESP32 board was connected to the USB port on my PC, but NO noise when powered by a USB power bank.
 * Connectors!! Dupont connectors are notoriously flaky. I use JST-SM connectors for the LED's and JST-XHP connectors for the microphones.
 
-## Steps
+## First Steps
 1. On the WiFi page, it is highly recommended that you connect your SR WLED strip to an existing network.
 2. At the bottom of the WiFi page, check on 'Disable WiFi sleep'. May not be necessary if you're not experiencing noise issues.
 3. On the LED Preferences page, configure the length of your led strip.
