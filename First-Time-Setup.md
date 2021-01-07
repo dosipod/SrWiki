@@ -16,13 +16,13 @@ The sound reactive version of WLED provides all of the functionality of WLED wit
 2. At the bottom of the WiFi page, check on 'Disable WiFi sleep'. May not be necessary if you're not experiencing noise issues.
 3. On the LED Preferences page, configure the length of your led strip.
 3. On the LED Preference page, configure the 2D matrix size, i.e. 1x30 or 16x16, etc.
-4. On the sound setting page, set the Squelch setting to '0' and the Gain > 100.
-5. On the effects page, set the animation to *Gravcenter.
-6. Back on the sound settings page, increase/save Squelch setting until strip no longer reacts to the ambient noise.
-7. On the sound settings page, reduce/adjust the Gain setting until the leds react reasonably with your voice.
+4. On the Sound Setting page, set the Squelch setting to '0' and the Gain > 100.
+5. On the Effects page, set the animation to '*Gravcenter'.
+6. Back on the Sound Settings page, increase/save Squelch setting until strip no longer reacts to the ambient noise.
+7. On the Sound Settings page, reduce/adjust the Gain setting until the leds react reasonably with your voice.
 8. I also ran pink noise at https://www.youtube.com/watch?v=ZXtimhT-ff4 and fine tuned the values from there.
 
-Here's a starting point table of Squelch and Gain settings for different inputs:
+Here's a starting point table of Squelch and Gain settings for different input types:
 
 | Input | Squelch | Gain
 | ----- | ------- | ----
