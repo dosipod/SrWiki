@@ -18,7 +18,7 @@ The sound reactive version of WLED provides all of the functionality of WLED wit
 5. On the Effects page, set the animation to '*Gravcenter'.
 6. Back on the Sound Settings page, increase/save Squelch setting until strip no longer reacts to the ambient noise.
 7. On the Sound Settings page, reduce/adjust the Gain setting until the leds react reasonably with your voice.
-8. You might also want to run the pink noise at https://www.youtube.com/watch?v=ZXtimhT-ff4 and fine tune the values from there.
+8. You might also want to run a [Pink Noise](https://www.youtube.com/watch?v=ZXtimhT-ff4) video and fine tune the values from there.
 
 Here's a starting point table of Squelch and Gain settings for different input types:
 
