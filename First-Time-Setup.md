@@ -34,7 +34,7 @@ Here's a starting point table of Squelch and Gain settings for different input t
 Automatic gain control is not currently being used by SR WLED because of so many different input types and ambient noise in different environments. We don't know what your 'quiet' is. In addition, the LED's should NOT be reacting when it IS quiet, so it's up to you to make those adjustments. In addition, sensitivity can be further adjusted with either the Intensity or Speed slider in many of the animations.
 
 ## Noise and Spikes
-While providing a lot of functionality, the ESP8266 and the ESP32 boards (typical ones) we have been using, have experienced a lot of spurious noise on their ADC pins. This has also been discussed at length on various ESP related forums. Methods to remediate this include:
+While providing a lot of functionality, the ESP8266 and the ESP32 boards (typical ones) we have been using, have experienced a lot of spurious noise on their ADC pins. This has also been discussed at length on various ESP related forums. Methods that may help remediate this include:
 
 * Use a separate WiFi antenna.
 * Don't use AP mode.
@@ -42,4 +42,5 @@ While providing a lot of functionality, the ESP8266 and the ESP32 boards (typica
 * Use shielded wiring for your analog sampling pin.
 * Use an I2S microphone, such as the INMP441 or ICS-43434.
 * Isolate the power between the LED strips and the controller.
+* Don't use USB power from your PC.
 
