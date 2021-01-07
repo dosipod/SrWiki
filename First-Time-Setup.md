@@ -4,9 +4,9 @@ This page is under construction!!!!!!
 The sound reactive version of WLED provides all of the functionality of WLED with a few caveats:
 
 * Some of the default services supported by WLED such as Alexa and Blynk are disabled by default.
-* Spurious noise and spikes have been problematic during the development of SR WLED.
-* We recommend using SR WLED in STA mode, instead of AP mode (aka WLED-AP). It generates more noise.
-* If you have problems, make sure you can successfully run the latest version of standard WLED.
+* Spurious noise and spikes have been problematic during the development of SR WLED. See 'Noise and Spikes' below for further discussion on that topic.
+* We recommend using SR WLED in STA mode, instead of the standalone AP mode (aka WLED-AP). It generates more noise.
+* If you have problems with the LED's, make sure you can successfully run the latest version of standard WLED.
 * Start out with a small strip of ~30 LED's before setting up a large installation.
 * Grounding may also be a problem. For example, my line-in setup picked up a lot of noise when my ESP32 board was connected to the USB port on my PC, but NO noise when powered by a USB power bank.
 * Connectors!! Dupont connectors are notoriously flaky. I use JST-SM connectors for the LED's and JST-XHP connectors for the microphones.
