@@ -12,32 +12,36 @@ The sound reactive version of WLED provides all of the functionality of WLED wit
 * Connectors!! Dupont connectors are notoriously flaky. I use JST-SM connectors for the LED's and JST-XHP connectors for the microphones.
 
 ## First Steps
-1. On the WiFi page, it is highly recommended that you connect your SR WLED strip to an existing network.
-2. At the bottom of the WiFi page, check on 'Disable WiFi sleep'. May not be necessary if you're not experiencing noise issues.
+1. On the WiFi Setup page, it is highly recommended that you connect your SR WLED strip to an existing network.
+2. At the bottom of the WiFi Setup page, check on 'Disable WiFi sleep'. This may not be necessary if you're not experiencing noise issues.
 3. On the LED Preferences page, configure the length of your led strip.
 3. On the LED Preference page, configure the 2D matrix size, i.e. 1x30 or 16x16, etc.
 4. On the Sound Setting page, set the Squelch setting to '0' and the Gain > 100.
 5. On the Effects page, set the animation to '*Gravcenter'.
 6. Back on the Sound Settings page, increase/save Squelch setting until strip no longer reacts to the ambient noise.
 7. On the Sound Settings page, reduce/adjust the Gain setting until the leds react reasonably with your voice.
-8. I also ran pink noise at https://www.youtube.com/watch?v=ZXtimhT-ff4 and fine tuned the values from there.
+8. You might also want to run the pink noise at https://www.youtube.com/watch?v=ZXtimhT-ff4 and fine tune the values from there.
 
 Here's a starting point table of Squelch and Gain settings for different input types:
 
 | Input | Squelch | Gain
 | ----- | ------- | ----
+| INMP411 | 20 | 50
+| MAX4466 | 20 | 50
 | MAX9814 @40dB | 10 | 10
 | Line-In | 1 | 60
 | INMP441 | 20 | 5
 | ICS-43434 | 20 | 5
 
-Automatic gain control is not currently being used by SR WLED because of so many different input types and ambient settings. We don't know what your 'quiet' is. In addition, the LED's should NOT be reacting when it IS quiet, so it's up to you to make those adjustments. Furthermore, many of the animations can be further adjusted with either the Intensity or Speed slider.
+Automatic gain control is not currently being used by SR WLED because of so many different input types and ambient noise in different environments. We don't know what your 'quiet' is. In addition, the LED's should NOT be reacting when it IS quiet, so it's up to you to make those adjustments. In addition, sensitivity can be further adjusted with either the Intensity or Speed slider in many of the animations.
 
 ## Noise and Spikes
-While providing a lot of functionality, the ESP8266 and the ESP32 boards (typical ones) we have been using have experienced a lot of spurious noise on their ADC pins. This has also been discussed at length on various ESP related forums. Methods to remediate this include:
+While providing a lot of functionality, the ESP8266 and the ESP32 boards (typical ones) we have been using, have experienced a lot of spurious noise on their ADC pins. This has also been discussed at length on various ESP related forums. Methods to remediate this include:
 
 * Use a separate WiFi antenna.
+* Don't use AP mode.
 * Disable the WiFi sleep mode.
-* Use shielded wiring for your analog data.
+* Use shielded wiring for your analog sampling pin.
 * Use an I2S microphone, such as the INMP441 or ICS-43434.
+* Isolate the power between the LED strips and the controller.
 
