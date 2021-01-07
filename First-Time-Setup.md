@@ -30,7 +30,7 @@ Here's a starting point table of Squelch and Gain settings for different inputs:
 | INMP441 | 20 | 5
 | ICS-43434 | 20 | 5
 
-Automatic gain control is not currently being used by SR WLED because of so many different input types and ambient settings. We don't know what your 'quiet' is. In addition, the LED's should NOT be reacting when it IS quiet, so it's up to you to make those adjustments.
+Automatic gain control is not currently being used by SR WLED because of so many different input types and ambient settings. We don't know what your 'quiet' is. In addition, the LED's should NOT be reacting when it IS quiet, so it's up to you to make those adjustments. Furthermore, many of the animations can be further adjusted with either the Intensity or Speed slider.
 
 ## Noise and Spikes
 While providing a lot of functionality, the ESP8266 and the ESP32 boards (typical ones) we have been using have experienced a lot of spurious noise on their ADC pins. This has also been discussed at length on various ESP related forums. Methods to remediate this include:
