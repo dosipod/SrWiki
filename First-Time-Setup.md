@@ -4,7 +4,7 @@ This page is under construction!!!!!!
 The sound reactive version of WLED provides all of the functionality of WLED with a few caveats:
 
 * Some of the default services supported by WLED such as Alexa and Blynk are disabled by default.
-* Spurious noise and spikes have been problematic during the development of SR WLED. See 'Noise and Spikes' below for further discussion on that topic.
+* Spurious noise and spikes have been problematic during the development of SR WLED. See 'Noise and Spikes' below for further discussion on this topic.
 * We recommend using SR WLED in STA mode, instead of the standalone AP mode (aka WLED-AP). It generates more noise.
 * If you have problems with the LED's, make sure you can successfully run the latest version of standard WLED.
 * Start out with a small strip of ~30 LED's before setting up a large installation.
