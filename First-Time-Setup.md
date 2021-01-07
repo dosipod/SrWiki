@@ -13,7 +13,7 @@ The sound reactive version of WLED provides all of the functionality of WLED wit
 
 ## Steps
 1. On the WiFi page, it is highly recommended that you connect your SR WLED strip to an existing network.
-2. At the bottom of the WiFi page, check on 'Disable WiFi sleep'. May not be necessary if you're not experiencing noise issue.
+2. At the bottom of the WiFi page, check on 'Disable WiFi sleep'. May not be necessary if you're not experiencing noise issues.
 3. On the LED Preferences page, configure the length of your led strip.
 3. On the LED Preference page, configure the 2D matrix size, i.e. 1x30 or 16x16, etc.
 4. On the sound setting page, set the Squelch setting to '0' and the Gain > 100.
