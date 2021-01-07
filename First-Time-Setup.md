@@ -1,5 +1,3 @@
-This page is under construction!!!!!!
-
 ## Introduction
 The sound reactive version of WLED provides all of the functionality of WLED with a few caveats:
 
