@@ -24,11 +24,9 @@ The sound reactive version of WLED provides all of the functionality of WLED wit
 Here's a starting point table of Squelch and Gain settings for different inputs:
 
 | Input | Squelch | Gain
-| ----- | -
-
-0
+| ----- | ------- | ----
 | MAX9814 @40dB | 10 | 10
-| Line-In | ? | ?
+| Line-In | 1 | 60
 | INMP441 | 20 | 5
 | ICS-43434 | 20 | 5
 
