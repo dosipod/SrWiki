@@ -281,7 +281,7 @@ Some animations may break when the users start implementing SEGMENTS. Issues enc
 * To use persistent variable across SEGMENTS, don't use 'static', but rather use the existing uint16_t defined SEGENV.aux0 and SEGENV.aux1 variables. Too bad they're not uint32_t.
 * For further reading on persistent variables, see this page https://github.com/atuline/WLED/wiki/Persistent-Variables-and-WLED
 
-Here's a replacmeent for EVERY_N_MILLIS()
+Here's a replacement for EVERY_N_MILLIS()
 
 ```C
   uint8_t secondHand = millis()/(256-SEGMENT.speed) % 10;
