@@ -7,7 +7,7 @@ The sound reactive version of WLED provides all of the functionality of WLED wit
 * If you have problems with the LED's, make sure you can successfully run the latest version of standard WLED.
 * Start out with a small strip of ~30 LED's before setting up a large installation.
 * Grounding may also be a problem. For example, my line-in setup picked up a lot of noise when my ESP32 board was connected to the USB port on my PC, but NO noise when powered by a USB power bank.
-* Connectors!! Dupont connectors are notoriously flaky. I use JST-SM connectors for the LED's and JST-XHP connectors for the microphones.
+* Connectors!! Dupont connectors are notoriously flaky. I use JST-SM connectors for the LED's and (so far) just soldered the microphones.
 
 ## First Steps
 1. On the WiFi Setup page, it is highly recommended that you connect your SR WLED strip to an existing network.
