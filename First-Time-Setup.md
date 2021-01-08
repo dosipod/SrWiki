@@ -40,6 +40,7 @@ While providing a lot of functionality, the ESP8266 and the ESP32 boards (typica
 * Don't use AP mode.
 * Disable the WiFi sleep mode.
 * Use shielded wiring for your analog sampling pin.
+* Some batches of analog microphones are just no good.
 * Use an I2S microphone, such as the INMP441 or ICS-43434.
 * Isolate the power between the LED strips and the controller.
 * Don't use USB power from your PC.
