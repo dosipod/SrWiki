@@ -6,8 +6,8 @@
 [Sound Reactive Animations](https://github.com/atuline/WLED/wiki/Reactive-Animations)  
 [Non-Reactive Animations](https://github.com/atuline/WLED/wiki/Non-Reactive-Animations)    
 [Analog Audio Input Options](https://github.com/atuline/WLED/wiki/Analog-Audio-Input-Options)   
-[Squelch and Gain](https://github.com/atuline/WLED/wiki/Squelch-and-Gain)  
 [Digital Microphone Hookup](https://github.com/atuline/WLED/wiki/Digital-Microphone-Hookup)  
+[Squelch and Gain](https://github.com/atuline/WLED/wiki/Squelch-and-Gain)  
 [Using my PC for the Sound](https://github.com/atuline/WLED/wiki/Using-my-PC-for-the-Sound)  
 [News](https://github.com/atuline/WLED/wiki/News) 
 
