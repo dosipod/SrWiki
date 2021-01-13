@@ -1,3 +1,23 @@
+What's possibly on the horizon (no dates given):
+
+* Cleaning up volume acquisition routines to just get volume from FFT_Magnitude.
+* Modify both analog and digital data acquisition to read I2S in blocks.
+* Some folks are interested in higher sampling rates. We may look for outside work on that.
+* Possibly improved 2D support.
+* Smoothing.
+* Some more animations.
+
+### January 13, 2021
+
+* Well that was a year, only for 2021 to say 'hold my beer'.
+* We've been working on fixing bugs, including UDP sync issues among others.
+* Normalizing frequency and volume response for different microphones.
+* Testing/updating various routines to work with the above changes.
+* Modified routines to better support the 'FastLED' way of doing things, specifically for leds[i+1] = leds[i] and vice versa.
+* Dealing with platform related noise and spikes. Had to add an exponential filter combined with the squelch control.
+* Added a few more animations, and took out one or two.
+
+
 ### November 5, 2020
 
 * The ESP8266 branch continues to be reliable for that platform, but NOT reliable for the regular build. Would love to know why.
