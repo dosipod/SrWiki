@@ -213,7 +213,7 @@ void WS2812FX::setPixels(CRGB* leds) {
    }  
 }
 ```
-You can now us FastLED address methods, AND it works with segments.
+You can now use FastLED address methods, AND it works with segments.
 
 Then, you can call this function at the end of your routine as follows:
 ```
