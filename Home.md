@@ -64,7 +64,8 @@ For more information, see our **[Analog Audio Input Options](https://github.com/
 * GPIO2 (D4 on WEMOS) for both ESP8266 and ESP32 for WS2812's
 * A0 for ESP8266 (audio-in pin)
 * GPIO36 (or VP) for the ESP32 (audio-in pin)
-
+* See [[Digital Microphone Hookup]] for pins used
+* (You can change the pins used by adding definitions in your PlatformIO config or editing audio_reactive.h)
 
 ## Support Forums
 

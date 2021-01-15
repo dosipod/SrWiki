@@ -11,6 +11,8 @@ On an ESP32 (only), if a digital microphone is not detected during startup, Soun
 | VDD | VDD | 3.3V
 | GND | GND | Gnd
 
+(You can change the pins used by defining `I2S_WS`, `I2S_SD`, and `I2S_SCK` in your PlatformIO config, or by editing the values in audio_reactive.h)
+
 Note that 'Other' is supposed to represent the GY-SPH0645 I²S, which did not function correctly during testing with the INMP441 setup.
 
 For an ESP32 in a D1 Mini form factor, you should be able to use GPIO pins 26, 18 and 22. To do so, edit audio_reactive.h, change the pin numbers and then recompile.
