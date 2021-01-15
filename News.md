@@ -6,6 +6,8 @@ What's possibly on the horizon (no dates given):
 * Possibly improved 2D support.
 * Smoothing.
 * Some more animations.
+* Dynamic slider visibility.
+* Implement usermod V2.
 
 ### January 13, 2021
 
