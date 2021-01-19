@@ -170,7 +170,7 @@ laid out back-and-forth, like this:
   * `matrixHeight` is the number of pixels per column
 * Some existing animations (as of Jan 2021) were coded for different orientations and need to be redone to match the newly agreed to orientation described above
 * Not yet supported: rotation, or any mapping other than rectangular progressive/serpentine
-  * Ideally the `XY()` function will return the correct led index even with a rotated display, and `matrixWidth`/`matrixHeight` will refer to the rotated displays dimensions.
+  * Ideally the `XY()` function will return the correct led index even with a rotated display, and `matrixWidth`/`matrixHeight` will refer to the rotated display's dimensions.
   * It's likely that there will at least a minor change in animations required to support a non-rectangular or non-contiguous mapping
 
 ## On Variable Length Arrays
