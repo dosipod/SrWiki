@@ -13,7 +13,8 @@ If you are using the [MAX9814](https://learn.adafruit.com/adafruit-agc-electret-
 
 If the LED's are active when the ambient volume is low while running volume only effects beginning with a single '*', you can increase the background noise filtering (or squelch) by navigating to the 'Config | LED Preferences | Sound' and increase the Squelch value. You can also make it more sensitive by lowering that Squelch value. In addition, there is a gain setting, which is required for the much lower signal level provided by the line-in configuration. We have not yet implemented a similar capability for the FFT effects.
 
-**Note:** Do NOT connect the microphone to 5V (or Vin). The power should be connected to the 3.3V pin.
+**Note 1:** Do NOT connect input devices to 5V (or Vin). The power should be connected to the 3.3V pin.
+**Note 2:** A piezo vibration sensor (from aliexpress) was successfully hooked up and tested.
 
 ***
 
