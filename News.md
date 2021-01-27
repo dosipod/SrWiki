@@ -1,9 +1,11 @@
 What's possibly on the horizon (no dates given):
 
-* Cleaning up volume acquisition routines to just get volume from FFT_Magnitude.
+* Cleaning up volume acquisition routines and just get volume from FFT_Magnitude.
 * Modify both analog and digital data acquisition to read I2S in blocks.
 * Some folks are interested in higher sampling rates. We may look for outside work on that.
-* Possibly improved 2D support.
+* Improved 2D support.
+* Improved support for FastLED.
+* Support for Pixelblaze.
 * Smoothing.
 * Some more animations.
 * Dynamic slider visibility.
