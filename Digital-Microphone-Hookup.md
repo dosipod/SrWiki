@@ -17,6 +17,8 @@ Note that 'Other' is supposed to represent the GY-SPH0645 I²S, which did not fu
 
 For an ESP32 in a D1 Mini form factor, you should be able to use GPIO pins 26, 18 and 22. To do so, edit audio_reactive.h, change the pin numbers and then recompile.
 
+We do not have these digital microphones running on an ESP8266.
+
 Having problems getting the INMP441 running with WLED? Here's a test sketch (which you can compile with the Arduino IDE): https://pastebin.com/Ua7s7LYF
 
 Here's the first board I've seen with the ICS-43434 at: https://www.tindie.com/products/serg74/digital-i2s-microphone-ics-43434-add-on/
