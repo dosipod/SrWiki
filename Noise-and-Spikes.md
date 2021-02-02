@@ -15,5 +15,5 @@ Although the ESP32 did lose connection with the web server, it was nowhere near 
 
 On both platforms, we encountered significant spikes when using the analog ADC when the WiFi is active. There are numerous articles on this issue, along with various methods to reduce the noise. We've found that an I2S microphone, such as the INMP441 or ICS-43434 will provide a better response than any of the analog microphones or input methods that we support.
 
-Here's some [test results](https://github.com/atuline/WLED/blob/assets/docs/Noise%20and%20Spikes.pdf) with the analog input
+Here's some [test results](https://github.com/atuline/WLED/blob/assets/docs/Noise%20and%20Spikes.pdf) with the analog input.
 
