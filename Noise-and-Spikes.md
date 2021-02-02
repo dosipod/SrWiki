@@ -22,6 +22,9 @@ Here's some references:
 * https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/peripherals/adc.html
 * https://www.esp32.com/viewtopic.php?t=9613
 * https://www.youtube.com/watch?v=3g7l5bm7fZ8
+* https://github.com/espressif/arduino-esp32/issues/92
+* https://randomnerdtutorials.com/esp32-adc-analog-read-arduino-ide/
+
 
 Note: We have not yet tested I2S sampling of analog microphones, only the standard analogRead().
 
