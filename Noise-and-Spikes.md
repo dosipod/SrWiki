@@ -17,3 +17,11 @@ On both platforms, we encountered significant spikes when using the analog ADC w
 
 Here's some [test results](https://github.com/atuline/WLED/blob/assets/docs/Noise%20and%20Spikes.pdf) with the analog input.
 
+Here's some references:
+
+* https://www.esp32.com/viewtopic.php?t=9613
+* https://www.youtube.com/watch?v=3g7l5bm7fZ8
+
+Note: We have not yet tested I2S sampling of analog microphones, only the standard analogRead().
+
+
