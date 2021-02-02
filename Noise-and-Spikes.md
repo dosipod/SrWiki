@@ -19,6 +19,7 @@ Here's some [test results](https://github.com/atuline/WLED/blob/assets/docs/Nois
 
 Here's some references:
 
+* https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/peripherals/adc.html
 * https://www.esp32.com/viewtopic.php?t=9613
 * https://www.youtube.com/watch?v=3g7l5bm7fZ8
 
