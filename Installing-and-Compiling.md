@@ -21,7 +21,7 @@ See: https://www.youtube.com/watch?v=4EXefD6INos
 
 ## Compiling from a fresh install of the Arduino IDE
 
-**Note: Around October 2020, library version issues made it increasingly difficult to compile WLED with the Arduino IDE. Your best bet is to use VS Code with Platform IO. In the meantime, here's the old Arduino IDE instructions:**
+**Note: Around October 2020, mismatching library version issues made it increasingly difficult to compile WLED with the Arduino IDE. Your best bet is to use VS Code with Platform IO. In the meantime, here's the old Arduino IDE instructions:**
 
 1. Download and install the Arduino IDE from [arduino.cc](https://www.arduino.cc/en/Main/Software). Defaults are OK.
 1. Start the Arduino IDE and add ESP8266/ESP32 board support by going to "File | Preferences" ("Arduino | Preferences" for macOS (⌘,))
