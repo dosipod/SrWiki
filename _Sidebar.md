@@ -13,7 +13,7 @@
 
 ### Technicals
 [It's Not Working](https://github.com/atuline/WLED/wiki/My--device--is-not-working)   
-[Noise and Spikes](https://github.com/atuline/WLED/wiki/Noise-and-Spikes)
+[Noise and Spikes](https://github.com/atuline/WLED/wiki/Noise-and-Spikes)    
 [Connectivity Issues](https://github.com/atuline/WLED/wiki/Connectivity-Issues)  
 [Modifying Sound Reactive WLED](https://github.com/atuline/WLED/wiki/Modifying-Sound-Reactive-WLED)  
 [Adding a new Settings Page](https://github.com/atuline/WLED/wiki/Adding-a-Sound-Settings-page-to-the-UI)  
