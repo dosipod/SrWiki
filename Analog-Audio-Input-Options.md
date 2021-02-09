@@ -29,7 +29,10 @@ Microphone Wiring Example (MAX9814) | Line In Wiring Example
 --- | ---
 ![Simple Mic Schematic](https://github.com/atuline/WLED/blob/assets/media/WLED_Simple_Mic_Wiring.png) | ![Line In Schematic](https://github.com/atuline/WLED/blob/assets/media/WLED_Line_In_Wiring.png)
 
-**Note:** If you are just using a single L or R channel for the line-in, disconnect the capacitor for the other channel, or the resultant sample will be significantly reduced in amplitude.
+**Note 1:** If you are just using a single L or R channel for the line-in, disconnect the capacitor for the other channel, or the resultant sample will be significantly reduced in amplitude.
+
+**Note 2:** Providing a 'T' connector so that you can hear the music as it goes into the circuit is highly recommended. In the author's case, there was considerable static when the ESP32 was powered by the computer's USB port, but was fine when the ESP32 was powered by a USB powerbank.
+
 ### Dual Input Wiring
 The following diagram shows one way of connecting a 3.5mm jack and an analog microphone to the ESP8266/32 while being able to change your desired input with a simple SPDT switch.
 
