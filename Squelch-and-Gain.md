@@ -1,6 +1,6 @@
 ## Introduction
 
-In order to accommodate a wide range of audio inputs and string lengths, we have added user configurable squelch (noise reduction) and gain controls on the LED settings page for the volume reactive animations.
+In order to accommodate a wide range of audio inputs, ambient environments and string lengths, we have added user configurable squelch (noise reduction) and gain controls on the LED settings page for the volume reactive animations.
 
 ## Squelch
 Adjust this value on the LED Settings page so that the leds are only activated above a certain 'background noise' level.
