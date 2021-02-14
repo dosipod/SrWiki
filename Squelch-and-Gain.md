@@ -8,6 +8,8 @@ Adjust this value on the LED Settings page so that the leds are only activated a
 ## Gain
 Line-in signals are typically much lower than that of some of the microphones. Rather than use an auto gain function, you can manually adjust the gain from 0 to 255, which translate to a 1.0 gain up to a 5.0 gain.
 
+In addition, the 'Intensity' slider can sometimes adjust an animation to provide greater 'gain'.
+
 ## Manual Calibration
 The sound reactive fork of WLED supports several different types of inputs. In addition, different environments can have different levels of ambient/background noise. As a result, we've included settings for adjust gain and reduce sensitivity to background noise.
 
