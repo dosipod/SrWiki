@@ -3,7 +3,7 @@ During the development of our sound reactive version of WLED, we've had several 
 
 ### ESP8266
 
-After the code refactoring of WLED from .ino to .cpp files around April 2020, our ESP8266 code lost connection between the user interface and the ESP8266's web server. This eventually culimated in a re-write of a stripped down version of SR WLED dedicated just for the ESP8266. It included the UDP sound sync as a receiver, but supported none of the FFT or 2D functionality. This stripped down version seems to be stable, however that platform is now deprecated from further development.
+After the code refactoring of WLED from .ino to .cpp files around April 2020, our ESP8266 code lost connection between the user interface and the ESP8266's web server. This eventually culimated in a re-write of a stripped down version of SR WLED dedicated just for the ESP8266. It included the UDP sound sync as a receiver (only), but supported none of the FFT or 2D functionality. This stripped down version seems to be stable, however that platform is now deprecated from further development.
 
 
 ### ESP32
