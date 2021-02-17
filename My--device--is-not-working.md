@@ -49,3 +49,5 @@ As for UDP support, this article may shed some light on the challenges:
 
 https://superuser.com/questions/1287485/udp-broadcasting-not-working-on-some-routers
 
+In the meantime, UDP Sound sync has been configured to transmit 50 packets per second.
+
