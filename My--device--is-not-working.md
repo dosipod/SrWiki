@@ -41,11 +41,11 @@ The other analog input options should provide something similar.
 
 ## UDP Sound Sync Issues
 
-We recently received a support request around UDP sound synchronization taking down a WiFi network. The challenge with troubleshooting WiFi is that you need to configure your packet sniffer in monitor mode, something which is very difficult to achieve with most workstations. As a result, we are unable to see a lot of WiFi network traffic.
+We received a support request reporting that UDP sound synchronization will take down a Wi-Fi network. The challenge with troubleshooting WiFi is that you need to configure your packet sniffer in monitor mode, something which is very difficult to achieve with most workstations. As a result, we are unable to see a lot of Wi-Fi network traffic.
 
-One setting to change on 'WiFi Preferences' is to Disable WiFi sleep mode.
+One setting to change on 'WiFi Setup' is to check on "Disable WiFi sleep" mode.
 
-As for UDP support, this article may shed some light on the situation:
+As for UDP support, this article may shed some light on the challenges:
 
 https://superuser.com/questions/1287485/udp-broadcasting-not-working-on-some-routers
 
