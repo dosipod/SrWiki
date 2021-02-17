@@ -38,3 +38,14 @@ If you'd like some help with your device, these are the types of things we would
 ![MAX4466 talking](https://github.com/atuline/WLED/blob/assets/media/loud.jpg)
 
 The other analog input options should provide something similar.
+
+## UDP Sound Sync Issues
+
+We recently received a support request around UDP sound synchronization taking down a WiFi network. The challenge with troubleshooting WiFi is that you need to configure your packet sniffer in monitor mode, something which is very difficult to achieve with most workstations. As a result, we are unable to see a lot of WiFi network traffic.
+
+One setting to change on 'WiFi Preferences' is to Disable WiFi sleep mode.
+
+As for UDP support, this article may shed some light on the situation:
+
+https://superuser.com/questions/1287485/udp-broadcasting-not-working-on-some-routers
+
