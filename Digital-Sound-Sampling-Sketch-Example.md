@@ -117,4 +117,4 @@ void getINMP() {
     mean = mean/BLOCK_SIZE/16384;
   }  
 }
-```C
+```
