@@ -9,7 +9,7 @@ If you'd like some help with your device, these are the types of things we would
 * Is your audio all wired up OK? [See here](https://github.com/atuline/WLED/wiki/Analog-Audio-Input-Options).
 * Which microphone/input are you using and how is it configured?
 * Have you tested that microphone with a [basic analog sound sampling sketch](https://github.com/atuline/WLED/wiki/Analog-Sound-Sampling-Sketch-Example)?
-* You have an INMP441 or ICS-43434? Try the [basic digital sound sampling sketch](https://github.com/atuline/WLED/wiki/Digital-Sound-Sampling-Sketch-Example)
+* You have an INMP441 or ICS-43434? Try the [basic digital sound sampling sketch](https://github.com/atuline/WLED/wiki/Digital-Sound-Sampling-Sketch-Example).
 * What are the results of that sketch? Does it respond to your speech? A MAX4466 and INMP401 should average about 1875 on an ESP32, a MAX9814 about 1350 for all gain settings.
 * Try a different pin when using that sketch if you're still not seeing good results.
 * Have spares. They're cheap and they break. (source: experience)
