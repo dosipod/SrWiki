@@ -16,7 +16,7 @@ As we continue to develop SR WLED, some animations may appear or disappear. It's
 | *Midnoise | Perlin noise emanating from center.| Speed: Fade rate <br /> Intensity: Maximum length
 | *Noisefire | A perlin noise based volume reactive fire routine. | n/a
 | *Noisemeter | Volume reactive vu-meter. | Speed: Fade rate <br /> Intensity: Width
-| *Pixels | Random pixels. | Intensity: # of pixels
+| *Pixels | Random pixels. | Speed: Fade rate <br /> Intensity: # of pixels
 | *Pixelwave | Pixels emanating from center. | Speed: yes <br /> Intensity: Sensitivity
 | *Plasmoid | Sine wave based plasma. | Intensity: # of pixels
 | *Puddlepeak | Blast coloured puddles randomly up and down the strand with the 'beat'. |Speed: Adjust fade rate.<br /> Intensity: Size of puddles.
