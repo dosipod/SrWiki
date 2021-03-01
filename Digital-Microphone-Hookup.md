@@ -20,7 +20,7 @@ For an ESP32 in a D1 Mini form factor, you should be able to use GPIO pins 26, 1
 We do not have these digital microphones running on an ESP8266.
 
 Having problems getting the INMP441 running with WLED? Here's a test sketch (which you can compile with the Arduino IDE): https://pastebin.com/Ua7s7LYF
-If you are still having a problem with that sketch, change the line with ONLY_LEFT to ONLY_RIGHT. If that works, you'll need to go into usermod.cpp and change that line.
+. If you are still having a problem with that sketch, change the line with ONLY_LEFT to ONLY_RIGHT. If that works, you'll need to go into usermod.cpp and change that line.
 
 Here's the first board I've seen with the ICS-43434 at: https://www.tindie.com/products/serg74/digital-i2s-microphone-ics-43434-add-on/
 
