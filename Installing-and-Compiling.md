@@ -9,6 +9,7 @@ See: https://www.youtube.com/watch?v=4EXefD6INos
 
 1.  The Sound Reactive WLED binaries for ESP32 and Wemos D1 Mini are located [here.](https://github.com/atuline/WLED/releases/latest)
 1.  The Original WLED binaries are located [here.](https://github.com/Aircoookie/WLED/releases/latest)
+1.  For the ESP32, you can download the [ESP Home Flasher](https://github.com/esphome/esphome-flasher/releases/latest). For some reason, the NodMCU Pyflasher hasn't been working on this platform for a while.
 1.  Download [NodeMCU-PyFlasher](https://github.com/marcelstoer/nodemcu-pyflasher/releases) or [esptool.py](https://github.com/espressif/esptool) which works on Windows and macOS
     1. **NOTE:** For ESP32 you must write flash at 0x10000 and program the bootloader. There are great [instructions here](https://github.com/Aircoookie/WLED/wiki/Install-WLED-binary).
 1.  Plug the WeMOS D1 Mini into your computer
