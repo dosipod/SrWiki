@@ -4,7 +4,7 @@ Effects beginning with '**' use FFT (Fast Fourier Transforms) for frequency dete
 
 Some of the 2D routines require 256 LED's in a 16x16 matrix.
 
-As we continue to develop SR WLED, some animations may appear or disappear. It's still a work very much in progress.
+As we continue to develop SR WLED, some animations may appear or disappear. It's still a work very much in progress. Some may only appear in the dev branch for now.
 
 | Effect | Description | Sliders
 | :------------------ | --- | ---
