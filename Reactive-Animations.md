@@ -22,10 +22,10 @@ As we continue to develop SR WLED, some animations may appear or disappear. It's
 | *Puddlepeak | Blast coloured puddles randomly up and down the strand with the 'beat'. |Speed: Adjust fade rate.<br /> Intensity: Size of puddles.<br /> FFT High: 256 freq bin select on ESP32.<br /> FFT Custom: Volume comparator on ESP32.
 | *Puddles | Blast coloured puddles based on volume.| Speed: Fade rate <br /> Intensity: Size of puddle
 | *Ripple Peak | Peak detection triggers ripples. | Intensity: Max number of ripples.<br /> FFT High: 256 freq bin select on ESP32.<br /> FFT Custom: Volume comparator on ESP32.
-| *Waterfall | A volume AND FFT version of a Waterfall that has 'beat' support.| Speed: Speed <br /> Intensity: Adjust colour<br /> FFT High: 256 freq bin select on ESP32.<br /> FFT Custom: Volume comparator on ESP32.
-| **2D CenterBars | A 16x16 spectral analysis routine emanating from the center | None.
+| *Waterfall | A volume AND FFT version of a Waterfall that has 'beat' support.| Speed: Speed <br /> Intensity: Adjust colour
+| **2D CenterBars | A 16x16 spectral analysis routine emanating from the center | None
 | **2D Funky Plank | A 2D wall of reactivity running from bottom to top | Speed: Speed
-| **2D GEQ | A 16x16 graphic equalizer. | Speed: Fade rate<br />fft3: Number of bands.
+| **2D GEQ | A 16x16 graphic equalizer. | Speed: Fade rate<br />FFT Custom: Number of bands
 | **Binmap | Map bins 3-255 throughout the length of the LEDs.<br />Values are not normalized.| Intensity: Max volume 
 | **DJLight | An effect emanating from the center to the edges. | Speed: Speed
 | **Freqmap | Map the loudest frequency throughout the length of the LED's.| Speed: Fade rate<br /> Intensity: Starting colour 
@@ -34,7 +34,7 @@ As we continue to develop SR WLED, some animations may appear or disappear. It's
 | **Freqwave | See below. | See below
 | **Gravfreq | VU Meter from center. Log of frequency is index to center colour. | Speed: Speed: Rate of fall<br /> Intensity: Sensitivity
 | **Noisemove | Using perlin noise as movement for different frequency bins. |Speed: Speed of perlin movement <br /> Intensity: Fade rate
-| **Waterfall | FFT version of a Waterfall.| Speed: Speed <br /> Intensity: Adjust colour
+| **Waterfall | FFT version of a Waterfall.| Speed: Speed <br /> Intensity: Adjust colour<br /> FFT High: 256 freq bin select on ESP32.<br /> FFT Custom: Volume comparator on ESP32.
 <br />
 
 ## FFT Routines for ESP32 Notes
