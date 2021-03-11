@@ -37,6 +37,11 @@ As we continue to develop SR WLED, some animations may appear or disappear. It's
 | **Waterfall | FFT version of a Waterfall.| Speed: Speed <br /> Intensity: Adjust colour<br /> FFT High: 256 freq bin select on ESP32.<br /> FFT Custom: Volume comparator on ESP32.
 <br />
 
+## Peak Detection
+
+On the ESP32, you can adjust 'FFT High' in order to select frequency bins 0 - 255 to compare against. In addition, 'FFT Custom' is adjust to select the volume that you want to compare the bin against. These are the raw frequency bins and have not been 'normalized'. As a result, some bins may have high volumes than others.
+
+
 ## FFT Routines for ESP32 Notes
 
 ### Freqmatrix 
