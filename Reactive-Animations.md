@@ -19,7 +19,7 @@ As we continue to develop SR WLED, some animations may appear or disappear. It's
 | *Pixels | Random pixels. | Speed: Fade rate <br /> Intensity: # of pixels
 | *Pixelwave | Pixels emanating from center. | Speed: yes <br /> Intensity: Sensitivity
 | *Plasmoid | Sine wave based plasma. | Intensity: # of pixels
-| *Puddlepeak | Blast coloured puddles randomly up and down the strand with the 'beat'. |Speed: Adjust fade rate.<br /> Intensity: Size of puddles.
+| *Puddlepeak | Blast coloured puddles randomly up and down the strand with the 'beat'. |Speed: Adjust fade rate.<br /> Intensity: Size of puddles.<br /> FFT High: freq bin select on ESP32.<br /> FFT Custom: Volume comparator on ESP32.
 | *Puddles | Blast coloured puddles based on volume.| Speed: Fade rate <br /> Intensity: Size of puddle
 | *Ripple Peak | Peak detection triggers ripples. | Intensity: Max number of ripples.
 | *Waterfall | A volume AND FFT version of a Waterfall.| Speed: Speed <br /> Intensity: Adjust colour
