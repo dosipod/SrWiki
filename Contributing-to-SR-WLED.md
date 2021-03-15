@@ -2,7 +2,7 @@ We learned a long time ago that a adding new code can make for a LOT of testing.
 
 * Several different analog microphones and some in different configurations (ie MAX9814), each of which need to be tested.
 * Line-in, with different possible line-in levels.
-* The digital INMP441 microphone.
+* The digital INMP441 and ICS-43434 microphones.
 * Sampling for both volume and FFT calculations.
 * Volume, peak and FFT based animations.
 * Up to 5 sliders for each animation.
@@ -14,12 +14,18 @@ We learned a long time ago that a adding new code can make for a LOT of testing.
 * ESP32 and ESP8266 based devices.
 * Support for both the Arduino IDE as well as Platform IO.
 * Supporting both AP mode as well as STA mode for WiFi.
-* A dev branch for the latest code for ESP32 (optionally ESP8266).
+* A dev branch for the latest code for ESP32.
 * An ESP8266 branch for volume only routines.
 * A master branch, which gets occasionally gets merged with AC's master by one of our team members. We normally don't commit to this branch.
 * SEGMENTS. Every routine must be compatible and tested for SEGMENTS.
 
 If you'd like to contribute, you would need to be able to perform a significant amount of testing (see above) so your new code doesn't unintentionally break other functionality.
+
+What functionality to add:
+
+* Is the addition specific to sound reactive WLED or should it be a part of regular WLED?
+* Will the proposed addition break potential future WLED functionality?
+* Can other members of the team support this added functionality in the future?
 
 In addition:
 
