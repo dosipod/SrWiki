@@ -10,6 +10,7 @@
 | 2D DNA | A very cool DNA like pattern by /u/ldirko. | n/a
 | 2D Fire2012 | Mark Kriegsman's fire routine. | n/a
 | 2D Firenoise | Using Perlin Noise for fire. | n/a
+| 2D Julia | An animated Julia set | intensity: max # of calculations per pixel <br /> fft1: x center of the set <br /> fft2: y center of the set <br /> fft3: Size of the window
 | 2D Matrix | The Matrix in 2D. | Speed: Affects the speed of the movement. <br /> fft3: Change orientation
 | 2D Meatballs | A cool plasma type effect by Stefan Petrick. | n/a
 | 2D Plasma | A plasma effect. | Speed: Affects the speed of the movement. <br />  fft1: Shifts the colours <br />fft2: Distance from the plasma
