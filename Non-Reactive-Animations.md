@@ -18,7 +18,7 @@
 
 ### 2D Julia notes
 
-This animation supports palettes. The controls are a **change** of size/location rather than just the actual size/location. fft3 controls the window size, where the midpoint keeps the window the same size, while a value to the left continuously makes the window smaller, and larger to the right.
+This animation supports palettes. fft1-3 affect the rate of **change** of size/location rather than just changing the size/location. fft3 controls the window size, where the midpoint keeps the window the same size, while a value to the left continuously makes the window smaller, and larger to the right.
 
 Feel free to PR a different control layout (along with associated documentation). We get to use up to 5 sliders.
 
