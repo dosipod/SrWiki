@@ -15,3 +15,10 @@
 | 2D Meatballs | A cool plasma type effect by Stefan Petrick. | n/a
 | 2D Plasma | A plasma effect. | Speed: Affects the speed of the movement. <br />  fft1: Shifts the colours <br />fft2: Distance from the plasma
 | 2D Squared Swirl | Boxes moving around. | fft3: Blur amount
+
+### 2D Julia notes
+
+The controls are a **change** of size/location rather than just the size/location.
+
+Feel free to PR a different control layout (along with associated documentation). We get to use up to 5 sliders.
+
