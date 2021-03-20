@@ -21,6 +21,8 @@ See: https://www.youtube.com/watch?v=4EXefD6INos
 
 ## Compiling from Platform IO
 
+https://github.com/Aircoookie/WLED/wiki/Compiling-WLED
+
 
 ## Compiling from a fresh install of the Arduino IDE
 
