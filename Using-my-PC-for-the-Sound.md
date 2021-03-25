@@ -7,6 +7,6 @@ https://github.com/atuline/WLED/wiki/UDP-Sound-Sync
 
 To answer this question, not directly, except for the line-out signal. Although we support UDP sound sync, someone would have to write a program for their OS of choice to capture the sound from the PC, perform FFT calculations, and UDP transmit the sampled data (the packet matching our sound reactive WLED data structure). That's a non-trivial course of action.
 
-All that being said, LedFx (as found at https://github.com/ahodges9/LedFx) may be just the solution for this use case. Since WLED supports the E1.31 DMX protocol, you can use the sound reactive LedFx running on your PC to control a WLED device. There's an excellent video on setting this environment up at https://www.youtube.com/watch?v=ipSfQdfX4fE
+All that being said, LedFx (as found at https://github.com/LedFx/LedFx) may be just the solution for this use case. Since WLED supports UDP, DDP, and E1.31 DMX protocols, you can use the sound reactive LedFx running on your PC to control a WLED device. There's an excellent video on setting this environment up at https://www.youtube.com/watch?v=ipSfQdfX4fE
 
-LedFX will then directly control the LED's on your WLED device, although you can still revert to native WLED animations.
+LedFx will then directly control the LED's on your WLED device, although you can still revert to native WLED animations.
