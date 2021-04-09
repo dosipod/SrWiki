@@ -2,14 +2,14 @@ The INMP441 is a high-performance, low power, digital output, omnidirectional ME
 
 On an ESP32 (only), if a digital microphone is not detected during startup, Sound Reactive WLED will fall back to analog read.
 
-| INMP441 | Other | ESP32 Pin
-| ---- | ---- | ----
-| L/R | SEL | Gnd
-| SD | DOUT | 32
-| WS | LRCL | 15
-| SCK | BCLK | 14
-| VDD | VDD | 3.3V
-| GND | GND | Gnd
+| INMP441 | Other | ESP32 Pin | ESP32 Mini
+| ---- | ---- | ---- | ----
+| L/R | SEL | Gnd | Gnd
+| SD | DOUT | 32 | 16
+| WS | LRCL | 15 | 22
+| SCK | BCLK | 14 | 18
+| VDD | VDD | 3.3V | 3.3V
+| GND | GND | Gnd | Gnd
 
 (You can change the pins used by defining `I2S_WS`, `I2S_SD`, and `I2S_SCK` in your PlatformIO config, or by editing the values in audio_reactive.h)
 
