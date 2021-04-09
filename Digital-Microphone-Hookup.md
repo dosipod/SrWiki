@@ -15,7 +15,7 @@ On an ESP32 (only), if a digital microphone is not detected during startup, Soun
 
 Note that 'Other' is supposed to represent the GY-SPH0645 I²S, which did not function correctly during testing with the INMP441 setup.
 
-For an ESP32 in a D1 Mini form factor, you should be able to use GPIO pins 26, 18 and 22. To do so, edit audio_reactive.h, change the pin numbers and then recompile.
+Alternatively, for an ESP32 in a D1 Mini form factor, you should be able to use GPIO pins 26, 18 and 22.
 
 We do not have these digital microphones running on an ESP8266.
 
