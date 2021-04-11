@@ -59,7 +59,7 @@ Append the new function(s) and use current functions as templates. Cannot add an
 * FX.h:66  - Other stuff
 
 ## Delays
-You DO NOT use delay statements here, except to keep the watchdog happy. Here is the awesome FastLED method of timing/scheduling:
+You DO NOT use delay statements here, except to keep the watchdog happy. Here is the awesome FastLED method of timing/scheduling (which DOES NOT work with segments):
 
 ```C
 EVERY_N_MILLISECONDS_I(pixTimer, SEGMENT.speed) {
