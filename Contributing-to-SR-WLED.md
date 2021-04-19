@@ -20,7 +20,7 @@ We learned a long time ago that a adding new code can make for a LOT of testing.
 * SEGMENTS. Every routine must be compatible and tested for SEGMENTS.
 * Try and keeping our fork current with the original WLED.
 
-If you'd like to contribute, you would need to be able to perform a significant amount of testing (see above) so your new code doesn't unintentionally break other functionality.
+If you'd like to contribute, you would need to be able to perform a significant amount of testing and future maintenance (see above) so your new code doesn't unintentionally break other functionality.
 
 What functionality to add:
 
