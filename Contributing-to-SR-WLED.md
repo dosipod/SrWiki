@@ -18,6 +18,7 @@ We learned a long time ago that a adding new code can make for a LOT of testing.
 * An ESP8266 branch for volume only routines.
 * A master branch, which gets occasionally gets merged with AC's master by one of our team members. We normally don't commit to this branch.
 * SEGMENTS. Every routine must be compatible and tested for SEGMENTS.
+* Try and keeping our fork current with the original WLED.
 
 If you'd like to contribute, you would need to be able to perform a significant amount of testing (see above) so your new code doesn't unintentionally break other functionality.
 
@@ -42,7 +43,8 @@ Knowledge required:
 * HTML, CSS, Javascript, XML, JSON, npm for any UI changes.
 * WLED coding standards.
 
-We still have the occasional issue with our dev/master branches where we lose connectivity with the web server on occasion. This was most prevalent with the ESP8266 in AP mode, which precipitated a re-write for that platform. As a result of this ongoing issue, we are sensitive to new functionality being added without adequate testing.
+We still have the occasional issue with our dev/master branches where we lose connectivity with the web server. This was most prevalent with the ESP8266 branch in AP mode, and precipitated a re-write for that platform. As a result of this ongoing issue, we are sensitive to new functionality being added without adequate testing.
 
 In conclusion, the most important factors are commitment, teamwork, communication, documentation, testing, testing and more testing. Oh yea, and a bit of new code as well, just so long as it's thoroughly tested across the range of supported environments.
 
+Just remember that any code you add will need to be maintained when we attempt to incorporate future versions of WLED. It's easy to add new code; maintaining it across multiple versions of WLED is a whole other matter. Be sparing with your additions.
