@@ -5,6 +5,7 @@ If you'd like some help with your device, these are the types of things we would
 * If you are referring to code, please provide a link to the version you are referring to.
 * Is it just sound reactivity that doesn't work? Is there a specific animation?
 * Make sure your microphone is powered by the 3V pin and NOT Vin or 5V . . and that your LED's are NOT connected to that 3V pin either (source: experience).
+* Leave the MAX4466 gain untouched. It works fine out of the box.
 * Have you gone through [initial settings](https://github.com/atuline/WLED/wiki/Running-Sound-Reactive-WLED)?
 * Is your audio all wired up OK? [See here](https://github.com/atuline/WLED/wiki/Analog-Audio-Input-Options).
 * Which microphone/input are you using and how is it configured?
