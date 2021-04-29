@@ -27,10 +27,11 @@ What functionality to add:
 * Is the addition specific to sound reactive WLED or should it be a part of regular WLED?
 * Will the proposed addition break potential future WLED functionality?
 * Can other members of the team support this added functionality in the future?
+* Is the code clear and concise?
 
 In addition:
 
-* Keep any code update to a limited topic for ease of testing/rollback.
+* Keep any git update to a limited topic for ease of testing/rollback.
 * Good communication with team members is very important.
 * Keep the Wiki documentation in good order.
 * Commitment. You're really keen on WLED and have a long term commitment to support the community.
