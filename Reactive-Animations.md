@@ -26,7 +26,7 @@ As we continue to develop SR WLED, some animations may appear or disappear. It's
 | **2D CenterBars | A 16x16 spectral analysis routine emanating from the center | None
 | **2D Funky Plank | A 2D wall of reactivity running from bottom to top | Speed: Speed
 | **2D GEQ | A 16x16 graphic equalizer. | Speed: Fade rate<br />FFT Custom: Number of bands
-| **Binmap | Map bins 3-255 throughout the length of the LEDs.<br />Values are not normalized.| Intensity: Max volume 
+| **Binmap | Map bins 3-255 throughout the length of the LEDs. This does not work with UDP sync.<br />Values are not normalized.| Intensity: Max volume 
 | **Blurz  | Flash an fftResult bin per frame and then blur/fade. | Speed: Fade Rate<br /> Intensity: Blurring
 | **DJLight | An effect emanating from the center to the edges. | Speed: Speed
 | **Freqmap | Map the loudest frequency throughout the length of the LED's.| Speed: Fade rate<br /> Intensity: Starting colour 
