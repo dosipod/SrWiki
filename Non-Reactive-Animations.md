@@ -6,6 +6,7 @@
 
 | Effect | Description | Sliders
 | --- | --- | ---
+| Flow Stripe |   |Speed: <br/>Intensity:
 | Perlin Move | Using Perlin Noise for movement. | Speed: Speed of elements<br/>Intensity: # of pixels<br />fft1: Fade rate
 | 2D DNA | A very cool DNA like pattern by /u/ldirko. | n/a
 | 2D Fire2012 | Mark Kriegsman's fire routine. | n/a
