@@ -11,7 +11,7 @@ As we continue to develop SR WLED, some animations may appear or disappear. It's
 | * 2D Swirl |   | Speed: <br/>Intensity:
 | * 2D Waverly |  | Speed: <br/>Intensity:
 | * Gravcenter | Volume reactive vu-meter from center with gravity and perlin noise. | Speed: Rate of fall <br /> Intensity: Sensitivity
-| * Gravcentric |  Volume reactive vu-meter from center with gravity. Volume provides index to (time rotating) palette colour. | Speed: Rate of fall <br /> Intensity: Sensitivity
+| * Gravcentric     |  Volume reactive vu-meter from center with gravity. Volume provides index to (time rotating) palette colour. | Speed: Rate of fall <br /> Intensity: Sensitivity
 | * Gravimeter | Volume reactive vu-meter with gravity and perlin noise. | Speed: Rate of fall <br /> Intensity: Sensitivity
 | * Juggles | Juggling balls.| Speed: Yes <br /> Intensity: # of balls
 | * Matripix | Similar to Matrix. | Speed: yes <br /> Intensity: Brightness
