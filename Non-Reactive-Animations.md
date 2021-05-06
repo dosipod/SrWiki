@@ -8,15 +8,26 @@
 | --- | --- | ---
 | Flow Stripe |   |Speed: <br/>Intensity:
 | Perlin Move | Using Perlin Noise for movement. | Speed: Speed of elements<br/>Intensity: # of pixels<br />fft1: Fade rate
-|    |  |  <br /> 
+|    |  |  <br />
+| 2D CA Elementary |  | Speed: <br/>Intensity:
+| 2D Colored Bursts | |  Speed: <br/>Intensity:
 | 2D DNA | A very cool DNA like pattern by /u/ldirko. | n/a
+| 2D DNA Spiral |   |  Speed: <br/>Intensity:
+| 2D Drift |  |  Speed: <br/>Intensity:
 | 2D Fire2012 | Mark Kriegsman's fire routine. | n/a
 | 2D Firenoise | Using Perlin Noise for fire. | n/a
+| 2D Frizzles |   | Speed: <br/>Intensity:
+| 2D Hiphotic |  | Speed: <br/>Intensity:
 | 2D Julia | An animated Julia set | Intensity: max # of calculations per pixel <br /> fft1: x center of the set <br /> fft2: y center of the set <br /> fft3: Size of the window
+| 2D Lissajous |  | Speed: <br/>Intensity:
 | 2D Matrix | The Matrix in 2D. | Speed: Affects the speed of the movement. <br /> fft3: Change orientation
 | 2D Meatballs | A cool plasma type effect by Stefan Petrick. | n/a
 | 2D Plasma | A plasma effect. | Speed: Affects the speed of the movement. <br />  fft1: Shifts the colours <br />fft2: Distance from the plasma
+| 2D Plasma Ball |  | Speed: <br/>Intensity:
+| 2D Polar Lights |  | Speed: <br/>Intensity:
+| 2D Pulser |  | Speed: <br/>Intensity:
 | 2D Squared Swirl | Boxes moving around. | fft3: Blur amount
+| 2D Sun radiation |   | Speed: <br/>Intensity:
 
 ### 2D Julia notes
 
