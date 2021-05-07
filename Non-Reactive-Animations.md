@@ -6,13 +6,13 @@
 
 | Effect | Description | Sliders
 | --- | --- | ---
-| Flow Stripe |   |Speed: <br/>Intensity:
+| Flow Stripe | Strip with rotating colours.  |Speed: Controls a speed timer <br/>Intensity: Controls another timer
 | Perlin Move | Using Perlin Noise for movement. | Speed: Speed of elements<br/>Intensity: # of pixels<br />fft1: Fade rate
 |    |  |  <br />
-| 2D CA Elementary |  | Speed: <br/>Intensity:
-| 2D Colored Bursts | |  Speed: <br/>Intensity:
-| 2D DNA | A very cool DNA like pattern by /u/ldirko. | n/a
-| 2D DNA Spiral |   |  Speed: <br/>Intensity:
+| 2D CA Elementary | Scrolling game of life. | Speed: Speed <br/>Intensity: Starting grid.
+| 2D Colored Bursts | Multiple lines |  Speed: Speed of lines. <br/>Intensity: Number of lines.
+| 2D DNA | A very cool DNA like pattern. Select a palette | Speed: Scroll speed. <br /> Intensity: Blur.
+| 2D DNA Spiral | Spiraling DNA pattern. |  Speed: Speed. <br/>Intensity: Frequency.
 | 2D Drift |  |  Speed: <br/>Intensity:
 | 2D Fire2012 | Mark Kriegsman's fire routine. | n/a
 | 2D Firenoise | Using Perlin Noise for fire. | n/a
