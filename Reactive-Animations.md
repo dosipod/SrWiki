@@ -8,8 +8,8 @@ As we continue to develop SR WLED, some animations may appear or disappear. It's
 
 | Effect | Description | Sliders
 | :------------------ | --- | ---
-| * 2D Swirl |   | Speed: <br/>Intensity:
-| * 2D Waverly |  | Speed: <br/>Intensity:
+| * 2D Swirl | Several blurred circles   | Speed: Pattern  <br/>Intensity: Blur
+| * 2D Waverly | Noise waves with some sound | Speed: Amplification<br/>Intensity: Sensitivity
 | * Gravcenter | Volume reactive vu-meter from center with gravity and perlin noise. | Speed: Rate of fall <br /> Intensity: Sensitivity
 | * Gravcentric     |  Volume reactive vu-meter from center with gravity. Volume provides index to (time rotating) palette colour. | Speed: Rate of fall <br /> Intensity: Sensitivity
 | * Gravimeter | Volume reactive vu-meter with gravity and perlin noise. | Speed: Rate of fall <br /> Intensity: Sensitivity
