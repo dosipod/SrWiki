@@ -32,7 +32,8 @@
 ### 2D Julia notes
 
 This animation supports palettes. fft1-3 affect the rate of **change** of size/location rather than just changing the size/location. fft3 controls the window size, where the midpoint keeps the window the same size, while a value to the left continuously makes the window smaller, and larger to the right.
-How to reset this animation? Just center the sliders, click another animation and then select this one again.
+How to reset this animation? Just center the sliders, click another animation and then select this one again. Feel free to PR a different control layout (along with associated documentation). We get to use up to 5 sliders.
 
-Feel free to PR a different control layout (along with associated documentation). We get to use up to 5 sliders.
+### Thanks are in order
 
+Oh, and special thanks are in order for urish for creating wokwi, Elliot and his team for soulmatelights and Stepko and ldirko for some awesome 2D animations. With their approval, we were able to convert and publish several of their animations to use with WLED.
