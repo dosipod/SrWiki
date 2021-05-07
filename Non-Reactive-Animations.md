@@ -20,7 +20,7 @@
 | 2D Hiphotic | A moving plasma.|Speed: One direction.<br/>Intensity: Other direction.
 | 2D Julia |An animated Julia set |Intensity: max # of calculations per pixel.<br />fft1: x center of the set.<br />fft2: y center of the set.<br /> fft3: Size of the window.
 | 2D Lissajous | A frequency based Lissajous pattern.|Speed: Frequency of cos,<br/>Intensity: Frequency of sin.
-| 2D Matrix |The Matrix in 2D.|Speed: Affects the speed of the movement.<br />fft3: Change orientation.
+| 2D Matrix |The Matrix in 2D.|Speed: Affects the speed of the movement.<br />Intensity: Number of lines.<br/>fft3: Change orientation.
 | 2D Meatballs |A cool plasma type effect.|n/a
 | 2D Plasma |A plasma effect.|Speed: Affects the speed of the movement.<br />fft1: Shifts the colours.<br />fft2: Distance from the plasma.
 | 2D Plasma Ball |A ball of plasma. |Speed: Speed. <br/>Intensity:
