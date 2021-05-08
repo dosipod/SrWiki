@@ -3,7 +3,7 @@ This is a FORK of the original WLED code as found at [wled.me](http://wled.me). 
 
 Due to the performance limitations of the ESP8266, we decided to separate the ESP8266 and ESP32 code in order to provide a more stable build for the ESP8266. Beginning with version 0.10.2 and moving forward, ESP8266 support has been removed from the master branch and will continue to be supported in the [ESP8266 Branch](https://github.com/atuline/WLED/tree/ESP8266).
 
-We have also disabled functionality for other interfaces, such as Alexa, Blynk, Cronixie, Huesync, Infrared. If you would like to enable them, you will need to modify wled.h, compile and upload to your device. If you have any issues, please engage the Discord community. We only support functionality for the web interface.
+We have also disabled functionality for other interfaces, such as Alexa, Blynk, Cronixie, Huesync, Infrared. If you would like to enable them, you will need to modify wled.h, compile and upload to your device. If you have any issues, please engage the Discord community, as we only support functionality for the web interface.
 
 In addition to new animations, we've made numerous changes to the UI of WLED, and are unable to merge it with the original at this time. Our fork includes:
 
