@@ -4,6 +4,9 @@ If you'd like some help with your device, these are the types of things we would
 * How about posting a crystal clear close-up photo of your wiring, or better yet, a block diagram.
 * If you are referring to code, please provide a link to the version you are referring to.
 * Is it just sound reactivity that doesn't work? Is there a specific animation?
+* Is it an ESP32? An ESP8266? Please provide the link that you downloaded the files from.
+* What flasher did you use?
+* Are you compiling from IDE? If so, which one?
 * Make sure your microphone is powered by the 3V pin and NOT Vin or 5V . . and that your LED's are NOT connected to that 3V pin either (source: experience).
 * If you had previously used a 5V pin for your microphone, you may have blown that analog pin.
 * Buy spares. . . of everything.
@@ -20,9 +23,8 @@ If you'd like some help with your device, these are the types of things we would
 * Does the [latest release from WLED](https://github.com/Aircoookie/WLED/releases/latest) work?
 * Are you using our most recent 'MASTER' release?
 * Have you tried flashing [our latest release](https://github.com/atuline/WLED/releases/latest)?
-* Are you using an ESP8266 or ESP32?
 * Is your device working in AP mode?
-* Which IDE are you using?
+
 * You may need to re-flash/clear the device completely (ie using NodeMCU Pyflasher), especially after a major update.
 * Alternatively, try a factory reset from the Security & Updates page.
 * Got too much noise? Try lowering the current draw/brightness and clean up the wiring.
