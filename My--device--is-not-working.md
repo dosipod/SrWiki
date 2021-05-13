@@ -1,5 +1,6 @@
 If you'd like some help with your device, these are the types of things we would be asking:
 
+* The latest version of SR WLED has a sound pin configurator. Please review yours.
 * Please provide a comprehensive, but clear and concise description of the symptoms and your environment.
 * How about posting a crystal clear close-up photo of your wiring, or better yet, a block diagram.
 * If you are referring to code, please provide a link to the version you are referring to.
