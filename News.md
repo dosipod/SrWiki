@@ -21,7 +21,7 @@ We've since added several 2D routines to WLED and in the process have determined
 
 ### November 5, 2020
 
-* The ESP8266 branch continues to be reliable for that platform, but NOT reliable for the regular build. Would love to know why.
+* The ESP8266 branch continues to be reliable for that platform, but NOT reliable for the regular build. Would love to know why. Update: It was probably RAM usage.
 * Have fixed issues around SEGMENTS for various sound reactive animations. Ths issue was SEGMENT specific 'persistent' variables. Use the uint16_t SEGENV.aux0 or SEGENV.aux1 variables if you need those.
 * That was updated for both the dev and ESP8266 branches.
 * We now have a dedicated Sound Settings page.
