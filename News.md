@@ -1,15 +1,12 @@
 What's possibly on the horizon (no dates given):
 
-* Cleaning up volume acquisition routines and just get volume from FFT_Magnitude.
-* Modify both analog and digital data acquisition to read I2S in blocks.
-* Some folks are interested in higher sampling rates. We may look for outside work on that.
-* Improved 2D support.
-* Improved support for FastLED.
-* Support for Pixelblaze.
-* Smoothing.
-* Some more animations.
-* Dynamic slider visibility.
-* Implement usermod V2.
+* Orient 2D animation for top left to top right orientation.
+* Add 2D orientation settings, but no multi-SEGMENT 2D orientation support.
+* Yes, we'd love dynamic controls for each animation, but we think that may interfere with future releases from Aircoookie.
+
+### May 15, 2021
+
+We've since added several 2D routines to WLED and in the process have determined that our ESP32 binary now consumes about 98.5% of flash memory, or in oil industry terms. . . We have reached peak Flash. As a result, we're going to look carefully into ALL of the animations and see which ones consume the most flash and with the least coolness. In the meantime, we've updated SR WLED to support a very recent Master of 0.12.0, which has seen some changes/fixes since it was originally released. Special thanks to THATDONFC for keeping SR WLED in sync with Aircoookie's updates. It's not a small job.
 
 ### January 13, 2021
 
