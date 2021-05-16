@@ -174,7 +174,7 @@ laid out back-and-forth, like this:
   * It's likely that there will at least a minor change in animations required to support a non-rectangular or non-contiguous mapping.
 
 ### Array Layouts
-* Top left to right (is the default)
+* Top left to right (is the default above)
 * Top right to left
 * Bottom left to right (aliexpress boards)
 * Bottom right to left
