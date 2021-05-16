@@ -166,12 +166,24 @@ laid out back-and-forth, like this:
 ```
 
 * `matrixWidth` and `matrixHeight` are new 'LED Settings'.
-  * `matrixWidth` is the number of pixels per row
-  * `matrixHeight` is the number of pixels per column
-* Some existing animations (as of Jan 2021) were coded for different orientations and need to be redone to match the newly agreed to orientation described above
-* Not yet supported: rotation, or any mapping other than rectangular progressive/serpentine
+  * `matrixWidth` is the number of pixels per row.
+  * `matrixHeight` is the number of pixels per column.
+* Some existing animations (as of Jan 2021) were coded for different orientations and need to be redone to match the newly agreed to orientation described above.
+* Not yet supported: rotation, or any mapping other than rectangular progressive/serpentine.
   * Ideally the `XY()` function will return the correct led index even with a rotated display, and `matrixWidth`/`matrixHeight` will refer to the rotated display's dimensions.
-  * It's likely that there will at least a minor change in animations required to support a non-rectangular or non-contiguous mapping
+  * It's likely that there will at least a minor change in animations required to support a non-rectangular or non-contiguous mapping.
+
+### Array Layouts
+* Top left to right (is the default)
+* Top right to left
+* Bottom left to right (aliexpress boards)
+* Bottom right to left
+
+For both serpentine and non-serpentine layouts.
+
+This could either be in the XY() routine or in setPixels(). Will need to review both.
+
+
 
 ## On Variable Length Arrays
 
