@@ -16,7 +16,7 @@ We learned a long time ago that a adding new code can make for a LOT of testing.
 * Supporting both AP mode as well as STA mode for WiFi.
 * A dev branch for the latest code for ESP32.
 * An ESP8266 branch for volume only routines.
-* A master branch, which gets occasionally gets merged with AC's master by one of our team members. We normally don't commit to this branch.
+* A master branch, which gets occasionally gets merged with AC's master by one of our team members. New development happens on our 'dev' branch.
 * SEGMENTS. Every routine must be compatible and tested for SEGMENTS.
 * Try and keeping our fork current with the original WLED.
 * Our Flash usage is now FULL. Prior to adding anything new, we either need to free up the same or larger space elsewhere, typically other animations.
