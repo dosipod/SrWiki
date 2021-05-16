@@ -19,7 +19,7 @@ We learned a long time ago that a adding new code can make for a LOT of testing.
 * A master branch, which gets occasionally gets merged with AC's master by one of our team members. We normally don't commit to this branch.
 * SEGMENTS. Every routine must be compatible and tested for SEGMENTS.
 * Try and keeping our fork current with the original WLED.
-* Our Flash usage is now FULL. With any new addition, we either need to tighten up elsewhere, or remove something.
+* Our Flash usage is now FULL. Prior to adding anything new, we either need to free up the same or larger space elsewhere, typically other animations.
 
 If you'd like to contribute, you would need to be able to perform a significant amount of testing and future maintenance (see above) so your new code doesn't unintentionally break other functionality.
 
