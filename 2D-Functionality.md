@@ -45,17 +45,20 @@ laid out back-and-forth, like this:
   * `matrixWidth` is the number of pixels per row.
   * `matrixHeight` is the number of pixels per column.
 * Some existing animations (as of Jan 2021) were coded for different orientations and need to be redone to match the newly agreed to orientation described above.
-* Not yet supported: rotation, or any mapping other than rectangular progressive/serpentine.
-  * Ideally the `XY()` function will return the correct led index even with a rotated display, and `matrixWidth`/`matrixHeight` will refer to the rotated display's dimensions.
   * It's likely that there will at least a minor change in animations required to support a non-rectangular or non-contiguous mapping.
 
-### Array Layouts
-* Top left to right (is the default above)
-* Top right to left
-* Bottom left to right (aliexpress boards)
-* Bottom right to left
+### XY() routine update
 
-For both serpentine and non-serpentine layouts.
+The dev branch has a new hard-coded XY() function (thanks Sutaburosu) in FX.cpp, which supports multiple layouts.
 
-This could either be in the XY() routine or in setPixels(). Will need to review both.
+  We have 5 orientation bits. The values are:
 
+  XY_LAYOUT = SERPENTINE = 16, ROWMAJOR = 8, TRANSPOSE = 4, FLIPMAJOR = 2, FLIPMINOR = 1
+
+  ROWMAJOR   - The x (or Major) value goes horizontal (otherwise vertical).
+  SERPENTINE - A serpentine layout (otherwise non-serpentine layout).
+  FLIPMAJOR  - Flip the major axis, ie top to bottom (otherwise not).
+  FLIPMINOR  - Flip the minor axis, ie left to right (otherwise not).
+  TRANSPOSE  - Swap the major and the minor axes (otherwise no swap). Don't use on non-square.
+
+When an X,Y value goes out of bounds, this routine writes to an LED beyond SEGLEN, and as a result, we need to use the setPixels() routine to write to the display.
