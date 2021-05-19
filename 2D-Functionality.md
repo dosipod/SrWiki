@@ -53,7 +53,7 @@ The dev branch has a new hard-coded XY() function (thanks Sutaburosu) in FX.cpp,
 
 There are 5 orientation bits as follows:
 
-  XY_LAYOUT = SERPENTINE = 16, ROWMAJOR = 8, TRANSPOSE = 4, FLIPMAJOR = 2, FLIPMINOR = 1
+  SERPENTINE = 16, ROWMAJOR = 8, TRANSPOSE = 4, FLIPMAJOR = 2, FLIPMINOR = 1
 
 * ROWMAJOR   - The x (or Major) value goes horizontal (otherwise vertical).
 * SERPENTINE - A serpentine layout (otherwise non-serpentine layout).
