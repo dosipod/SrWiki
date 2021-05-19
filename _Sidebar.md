@@ -19,6 +19,7 @@
 [Adding a new Settings Page](https://github.com/atuline/WLED/wiki/Adding-a-Sound-Settings-page-to-the-UI)  
 [UDP Sound Sync](https://github.com/atuline/WLED/wiki/UDP-Sound-Sync)  
 [WLED Programming Notes](https://github.com/atuline/WLED/wiki/WLED-Programming-Notes)  
+[2D Functionality](https://github.com/atuline/WLED/wiki/2D-Functionality)    
 [On Lossy Colours](https://github.com/atuline/WLED/wiki/On-Lossy-Colours)  
 [Sliders in WLED](https://github.com/atuline/WLED/wiki/Adding-Sliders)  
 [Future Directions](https://github.com/atuline/WLED/wiki/Future-Directions)  
