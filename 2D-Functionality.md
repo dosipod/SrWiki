@@ -55,10 +55,10 @@ The dev branch has a new hard-coded XY() function (thanks Sutaburosu) in FX.cpp,
 
   XY_LAYOUT = SERPENTINE = 16, ROWMAJOR = 8, TRANSPOSE = 4, FLIPMAJOR = 2, FLIPMINOR = 1
 
-  ROWMAJOR   - The x (or Major) value goes horizontal (otherwise vertical).
-  SERPENTINE - A serpentine layout (otherwise non-serpentine layout).
-  FLIPMAJOR  - Flip the major axis, ie top to bottom (otherwise not).
-  FLIPMINOR  - Flip the minor axis, ie left to right (otherwise not).
-  TRANSPOSE  - Swap the major and the minor axes (otherwise no swap). Don't use on non-square.
+* ROWMAJOR   - The x (or Major) value goes horizontal (otherwise vertical).
+*  SERPENTINE - A serpentine layout (otherwise non-serpentine layout).
+*  FLIPMAJOR  - Flip the major axis, ie top to bottom (otherwise not).
+*  FLIPMINOR  - Flip the minor axis, ie left to right (otherwise not).
+*  TRANSPOSE  - Swap the major and the minor axes (otherwise no swap). Don't use on non-square.
 
 When an X,Y value goes out of bounds, this routine writes to an LED beyond SEGLEN, and as a result, we need to use the setPixels() routine to write to the display.
