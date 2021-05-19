@@ -51,7 +51,7 @@ laid out back-and-forth, like this:
 
 The dev branch has a new hard-coded XY() function (thanks Sutaburosu) in FX.cpp, which supports multiple layouts.
 
-  We have 5 orientation bits. The values are:
+There are 5 orientation bits as follows:
 
   XY_LAYOUT = SERPENTINE = 16, ROWMAJOR = 8, TRANSPOSE = 4, FLIPMAJOR = 2, FLIPMINOR = 1
 
