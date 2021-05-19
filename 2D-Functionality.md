@@ -1,7 +1,7 @@
 ## 2D functionality
 * An `XY()` function which returns the index number of the X-Y coordinate on the matrix has been added.
-  * The origin (x=0,y=0) is at the top left of the display, with X axis extending to the right, Y axis toward the bottom
-  * The LED order starts from 0 at the top left, and ascends to the right on the top row
+  * The origin (x=0,y=0) is at the top left of the display, with X axis extending to the right, Y axis toward the bottom.
+  * The LED order starts from 0 at the top left, and ascends to the right on the top row.
   * 2D addressing is leds[XY(column, row)]
 * A serpentine/zig-zag setting has been added to 'LED Settings'.
   * With serpentine mode enabled, the led index on every odd row (top row is row 0) is ascending from right to left, and on even rows is ascending from left to right
