@@ -63,6 +63,8 @@ There are 5 orientation bits as follows:
 
 By comparison, the author's aliexpress purchased 16x16 array needs to be configured as:
 
-XY_LAYOUT = (ROWMAJOR | SERPENTINE | FLIPMAJOR).
+```
+#define XY_LAYOUT (ROWMAJOR | SERPENTINE | FLIPMAJOR)
+```
 
 When an X,Y value goes out of bounds, this routine writes to an LED beyond SEGLEN, and as a result, we need to use the setPixels() routine to write to the display.
