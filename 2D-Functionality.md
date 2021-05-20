@@ -61,6 +61,6 @@ There are 5 orientation bits as follows:
 * FLIPMINOR  - Flip the minor axis, ie left to right (otherwise not).
 * TRANSPOSE  - Swap the major and the minor axes (otherwise no swap). Don't use on non-square.
 
-By comparison, the author's aliexpress 16x16 array needs to be configured as (ROWMAJOR | SERPENTINE | FLIPMAJOR).
+By comparison, the author's aliexpress purchased 16x16 array needs to be configured as (ROWMAJOR | SERPENTINE | FLIPMAJOR).
 
 When an X,Y value goes out of bounds, this routine writes to an LED beyond SEGLEN, and as a result, we need to use the setPixels() routine to write to the display.
