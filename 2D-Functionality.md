@@ -49,22 +49,20 @@ laid out back-and-forth, like this:
 
 ### XY() routine update
 
-The dev branch has a new hard-coded XY() function (thanks Sutaburosu) in FX.cpp, which supports multiple layouts.
+The dev branch has a new XY() function (thanks Sutaburosu) in FX.cpp, which supports multiple layouts.
 
-There are 5 orientation bits as follows:
+There are 5 orientation flags as follows:
 
-  SERPENTINE = 16, ROWMAJOR = 8, TRANSPOSE = 4, FLIPMAJOR = 2, FLIPMINOR = 1
-
-* ROWMAJOR   - The x (or Major) value goes horizontal (otherwise vertical).
-* SERPENTINE - A serpentine layout (otherwise non-serpentine layout).
-* FLIPMAJOR  - Flip the major axis, ie top to bottom (otherwise not).
-* FLIPMINOR  - Flip the minor axis, ie left to right (otherwise not).
-* TRANSPOSE  - Swap the major and the minor axes (otherwise no swap). Don't use on non-square.
+* Serpentine - A serpentine layout as described above (otherwise non-serpentine layout).
+* Rowmajor   - The x (or Major) value goes horizontal (otherwise vertical).
+* Flipmajor  - Flip the major axis, ie top to bottom (otherwise not).
+* Flipminor  - Flip the minor axis, ie left to right (otherwise not).
+* Transpose  - Swap the major and the minor axes (otherwise no swap). Don't use on non-square.
 
 By comparison, the author's aliexpress purchased 16x16 array needs to be configured as:
 
 ```
-#define XY_LAYOUT (ROWMAJOR | SERPENTINE | FLIPMAJOR)
+Serpentine | Rowmajor | Flipmajor
 ```
 
-When an X,Y value goes out of bounds, this routine writes to an LED beyond SEGLEN, and as a result, we need to use the setPixels() routine to write to the display.
+Note: When an X,Y value goes out of bounds, this routine writes to an LED beyond SEGLEN, and as a result, we need to use the setPixels() routine to write to the display.
