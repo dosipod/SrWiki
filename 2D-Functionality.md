@@ -7,6 +7,7 @@
   * With serpentine mode enabled, the led index on every odd row (top row is row 0) is ascending from right to left, and on even rows is ascending from left to right
   * The opposite of serpentine is "progressive", where all rows are oriented in ascending order from left to right
 
+As documented in [FastLED](https://github.com/FastLED/FastLED/blob/master/examples/XYMatrix/XYMatrix.ino):
 ```
 Don't enable serpentine setting if your pixels are
 laid out all running the same way, like this:
