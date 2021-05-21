@@ -67,6 +67,6 @@ By comparison, the author's aliexpress purchased 16x16 array needs to be configu
 Serpentine | Rowmajor | Flipmajor
 ```
 
-Note: When an X,Y value goes out of bounds, this routine writes to an LED beyond SEGLEN, and as a result, we need to use the setPixels() routine to write to the display.
+**Note:** When an X,Y value goes out of bounds, this routine writes to an LED beyond SEGLEN, and as a result, we need to use the setPixels() routine to write to the display.
 
-Note: Oh, and here's a simulator you can play around with to get familiar with[ XY()  at Wokwi](https://wokwi.com/arduino/projects/298774787561357832).
+**Note:** Working with this can be confusing, so here's a simulator you can play around with to get familiar with[ XY()  at Wokwi](https://wokwi.com/arduino/projects/298774787561357832).
