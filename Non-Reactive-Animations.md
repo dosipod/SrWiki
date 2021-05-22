@@ -17,7 +17,6 @@
 | 2D Firenoise |Using Perlin Noise for fire.|n/a
 | 2D Frizzles |Moving patterns.|Speed: One thing.<br/>Intensity: Another thing.
 | 2D Hiphotic | A moving plasma.|Speed: One direction.<br/>Intensity: Other direction.
-| 2D Julia |An animated Julia set |Intensity: max # of calculations per pixel.<br />fft1: x center of the set.<br />fft2: y center of the set.<br /> fft3: Size of the window.
 | 2D Lissajous | A frequency based Lissajous pattern.|Speed: Frequency of cos,<br/>Intensity: Frequency of sin.
 | 2D Matrix |The Matrix in 2D.|Speed: Affects the speed of the movement.<br />Intensity: Number of lines.<br/>fft3: Change orientation.
 | 2D Meatballs |A cool plasma type effect.|n/a
@@ -31,10 +30,15 @@
 | 2D Sun radiation |The sun!|n/a
 | 2D Twister |A large twister.|Speed: Speed. <br/>Intensity: Phases.
 
-### 2D Julia notes
+### 2D Clock Overlay
 
-This animation supports palettes. fft1-3 affect the rate of **change** of size/location rather than just changing the size/location. fft3 controls the window size, where the midpoint keeps the window the same size, while a value to the left continuously makes the window smaller, and larger to the right.
-How to reset this animation? Just center the sliders, click another animation and then select this one again. Feel free to PR a different control layout (along with associated documentation). We get to use up to 5 sliders.
+To configure, go to Time & Macros setting
+
+Time setup: fill in required parameters
+
+Clock: Clock overlay; Analog Clock, check Show 5min marks, uncheck the rest
+
+
 
 ### Thanks are in order
 
