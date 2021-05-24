@@ -25,9 +25,9 @@ As we continue to develop SR WLED, some animations may appear or disappear. It's
 | * Puddles | Blast coloured puddles based on volume.| Speed: Fade rate <br /> Intensity: Size of puddle
 | * Ripple Peak | Peak detection triggers ripples. | Intensity: Max number of ripples.<br /> FFT High: 256 freq bin select on ESP32.<br /> FFT Custom: Volume comparator on ESP32.
 | * Waterfall | A volume AND FFT version of a Waterfall that has 'beat' support.| Speed: Speed <br /> Intensity: Adjust colour
-| ** 2D CenterBars | A 16x16 spectral analysis routine emanating from the center |  Speed: Fade rate<br />FFT Custom: Number of bands
+| ** 2D CenterBars | A 16x16 spectral analysis routine emanating from the center | FFT Custom: Number of bands
 | ** 2D Funky Plank | A 2D wall of reactivity running from bottom to top | Speed: Speed
-| ** 2D GEQ | A 16x16 graphic equalizer. | Speed: Fade rate<br />FFT Custom: Number of bands
+| ** 2D GEQ | A 16x16 graphic equalizer. | FFT Custom: Number of bands
 | ** Binmap | Map bins 3-255 throughout the length of the LEDs. This does not work with UDP sync.<br />Values are not normalized.| Intensity: Max volume 
 | ** Blurz  | Flash an fftResult bin per frame and then blur/fade. | Speed: Fade Rate<br /> Intensity: Blurring
 | ** DJLight | An effect emanating from the center to the edges. | Speed: Speed
