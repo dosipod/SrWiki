@@ -1,6 +1,6 @@
-**Note 1:** Due to its limited capability, we have disabled 2D animations on the ESP8266 platform, although those settings still show up in the LED settings UI.  
-**Note 2:** If you are using 2D, please ensure your 2D settings are correct. We aren't checking them.  
-**Note 3:** Some 2D routines require a minimum of 4 pixels in both directions. You may get a red blinking pattern if too small.
+**Note 1:** Due to its limited capability, we have disabled 2D animations on the ESP8266 platform.    
+**Note 2:** The 2D routines require a minimum of 4 pixels in both directions. If you see blinking red, your 2D settings don't match the requirements.    
+**Note 3:** As we continue to develop SR WLED, some animations may appear or disappear. It's still a work very much in progress. Some may only appear in the dev branch for now.    
 
 
 | Effect | Description | Sliders
