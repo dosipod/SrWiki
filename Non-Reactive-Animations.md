@@ -27,7 +27,7 @@
 | 2D Pulser |Travelling waves.|Speed: Speed. <br/>Intensity: Blur
 | 2D Sindots |Moving/rotating pattern.|Speed: Speed. <br/>Intensity: Length/size
 | 2D Squared Swirl |Boxes moving around.|fft3: Blur amount
-| 2D Sun radiation |The sun! Doesn't support segments.|<br/>Intensity: Brightness
+| 2D Sun radiation |The sun! Doesn't support segments.|Speed: Variance<br/>Intensity: Brightness
 | 2D Twister |A large twister.|Speed: Speed <br/>Intensity: Phases
 
 ### 2D Clock Overlay
