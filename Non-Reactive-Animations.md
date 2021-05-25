@@ -21,9 +21,9 @@
 | 2D Lissajous | A frequency based Lissajous pattern.|Speed: Frequency of cos<br/>Intensity: Frequency of sin
 | 2D Matrix |The Matrix in 2D.|Speed: Affects the speed of the movement<br />Intensity: Number of lines
 | 2D Meatballs |A cool plasma type effect.|n/a
-| 2D Plasma |A plasma effect.|Speed: Affects the speed of the movement<br />fft1: Shifts the colours<br />fft2: Distance from the plasma
+| 2D Plasma |A plasma effect.|Speed: Affects the speed of the movement<br />fft low: Shifts the colours<br />fft high: Distance from the plasma
 | 2D Plasma Ball |A ball of plasma. |Speed: Speed. <br/>Intensity:
-| 2D Polar Lights |The northern lights.|Speed: Speed.<br/>Intensity: Frequency.<br/>fft1: Palette rotation
+| 2D Polar Lights |The northern lights.|Speed: Speed.<br/>Intensity: Frequency.<br/>fft low: Palette rotation
 | 2D Pool Noise |Looking at a pool.|n/a
 | 2D Pulser |Travelling waves.|Speed: Speed. <br/>Intensity: Blur
 | 2D Sindots |Moving/rotating pattern.|Speed: Speed. <br/>Intensity: Length/size
