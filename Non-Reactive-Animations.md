@@ -6,7 +6,7 @@
 | Effect | Description | Sliders
 | --- | --- | ---
 | Flow Stripe |Strip with rotating colours.|Speed: Controls a speed timer <br/>Intensity: Controls another timer
-| Perlin Move |Using Perlin Noise for movement.|Speed: Speed of elements<br/>Intensity: # of pixels<br />fft1: Fade rate
+| Perlin Move |Using Perlin Noise for movement.|Speed: Speed of elements<br/>Intensity: # of pixels<br />fft low: Fade rate
 |    |  |  <br />
 
 | 2D Black Hole | Stars moving around black hole. |fft low: one beat<br/>fft high: Another beat<br/>fft custom: last beat
