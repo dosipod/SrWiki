@@ -14,7 +14,7 @@
 | 2D DNA Spiral |Spiraling DNA pattern.|Speed: Speed.<br/>Intensity: Frequency.
 | 2D Drift |A rotating caleidoscope.|Speed: Speed of rotation.<br/>Intensity: Blur.
 | 2D Fire2012| Mark Kriegsman's fire routine.|n/a
-| 2D Firenoise |Using Perlin Noise for fire.|n/a
+| 2D Firenoise |Using Perlin Noise for fire.|Speed: Yscale.<br/>Intensity: Scale.
 | 2D Frizzles |Moving patterns.|Speed: One thing.<br/>Intensity: Another thing.
 | 2D Hiphotic | A moving plasma.|Speed: One direction.<br/>Intensity: Other direction.
 | 2D Lissajous | A frequency based Lissajous pattern.|Speed: Frequency of cos,<br/>Intensity: Frequency of sin.
