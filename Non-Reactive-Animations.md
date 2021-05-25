@@ -8,7 +8,8 @@
 | Flow Stripe |Strip with rotating colours.|Speed: Controls a speed timer <br/>Intensity: Controls another timer
 | Perlin Move |Using Perlin Noise for movement.|Speed: Speed of elements<br/>Intensity: # of pixels<br />fft1: Fade rate
 |    |  |  <br />
-| 2D CA Elementary |Scrolling game of life.|Speed: Speed <br/>Intensity: Starting grid
+
+| 2D Black Hole | Stars moving around black hole. |fft low: one beat<br/>fft high: Another beat<br/>fft custom: last beat
 | 2D Colored Bursts |Multiple lines.|Speed: Speed of lines<br/>Intensity: Number of lines
 | 2D DNA | A very cool DNA like pattern. Select a palette.|Speed: Scroll speed<br />Intensity: Blur
 | 2D DNA Spiral |Spiraling DNA pattern.|Speed: Speed.<br/>Intensity: Frequency
@@ -16,6 +17,7 @@
 | 2D Fire2012| Mark Kriegsman's fire routine.|n/a
 | 2D Firenoise |Using Perlin Noise for fire.|Speed: Yscale.<br/>Intensity: Scale
 | 2D Frizzles |Moving patterns.|Speed: One thing<br/>Intensity: Another thing
+| 2D Gameoflife |Scrolling game of life.|Speed: Speed <br/>Intensity: Starting grid
 | 2D Hiphotic | A moving plasma.|Speed: One direction<br/>Intensity: Other direction
 | 2D Lissajous | A frequency based Lissajous pattern.|Speed: Frequency of cos<br/>Intensity: Frequency of sin
 | 2D Matrix |The Matrix in 2D.|Speed: Affects the speed of the movement<br />Intensity: Number of lines
