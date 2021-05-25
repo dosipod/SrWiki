@@ -8,27 +8,27 @@
 | Flow Stripe |Strip with rotating colours.|Speed: Controls a speed timer <br/>Intensity: Controls another timer
 | Perlin Move |Using Perlin Noise for movement.|Speed: Speed of elements<br/>Intensity: # of pixels<br />fft1: Fade rate
 |    |  |  <br />
-| 2D CA Elementary |Scrolling game of life.|Speed: Speed <br/>Intensity: Starting grid.
-| 2D Colored Bursts |Multiple lines.|Speed: Speed of lines.<br/>Intensity: Number of lines.
-| 2D DNA | A very cool DNA like pattern. Select a palette.|Speed: Scroll speed.<br />Intensity: Blur.
-| 2D DNA Spiral |Spiraling DNA pattern.|Speed: Speed.<br/>Intensity: Frequency.
-| 2D Drift |A rotating caleidoscope.|Speed: Speed of rotation.<br/>Intensity: Blur.
+| 2D CA Elementary |Scrolling game of life.|Speed: Speed <br/>Intensity: Starting grid
+| 2D Colored Bursts |Multiple lines.|Speed: Speed of lines<br/>Intensity: Number of lines
+| 2D DNA | A very cool DNA like pattern. Select a palette.|Speed: Scroll speed<br />Intensity: Blur
+| 2D DNA Spiral |Spiraling DNA pattern.|Speed: Speed.<br/>Intensity: Frequency
+| 2D Drift |A rotating caleidoscope.|Speed: Speed of rotation.<br/>Intensity: Blur
 | 2D Fire2012| Mark Kriegsman's fire routine.|n/a
-| 2D Firenoise |Using Perlin Noise for fire.|Speed: Yscale.<br/>Intensity: Scale.
-| 2D Frizzles |Moving patterns.|Speed: One thing.<br/>Intensity: Another thing.
-| 2D Hiphotic | A moving plasma.|Speed: One direction.<br/>Intensity: Other direction.
-| 2D Lissajous | A frequency based Lissajous pattern.|Speed: Frequency of cos,<br/>Intensity: Frequency of sin.
-| 2D Matrix |The Matrix in 2D.|Speed: Affects the speed of the movement.<br />Intensity: Number of lines.<br/>fft3: Change orientation.
+| 2D Firenoise |Using Perlin Noise for fire.|Speed: Yscale.<br/>Intensity: Scale
+| 2D Frizzles |Moving patterns.|Speed: One thing<br/>Intensity: Another thing
+| 2D Hiphotic | A moving plasma.|Speed: One direction<br/>Intensity: Other direction
+| 2D Lissajous | A frequency based Lissajous pattern.|Speed: Frequency of cos<br/>Intensity: Frequency of sin
+| 2D Matrix |The Matrix in 2D.|Speed: Affects the speed of the movement<br />Intensity: Number of lines
 | 2D Meatballs |A cool plasma type effect.|n/a
-| 2D Plasma |A plasma effect.|Speed: Affects the speed of the movement.<br />fft1: Shifts the colours.<br />fft2: Distance from the plasma.
+| 2D Plasma |A plasma effect.|Speed: Affects the speed of the movement<br />fft1: Shifts the colours<br />fft2: Distance from the plasma
 | 2D Plasma Ball |A ball of plasma. |Speed: Speed. <br/>Intensity:
-| 2D Polar Lights |The northern lights.|Speed: Speed.<br/>Intensity: Frequency.<br/>fft1: Palette rotation.
+| 2D Polar Lights |The northern lights.|Speed: Speed.<br/>Intensity: Frequency.<br/>fft1: Palette rotation
 | 2D Pool Noise |Looking at a pool.|n/a
-| 2D Pulser |Travelling waves.|Speed: Speed. <br/>Intensity: Blur.
-| 2D Sindots |Moving/rotating pattern.|Speed: Speed. <br/>Intensity: Length/size.
+| 2D Pulser |Travelling waves.|Speed: Speed. <br/>Intensity: Blur
+| 2D Sindots |Moving/rotating pattern.|Speed: Speed. <br/>Intensity: Length/size
 | 2D Squared Swirl |Boxes moving around.|fft3: Blur amount
 | 2D Sun radiation |The sun!|n/a
-| 2D Twister |A large twister.|Speed: Speed. <br/>Intensity: Phases.
+| 2D Twister |A large twister.|Speed: Speed <br/>Intensity: Phases
 
 ### 2D Clock Overlay
 
