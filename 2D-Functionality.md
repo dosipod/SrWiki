@@ -55,11 +55,11 @@ The dev branch has a new XY() function (thanks Sutaburosu) in FX.cpp, which supp
 
 There are 5 orientation flags as follows:
 
-* Serpentine - A serpentine layout as described above (otherwise non-serpentine layout).
-* Rowmajor   - The x (or Major) value goes horizontal (otherwise vertical).
-* Flipmajor  - Flip the major axis, ie top to bottom (otherwise not).
-* Flipminor  - Flip the minor axis, ie left to right (otherwise not).
-* Transpose  - Swap the major and the minor axes (otherwise no swap). Don't use on non-square.
+*  ROWMAJOR   - Select if your layout is horizontal. De-select if it's vertical.
+*  SERPENTINE - Select if your layout is serpentine. Otherwise, it's not.
+*  FLIPMAJOR  - Flip the major axis, ie top to bottom if it's a horizontal layout.
+*  FLIPMINOR  - Flip the minor axis, ie left to right if it's a horizonal layout.
+*  TRANSPOSE  - Swap the major and the minor axes (otherwise no swap). Don't use on non-square.
 
 By comparison, the author's aliexpress purchased 16x16 array needs to be configured as:
 
