@@ -4,6 +4,7 @@ See [WLED General settings](https://github.com/aircoookie/WLED/wiki/Settings)
 
 ### LED settings
 See [WLed General Led Settings](https://github.com/aircoookie/WLED/wiki/Settings#led-settings)
+
 2D Matrix and Panels
 
 Setting name | Value Range | Description
