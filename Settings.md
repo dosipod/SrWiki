@@ -8,4 +8,6 @@ Additional Sound Reactive Settings
 
 Setting name | Value Range | Description
 |---|---|---|
-Matrix Width x Height | 1..1500 | Dimensions of 2D Matrix. width x height should match LED count!
+Width x Height | 1..x | Dimensions of 2D Matrix. width x height should match LED count!
+Multiple panels | yes/no | check if more than 1 panel (dev version)
+Horizontal / Vertical panels | 1..x | Number of panels on horizontal and vertical axis. Total panels is horizontal x vertical (dev version)
