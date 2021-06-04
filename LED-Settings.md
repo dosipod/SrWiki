@@ -1,8 +1,5 @@
-See [WLED General settings](https://github.com/aircoookie/WLED/wiki/Settings)
 
-
-
-### LED settings
+### AirCoookie's LED settings
 See [WLED General Led Settings](https://github.com/aircoookie/WLED/wiki/Settings#led-settings)
 
 #### Additional Sound Reactive Settings
