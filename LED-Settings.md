@@ -1,14 +1,14 @@
 
-### AirCoookie's LED settings
+## AirCoookie's LED settings
 See [WLED General Led Settings](https://github.com/aircoookie/WLED/wiki/Settings#led-settings)
 
-### LED Settings for Sound Reactive additions
+## LED Settings for Sound Reactive additions
 
 The sound reactive fork of WLED support multiple 2D layouts as well as multiple panels.
 
 
+## 2D Matrix Settings
 
-### 2D Matrix
 
 | Setting name | Value Range | Description
 | --- | --- | ---
@@ -22,6 +22,7 @@ Transpose| Y/N | Swap the major and the minor axes (otherwise no swap). Don't us
 
 
 ### Multiple Panels
+
 
 | Setting name | Value Range | Description
 | --- | --- | ---
