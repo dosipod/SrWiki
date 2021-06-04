@@ -78,6 +78,7 @@ When you want to create larger matrices, the standard available panels are not b
 For example if you create a 32x32 matrix by connecting 4 8x32 panels together you have 4 horizontal panels and 1 vertical panel. Alternatively if you have 4 16x16 panels, you have 2 horizontal and 2 vertical panels. In the latter case, panel ordering is:
 
 0   1
+
 2   3
 
 The XY() function supports this by first determining in which panel an (x,y) coordinate should be displayed and then within a panel it's position is determined as described above (using flipmajor, serpentine etc.).
