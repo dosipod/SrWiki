@@ -2,8 +2,12 @@
 ### AirCoookie's LED settings
 See [WLED General Led Settings](https://github.com/aircoookie/WLED/wiki/Settings#led-settings)
 
-#### Additional Sound Reactive Settings
-2D Matrix and Panels
+### LED Settings for Sound Reactive additions
+
+The sound reactive fork of WLED support multiple 2D layouts as well as multiple panels.
+
+2D Matrix
+
 
 Setting name | Value Range | Description
 |---|---|---|
@@ -15,6 +19,12 @@ Flipminor| Y/N | Flip the minor axis, ie left to right if it's a horizonal layou
 Transpose| Y/N | Swap the major and the minor axes (otherwise no swap). Don't use on non-square. (dev version)
 Multiple panels | Y/N | Check if more than 1 panel, e.g. 4 8x32 or 16x16 panels. Multiple panels are connected together starting top left and ending bottom right (dev version)
 Horizontal / Vertical panels | 1..x | Number of panels on horizontal and vertical axis. Total panels is horizontal x vertical. Total Width and Height of connected panels should match Matrix Width and Height (dev version)
+
+
+
+###Multiple Panels
+
+
 
 Note 1: The number of LED's should contain ALL the number of ALL LED's in the display.
 Note 2: The 2D matrix value should contain values for number of pixels in all your connected panels.
