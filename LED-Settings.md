@@ -16,7 +16,7 @@ Flipmajor| Y/N | Flip the major axis, ie top to bottom if it's a horizontal layo
 Flipminor| Y/N | Flip the minor axis, ie left to right if it's a horizonal layout. (dev version)
 Transpose| Y/N | Swap the major and the minor axes (otherwise no swap). Don't use on non-square. (dev version)
 
-
+**Note:** If multiple panels are used, they must be identical.
 
 ### Multiple Panels Settings (the number of LED panels)
 
