@@ -6,10 +6,12 @@ See [WLED General Led Settings](https://github.com/aircoookie/WLED/wiki/Settings
 
 The sound reactive fork of WLED support multiple 2D layouts as well as multiple panels.
 
+
+
 ### 2D Matrix
 
-|---|---|---
-Setting name | Value Range | Description
+| Setting name | Value Range | Description
+| --- | --- | ---
 Matrix Width x Height | 1..x | Dimensions of 2D Matrix. width x height should match LED count!
 Serpentine | Y/N | Select if your layout is serpentine. Otherwise, it's not. (dev version)
 Rowmajor| Y/N | Select if your layout is horizontal. De-select if it's vertical. (dev version)
@@ -21,8 +23,8 @@ Transpose| Y/N | Swap the major and the minor axes (otherwise no swap). Don't us
 
 ### Multiple Panels
 
-|---|---|---
-Setting name | Value Range | Description
+| Setting name | Value Range | Description
+| --- | --- | ---
 Multiple panels | Y/N | Check if more than 1 panel, e.g. 4 8x32 or 16x16 panels. Multiple panels are connected together starting top left and ending bottom right (dev version)
 Horizontal / Vertical panels | 1..x | Number of panels on horizontal and vertical axis. Total panels is horizontal x vertical. Total Width and Height of connected panels should match Matrix Width and Height (dev version)
 
