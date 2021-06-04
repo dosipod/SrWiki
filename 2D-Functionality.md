@@ -73,7 +73,7 @@ Serpentine | Rowmajor | Flipmajor
 **Note:** Working with this can be confusing, so here's a simulator you can play around with to get familiar with[ XY()  at Wokwi](https://wokwi.com/arduino/projects/298774787561357832).
 
 ### Multiple panels (202106/dev)
-When you want to create larger matrices, the standard available panels are not big enough. They typically are 16x16 or 8x32 pixels. To support large matrices, they should be connected together. This is now supported as well (currently in dev version). Multiple panels can be specified in the LED-Preferences screen by checking Multiple Panels and then defining the number of horizontal and vertical panels. 
+When you want to create larger matrices, the standard available panels are not big enough. They typically are 16x16 or 8x32 pixels. To support large matrices, they should be connected together. This is now supported in WLED SR (currently in dev version). Multiple panels can be specified in the LED-Preferences screen by checking Multiple Panels and then defining the number of horizontal and vertical panels. 
 
 For example if you create a 32x32 matrix by connecting 4 8x32 panels together you have 4 horizontal panels and 1 vertical panel.
 
