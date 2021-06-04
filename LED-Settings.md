@@ -24,7 +24,7 @@ Note 2: The 2D matrix value should contain values for number of pixels in all yo
 
 ### Example: 
 
-I have 6 - 8x32 panels. They are connected:
+I have 6 - 8x32 panels. They are connected sequentially:
 
 0 1 2
 
