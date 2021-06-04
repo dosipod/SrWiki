@@ -22,7 +22,7 @@ Horizontal / Vertical panels | 1..x | Number of panels on horizontal and vertica
 Note 1: The number of LED's should contain ALL the number of ALL LED's in the display.
 Note 2: The 2D matrix value should contain values for number of pixels in all your connected panels.
 
-Example: 
+### Example: 
 
 I have 6 - 8x32 panels. They are connected:
 
