@@ -1,1 +1,1 @@
-See [WLED General settings](https://github.com/atuline/WLED/wiki/Settings)
+See [WLED General settings](https://github.com/aircoookie/WLED/wiki/Settings)
