@@ -27,12 +27,12 @@ Multiple panels | Y/N | Check if more than 1 panel, e.g. 4 8x32 or 16x16 panels.
 Horizontal / Vertical panels | 1..x | Number of panels on horizontal and vertical axis. Total panels is horizontal x vertical. Total Width and Height of connected panels should match Matrix Width and Height (dev version)
 
 
-Note 1: The number of LED's should contain ALL the number of ALL LED's in the display.
-Note 2: The 2D matrix value should contain values for number of pixels in all your connected panels.
+**Note 1:** The number of LED's should contain ALL the number of ALL LED's in the display.
+**Note 2:** The 2D matrix value should contain values for number of pixels in all your connected panels.
 
-### Example: 
+## Example: 
 
-I have 6 - 8x32 panels. They are connected sequentially:
+I have 6 - 8x32 panels. They are connected sequentially with 32 led's wide and 8 led's high as follows:
 
 0 1 2
 
