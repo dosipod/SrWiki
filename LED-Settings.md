@@ -27,17 +27,9 @@ Example:
 I have 6 - 8x32 panels. They are connected:
 
 0 1 2
+
 3 4 5
 
 
 ![6 - 8x32 panels](https://github.com/atuline/WLED/blob/assets/media/panels.jpg?raw=true)
-
-
-•	If you only have 1 led panel of 16x16, then you ‘must’ set total led count to 256 and width and height to 16. It does not make sense to check multiple panels then because you do not have multiple panels. But you can do it, for instance 4 horizontal and 4 vertical, than the 16x16 panel will be divided in 4 areas of 4x4 pixels but the panel functionality assumes that the first panel is top left, expanding right, then down and the last is bottom right and that is not the case in 1 led panel. So it does not look good.
-•	So for multiple panels to work, you physically need multiple panels, which are connected in series. Do you have a second 16x16 panel? Then you can set horizontal to 2 and vertical to 1 If you put them side by side (32x16), or vice versa if you put them above eachother (16x32)
-So I need to think how to explain this better. See my first attempt here: https://github.com/atuline/WLED/wiki/2D-Functionality.
-What do you think after reading the remarks I make here. If this matches what you did, then I can add something like this:
-•	Total leds should be the sum of all leds of all panels
-•	Matrixwidth and height should be the width and height of all panels together.
-•	If you specify multiple panels you should physically have multiple panels which are connected together 
 
