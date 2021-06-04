@@ -21,7 +21,7 @@ Transpose| Y/N | Swap the major and the minor axes (otherwise no swap). Don't us
 
 
 
-### Multiple Panels
+### Multiple Panels Settings
 
 
 | Setting name | Value Range | Description
