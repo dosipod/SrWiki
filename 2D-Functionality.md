@@ -83,4 +83,4 @@ For example if you create a 32x32 matrix by connecting 4 8x32 panels together yo
 
 The XY() function supports this by first determining in which panel an (x,y) coordinate should be displayed and then within a panel it's position is determined as described above (using flipmajor, serpentine etc.).
 
-In the example above, 0<x<8 is displayed in the first panel, 8<x<16 in the second panel and so on. For each panel, the first led number is calculated. E.g. if each panel has 256 leds then the second panel first led is led[256]. The values of x and y are then corrected by the width and the height of the panel to find the place within the panel (major and minor values)
+In the 8x32 example above, 0<x<8 is displayed in the first panel, 8<x<16 in the second panel and so on. For each panel, the first led number is calculated. E.g. if each panel has 256 leds then the second panel first led is led[256]. The values of x and y are then corrected by the width and the height of the panel to find the place within the panel (major and minor values)
