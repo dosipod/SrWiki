@@ -1,0 +1,1 @@
+See [WLED General settings](https://github.com/atuline/WLED/wiki/Settings)
