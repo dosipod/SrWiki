@@ -3,6 +3,8 @@ What's possibly on the horizon (no dates given):
 * Orient 2D animation for top left to top right orientation.
 * Add 2D orientation settings, but no multi-SEGMENT 2D orientation support.
 * Yes, we'd love dynamic controls for each animation, but we think that may interfere with future releases from Aircoookie.
+* We are working on adding multiple panels.
+* Automatic gain control. It's a challenge because each animation uses sound variables differently.
 
 ### May 15, 2021
 
