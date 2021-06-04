@@ -73,9 +73,12 @@ Serpentine | Rowmajor | Flipmajor
 **Note:** Working with this can be confusing, so here's a simulator you can play around with to get familiar with[ XY()  at Wokwi](https://wokwi.com/arduino/projects/298774787561357832).
 
 ### Multiple panels (202106/dev)
-When you want to create larger matrices, the standard available panels are not big enough. They typically are 16x16 or 8x32 pixels. To support large matrices, they should be connected together. This is now supported in WLED SR (currently in dev version). Multiple panels can be specified in the LED-Preferences screen by checking Multiple Panels and then defining the number of horizontal and vertical panels. 
+When you want to create larger matrices, the standard available panels are not big enough. They typically are 16x16 or 8x32 pixels. To support large matrices, they should be connected together. This is now supported in WLED SR (currently in dev version). Multiple panels can be specified in the LED-Preferences screen by checking Multiple Panels and then defining the number of horizontal and vertical panels. First panel should be top left, extending to the right, the extending down, until bottom right.
 
-For example if you create a 32x32 matrix by connecting 4 8x32 panels together you have 4 horizontal panels and 1 vertical panel.
+For example if you create a 32x32 matrix by connecting 4 8x32 panels together you have 4 horizontal panels and 1 vertical panel. Alternatively if you have 4 16x16 panels, you have 2 horizontal and 2 vertical panels. In the latter case, panel ordering is:
+
+0   1
+2   3
 
 The XY() function supports this by first determining in which panel an (x,y) coordinate should be displayed and then within a panel it's position is determined as described above (using flipmajor, serpentine etc.).
 
