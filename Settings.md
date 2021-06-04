@@ -4,6 +4,8 @@ Additional Sound Reactive Settings
 
 ### LED settings
 
+2D Matrix and Panels
+
 Setting name | Value Range | Description
 |---|---|---|
-MatrixWidth | 1..1500 | How many LEDs are in your WS2812B strip
+Matrix Width x Height | 1..1500 | Dimensions of 2D Matrix. width x height should match LED count!
