@@ -71,3 +71,12 @@ Serpentine | Rowmajor | Flipmajor
 **Note:** When an X,Y value goes out of bounds, this routine writes to an LED beyond SEGLEN, and as a result, we need to use the setPixels() routine to write to the display.
 
 **Note:** Working with this can be confusing, so here's a simulator you can play around with to get familiar with[ XY()  at Wokwi](https://wokwi.com/arduino/projects/298774787561357832).
+
+### Multiple panels (202106/dev)
+When you want to create larger matrices, the standard available panels are not big enough. They typically are 16*16 or 8*32 pixels. To support large matrices, they should be connected together. This is now supported as well (currently in dev version). Multiple panels can be specified in the LED-Preferences screen by checking Multiple Panels and then defining the number of horizontal and vertical panels. 
+
+For example if you create a 32*32 matrix by connecting 4 8*32 panels together you have 4 horizontal panels and 1 vertical panel.
+
+The XY() function supports this by first determining in which panel an (x,y) coordinate should be displayed and then within a panel it's position is determined as described above (using flipmajor, serpentine etc.).
+
+In the example above, 0<x<8 is displayed in the first panel, 8<x<16 in the second panel and so on.
