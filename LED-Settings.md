@@ -18,7 +18,7 @@ Transpose| Y/N | Swap the major and the minor axes (otherwise no swap). Don't us
 
 
 
-### Multiple Panels Settings
+### Multiple Panels Settings (the number of LED panels)
 
 
 | Setting name | Value Range | Description
