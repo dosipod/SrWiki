@@ -3,6 +3,7 @@
 
 The sound reactive fork of WLED support multiple layouts of a 2D matrix led panel. In addition it support multiple 2D matrix led panels.
 
+![6 - 8x32 panels](https://github.com/atuline/WLED/blob/assets/media/panels1.jpg?raw=true)
 
 ## 2D Matrix Settings (how each panel is laid out)
 
@@ -41,5 +42,5 @@ I have 6 - 8x32 panels. They are connected sequentially with 32 led's wide and 8
 3 4 5
 
 
-![6 - 8x32 panels](https://github.com/atuline/WLED/blob/assets/media/panels1.jpg?raw=true)
+
 
