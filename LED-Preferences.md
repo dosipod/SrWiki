@@ -1,7 +1,7 @@
 
 ## LED Preferences for Sound Reactive WLED
 
-The sound reactive fork of WLED support multiple layouts of a 2D matrix led panel. In addition it support multiple 2D matrix led panels.
+The sound reactive fork of WLED supports multiple layouts of a 2D matrix led panel as well as multiple identical 2D matrix led panels.
 
 ![6 - 8x32 panels](https://github.com/atuline/WLED/blob/assets/media/panels1.jpg?raw=true)
 
