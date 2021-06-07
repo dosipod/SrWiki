@@ -5,7 +5,7 @@ The sound reactive fork of WLED support multiple layouts of a 2D matrix led pane
 
 ![6 - 8x32 panels](https://github.com/atuline/WLED/blob/assets/media/panels1.jpg?raw=true)
 
-## 2D Matrix Settings (how each panel is laid out)
+## 2D Panel Layout (how each panel is laid out)
 
 A matrix is made of 1 or more identical physical led panels connected together. Width and Height is the sum of leds in all the panels in both directions.
 
