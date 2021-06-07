@@ -7,11 +7,9 @@ The sound reactive fork of WLED supports multiple layouts of a 2D matrix led pan
 
 ## 2D Panel Layout (how each panel is laid out)
 
-A matrix is made of 1 or more identical physical led panels connected together. Width and Height is the sum of leds in all the panels in both directions.
+The layout is made of 1 or more identical physical led panels connected together. Width and Height is the sum of leds in all the panels in both directions.
 
-Animations are written so that the first LED in the matrix is in the top left corner. If your matrix is oriented in a different fashion, you can use the 2D Panel layout settings to adjust that.
-
-
+Animations are written so that the first LED in in the panel(s) is in the top left corner. If your panels are oriented in a different fashion, you can use the 2D Panel layout settings to adjust that.
 
 
 | Setting name | Value Range | Description
