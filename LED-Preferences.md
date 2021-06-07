@@ -41,5 +41,5 @@ I have 6 - 8x32 panels. They are connected sequentially with 32 led's wide and 8
 3 4 5
 
 
-![6 - 8x32 panels](https://github.com/atuline/WLED/blob/assets/media/panels.jpg?raw=true)
+![6 - 8x32 panels](https://github.com/atuline/WLED/blob/assets/media/panels1.jpg?raw=true)
 
