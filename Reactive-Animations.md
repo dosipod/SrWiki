@@ -9,35 +9,35 @@ Effects beginning with '**' use FFT (Fast Fourier Transforms) for frequency dete
 | Effect | Description | Sliders
 | :------------------ | --- | ---
 | * 2D Swirl | Several blurred circles. Looks good with pink plasma palette. Supports AGC.  | **Speed:** Speed  <br/>**Intensity:** Sensitivity<br/>FFT Low: Blur
-| * 2D Waverly | Noise waves with some sound | Speed: Amplification<br/>Intensity: Sensitivity
-| * Gravcenter | Volume reactive vu-meter from center with gravity and perlin noise. | Speed: Rate of fall <br /> Intensity: Sensitivity
-| * Gravcentric     |  Volume reactive vu-meter from center with gravity. Volume provides index to (time rotating) palette colour. | Speed: Rate of fall <br /> Intensity: Sensitivity
-| * Gravimeter | Volume reactive vu-meter with gravity and perlin noise. | Speed: Rate of fall <br /> Intensity: Sensitivity
-| * Juggles | Juggling balls.| Speed: Yes <br /> Intensity: # of balls
-| * Matripix | Similar to Matrix. | Speed: yes <br /> Intensity: Brightness
-| * Midnoise | Perlin noise emanating from center.| Speed: Fade rate <br /> Intensity: Maximum length
+| * 2D Waverly | Noise waves with some sound | **Speed:** Amplification<br/>**Intensity:** Sensitivity
+| * Gravcenter | Volume reactive vu-meter from center with gravity and perlin noise. | **Speed:** Rate of fall <br /> **Intensity:** Sensitivity
+| * Gravcentric     |  Volume reactive vu-meter from center with gravity. Volume provides index to (time rotating) palette colour. | **Speed:** Rate of fall <br /> **Intensity:** Sensitivity
+| * Gravimeter | Volume reactive vu-meter with gravity and perlin noise. | **Speed:** Rate of fall <br /> **Intensity:** Sensitivity
+| * Juggles | Juggling balls.| **Speed:** Yes <br /> **Intensity:** # of balls
+| * Matripix | Similar to Matrix. | **Speed:** yes <br /> **Intensity:** Brightness
+| * Midnoise | Perlin noise emanating from center.| **Speed:** Fade rate <br /> **Intensity:** Maximum length
 | * Noisefire | A perlin noise based volume reactive fire routine. | n/a
-| * Noisemeter | Volume reactive vu-meter. | Speed: Fade rate <br /> Intensity: Width
-| * Pixels | Random pixels. | Speed: Fade rate <br /> Intensity: # of pixels
-| * Pixelwave | Pixels emanating from center. | Speed: yes <br /> Intensity: Sensitivity
-| * Plasmoid | Sine wave based plasma. | Intensity: # of pixels
-| * Puddlepeak | Blast coloured puddles randomly up and down the strand with the 'beat'. |Speed: Adjust fade rate.<br /> Intensity: Size of puddles.<br /> FFT High: 256 freq bin select on ESP32.<br /> FFT Custom: Volume comparator on ESP32.
-| * Puddles | Blast coloured puddles based on volume.| Speed: Fade rate <br /> Intensity: Size of puddle
-| * Ripple Peak | Peak detection triggers ripples. | Intensity: Max number of ripples.<br /> FFT High: 256 freq bin select on ESP32.<br /> FFT Custom: Volume comparator on ESP32.
-| * Waterfall | A volume AND FFT version of a Waterfall that has 'beat' support.| Speed: Speed <br /> Intensity: Adjust colour
+| * Noisemeter | Volume reactive vu-meter. | **Speed:** Fade rate <br /> **Intensity:** Width
+| * Pixels | Random pixels. | **Speed:** Fade rate <br /> **Intensity:** # of pixels
+| * Pixelwave | Pixels emanating from center. | **Speed:** yes <br /> **Intensity:** Sensitivity
+| * Plasmoid | Sine wave based plasma. | **Intensity:** # of pixels
+| * Puddlepeak | Blast coloured puddles randomly up and down the strand with the 'beat'. |**Speed:** Adjust fade rate.<br /> **Intensity:** Size of puddles.<br /> FFT High: 256 freq bin select on ESP32.<br /> FFT Custom: Volume comparator on ESP32.
+| * Puddles | Blast coloured puddles based on volume.| **Speed:** Fade rate <br /> **Intensity:** Size of puddle
+| * Ripple Peak | Peak detection triggers ripples. | **Intensity:** Max number of ripples.<br /> FFT High: 256 freq bin select on ESP32.<br /> FFT Custom: Volume comparator on ESP32.
+| * Waterfall | A volume AND FFT version of a Waterfall that has 'beat' support.| **Speed:** Speed <br /> **Intensity:** Adjust colour
 | ** 2D CenterBars | A 16x16 spectral analysis routine emanating from the center | FFT Custom: Number of bands
-| ** 2D Funky Plank | A 2D wall of reactivity running from bottom to top | Speed: Speed <br /> FFT Custom: Number of bands
+| ** 2D Funky Plank | A 2D wall of reactivity running from bottom to top | **Speed:** Speed <br /> FFT Custom: Number of bands
 | ** 2D GEQ | A 16x16 graphic equalizer. | FFT Custom: Number of bands
-| ** Binmap | Map bins 3-255 throughout the length of the LEDs. This does not work with UDP sync.<br />Values are not normalized.| Intensity: Max volume 
-| ** Blurz  | Flash an fftResult bin per frame and then blur/fade. | Speed: Fade Rate<br /> Intensity: Blurring
-| ** DJLight | An effect emanating from the center to the edges. | Speed: Speed
-| ** Freqmap | Map the loudest frequency throughout the length of the LED's.| Speed: Fade rate<br /> Intensity: Starting colour 
+| ** Binmap | Map bins 3-255 throughout the length of the LEDs. This does not work with UDP sync.<br />Values are not normalized.| **Intensity:** Max volume 
+| ** Blurz  | Flash an fftResult bin per frame and then blur/fade. | **Speed:** Fade Rate<br /> **Intensity:** Blurring
+| ** DJLight | An effect emanating from the center to the edges. | **Speed:** Speed
+| ** Freqmap | Map the loudest frequency throughout the length of the LED's.| **Speed:** Fade rate<br /> **Intensity:** Starting colour 
 | ** Freqmatrix | See below. | See below
-| ** Freqpixels | Random pixels coloured by frequency. | Speed: Fade rate<br /> Intensity: Starting colour
+| ** Freqpixels | Random pixels coloured by frequency. | **Speed:** Fade rate<br /> **Intensity:** Starting colour
 | ** Freqwave | See below. | See below
-| ** Gravfreq | VU Meter from center. Log of frequency is index to center colour. | Speed: Speed: Rate of fall<br /> Intensity: Sensitivity
-| ** Noisemove | Using perlin noise as movement for different frequency bins. |Speed: Speed of perlin movement <br /> Intensity: Fade rate
-| ** Waterfall | FFT version of a Waterfall.| Speed: Speed <br /> Intensity: Adjust colour<br /> FFT High: 256 freq bin select on ESP32.<br /> FFT Custom: Volume comparator on ESP32.
+| ** Gravfreq | VU Meter from center. Log of frequency is index to center colour. | **Speed:** **Speed:** Rate of fall<br /> **Intensity:** Sensitivity
+| ** Noisemove | Using perlin noise as movement for different frequency bins. |**Speed:** Speed of perlin movement <br /> **Intensity:** Fade rate
+| ** Waterfall | FFT version of a Waterfall.| **Speed:** Speed <br /> **Intensity:** Adjust colour<br /> FFT High: 256 freq bin select on ESP32.<br /> FFT Custom: Volume comparator on ESP32.
 <br />
 
 ## Slider Usage
@@ -64,8 +64,8 @@ On the ESP32, you can adjust 'FFT High' in order to select frequency bins 0 - 25
 The temporal tail for this animation starts at the beginning of the Segment rather than in the center of the segment.
 
 **Sliders used:**
-1. Speed: This determines the time delay before each pixel is moved down the line.
-1. Intensity: This determines how _MUCH_ the sound input affects the selected effect.
+1. **Speed:** This determines the time delay before each pixel is moved down the line.
+1. **Intensity:** This determines how _MUCH_ the sound input affects the selected effect.
 
 **FFT Sliders:**
 1. FFT Low: The low cut off for the FFT bins. Values range from 0-100. Good values are from 0 to 10
@@ -77,8 +77,8 @@ This effect maps the major frequencies from the incoming signal to colors in the
  
 **Sliders used:**
 
-1. Speed: This determines the time delay before each pixel is moved down the line.
-1. Intensity: This determines how _MUCH_ the sound input affects the selected effect.
+1. **Speed:** This determines the time delay before each pixel is moved down the line.
+1. **Intensity:** This determines how _MUCH_ the sound input affects the selected effect.
 
 **FFT Sliders:**
 1. FFT Low: The low cut off for the FFT bins. Values range from 0-100. Good values are from 0 to 10
