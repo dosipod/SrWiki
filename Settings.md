@@ -4,7 +4,7 @@ See [WLED General Led Settings](https://github.com/aircoookie/WLED/wiki/Settings
 
 ## LED Settings for Sound Reactive Additions
 
-See [LED Settings](https://github.com/atuline/WLED/wiki/LED-Preferences)
+See [LED Preferences](https://github.com/atuline/WLED/wiki/LED-Preferences)
 
 ### Sound Reactive Settings
 
