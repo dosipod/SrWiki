@@ -5,6 +5,17 @@ The sound reactive fork of WLED supports multiple layouts of a 2D matrix led pan
 
 ![6 - 8x32 panels](https://github.com/atuline/WLED/blob/assets/media/panels1.jpg?raw=true)
 
+### 2D Matrix
+2D effects are projected on a 2 dimensional matrix. 
+
+A specific led is identified by led[x,y] where led[0,0] is top left (logical layer)
+Setting name | Value Range | Description | Master/Dev
+|---|---|---|---|
+Width| 1..x | Width of the matrix | Master
+Height| 1..y | Height of the matrix | Master
+
+Note: width x height should match LED count!
+
 ## 2D Panel Layout (how each panel is laid out)
 
 The layout is made of 1 or more identical physical led panels connected together. Width and Height is the sum of leds in all the panels in both directions.
