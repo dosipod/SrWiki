@@ -41,6 +41,6 @@ Clock: Clock overlay; Analog Clock, check Show 5min marks, uncheck the rest
 
 
 
-### Thanks are in order
+### 2D Animations
 
 Oh, and special thanks are in order for urish for creating wokwi, Elliot and his team for soulmatelights and Stepko and ldirko for some awesome 2D animations. With their approval, we were able to convert and publish several of their animations to use with WLED.
