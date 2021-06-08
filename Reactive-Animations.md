@@ -41,14 +41,16 @@ Effects beginning with '**' use FFT (Fast Fourier Transforms) for frequency dete
 <br />
 
 ## Slider Usage
+Please see the brief slider descripion for each effect in the rightmost column above.
 
 ### Speed/Intensity
+These typically reflect the value of their namesake. Intensity would typically be number of LED's lit, or brightness of the LED's
 
 ### FFT Sliders
-
+These may get renamed in the future and could be used for FFT routines OR for additional effect adjustments.
 
 ## Peak Detection
-
+This is NOT beat detection, but rather samples that are louder than a the current average plus a slider adjustable value.
 
 ## Automatic Gain Control
 We are just beginning to add Automatic Gain Control to the routines, starting with 2D Swirl. This setting is only available on the LED Preferences page on the ESP32.
