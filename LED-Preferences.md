@@ -16,31 +16,37 @@ Height| 1..y | Height of the matrix | Master
 
 Note: width x height should match LED count!
 
-## 2D Panel Layout (how each panel is laid out)
+### 2D Panels
+A matrix is made of 1 or more identical physical led panels (physical layer)
+Setting name | Value Range | Description | Master/Dev
+|---|---|---|---|
+Multiple panels| Y/N | No if only one panel, yes if more than one | Dev
+Horizontal panels| 1..x | Number of panels side by side | Dev 
+Vertical panels| 1..y | Number of panels above each other | Dev
 
-The layout is made of 1 or more identical physical led panels connected together. Width and Height is the sum of leds in all the panels in both directions.
+Note: Panel width = matrix width / horizontal panels and panel height = matrix height / vertical panels!
 
-Animations are written so that the first LED in in the panel(s) is in the top left corner. If your panels are oriented in a different fashion, you can use the 2D Panel layout settings to adjust that.
-
-
-| Setting name | Value Range | Description
-| --- | --- | ---
-Serpentine | Y/N | Select if your layout is serpentine. Otherwise, it's not. (dev version)
-Transpose| Y/N | Swap the major and the minor axes (otherwise no swap). Don't use on non-square. (dev version)
-
-**Note:** If multiple panels are used, they must be identical.
-
-### Multiple Panels Settings (the number of LED panels)
-
-
-| Setting name | Value Range | Description
-| --- | --- | ---
-Multiple panels | Y/N | Check if more than 1 panel, e.g. 4 8x32 or 16x16 panels. Multiple panels are connected together starting top left and ending bottom right (dev version)
-Horizontal / Vertical panels | 1..x | Number of panels on horizontal and vertical axis. Total panels is horizontal x vertical. Total Width and Height of connected panels should match Matrix Width and Height (dev version)
-
+Note: Total panels = horizontal * vertical
 
 **Note 1:** The number of LED's should contain ALL the number of ALL LED's in the display.
 **Note 2:** The 2D matrix value should contain values for number of pixels in all your connected panels.
+
+### 2D Panel layout
+Specify how a led panel is wired.
+
+This is used to translate the logical layer (led[x,y]) to the physical layer (led[0] .. led[n]).
+
+Animations are written so that the first LED in in the panel(s) is in the top left corner. If your panels are oriented in a different fashion, you can use the 2D Panel layout settings to adjust that.
+
+Setting name | Value Range | Description | Master/Dev
+|---|---|---|---|
+First led position| Top/Bottom & Left/Right | Where is the first led positioned | Dev (replacing flipmajor/minor)
+Orientation| Horizontal / Vertical | Are rows of leds wired horizontal or vertical | Dev (replacing rowMajor)
+Serpentine| Y/N | Are rows of leds wired zig-zag or not | Master
+Transpose| Y/N | Swap the axes (otherwise no swap). Don't use on non-square panels | Dev
+
+
+**Note:** If multiple panels are used, they must be identical.
 
 ## Example: 
 
