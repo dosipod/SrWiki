@@ -21,8 +21,6 @@ Note: width x height should match LED count!
 
 **Note 2:** The 2D matrix value should contain values for number of pixels in all your connected panels.
 
-**Note:** Animations are written so that the first LED in in the panel(s) is in the top left corner.
-
 ### 2D Panels
 A matrix is made of 1 or more identical physical led panels (physical layer)
 Setting name | Value Range | Description | Master/Dev
@@ -38,7 +36,9 @@ Note: Total panels = horizontal * vertical
 ### 2D Panel layout
 Specify how a led panel is wired.
 
-This is used to translate the logical layer (led[x,y]) to the physical layer (led[0] .. led[n]). If your panels are oriented in a different fashion, you can use the 2D Panel layout settings to adjust that.
+This is used to translate the logical layer (led[x,y]) to the physical layer (led[0] .. led[n]). 
+
+Animations are written so that the first LED in in the panel(s) is in the top left corner. If your panels are oriented in a different fashion, you can use the 2D Panel layout settings to adjust that.
 
 Setting name | Value Range | Description | Master/Dev
 |---|---|---|---|
@@ -51,7 +51,7 @@ Transpose| Y/N | Swap the axes (otherwise no swap). Don't use on non-square pane
 
 ### Example: 
 
-I have 6 - 8x32 panels. They are connected sequentially with 32 led's wide and 8 led's high as follows:
+I have 6 - 8x32 panels. They are connected sequentially with 8 led's wide and 32 led's high as follows:
 
 0 1 2
 
