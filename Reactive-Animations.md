@@ -21,9 +21,9 @@ Effects beginning with '**' use FFT (Fast Fourier Transforms) for frequency dete
 | * Pixels | Random pixels. | **Speed:** Fade rate <br /> **Intensity:** # of pixels
 | * Pixelwave | Pixels emanating from center. | **Speed:** yes <br /> **Intensity:** Sensitivity
 | * Plasmoid | Sine wave based plasma. | **Intensity:** # of pixels
-| * Puddlepeak | Blast coloured puddles randomly up and down the strand with the 'beat'. |**Speed:** Adjust fade rate.<br /> **Intensity:** Size of puddles.<br /> **FFT High:** 256 freq bin select on ESP32.<br /> **FFT Custom:** Volume comparator on ESP32.
+| * Puddlepeak | Blast coloured puddles randomly up and down the strand with the 'beat'. |**Speed:** Adjust fade rate.<br /> **Intensity:** Size of puddles<br /> **FFT High:** 256 freq bin select on ESP32.<br /> **FFT Custom:** Volume comparator on ESP32
 | * Puddles | Blast coloured puddles based on volume.| **Speed:** Fade rate <br /> **Intensity:** Size of puddle
-| * Ripple Peak | Peak detection triggers ripples. | **Intensity:** Max number of ripples.<br /> **FFT High:** 256 freq bin select on ESP32.<br /> **FFT Custom:** Volume comparator on ESP32.
+| * Ripple Peak | Peak detection triggers ripples. | **Intensity:** Max number of ripples.<br /> **FFT High:** 256 freq bin select on ESP32<br /> **FFT Custom:** Volume comparator on ESP32
 | * Waterfall | A volume AND FFT version of a Waterfall that has 'beat' support.| **Speed:** Speed <br /> **Intensity:** Adjust colour
 | ** 2D CenterBars | A 16x16 spectral analysis routine emanating from the center | **FFT Custom:** Number of bands
 | ** 2D Funky Plank | A 2D wall of reactivity running from bottom to top | **Speed:** Speed <br /> **FFT Custom:** Number of bands
@@ -32,12 +32,12 @@ Effects beginning with '**' use FFT (Fast Fourier Transforms) for frequency dete
 | ** Blurz  | Flash an fftResult bin per frame and then blur/fade. | **Speed:** Fade Rate<br /> **Intensity:** Blurring
 | ** DJLight | An effect emanating from the center to the edges. | **Speed:** Speed
 | ** Freqmap | Map the loudest frequency throughout the length of the LED's.| **Speed:** Fade rate<br /> **Intensity:** Starting colour 
-| ** Freqmatrix | See below. | See below
+| ** Freqmatrix | See below | See below
 | ** Freqpixels | Random pixels coloured by frequency. | **Speed:** Fade rate<br /> **Intensity:** Starting colour
-| ** Freqwave | See below. | See below
+| ** Freqwave | See below | See below
 | ** Gravfreq | VU Meter from center. Log of frequency is index to center colour. | **Speed:** Rate of fall<br /> **Intensity:** Sensitivity
 | ** Noisemove | Using perlin noise as movement for different frequency bins. |**Speed:** Speed of perlin movement <br /> **Intensity:** Fade rate
-| ** Waterfall | FFT version of a Waterfall.| **Speed:** Speed <br /> **Intensity:** Adjust colour<br /> **FFT High:** 256 freq bin select on ESP32.<br /> **FFT Custom:** Volume comparator on ESP32.
+| ** Waterfall | FFT version of a Waterfall.| **Speed:** Speed <br /> **Intensity:** Adjust colour<br /> **FFT High:** 256 freq bin select on ESP32.<br /> **FFT Custom:** Volume comparator on ESP32
 <br />
 
 ## Slider Usage
