@@ -8,7 +8,7 @@ Effects beginning with '**' use FFT (Fast Fourier Transforms) for frequency dete
 
 | Effect | Description | Sliders
 | :------------------ | --- | ---
-| * 2D Swirl | Several blurred circles. Looks good with pink plasma palette.   | Speed: Speed  <br/>Intensity: Sensitivity<br/>FFT Low: Blur
+| * 2D Swirl | Several blurred circles. Looks good with pink plasma palette. Supports Agc.  | Speed: Speed  <br/>Intensity: Sensitivity<br/>FFT Low: Blur
 | * 2D Waverly | Noise waves with some sound | Speed: Amplification<br/>Intensity: Sensitivity
 | * Gravcenter | Volume reactive vu-meter from center with gravity and perlin noise. | Speed: Rate of fall <br /> Intensity: Sensitivity
 | * Gravcentric     |  Volume reactive vu-meter from center with gravity. Volume provides index to (time rotating) palette colour. | Speed: Rate of fall <br /> Intensity: Sensitivity
