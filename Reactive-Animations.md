@@ -1,5 +1,5 @@
 
-**Note 1:** Effects beginning with '***' are volume only and run on both ESP32 and ESP8266 (unless they are 2D).    
+**Note 1:** Effects beginning with '*' are volume only and run on both ESP32 and ESP8266 (unless they are 2D).    
 **Note 2:** Effects beginning with '**' use FFT (Fast Fourier Transforms) for frequency detection and only run on the ESP32.    
 **Note 3:** Due to its limited capability, we have not added 2D animations to the ESP8266 platform.    
 **Note 4:** The 2D routines require a minimum of 4 pixels in both directions. If you see blinking red, your 2D settings don't match the requirements.    
