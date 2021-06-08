@@ -35,7 +35,7 @@ Effects beginning with '**' use FFT (Fast Fourier Transforms) for frequency dete
 | ** Freqmatrix | See below. | See below
 | ** Freqpixels | Random pixels coloured by frequency. | **Speed:** Fade rate<br /> **Intensity:** Starting colour
 | ** Freqwave | See below. | See below
-| ** Gravfreq | VU Meter from center. Log of frequency is index to center colour. | **Speed:** **Speed:** Rate of fall<br /> **Intensity:** Sensitivity
+| ** Gravfreq | VU Meter from center. Log of frequency is index to center colour. | **Speed:** Rate of fall<br /> **Intensity:** Sensitivity
 | ** Noisemove | Using perlin noise as movement for different frequency bins. |**Speed:** Speed of perlin movement <br /> **Intensity:** Fade rate
 | ** Waterfall | FFT version of a Waterfall.| **Speed:** Speed <br /> **Intensity:** Adjust colour<br /> FFT High: 256 freq bin select on ESP32.<br /> FFT Custom: Volume comparator on ESP32.
 <br />
