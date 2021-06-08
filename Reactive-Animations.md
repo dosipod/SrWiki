@@ -8,7 +8,7 @@ Effects beginning with '**' use FFT (Fast Fourier Transforms) for frequency dete
 
 | Effect | Description | Sliders
 | :------------------ | --- | ---
-| * 2D Swirl | Several blurred circles. Looks good with pink plasma palette. Supports AGC.  | **Speed:** Speed  <br/>**Intensity:** Sensitivity<br/>FFT Low: Blur
+| * 2D Swirl | Several blurred circles. Looks good with pink plasma palette. Supports AGC.  | **Speed:** Speed  <br/>**Intensity:** Sensitivity<br/>**FFT Low:** Blur
 | * 2D Waverly | Noise waves with some sound | **Speed:** Amplification<br/>**Intensity:** Sensitivity
 | * Gravcenter | Volume reactive vu-meter from center with gravity and perlin noise. | **Speed:** Rate of fall <br /> **Intensity:** Sensitivity
 | * Gravcentric     |  Volume reactive vu-meter from center with gravity. Volume provides index to (time rotating) palette colour. | **Speed:** Rate of fall <br /> **Intensity:** Sensitivity
@@ -21,13 +21,13 @@ Effects beginning with '**' use FFT (Fast Fourier Transforms) for frequency dete
 | * Pixels | Random pixels. | **Speed:** Fade rate <br /> **Intensity:** # of pixels
 | * Pixelwave | Pixels emanating from center. | **Speed:** yes <br /> **Intensity:** Sensitivity
 | * Plasmoid | Sine wave based plasma. | **Intensity:** # of pixels
-| * Puddlepeak | Blast coloured puddles randomly up and down the strand with the 'beat'. |**Speed:** Adjust fade rate.<br /> **Intensity:** Size of puddles.<br /> FFT High: 256 freq bin select on ESP32.<br /> FFT Custom: Volume comparator on ESP32.
+| * Puddlepeak | Blast coloured puddles randomly up and down the strand with the 'beat'. |**Speed:** Adjust fade rate.<br /> **Intensity:** Size of puddles.<br /> **FFT High:** 256 freq bin select on ESP32.<br /> **FFT Custom:** Volume comparator on ESP32.
 | * Puddles | Blast coloured puddles based on volume.| **Speed:** Fade rate <br /> **Intensity:** Size of puddle
-| * Ripple Peak | Peak detection triggers ripples. | **Intensity:** Max number of ripples.<br /> FFT High: 256 freq bin select on ESP32.<br /> FFT Custom: Volume comparator on ESP32.
+| * Ripple Peak | Peak detection triggers ripples. | **Intensity:** Max number of ripples.<br /> **FFT High:** 256 freq bin select on ESP32.<br /> **FFT Custom:** Volume comparator on ESP32.
 | * Waterfall | A volume AND FFT version of a Waterfall that has 'beat' support.| **Speed:** Speed <br /> **Intensity:** Adjust colour
-| ** 2D CenterBars | A 16x16 spectral analysis routine emanating from the center | FFT Custom: Number of bands
-| ** 2D Funky Plank | A 2D wall of reactivity running from bottom to top | **Speed:** Speed <br /> FFT Custom: Number of bands
-| ** 2D GEQ | A 16x16 graphic equalizer. | FFT Custom: Number of bands
+| ** 2D CenterBars | A 16x16 spectral analysis routine emanating from the center | **FFT Custom:** Number of bands
+| ** 2D Funky Plank | A 2D wall of reactivity running from bottom to top | **Speed:** Speed <br /> **FFT Custom:** Number of bands
+| ** 2D GEQ | A 16x16 graphic equalizer. | **FFT Custom:** Number of bands
 | ** Binmap | Map bins 3-255 throughout the length of the LEDs. This does not work with UDP sync.<br />Values are not normalized.| **Intensity:** Max volume 
 | ** Blurz  | Flash an fftResult bin per frame and then blur/fade. | **Speed:** Fade Rate<br /> **Intensity:** Blurring
 | ** DJLight | An effect emanating from the center to the edges. | **Speed:** Speed
@@ -37,7 +37,7 @@ Effects beginning with '**' use FFT (Fast Fourier Transforms) for frequency dete
 | ** Freqwave | See below. | See below
 | ** Gravfreq | VU Meter from center. Log of frequency is index to center colour. | **Speed:** Rate of fall<br /> **Intensity:** Sensitivity
 | ** Noisemove | Using perlin noise as movement for different frequency bins. |**Speed:** Speed of perlin movement <br /> **Intensity:** Fade rate
-| ** Waterfall | FFT version of a Waterfall.| **Speed:** Speed <br /> **Intensity:** Adjust colour<br /> FFT High: 256 freq bin select on ESP32.<br /> FFT Custom: Volume comparator on ESP32.
+| ** Waterfall | FFT version of a Waterfall.| **Speed:** Speed <br /> **Intensity:** Adjust colour<br /> **FFT High:** 256 freq bin select on ESP32.<br /> **FFT Custom:** Volume comparator on ESP32.
 <br />
 
 ## Slider Usage
@@ -68,8 +68,8 @@ The temporal tail for this animation starts at the beginning of the Segment rath
 1. **Intensity:** This determines how _MUCH_ the sound input affects the selected effect.
 
 **FFT Sliders:**
-1. FFT Low: The low cut off for the FFT bins. Values range from 0-100. Good values are from 0 to 10
-1. FFT High: High cut off for the FFT bins. Values range from 0-100. This is important because every type of music is different and what is considered a high note in one type of music is not the case in others. 
+1. **FFT Low:** The low cut off for the FFT bins. Values range from 0-100. Good values are from 0 to 10
+1. **FFT High:** High cut off for the FFT bins. Values range from 0-100. This is important because every type of music is different and what is considered a high note in one type of music is not the case in others. 
 1. FFT Custom: This slider works similarly to a **"pre-amp"** for the input signal. The possible values for this slider are 1-10. A good starting point for this is around 2-3.
 
 ### Freqwave
@@ -81,8 +81,8 @@ This effect maps the major frequencies from the incoming signal to colors in the
 1. **Intensity:** This determines how _MUCH_ the sound input affects the selected effect.
 
 **FFT Sliders:**
-1. FFT Low: The low cut off for the FFT bins. Values range from 0-100. Good values are from 0 to 10
-1. FFT High: High cut off for the FFT bins. Values range from 0-100. This is important because every type of music is different and what is considered a high note in one type of music is not the case in others. 
-1. FFT Custom: This slider works similarly to a **"pre-amp"** for the input signal. The possible values for this slider are 1-10. A good starting point for this is around 2-3.
+1. **FFT Low:** The low cut off for the FFT bins. Values range from 0-100. Good values are from 0 to 10
+1. **FFT High:** High cut off for the FFT bins. Values range from 0-100. This is important because every type of music is different and what is considered a high note in one type of music is not the case in others. 
+1. **FFT Custom:** This slider works similarly to a **"pre-amp"** for the input signal. The possible values for this slider are 1-10. A good starting point for this is around 2-3.
 
 
