@@ -49,13 +49,11 @@ Effects beginning with '**' use FFT (Fast Fourier Transforms) for frequency dete
 
 ## Peak Detection
 
+
 ## Automatic Gain Control
+We are just beginning to add Automatic Gain Control to the routines, starting with 2D Swirl. This setting is only available on the LED Preferences page on the ESP32.
 
 ## FFT Routines
-
-
-
-On the ESP32, you can adjust 'FFT High' in order to select frequency bins 0 - 255 to compare against. In addition, 'FFT Custom' is adjustable to select the volume that you want to compare that bin against. These are the raw frequency bins and have not been 'normalized'. As a result, some bins may have high volumes than others.
 
 
 ## Additional effect notes
