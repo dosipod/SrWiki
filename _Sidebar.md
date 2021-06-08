@@ -2,7 +2,7 @@
 [Introduction](https://github.com/atuline/WLED/wiki)   
 [Installing and Compiling](https://github.com/atuline/WLED/wiki/Installing-and-Compiling)  
 [First Time Setup](https://github.com/atuline/WLED/wiki/First-Time-Setup)  
-[LED Settings](https://github.com/atuline/WLED/wiki/LED-Settings)  
+[LED Preferences](https://github.com/atuline/WLED/wiki/LED-Preferences)  
 [Sound Settings](https://github.com/atuline/WLED/wiki/Sound-Settings)  
 [Running Sound Reactive WLED](https://github.com/atuline/WLED/wiki/Running-Sound-Reactive-WLED)  
 [Sound Reactive Animations](https://github.com/atuline/WLED/wiki/Reactive-Animations)  
