@@ -1,5 +1,6 @@
 
 Effects beginning with '*' are volume only and run on both ESP32 and ESP8266 (unless they are 2D).
+
 Effects beginning with '**' use FFT (Fast Fourier Transforms) for frequency detection and only run on the ESP32.
 
 **Note 1:** Due to its limited capability, we have disabled 2D animations on the ESP8266 platform.    
