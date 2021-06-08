@@ -40,7 +40,20 @@ Effects beginning with '**' use FFT (Fast Fourier Transforms) for frequency dete
 | ** Waterfall | FFT version of a Waterfall.| Speed: Speed <br /> Intensity: Adjust colour<br /> FFT High: 256 freq bin select on ESP32.<br /> FFT Custom: Volume comparator on ESP32.
 <br />
 
+## Slider Usage
+
+### Speed/Intensity
+
+### FFT Sliders
+
+
 ## Peak Detection
+
+## Automatic Gain Control
+
+## FFT Routines
+
+
 
 On the ESP32, you can adjust 'FFT High' in order to select frequency bins 0 - 255 to compare against. In addition, 'FFT Custom' is adjustable to select the volume that you want to compare that bin against. These are the raw frequency bins and have not been 'normalized'. As a result, some bins may have high volumes than others.
 
@@ -63,6 +76,7 @@ The temporal tail for this animation starts at the beginning of the Segment rath
 This effect maps the major frequencies from the incoming signal to colors in the HSV color space. From the low notes being mapped to red (0) to the high notes being mapped to blue (255) and everything in between. The band you are looking at can be restricted by the FFT Low and FFT High sliders. We are digitizing at 10240Hz, meaning the highest frequency bin that you can find is 5120Hz, which for most music is just fine.
  
 **Sliders used:**
+
 1. Speed: This determines the time delay before each pixel is moved down the line.
 1. Intensity: This determines how _MUCH_ the sound input affects the selected effect.
 
