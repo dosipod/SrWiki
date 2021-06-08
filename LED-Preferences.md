@@ -8,17 +8,20 @@ The sound reactive fork of WLED supports multiple layouts of a 2D matrix led pan
 ### 2D Matrix
 2D effects are projected on a 2 dimensional matrix. 
 
-A specific led is identified by led[x,y] where led[0,0] is top left (logical layer)
+A specific led is identified by led[x,y] where led[0,0] is in the top left corner (logical layer)
+
 Setting name | Value Range | Description | Master/Dev
 |---|---|---|---|
 Width| 1..x | Width of the matrix | Master
 Height| 1..y | Height of the matrix | Master
 
-Note: width x height should match LED count!
+Note: width x height should match LED count! 
 
 **Note 1:** The number of LED's should contain ALL the number of ALL LED's in the display.
 
 **Note 2:** The 2D matrix value should contain values for number of pixels in all your connected panels.
+
+**Note:** Animations are written so that the first LED in in the panel(s) is in the top left corner.
 
 ### 2D Panels
 A matrix is made of 1 or more identical physical led panels (physical layer)
@@ -35,9 +38,7 @@ Note: Total panels = horizontal * vertical
 ### 2D Panel layout
 Specify how a led panel is wired.
 
-This is used to translate the logical layer (led[x,y]) to the physical layer (led[0] .. led[n]).
-
-Animations are written so that the first LED in in the panel(s) is in the top left corner. If your panels are oriented in a different fashion, you can use the 2D Panel layout settings to adjust that.
+This is used to translate the logical layer (led[x,y]) to the physical layer (led[0] .. led[n]). If your panels are oriented in a different fashion, you can use the 2D Panel layout settings to adjust that.
 
 Setting name | Value Range | Description | Master/Dev
 |---|---|---|---|
@@ -46,10 +47,9 @@ Orientation| Horizontal / Vertical | Are rows of leds wired horizontal or vertic
 Serpentine| Y/N | Are rows of leds wired zig-zag or not | Master
 Transpose| Y/N | Swap the axes (otherwise no swap). Don't use on non-square panels | Dev
 
-
 **Note:** If multiple panels are used, they must be identical.
 
-## Example: 
+### Example: 
 
 I have 6 - 8x32 panels. They are connected sequentially with 32 led's wide and 8 led's high as follows:
 
