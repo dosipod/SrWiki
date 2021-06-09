@@ -17,10 +17,6 @@ Height| 1..y | Height of the matrix | Master
 
 Note: width x height should match LED count! 
 
-**Note 1:** The number of LED's should contain ALL the number of ALL LED's in the display.
-
-**Note 2:** The 2D matrix value should contain values for number of pixels in all your connected panels.
-
 ### 2D Panels
 A matrix is made of 1 or more identical physical led panels (physical layer)
 Setting name | Value Range | Description | Master/Dev
