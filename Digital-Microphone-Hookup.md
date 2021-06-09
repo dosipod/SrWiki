@@ -24,4 +24,6 @@ Having problems getting the INMP441 running with WLED? Here's a test sketch (whi
 
 Here's the first board I've seen with the ICS-43434 at: https://www.tindie.com/products/serg74/digital-i2s-microphone-ics-43434-add-on/
 
+Looking to add line-in with I2S support? Try https://www.akm.com/content/dam/documents/products/audio/audio-adc/ak5720vt/ak5720vt-en-datasheet.pdf
+
 I2S support by @spedione
