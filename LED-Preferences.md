@@ -51,7 +51,7 @@ I have 6 - 8x32 panels. They are connected sequentially with 8 led's wide and 32
 
 3 4 5
 
-**Note:** Working with this can be confusing, so here's a simulator you can play around with to get familiar with [original XY() at Wokwi](https://wokwi.com/arduino/projects/298774787561357832) and [panel supported XY() at wokwi](https://wokwi.com/arduino/projects/300565972972995085).
+**Note:** Working with this can be confusing, so here's a simulator you can play around with to get familiar with [original XY() at Wokwi](https://wokwi.com/arduino/projects/298774787561357832) and [panel supported XY() at wokwi](https://wokwi.com/arduino/projects/300565972972995085) containing a printLayout function. This version shows the translation from old to new parameters. A version containing only the new parameters has not been made yet.
 
 
 
