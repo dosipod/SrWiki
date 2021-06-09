@@ -32,9 +32,7 @@ Note: Total panels = horizontal * vertical
 ### 2D Panel layout
 Specify how a led panel is wired.
 
-This is used to translate the logical layer (led[x,y]) to the physical layer (led[0] .. led[n]). 
-
-Animations are written so that the first LED in in the panel(s) is in the top left corner. If your panels are oriented in a different fashion, you can use the 2D Panel layout settings to adjust that.
+This is in most cases different from the logical layer (first led top left). Parameters here translate the logical layer (led[x,y]) to the physical layer (led[0] .. led[n]). 
 
 Setting name | Value Range | Description | Master/Dev
 |---|---|---|---|
