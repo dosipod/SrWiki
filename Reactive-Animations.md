@@ -79,8 +79,6 @@ This effect maps the major frequencies from the incoming signal to colors in the
 
 1. **Speed:** This determines the time delay before each pixel is moved down the line.
 1. **Intensity:** This determines how _MUCH_ the sound input affects the selected effect.
-
-**FFT Sliders:**
 1. **FFT Low:** The low cut off for the FFT bins. Values range from 0-100. Good values are from 0 to 10
 1. **FFT High:** High cut off for the FFT bins. Values range from 0-100. This is important because every type of music is different and what is considered a high note in one type of music is not the case in others. 
 1. **FFT Custom:** This slider works similarly to a **"pre-amp"** for the input signal. The possible values for this slider are 1-10. A good starting point for this is around 2-3.
