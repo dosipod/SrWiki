@@ -32,7 +32,7 @@
 | ** DJLight | An effect emanating from the center to the edges. | **Speed:** Speed
 | ** Freqmap | Map the loudest frequency throughout the length of the LED's.| **Speed:** Fade rate<br /> **Intensity:** Starting colour 
 | ** Freqmatrix | See below | See below
-| ** Freqpixels | Random pixels coloured by frequency. | **Speed:** Fade rate<br /> **Intensity:** Starting colour
+| ** Freqpixels | Random pixels coloured by frequency. | **Speed:** Fade rate<br /> **Intensity:** Starting colour and number of pixels
 | ** Freqwave | See below | See below
 | ** Gravfreq | VU Meter from center. Log of frequency is index to center colour. | **Speed:** Rate of fall<br /> **Intensity:** Sensitivity
 | ** Noisemove | Using perlin noise as movement for different frequency bins. |**Speed:** Speed of perlin movement <br /> **Intensity:** Fade rate
