@@ -45,6 +45,7 @@ Transpose| Y/N | Swap the axes (otherwise no swap). Don't use on non-square pane
 
 ### Example: 
 
+![](https://raw.githubusercontent.com/atuline/WLED/assets/media/2x3matrix.jpg)
 I have 6 - 8x32 panels. They are connected sequentially with 8 led's wide and 32 led's high as follows:
 
 0 1 2
