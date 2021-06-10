@@ -47,10 +47,8 @@ Transpose| Y/N | Swap the axes (otherwise no swap). Don't use on non-square pane
 
 ![](https://raw.githubusercontent.com/atuline/WLED/assets/media/2x3matrix.jpg)
 
-I have a 2D matrix of 6 - 8x8 panels. They are connected sequentially with 24 led's wide and 15 led's high as follows:
+I have a 2D matrix of 6 - 8x8 panels. They are connected sequentially with a total of 24 led's wide and 16 led's high.
 
-0 1 2
+The first led of each panel starts in the top left corner, the subsequent led is to the right of it (horizontally), and the panel is in a serpentine layout. These should be the settings for that layout:
 
-3 4 5
-
-The first led of each panel starts in the top left corner, the subsequent led is to the right of it (horizontally), and the panel is in a serpentine layout. 
+![](https://raw.githubusercontent.com/atuline/WLED/assets/media/horlayout.jpg)
