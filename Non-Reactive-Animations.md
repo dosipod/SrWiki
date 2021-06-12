@@ -8,6 +8,7 @@
 | Flow Stripe |Strip with rotating colours.|**Speed:** Controls a speed timer <br/>**Intensity:** Controls another timer
 | Perlin Move |Using Perlin Noise for movement.|**Speed:** Speed of elements<br/>**Intensity:** # of pixels<br />**FFT Low:** Fade rate
 |    |  |  <br />
+| Wavesins | Beat waves and phase shifting. | **Speed: Speed<br/>**Intensity** Varying brightness<br/>**FFT Low:** Starting colour<br/>**FFT High:** Range of colours<br/>**FFT Custom:** More fun to adjust
 | 2D Black Hole | Stars moving around black hole. |**FFT Low:** one beat<br/>**FFT High:** Another beat<br/>**FFT Custom:** last beat
 | 2D Colored Bursts |Multiple lines.|**Speed:** Speed of lines<br/>**Intensity:** Number of lines
 | 2D DNA | A very cool DNA like pattern. Select a palette.|**Speed:** Scroll speed<br />**Intensity:** Blur
