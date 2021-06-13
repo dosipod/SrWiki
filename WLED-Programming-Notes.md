@@ -1,6 +1,8 @@
 # Introduction
 This version of WLED contains sound reactive routines, which are prefaced with a `* FX_NAME` for volume reactive routines and `** FX_NAME` for FFT routines. Each is controllable by the intensity and/or speed sliders. Some routines also include 3 dedicated FFT control sliders.
 
+**Caveat: As our sound reactive fork of WLED evolves, some of this content may become out of date. We'll update as we become aware of any issues.
+
 Contents:
 * [HTTP API Links](https://github.com/atuline/WLED/wiki/WLED-Programming-Notes#http-api-links), [Updating FX.h](https://github.com/atuline/WLED/wiki/WLED-Programming-Notes#updating-fxh-line-numbers-will-vary), [Updating FX.cpp](https://github.com/atuline/WLED/wiki/WLED-Programming-Notes#updating-fxcpp)
 * [WLED Support Functions](https://github.com/atuline/WLED/wiki/WLED-Programming-Notes#wled-support-functions)
@@ -221,6 +223,12 @@ You can now use it as a 1D or quasi 2D array, i.e.
   myArray[5] = 4;                        // 1D array
   myArray[5*matrixWidth + 4] = 10;       // 2D array
 ```
+# 2D Changes
+We have implemented an advanced XY() function to support not only panels of varying sizes and orientations, but also for multiple (identical) panels.
+
+Animations have been written so that the top left led in the panel(s) is, well, at the top left.
+
+We do not (yet) have animation specific orientation settings. If you would like to do so, for any given 2D animation, you'll need to swap the parameters for the XY() function as well as changing the for loop parameter from height to width (or vice versa).
 
 # Sound Reactive EEPROM Layout
 We've expanded `EEPSIZE` in const.h to 4095 for ESP32 and 3300 for ESP8266 due to our additional requirements. We started saving values at 3072 defined as `EEP_AUDIO`. Although we'd like to apply SEGMENT specific settings, we may have some challenges with the FFT sliders. We're not sure at this point.
