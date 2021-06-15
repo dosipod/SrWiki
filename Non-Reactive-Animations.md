@@ -1,6 +1,7 @@
 **Note 1:** Due to its limited capability, we have disabled 2D animations on the ESP8266 platform.    
 **Note 2:** The 2D routines require a minimum of 4 pixels in both directions. If you see blinking red, your 2D settings don't match the requirements.    
-**Note 3:** As we continue to develop SR WLED, some animations may appear or disappear. It's still a work very much in progress. Some may only appear in the dev branch for now.    
+**Note 3:** As we continue to develop SR WLED, some animations may appear or disappear. It's still a work very much in progress. Some may only appear in the dev branch for now.   
+**Note 6:** In dev branch, sliders have been renamed from FFT Low to Custom 1, FFT High to Custom 2 and FFT Custom to Custom 3.     
 
 
 | Effect | Description | Sliders
