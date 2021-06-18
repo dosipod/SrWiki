@@ -23,6 +23,9 @@ See: https://www.youtube.com/watch?v=4EXefD6INos
 
 https://github.com/Aircoookie/WLED/wiki/Compiling-WLED
 
+Additional compile guidelines
+* If you get .py errors, install Python (wait for the VSCode popup to install Python)
+* If you do not install the Arduino IDE (Why should you if you have PlatformIO) and your board is not recognised if you compile to board, install the [USB to UART bridge VSP Drivers](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers)
 
 ## Compiling from a fresh install of the Arduino IDE
 
