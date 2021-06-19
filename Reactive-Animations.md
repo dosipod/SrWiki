@@ -31,13 +31,14 @@
 | ** Binmap | Map bins 3-255 throughout the length of the LEDs. This does not work with UDP sync.<br />Values are not normalized.| **Intensity:** Max volume 
 | ** Blurz  | Flash an fftResult bin per frame and then blur/fade. | **Speed:** Fade Rate<br /> **Intensity:** Blurring
 | ** DJLight | An effect emanating from the center to the edges. | **Speed:** Speed
-| ** Freqmap | Map the loudest frequency throughout the length of the LED's.| **Speed:** Fade rate<br /> **Intensity:** Starting colour 
+| ** Freqmap | Map the loudest frequency throughout the length of the LED's.|**Speed:** Fade rate<br />**Intensity:** Starting colour 
 | ** Freqmatrix | See below | See below
-| ** Freqpixels | Random pixels coloured by frequency. | **Speed:** Fade rate<br /> **Intensity:** Starting colour and number of pixels
+| ** Freqpixels | Random pixels coloured by frequency. |**Speed:** Fade rate<br />**Intensity:** Starting colour and number of pixels
 | ** Freqwave | See below | See below
-| ** Gravfreq | VU Meter from center. Log of frequency is index to center colour. | **Speed:** Rate of fall<br /> **Intensity:** Sensitivity
+| ** Gravfreq | VU Meter from center. Log of frequency is index to center colour. | **Speed:** Rate of fall<br />**Intensity:** Sensitivity
 | ** Noisemove | Using perlin noise as movement for different frequency bins. |**Speed:** Speed of perlin movement <br /> **Intensity:** Fade rate
-| ** Waterfall | FFT version of a Waterfall.| **Speed:** Speed <br /> **Intensity:** Adjust colour<br /> **FFT High:** 256 freq bin select on ESP32<br /> **FFT Custom:** Volume comparator on ESP32
+| ** Rocktaves | Colours the same for each note between octaves, with sine wave going back and forth |**Speed:** n/a<br />**Intensity:** n/a
+| ** Waterfall | FFT version of a Waterfall.| **Speed:** Speed <br /> **Intensity:** Adjust colour<br />**FFT High:** 256 freq bin select on ESP32<br /> **FFT Custom:** Volume comparator on ESP32
 <br />
 
 ## Slider Usage
