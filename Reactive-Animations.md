@@ -37,7 +37,7 @@
 | ** Freqwave | See below | See below
 | ** Gravfreq | VU Meter from center. Log of frequency is index to center colour. | **Speed:** Rate of fall<br />**Intensity:** Sensitivity
 | ** Noisemove | Using perlin noise as movement for different frequency bins. |**Speed:** Speed of perlin movement <br /> **Intensity:** Fade rate
-| ** Rocktaves | Colours the same for each note between octaves, with sine wave going back and forth |**Speed:** n/a<br />**Intensity:** n/a
+| ** Rocktaves | Colours the same for each note between octaves, with sine wave going back and forth. |**Speed:** n/a<br />**Intensity:** n/a
 | ** Waterfall | FFT version of a Waterfall.| **Speed:** Speed <br /> **Intensity:** Adjust colour<br />**FFT High:** 256 freq bin select on ESP32<br /> **FFT Custom:** Volume comparator on ESP32
 <br />
 
