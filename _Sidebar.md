@@ -4,7 +4,7 @@
 [First Time Setup](https://github.com/atuline/WLED/wiki/First-Time-Setup)  
 [LED Preferences](https://github.com/atuline/WLED/wiki/LED-Preferences)  
 [Sound Settings](https://github.com/atuline/WLED/wiki/Sound-Settings)  
-[2D Settings](https://github.com/atuline/WLED/wiki/2D-Settings)  
+[2D Support](https://github.com/atuline/WLED/wiki/2D-Support)  
 [Running Sound Reactive WLED](https://github.com/atuline/WLED/wiki/Running-Sound-Reactive-WLED)  
 [Sound Reactive Animations](https://github.com/atuline/WLED/wiki/Reactive-Animations)  
 [Non-Reactive Animations](https://github.com/atuline/WLED/wiki/Non-Reactive-Animations)    
