@@ -20,6 +20,7 @@ In 2D, a segment is a rectangle on a 2D matrix and 2D effects plot on this recta
 In order to use the 1D segment UI to specify a segment rectangle, currently the following trick is used:
 
 Segment top left = (start%matrixWidth, start/matrixWidth)
+
 Segment bottom right = (stop%matrixWidth, stop/matrixWidth)
 
 Example of 1 segment (default) covering a whole 16x16 matrix:
