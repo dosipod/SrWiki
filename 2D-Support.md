@@ -49,4 +49,20 @@ Multiple segments can be specified this way
 
 See [Led Preferences](https://github.com/atuline/WLED/wiki/LED-Preferences)
 
-<h1>hi</h1>
+<form onsubmit=”return false” oninput=”    totalamount.value = Math.round(principal.value * (Math.pow((1 + interest.value / 100), period.value)) * 100) / 100;“>
+
+            Principal<input name=”principal” id=”principal” type=”number”>
+
+            <br />
+
+            Duration<input name=”period” id=”period” type=”number”>
+
+            <br />
+
+            Interest Rate<input name=”interest” id=”interest” type=”number”>
+
+            <br />
+
+            Total amount <output name=”totalamount“ id=”totalamount“ for=”principal period interest”></output>
+
+        </form>
