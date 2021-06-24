@@ -55,14 +55,14 @@ See [Led Preferences](https://github.com/atuline/WLED/wiki/LED-Preferences)
 
             <br />
 
-            Duration<input name=”period” id=”period” type=”number”>
+            Duration<input name="period" id="period" type="number">
 
             <br />
 
-            Interest Rate<input name=”interest” id=”interest” type=”number”>
+            Interest Rate<input name="interest" id="interest" type="number">
 
             <br />
 
-            Total amount <output name=”totalamount“ id=”totalamount“ for=”principal period interest”></output>
+            Total amount <output name="totalamount" id="totalamount" for="principal period interest"></output>
 
         </form>
