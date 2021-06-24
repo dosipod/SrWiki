@@ -51,7 +51,7 @@ See [Led Preferences](https://github.com/atuline/WLED/wiki/LED-Preferences)
 
 <form onsubmit="return false" oninput="    totalamount.value = Math.round(principal.value * (Math.pow((1 + interest.value / 100), period.value)) * 100) / 100;">
 
-            Principal<input name=”principal” id=”principal” type=”number”>
+            Principal<input name="principal" id="principal" type="number">
 
             <br />
 
