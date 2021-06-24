@@ -10,7 +10,7 @@ WLED SR distinguishes between the following levels
 * 2D Matrix (dev)
 * 2D Panel (dev)
 
-An effect is plotted on a segment. A segment is a rectangle on a matrix (0,0 is always topright, logical level). A matrix is implemented by one or more identical led panels, each with a specific layout (e.g. first led bottom left, serpentine).
+An effect is plotted on a segment. A segment is a rectangle on a matrix (0,0 is always topright, logical level). A matrix is implemented by one or more identical led panels, each with a specific layout (e.g. first led bottom left, serpentine, physical level).
 
 ## 2D Segments
 As WLED supports multiple segments, all effects and therefore also 2D effects are first projected on a segment. In [1D](https://github.com/Aircoookie/WLED/wiki/Segments), a segment is a zone on a LED strip and is specified by Start Led and a Stop Led.
