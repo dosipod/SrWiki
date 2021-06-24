@@ -11,6 +11,7 @@ WLED SR distinguishes between the following levels
 * 2D Panel (dev)
 
 An effect is plotted on a segment. A segment is a rectangle on a matrix (0,0 is always topright, logical level). A matrix is implemented by one or more identical led panels, each with a specific layout (e.g. first led bottom left, serpentine, physical level).
+
 Note: 2D effects can also be projected on a LED Strip instead of a Panel. e.g. for a led strip of 144 leds you can define width=height=12 and each zone of 12 leds is a row of a matrix. Rows are then side by side instead of above each other. Some 2D effects, e.g. graphic equalizer look still pretty cool on strips (as is the other way around with 1D effects on a 2D matrix).
 
 ## 2D Segments
