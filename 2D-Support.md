@@ -39,3 +39,7 @@ Example of a segment covering the left part of the 16x16 matrix:
 * height = 16
 
 Multiple segments can be specified this way
+
+## 2D Matrices and panels
+
+See [Led Preferences](https://github.com/atuline/WLED/wiki/LED-Preferences)
