@@ -49,6 +49,12 @@ Multiple segments can be specified this way
 
 See [Led Preferences](https://github.com/atuline/WLED/wiki/LED-Preferences)
 
+## Technical
+
+* CRGB leds[MAX_LEDS+1]; in FX.cpp defines all leds on the matrix. Multiple segments share this array and effects should only write to leds[] within the boundaries of a segment. This should be done by calling XY as follows led[XY(x,y)]. Most (2D) effects do this but not all yet.
+
+## HTML in wiki?
+
 <form onsubmit="return false" oninput="    totalamount.value = Math.round(principal.value * (Math.pow((1 + interest.value / 100), period.value)) * 100) / 100;">
 
             Principal<input name="principal" id="principal" type="number">
