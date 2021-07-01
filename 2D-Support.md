@@ -17,11 +17,12 @@ Note: 2D effects can also be projected on a 1D LED Strip instead of a 2D Panel. 
 ## 2D Segments
 As WLED supports multiple segments, all effects and therefore also 2D effects are first projected on a segment. In [1D, a segment is a zone on a LED strip](https://github.com/Aircoookie/WLED/wiki/Segments) and is specified by Start Led and a Stop Led.
 In 2D, a segment is a rectangle on a 2D matrix and 2D effects plot on this rectangle using x,y coordinates of the SEGMENT.
-In order to use the 1D segment UI to specify a segment rectangle, currently the following trick is used:
+A rectangle can be defined in the Segment UI where the start led specifies the top-left and the stop led specifies the bottom-right of the rectangle.
+Segments can overlap. In fact overlapping creates very nice effects.
 
-Segment top left = (start%matrixWidth, start/matrixWidth)
-
-Segment bottom right = (stop%matrixWidth, stop/matrixWidth)
+To get the (x,y) coordinates from the start and stop led:
+* Segment top left = (start%matrixWidth, start/matrixWidth)
+* Segment bottom right = (stop%matrixWidth, stop/matrixWidth)
 
 Example of 1 segment (default) covering a whole 16x16 matrix:
 * start = 0, stop = 255
