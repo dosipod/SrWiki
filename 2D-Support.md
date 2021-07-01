@@ -52,8 +52,8 @@ See [Led Preferences](https://github.com/atuline/WLED/wiki/LED-Preferences)
 
 ## Technical
 
-* CRGB leds[MAX_LEDS+1]; in FX.cpp defines all leds on the matrix. Multiple segments share this array and effects should only write to leds[] within the boundaries of a segment. This should be done by calling XY as follows led[XY(x,y)]. Most (2D) effects do this but not all yet.
-* Functions with leds as parameter should make sure to follow above rule. E.g. fadeToBlackBy(leds, SEGLEN, 32) or fill_solid(leds,SEGLEN, 0) otherwise it writes outside the segment boundaries. This needs to be done still.
+* CRGB leds[MAX_LEDS+1]; in FX.cpp defines all leds on the matrix. Multiple segments share this array and effects should only write to leds[] within the boundaries of a segment. This should be done by calling leds[XY(x,y)] or leds[realPixelIndex(i)].
+* Functions with leds as parameter should make sure to follow above rule and have been refactored for this. E.g. fadeToBlackBy(leds, 32) or fill_solid(leds, 0) otherwise it writes outside the segment boundaries. 
 
 ## HTML in wiki?
 
