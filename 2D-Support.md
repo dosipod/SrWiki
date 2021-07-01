@@ -6,7 +6,7 @@ Note: Currently only working in dev. You are invited to test this and give feedb
 ## 2D architecture
 
 WLED SR distinguishes between the following levels
-* 2D Segment (SEGMENT2DV2 Branch)
+* 2D Segment (dev)
 * 2D Matrix (dev)
 * 2D Panel (dev)
 
