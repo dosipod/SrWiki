@@ -55,6 +55,18 @@ See [Led Preferences](https://github.com/atuline/WLED/wiki/LED-Preferences)
 * CRGB leds[MAX_LEDS+1]; in FX.cpp defines all leds on the matrix. Multiple segments share this array and effects should only write to leds[] within the boundaries of a segment. This is done by calling leds[XY(x,y)] or leds[realPixelIndex(i)].
 * Functions with leds as parameter should make sure to follow above rule and have been refactored for this. E.g. fadeToBlackBy(leds, 32) or fill_solid(leds, 0) otherwise it writes outside the segment boundaries. 
 
+## Examples
+
+### 16 x 12 matrix
+
+matrixWidth = 16, matrixHeight = 12.
+Total led count 192 leds
+left and right binmap effect. In the middle noisemove.
+
+Segment 0 (middle): start=1, stop=191, effect=noisemove
+Segment 1 (left): start=0, stop=176, effect=binmap
+Segment 2 (right): start=15, stop=192, effect=binmap
+
 ## HTML in wiki?
 
 <form onsubmit="return false" oninput="    totalamount.value = Math.round(principal.value * (Math.pow((1 + interest.value / 100), period.value)) * 100) / 100;">
