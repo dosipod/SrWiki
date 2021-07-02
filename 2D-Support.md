@@ -63,9 +63,9 @@ matrixWidth = 16, matrixHeight = 12.
 Total led count 192 leds
 left and right binmap effect. In the middle noisemove.
 
-Segment 0 (middle): start=1, stop=191, effect=noisemove
-Segment 1 (left): start=0, stop=176, effect=binmap
-Segment 2 (right): start=15, stop=192, effect=binmap
+* Segment 0 (middle): start=1, stop=191, effect=noisemove
+* Segment 1 (left): start=0, stop=176, effect=binmap
+* Segment 2 (right): start=15, stop=192, effect=binmap
 
 ## HTML in wiki?
 
