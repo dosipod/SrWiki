@@ -60,7 +60,9 @@ See [Led Preferences](https://github.com/atuline/WLED/wiki/LED-Preferences)
 ### 16 x 12 matrix
 
 matrixWidth = 16, matrixHeight = 12.
+
 Total led count 192 leds
+
 left and right binmap effect. In the middle noisemove.
 
 * Segment 0 (middle): start=1, stop=191, effect=noisemove
