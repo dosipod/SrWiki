@@ -23,7 +23,7 @@ Segments can overlap. In fact overlapping creates very nice effects.
 ### Rotation and Mirroring
 A segment can be rotated 90 degrees and mirrored vertical or horizontal. The spacing variable of a segment is temporary used for this. In the future separate variables could be added on segments to replace this.
 
-Enter a value between 0 and 7 into the spacing variable of a segment to obtain the following effects
+Enter a value between 0 and 7 into the spacing variable of a segment to obtain the following effects: 
 
 0 (000):      -       -           -
 
