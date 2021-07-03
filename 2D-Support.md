@@ -27,19 +27,19 @@ Enter a value between 0 and 7 into the spacing variable of a segment to obtain t
 
 0 (000):      - + - + - => no rotation or mirroring => equals 0º rotation
 
-1 (001):      - + - + MirrorH 
+1 (001):      - + - + Mirror Horizontal 
 
-2 (010):      - + MirrorV + -
+2 (010):      - + Mirror Vertical + -
 
-3 (011):      - + MirrorV + MirrorH => equals 180º rotation
+3 (011):      - + Mirror Vertical+ Mirror Horizontal=> equals 180º rotation
 
 4 (100):      rotation + - + - => equals 90º rotation
 
-5 (101):      rotation + - + MirrorH 
+5 (101):      rotation + - + Mirror Horizontal
 
-6 (110):      rotation + MirrorV + -
+6 (110):      rotation + Mirror Vertical+ -
 
-7 (111):      rotation + MirrorV + MirrorH => equals 270º rotation
+7 (111):      rotation + Mirror Vertical+ Mirror Horizontal=> equals 270º rotation
 
 ### Examples
 To get the (x,y) coordinates from the start and stop led:
