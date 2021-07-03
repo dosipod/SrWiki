@@ -29,10 +29,12 @@ Value | Binary | Rotation | Vertical Mirror | Horizontal Mirror | Effect
 |---|---|---|---|---|---|
 0|000|-|-|-|no rotation or mirroring => equals 0º rotation
 1|001|-|-|+
-
-0 (000):      - + - + - => no rotation or mirroring => equals 0º rotation
-
-1 (001):      - + - + Mirror Horizontal 
+2|010|-|+|-
+3|011|-|+|+
+4|100|+|-|-
+5|101|+|-|+
+6|110|+|+|-
+7|111|+|+|+
 
 2 (010):      - + Mirror Vertical + -
 
