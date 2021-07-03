@@ -41,7 +41,7 @@ Enter a value between 0 and 7 into the spacing variable of a segment to obtain t
 
 7 (111):      90      MirrorV     MirrorH
 
-
+### Examples
 To get the (x,y) coordinates from the start and stop led:
 * Segment top left = (start%matrixWidth, start/matrixWidth)
 * Segment bottom right = (stop%matrixWidth, stop/matrixWidth)
