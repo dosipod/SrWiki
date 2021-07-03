@@ -25,21 +25,21 @@ A segment can be rotated 90 degrees and mirrored vertical or horizontal. The spa
 
 Enter a value between 0 and 7 into the spacing variable of a segment to obtain the following effects
 
-`0: 000      -       -           -
+0 (000):      -       -           -
 
-1: 001      -       -           MirrorH 
+1 (001):      -       -           MirrorH 
 
-2: 010      -       MirrorV     -
+2 (010):      -       MirrorV     -
 
-3: 011      -       MirrorV     MirrorH
+3 (011):      -       MirrorV     MirrorH
 
-4: 100      90      -           -
+4 (100):      90      -           -
 
-5: 101      90      -           MirrorH 
+5 (101):      90      -           MirrorH 
 
-6: 110      90      MirrorV     -
+6 (110):      90      MirrorV     -
 
-7: 111      90      MirrorV     MirrorH`
+7 (111):      90      MirrorV     MirrorH
 
 
 To get the (x,y) coordinates from the start and stop led:
