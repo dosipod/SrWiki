@@ -21,25 +21,25 @@ A rectangle can be defined in the Segment UI where the start led specifies the t
 Segments can overlap. In fact overlapping creates very nice effects.
 
 ### Rotation and Mirroring
-A segment can be rotated 90 degrees and mirrored vertical or horizontal. The spacing variable of a segment is temporary used for this. In the future separate variables could be added on segments to replace this.
+A segment can be rotated 90º degrees and mirrored vertical or horizontal. The spacing variable of a segment is temporary used for this. In the future separate variables could be added on segments to replace this.
 
 Enter a value between 0 and 7 into the spacing variable of a segment to obtain the following effects: 
 
-0 (000):      -       -           -
+0 (000):      - + - + - => no rotation or mirroring => equals 0º rotation
 
-1 (001):      -       -           MirrorH 
+1 (001):      - + - + MirrorH 
 
-2 (010):      -       MirrorV     -
+2 (010):      - + MirrorV + -
 
-3 (011):      -       MirrorV     MirrorH
+3 (011):      - + MirrorV + MirrorH => equals 180º rotation
 
-4 (100):      90      -           -
+4 (100):      rotation + - + - => equals 90º rotation
 
-5 (101):      90      -           MirrorH 
+5 (101):      rotation + - + MirrorH 
 
-6 (110):      90      MirrorV     -
+6 (110):      rotation + MirrorV + -
 
-7 (111):      90      MirrorV     MirrorH
+7 (111):      rotation + MirrorV + MirrorH => equals 270º rotation
 
 ### Examples
 To get the (x,y) coordinates from the start and stop led:
