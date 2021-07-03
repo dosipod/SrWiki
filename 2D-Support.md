@@ -28,8 +28,8 @@ Enter a value between 0 and 7 into the spacing variable of a segment to obtain t
 Value | Binary | Rotation | Vertical Mirror | Horizontal Mirror | Effect
 |---|---|---|---|---|---|
 0|000|-|-|-|no rotation or mirroring => equals 0º rotation
-1|001|-|-|+
-2|010|-|+|-
+1|001|-|-|+|Horizontal mirror
+2|010|-|+|-|Vertical mirror
 3|011|-|+|+|equals 180º rotation
 4|100|+|-|-|equals 90º rotation
 5|101|+|-|+
