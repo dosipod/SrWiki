@@ -20,6 +20,21 @@ In 2D, a segment is a rectangle on a 2D matrix and 2D effects plot on this recta
 A rectangle can be defined in the Segment UI where the start led specifies the top-left and the stop led specifies the bottom-right of the rectangle.
 Segments can overlap. In fact overlapping creates very nice effects.
 
+### Rotation and Mirroring
+A segment can be rotated 90 degrees and mirrored vertical or horizontal. The spacing variable of a segment is temporary used for this. In the future separate variables could be added on segments to replace this.
+
+Enter a value between 0 and 7 into the spacing variable of a segment to obtain the following effects
+
+0: 000      -       -           -
+1: 001      -       -           MirrorH 
+2: 010      -       MirrorV     -
+3: 011      -       MirrorV     MirrorH
+4: 100      90      -           -
+5: 101      90      -           MirrorH 
+6: 110      90      MirrorV     -
+7: 111      90      MirrorV     MirrorH
+
+
 To get the (x,y) coordinates from the start and stop led:
 * Segment top left = (start%matrixWidth, start/matrixWidth)
 * Segment bottom right = (stop%matrixWidth, stop/matrixWidth)
