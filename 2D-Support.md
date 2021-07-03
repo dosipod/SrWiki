@@ -25,6 +25,11 @@ A segment can be rotated 90º degrees and mirrored vertical or horizontal. The s
 
 Enter a value between 0 and 7 into the spacing variable of a segment to obtain the following effects: 
 
+Value | Binary | Rotation | Vertical Mirror | Horizontal Mirror
+|---|---|---|---|---|---|
+0|000|-|-|-|no rotation or mirroring => equals 0º rotation
+
+
 0 (000):      - + - + - => no rotation or mirroring => equals 0º rotation
 
 1 (001):      - + - + Mirror Horizontal 
