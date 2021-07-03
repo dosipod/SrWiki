@@ -32,7 +32,7 @@ Value | Binary | Rotation | Vertical Mirror | Horizontal Mirror | Effect
 2|010|-|+|-|Vertical mirror
 3|011|-|+|+|equals 180º rotation
 4|100|+|-|-|equals 90º rotation
-5|101|+|-|+|90ºHorizontal mirror
+5|101|+|-|+|90º Horizontal mirror
 6|110|+|+|-|90º Vertical mirror
 7|111|+|+|+|equals 270º rotation
 
