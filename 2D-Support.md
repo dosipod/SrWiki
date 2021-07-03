@@ -36,18 +36,6 @@ Value | Binary | Rotation | Vertical Mirror | Horizontal Mirror | Effect
 6|110|+|+|-
 7|111|+|+|+|equals 270º rotation
 
-2 (010):      - + Mirror Vertical + -
-
-3 (011):      - + Mirror Vertical+ Mirror Horizontal=> equals 180º rotation
-
-4 (100):      rotation + - + - => equals 90º rotation
-
-5 (101):      rotation + - + Mirror Horizontal
-
-6 (110):      rotation + Mirror Vertical+ -
-
-7 (111):      rotation + Mirror Vertical+ Mirror Horizontal=> equals 270º rotation
-
 ### Examples
 To get the (x,y) coordinates from the start and stop led:
 * Segment top left = (start%matrixWidth, start/matrixWidth)
