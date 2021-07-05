@@ -25,16 +25,16 @@ A segment can be rotated 90º degrees and mirrored vertical or horizontal. The s
 
 Enter a value between 0 and 7 into the spacing variable of a segment to obtain the following effects: 
 
-Value | Binary | Rotation | Vertical Mirror | Horizontal Mirror | Effect
-|---|---|---|---|---|---|
-0|000|-|-|-|0º rotation and no mirroring
-1|001|-|-|+|Horizontal mirror
-2|010|-|+|-|Vertical mirror
-3|011|-|+|+|180º rotation
-4|100|+|-|-|90º rotation
-5|101|+|-|+|90º Horizontal mirror
-6|110|+|+|-|90º Vertical mirror
-7|111|+|+|+|270º rotation
+Value | Binary | Rotation | Vertical Mirror | Horizontal Mirror | Effect | degrees/mirrorX
+|---|---|---|---|---|---|---|
+0|000|-|-|-|0º rotation and no mirroring|rotate 0
+1|001|-|-|+|Horizontal mirror|rotate 180 + Mirror Vertical
+2|010|-|+|-|Vertical mirror|rotate 0 + Mirror Vertical
+3|011|-|+|+|180º rotation|rotate 180 
+4|100|+|-|-|90º rotation||rotate 90
+5|101|+|-|+|90º Horizontal mirror|rotate 270 + Mirror Vertical
+6|110|+|+|-|90º Vertical mirror|rotate 90 + Mirror Vertical
+7|111|+|+|+|270º rotation|rotate 270
 
 ### Examples
 To get the (x,y) coordinates from the start and stop led:
