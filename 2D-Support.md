@@ -31,7 +31,7 @@ Value | Binary | Rotation | Vertical Mirror | Horizontal Mirror | Effect | degre
 1|001|-|-|+|Horizontal mirror|rotate 180 + Mirror Vertical
 2|010|-|+|-|Vertical mirror|rotate 0 + Mirror Vertical
 3|011|-|+|+|180º rotation|rotate 180 
-4|100|+|-|-|90º rotation||rotate 90
+4|100|+|-|-|90º rotation|rotate 90
 5|101|+|-|+|90º Horizontal mirror|rotate 270 + Mirror Vertical
 6|110|+|+|-|90º Vertical mirror|rotate 90 + Mirror Vertical
 7|111|+|+|+|270º rotation|rotate 270
