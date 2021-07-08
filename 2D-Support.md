@@ -20,21 +20,19 @@ In 2D, a segment is a rectangle on a 2D matrix and 2D effects plot on this recta
 A rectangle can be defined in the Segment UI where the start led specifies the top-left and the stop led specifies the bottom-right of the rectangle.
 Segments can overlap. In fact overlapping creates very nice effects.
 
-### Rotation and Mirroring
-A segment can be rotated 90º degrees and mirrored vertical or horizontal. The spacing variable of a segment is temporary used for this. In the future separate variables could be added on segments to replace this.
+### Rotation and ReverseX/Y
+A segment can be rotated 90º degrees and reversed on the X or Y-axis. The SegmentRotation branch of dev supports this and is currently in beta-test. This will move to dev and release over time.
 
-Enter a value between 0 and 7 into the spacing variable of a segment to obtain the following effects: 
-
-Value | Binary | Rotation | Vertical Mirror | Horizontal Mirror | Effect | degrees/mirrorX
-|---|---|---|---|---|---|---|
-0|000|-|-|-|0º rotation and no mirroring|rotate 0
-1|001|-|-|+|Horizontal mirror|rotate 180 + Mirror Vertical
-2|010|-|+|-|Vertical mirror|rotate 0 + Mirror Vertical
-3|011|-|+|+|180º rotation|rotate 180 
-4|100|+|-|-|90º rotation|rotate 90
-5|101|+|-|+|90º Horizontal mirror|rotate 270 + Mirror Vertical
-6|110|+|+|-|90º Vertical mirror|rotate 90 + Mirror Vertical
-7|111|+|+|+|270º rotation|rotate 270
+Value | Rotation | Reverse X | Reverse Y| Effect | degrees/mirrorX
+|---|---|---|---|---|---|
+0|-|-|-|0º rotation and no mirroring|rotate 0
+1|-|-|+|Horizontal mirror|rotate 180 + Mirror Vertical
+2|-|+|-|Vertical mirror|rotate 0 + Mirror Vertical
+3|-|+|+|180º rotation|rotate 180 
+4|+|-|-|90º rotation|rotate 90
+5|+|-|+|90º Horizontal mirror|rotate 270 + Mirror Vertical
+6|+|+|-|90º Vertical mirror|rotate 90 + Mirror Vertical
+7|+|+|+|270º rotation|rotate 270
 
 ### Examples
 To get the (x,y) coordinates from the start and stop led:
