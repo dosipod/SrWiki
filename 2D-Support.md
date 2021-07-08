@@ -21,6 +21,8 @@ In 2D, a segment is a rectangle on a 2D matrix and 2D effects plot on this recta
 A rectangle can be defined in the Segment UI where the start led specifies the top-left and the stop led specifies the bottom-right of the rectangle.
 Segments can overlap. In fact overlapping creates very nice effects.
 
+See [Segment start stop charts](https://github.com/atuline/WLED/wiki/2D-Support#2d-segment-start-stop-charts) to easy find start and stop values
+
 
 ### Rotation and ReverseX/Y
 A segment can be rotated 90º degrees and reversed on the X or Y-axis. The SegmentRotation branch of dev supports this and is currently in beta-test. This will move to dev and release over time.
