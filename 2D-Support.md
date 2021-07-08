@@ -21,8 +21,6 @@ In 2D, a segment is a rectangle on a 2D matrix and 2D effects plot on this recta
 A rectangle can be defined in the Segment UI where the start led specifies the top-left and the stop led specifies the bottom-right of the rectangle.
 Segments can overlap. In fact overlapping creates very nice effects.
 
-![6 - 8x32 panels](https://github.com/atuline/WLED/blob/assets/media/2Dsegmentstartstop1616.png?raw=true)
-
 
 ### Rotation and ReverseX/Y
 A segment can be rotated 90º degrees and reversed on the X or Y-axis. The SegmentRotation branch of dev supports this and is currently in beta-test. This will move to dev and release over time.
@@ -88,22 +86,10 @@ left and right binmap effect. In the middle noisemove.
 * Segment 1 (left): start=0, stop=176, effect=binmap
 * Segment 2 (right): start=15, stop=192, effect=binmap
 
-## HTML in wiki?
+## 2D Segment start stop charts
+### 16x16 matrix
+![6 - 8x32 panels](https://github.com/atuline/WLED/blob/assets/media/2Dsegmentstartstop1616.png?raw=true)
 
-<form onsubmit="return false" oninput="    totalamount.value = Math.round(principal.value * (Math.pow((1 + interest.value / 100), period.value)) * 100) / 100;">
-
-            Principal<input name="principal" id="principal" type="number">
-
-            <br />
-
-            Duration<input name="period" id="period" type="number">
-
-            <br />
-
-            Interest Rate<input name="interest" id="interest" type="number">
-
-            <br />
-
-            Total amount <output name="totalamount" id="totalamount" for="principal period interest"></output>
-
-        </form>
+### 32x32 matrix
+![6 - 8x32 panels](https://github.com/atuline/WLED/blob/assets/media/2Dsegmentstartstop3232.png?raw=true)
+(Created by Harry Baas)
