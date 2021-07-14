@@ -23,7 +23,7 @@ See [List of effects and palettes](https://github.com/Aircoookie/WLED/wiki/List-
 | 2D Hiphotic | A moving plasma.|**Speed:** One direction<br/>**Intensity:** Other direction
 | 2D Lissajous | A frequency based Lissajous pattern.|**Speed:** Frequency of cos<br/>**Intensity:** Frequency of sin
 | 2D Matrix |The Matrix in 2D.|**Speed:** Affects the speed of the movement<br />**Intensity:** Number of lines
-| 2D Meatballs |A cool plasma type effect.|n/a
+| 2D Metaballs |A cool plasma type effect.|n/a
 | 2D Plasma |A plasma effect.|**Speed:** Affects the speed of the movement<br />**FFT Low:** Shifts the colours<br />**FFT High:** Distance from the plasma
 | 2D Plasma Ball |A ball of plasma. |**Speed:** Speed. <br/>**Intensity:**
 | 2D Polar Lights |The northern lights.|**Speed:** Speed.<br/>**Intensity:** Frequency.<br/>**FFT Low:** Palette rotation
