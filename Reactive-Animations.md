@@ -42,7 +42,6 @@ See [List of effects and palettes](https://github.com/Aircoookie/WLED/wiki/List-
 | ** Noisemove | Using perlin noise as movement for different frequency bins. |**Speed:** Speed of perlin movement <br /> **Intensity:** Fade rate
 | ** Rocktaves | Colours the same for each note between octaves, with sine wave going back and forth. |**Speed:** n/a<br />**Intensity:** n/a
 | ** Waterfall | FFT version of a Waterfall.| **Speed:** Speed <br /> **Intensity:** Adjust colour<br />**FFT High:** 256 freq bin select on ESP32<br /> **FFT Custom:** Volume comparator on ESP32
-<br />
 | ** DJ Light|tbd|
 | ** 2D Akemi|tbd|
 
