@@ -33,6 +33,10 @@ See [List of effects and palettes](https://github.com/Aircoookie/WLED/wiki/List-
 | 2D Squared Swirl |Boxes moving around.|fft3: Blur amount
 | 2D Sun radiation |The sun! Doesn't support segments.|**Speed:** Variance<br/>**Intensity:** Brightness
 | 2D Twister |A large twister.|**Speed:** Speed <br/>**Intensity:** Phases
+| 2D Tartan|tbd|
+| 2D Julia|tbd|
+| 2D Game of life|tbd|
+| 2D Black hole|tbd|
 
 ### 2D Clock Overlay
 
