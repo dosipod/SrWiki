@@ -37,6 +37,7 @@ See [List of effects and palettes](https://github.com/Aircoookie/WLED/wiki/List-
 | 2D Julia|tbd|
 | 2D Game of life|tbd|
 | 2D Black hole|tbd|
+| 2D Noise|tbd|
 
 ### 2D Clock Overlay
 
