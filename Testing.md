@@ -25,6 +25,7 @@ When testing the UI, make sure to **refresh your web browser**. It may have cach
 ### Segments
 * Configure multiple segments.
 * Configure multiple groups.
+* Segment options.
 
 ### Sound
 * Configure squelch setting.
@@ -34,6 +35,8 @@ When testing the UI, make sure to **refresh your web browser**. It may have cach
 ### 2D
 * Test different sizes, i.e. 1x32, 16x16, etc.
 * Serpentine/linear.
+* Single/multi-panels.
+* Layouts
 
 ### UDP Sound Sync
 * Test ESP32 to ESP8266 sync.
@@ -45,3 +48,4 @@ When testing the UI, make sure to **refresh your web browser**. It may have cach
 * Test with ESP32.
 * Test with ESP8266.
 * (Ensure EEPROM default is not 255 or 65535 - Not done yet).
+* OTA updates.
