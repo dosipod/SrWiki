@@ -10,6 +10,9 @@ The sound reactive version of WLED provides all of the functionality of WLED wit
 * Connectors!! Dupont connectors are notoriously flaky. I use JST-SM connectors for the LED's and (so far) just soldered the microphones.
 
 ## First Steps
+After uploading WLED to the Esp, use your phone and connect to the WLED-AP using the password 'wled1234'.
+Click 'Login to network' when the notification about this shows up. You are then transfered to the WLED's start page, and here we should click "WIFI SETTINGS" to connect to the local network. Fill in the settings for your local Wifi network, and then click 'Save & Connect'. The device will reboot and if everything worked it will now be connected to the local network. Finding it's IP-address can be done via the network routers administration page, or via an mobile app like Fing were you can find a new device called "wled-WLED". Open this IP in a webbrowser to access WLED's control page.
+
 1. On the WiFi Setup page, it is highly recommended that you connect your SR WLED strip to an existing network.
 2. At the bottom of the WiFi Setup page, check on 'Disable WiFi sleep'. This may not be necessary if you're not experiencing noise or UDP Sync lag issues.
 3. On the LED Preferences page, configure the length of your led strip.
