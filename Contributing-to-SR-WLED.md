@@ -34,8 +34,10 @@ In addition:
 
 * Keep any git update to a limited topic for ease of testing/rollback.
 * Good communication with team members is very important.
-* Keep the Wiki documentation in good order.
+* Keep the Wiki documentation in good order.'
+* Technical support for a long enough period of time to ensure your code is fully tested, the UI is fine, and supportable by others.
 * Commitment. You're really keen on WLED and have a long term commitment to support the community.
+
 
 Knowledge required:
 
