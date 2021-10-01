@@ -8,6 +8,7 @@
 
 See also [Non reactive animations](https://github.com/atuline/WLED/wiki/Non-Reactive-Animations)   
 See [List of effects and palettes](https://github.com/Aircoookie/WLED/wiki/List-of-effects-and-palettes) for AC Animations.
+See [ScottrBaileys GIF visualizer](https://github.com/scottrbailey/WLED-Utils/blob/main/effects_sr.md) for animations of the effects
 
 | Effect | Description | Sliders
 | :------------------ | --- | ---
