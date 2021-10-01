@@ -4,7 +4,10 @@
 **Note 6:** In dev branch, sliders have been renamed from FFT Low to Custom 1, FFT High to Custom 2 and FFT Custom to Custom 3.     
 
 See also [Reactive animations](https://github.com/atuline/WLED/wiki/Reactive-Animations)   
+
 See [List of effects and palettes](https://github.com/Aircoookie/WLED/wiki/List-of-effects-and-palettes) for AC Animations.
+
+See [ScottrBaileys GIF visualizer](https://github.com/scottrbailey/WLED-Utils/blob/main/effects_sr.md) for animations of the effects
 
 | Effect | Description | Sliders
 | --- | --- | ---
