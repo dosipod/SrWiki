@@ -119,3 +119,39 @@ To create a new custom effect, insert the following API command in a new preset 
 
 # Definition files
 Definition files define the syntax and semantics of the programming language you want to use. ARTI supports 'any' language as long as it has functions, calls, variables, for, if etc. ...
+
+`{`
+  `"meta": {"version": "0.0.4", "start":"program"},`
+  `"program": ["PROGRAM","ID","block"],`
+
+  `"TOKENS":`
+  `{`
+    `"ID": "ID",`
+    `"INTEGER_CONST": "INTEGER_CONST",`
+    `"REAL_CONST": "REAL_CONST",`
+    `"PROGRAM": "PROGRAM",`
+  `},`
+
+  `"SEMANTICS":`
+  `{`
+    `"program": {"id":"Program", "name":"ID", "block": "block"},`
+    `"variable": {"id":"Var", "name":"ID", "type": "type"},`
+    `"assign": {"id":"Assign", "name":"varleft", "indices":"indices", "value":"expr"},`
+    `"function": {"id":"Function", "name":"ID", "formals": "formals", "block": "block"},`
+    `"formal": {"id":"Formal", "name":"ID", "type": "type"},`
+    `"call": {"id":"Call", "name":"ID", "actuals": "actuals"},`
+    `"for": {"id":"For", "from":"assign", "condition":"expr", "increment": "increment", "block":"block"},`
+    `"if": {"id":"If", "condition":"expr", "true":"block", "false": "elseBlock"},`
+    `"expr": {"id":"Expr"},`
+    `"term": {"id":"Term"},`
+    `"varref": {"id":"VarRef", "name":"ID"}`
+  `},`
+
+  `"EXTERNALS":`
+  `{`
+    `"setPixelColor": {"pixelNr":"int", "color":"int"},`
+    `"printf": {"args": "__VA_ARGS__"},`
+    `"ledCount": {}`
+  `}`
+
+`}`
