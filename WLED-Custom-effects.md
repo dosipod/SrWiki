@@ -44,7 +44,7 @@ The following steps are needed to run a Custom Effect:
 
 ![Slash Edit](https://github.com/ewoudwijma/ARTI/blob/main/Images/SlashEditPNG.PNG?raw=true)
 
-* Upload [presets.json](https://github.com/ewoudwijma/ARTI/tree/main/wled) to /edit to get presets for current examples pre loaded (delete old presets.json in /edit first. Reboot to make them visible in the UI)
+* Upload [presets.json](https://github.com/ewoudwijma/ARTI/tree/main/wled) to /edit to get presets for current examples pre loaded (change "stop" from 50 to the number of leds you have connected) (delete old presets.json in /edit first. Reboot to make them visible in the UI)
 * Select one of the presets. Result should be visible on the led-strip
 
 ![Examples presets](https://github.com/ewoudwijma/ARTI/blob/main/Images/ExamplesPreset.PNG?raw=true)
