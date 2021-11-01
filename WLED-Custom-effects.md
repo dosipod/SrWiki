@@ -74,13 +74,13 @@ November 2021
 
 # How it works in detail
 
-The program file contains commands which adhere to a standard. These commands are specified in a definition file called wled.json. By this we can create and further develop our own WLED language.
+The program file contains commands which adhere to a standard. These commands are specified in a definition file called [wled.json](https://github.com/ewoudwijma/ARTI/tree/main/wled). By this we can create and further develop our own WLED language.
 
 To run this, a tool called Arduino Real Time Interpreter ([ARTI](https://github.com/ewoudwijma/ARTI)) is used. Actually this tool has been made to make Custom effects possible in WLED but can also be used without WLED. The tool is build using compiler technology and can support not only the WLED definition file but 'any' definition file. 
 
 Arti will run the following steps sequentially: Lexer, Parser, Semantic Analyzer and Interpreter. The first 3 steps are done once if an affect is selected (SEGENV.call == 0). Interpreter will be executed one time to initialize global variables and functions and then run in a loop executing the function 'renderFrame'. [See fx.cpp in the ARTI Github repo](https://github.com/ewoudwijma/ARTI/tree/main/wled).
 
-Another definition file can be created if you want to run commands in another coding language. In the Arti Github repository, pas.json is added as a demo to show an example of another definition file.
+Another definition file can be created if you want to run commands in another coding language. In the Arti Github repository, pas.json is added as a demo to show an example of another definition file. See below how to create another definition file.
 
 # More
 * Currently this has been added in the WLED Soundreactive / dev branch. As this is not limited to the Soundreactive fork, it could also be added to it's upstream repo: WLED AC. This might be a future step. At this moment, Custom effects do not support Soundreactive specific functions (it supports hardly anything at all ;-) ). It probably will support it in the future. Real time constraints for sound require some performance tuning to be done first.
@@ -117,3 +117,5 @@ To create a new custom effect, insert the following API command in a new preset 
 ## Contribute
 * Submit a pull request from your clone to the upstream ARTI repository
 
+# Definition files
+Definition files define the syntax and semantics of the programming language you want to use. ARTI supports 'any' language as long as it has functions, calls, variables, for, if etc. ...
