@@ -118,11 +118,12 @@ To create a new custom effect, insert the following API command in a new preset 
 * Submit a pull request from your clone to the upstream ARTI repository
 
 # Definition files
-Definition files define the syntax and semantics of the programming language you want to use. ARTI supports 'any' language as long as it has functions, calls, variables, for, if etc. ...
+Definition files define the syntax and semantics of the programming language you want to use. ARTI supports 'any' language as long as it has functions, calls, variables, for, if etc. ... [wled.json](https://github.com/ewoudwijma/ARTI/tree/main/wled)) is an example of this. Any new definition file should contain the following parts:
 
 `{`
   `"meta": {"version": "0.0.4", "start":"program"},`
   `"program": ["PROGRAM","ID","block"],`
+  `"block": ...,`
 
   `"TOKENS":`
   `{`
@@ -155,3 +156,8 @@ Definition files define the syntax and semantics of the programming language you
   `}`
 
 `}`
+
+* a meta tag containing version and start, current version of arti.h requires minimal version 0.0.4. Start is the first part of your program. A program is specified by [BNF](https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form)-like statements in the form of "symbol": "expression". Expression can contain special directives: ? is optional, + is one or more, * is 0 or more.
+* SEMANTICS: tells arti how to recognize different parts of the syntax
+* EXTERNALS: define predefined functions and variables. They should be defined in arti_<definition>_plugin.h
+* For any new definition, arti.h should have an include statement of the plugin file
