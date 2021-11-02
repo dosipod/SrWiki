@@ -89,7 +89,7 @@ Another definition file can be created if you want to run commands in another co
 
 To create a new custom effect, insert the following API command in a new preset and replace "ColorFade" with the prefix of the filename of the Custom Effect (In this example the filename is ColorFade.wled)
 
-{"on":true,"bri":128,"transition":7,"mainseg":0,"seg":[{"id":0,"start":0,"stop":30,"grp":1,"spc":0,"of":0,"on":true,"bri":255,"n":"ColorFade","col":[[255,160,0],[0,0,0],[0,0,0]],"fx":187,"sx":128,"ix":128,"f1x":128,"f2x":128,"f3x":128,"pal":0,"sel":true,"rev":false,"rev2D":false,"mi":false,"rot2D":false},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0}]}
+{"on":true,"bri":128,"transition":7,"mainseg":0,"seg":[{"id":0,"start":0,"stop":30,"grp":1,"spc":0,"of":0,"on":true,"bri":255,"n":"ColorFade","col":[[255,160,0],[0,0,0],[0,0,0]], "fx":187,"sx":128,"ix":128,"f1x":128,"f2x":128,"f3x":128,"pal":0,"sel":true,"rev":false,"rev2D":false,"mi":false,"rot2D":false},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0}]}
 
 (fx:187 is id of the Custom Effect)
 
