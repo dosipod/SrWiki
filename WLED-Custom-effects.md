@@ -164,6 +164,6 @@ Definition files define the syntax and semantics of the programming language you
 
 ## References
 
-https://github.com/rspivak/lsbasi
-https://compilers.iecc.com/crenshaw/
-https://github.com/ewoudwijma/ARTI
+* https://github.com/rspivak/lsbasi
+* https://compilers.iecc.com/crenshaw/
+* https://github.com/ewoudwijma/ARTI
