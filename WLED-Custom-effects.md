@@ -161,3 +161,9 @@ Definition files define the syntax and semantics of the programming language you
 * SEMANTICS: tells arti how to recognize different parts of the syntax
 * EXTERNALS: define predefined functions and variables. They should be defined in arti_<definition>_plugin.h
 * For any new definition, arti.h should have an include statement of the plugin file
+
+## References
+
+https://github.com/rspivak/lsbasi
+https://compilers.iecc.com/crenshaw/
+https://github.com/ewoudwijma/ARTI
