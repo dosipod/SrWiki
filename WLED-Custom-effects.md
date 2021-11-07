@@ -59,8 +59,6 @@ To change or add effects:
 
 ![Segment name](https://github.com/ewoudwijma/ARTI/blob/main/Images/SegmentName.PNG?raw=true)
 
-NOTE: Currently selecting Custom effects repeatedly will cause a crash / reboot. There must be a memory leak somewhere which has not been found yet... Therefore, above steps will not always work well. Alternatively edit / upload the presets.json file or edit API Commands directly, see [below](#preset-api-command):
-
 ![Preset](https://github.com/ewoudwijma/ARTI/blob/main/Images/Preset.PNG?raw=true)
 
 # Current status
@@ -69,7 +67,6 @@ November 2021
 * first release on WLED SR / dev branch
 * Only 1 segment
 * No sliders
-* Crash if selected again
 * Run only simple programs. As this tool is developed step by step, more complex programs can be run later.
 
 # How it works in detail
