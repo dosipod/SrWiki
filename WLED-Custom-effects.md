@@ -40,7 +40,7 @@ As this is new functionality the existing WLED user interface is used without mo
 
 The following steps are needed to run a Custom Effect:
 
-* Upload files to /edit: The definition file wled.json and default.wled should be uploaded at minimal (you can find them [here](https://github.com/ewoudwijma/ARTI/tree/main/wled))
+* Upload files to /edit: The definition file wled.json and default.wled should be uploaded at minimal. Make sure you have the latest version of wled.json  (you can find them [here](https://github.com/ewoudwijma/ARTI/tree/main/wled))
 
 ![Slash Edit](https://github.com/ewoudwijma/ARTI/blob/main/Images/SlashEditPNG.PNG?raw=true)
 
