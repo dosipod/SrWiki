@@ -61,6 +61,17 @@ To change or add effects:
 
 ![Preset](https://github.com/ewoudwijma/ARTI/blob/main/Images/Preset.PNG?raw=true)
 
+# Update from previous version
+If you have uploaded files to /edit before and a new version is published, follow this (files are [here](https://github.com/ewoudwijma/ARTI/tree/main/wled)):
+
+mandatory
+- remove wled.json and upload new wled.json
+
+desirable (to get newest effects)
+
+- remove presets.json and upload new presets.json (change the stop to the nr of leds you have) 
+- remove all the .wled files and upload the newest wled files.
+
 # Current status
 
 November 2021
