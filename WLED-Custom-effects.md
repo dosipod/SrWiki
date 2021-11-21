@@ -3,7 +3,7 @@
 - [User interface](#user-interface)
 - [Update from previous version](#update-from-previous-version)
 - [Current status](#current-status)
-- [Program your own effects](#program-your-own-effects)
+- [Programming your own effects](#programming-your-own-effects)
 - [How it works in detail](#how-it-works-in-detail)
 - [More](#more)
 - [Preset API command](#preset-api-command)
@@ -115,7 +115,7 @@ Once every frame
 Once every led within a frame
 
 * variables and functions
-(https://github.com/MoonModules/WLED-Effects/blob/master/Images/External%20functions.PNG?raw=true)
+![External functions](https://github.com/MoonModules/WLED-Effects/blob/master/Images/External%20functions.PNG?raw=true)
 ** leds
 
 ** ledcount
@@ -123,7 +123,7 @@ Once every led within a frame
 * internal and external
 
 * implementation of variables and functions
-(https://github.com/MoonModules/WLED-Effects/blob/master/Images/Function%20implementation.PNG?raw=true)
+![Function implementation](https://github.com/MoonModules/WLED-Effects/blob/master/Images/Function%20implementation.PNG?raw=true)
 
 See arti_wled.h
 
