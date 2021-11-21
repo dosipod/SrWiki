@@ -100,34 +100,31 @@ November 2021
 * Run only simple programs. As this tool is developed step by step, more complex programs can be run later.
 
 # Programming your own effects
-
 (WIP)
-* program
 
-Once every effect
+A wled program looks like this:
 
-* renderFrame
+![Example](https://github.com/MoonModules/WLED-Effects/blob/master/Images/Custom%20Effects%20program%20example.PNG?raw=true)
 
-Once every frame
+## Components
+* program: Once every effect
 
-* renderLed
+* renderFrame: Once every frame
 
-Once every led within a frame
+* renderLed: Once every led within a frame
 
-* variables and functions
+## external variables and functions
 ![External functions](https://github.com/MoonModules/WLED-Effects/blob/master/Images/External%20functions.PNG?raw=true)
-** leds
+* leds
 
-** ledcount
+* ledcount
 
-* internal and external
-
-* implementation of variables and functions
+## implementation of variables and functions
 ![Function implementation](https://github.com/MoonModules/WLED-Effects/blob/master/Images/Function%20implementation.PNG?raw=true)
 
 See arti_wled.h
 
-* status
+## status
 
 Language definition can change
 
