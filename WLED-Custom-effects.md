@@ -80,6 +80,24 @@ November 2021
 * No sliders
 * Run only simple programs. As this tool is developed step by step, more complex programs can be run later.
 
+# Program your own effects
+
+(WIP)
+* program
+Once every effect
+* renderFrame
+Once every frame
+* renderLed
+Once every led within a frame
+* variables and functions
+** leds
+** ledcount
+* internal and external
+* implementation of variables and functions
+See arti_wled.h
+* status
+Language definition can change
+
 # How it works in detail
 
 The program file contains commands which adhere to a standard. These commands are specified in a definition file called [wled.json](https://github.com/ewoudwijma/ARTI/tree/main/wled). By this we can create and further develop our own WLED language.
