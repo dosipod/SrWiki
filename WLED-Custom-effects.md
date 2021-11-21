@@ -1,3 +1,22 @@
+- [Custom effects](#custom-effects)
+- [How it works](#how-it-works)
+- [User interface](#user-interface)
+- [Update from previous version](#update-from-previous-version)
+- [Current status](#current-status)
+- [Program your own effects](#program-your-own-effects)
+- [How it works in detail](#how-it-works-in-detail)
+- [More](#more)
+- [Preset API command](#preset-api-command)
+- [Contribute to further development](#contribute-to-further-development)
+  * [Run on Windows](#run-on-windows)
+  * [Deploy on windows](#deploy-on-windows)
+  * [Deploy on Arduino](#deploy-on-arduino)
+  * [Contribute](#contribute)
+- [Definition files](#definition-files)
+  * [References](#references)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 # Custom effects
 
 Custom effects are effects which are not hard coded in the WLED repository but specified by a file (program file).
