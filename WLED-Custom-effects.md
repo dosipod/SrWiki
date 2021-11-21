@@ -84,18 +84,31 @@ November 2021
 
 (WIP)
 * program
+
 Once every effect
+
 * renderFrame
+
 Once every frame
+
 * renderLed
+
 Once every led within a frame
+
 * variables and functions
+
 ** leds
+
 ** ledcount
+
 * internal and external
+
 * implementation of variables and functions
+
 See arti_wled.h
+
 * status
+
 Language definition can change
 
 # How it works in detail
