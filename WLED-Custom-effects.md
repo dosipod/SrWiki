@@ -99,7 +99,7 @@ November 2021
 * No sliders
 * Run only simple programs. As this tool is developed step by step, more complex programs can be run later.
 
-# Program your own effects
+# Programming your own effects
 
 (WIP)
 * program
@@ -115,7 +115,7 @@ Once every frame
 Once every led within a frame
 
 * variables and functions
-
+(https://github.com/MoonModules/WLED-Effects/blob/master/Images/External%20functions.PNG?raw=true)
 ** leds
 
 ** ledcount
@@ -123,6 +123,7 @@ Once every led within a frame
 * internal and external
 
 * implementation of variables and functions
+(https://github.com/MoonModules/WLED-Effects/blob/master/Images/Function%20implementation.PNG?raw=true)
 
 See arti_wled.h
 
