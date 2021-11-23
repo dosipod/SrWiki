@@ -31,27 +31,9 @@ Another disadvantage is that this software is currently (November, 2021) 'experi
 
 Program files are uploaded to the file system of WLED (/edit) and after selecting effect '⚙️ Custom Effect', the file is opened, it’s content is examined and executed. If you want to change the effect, you change the file and upload and run it again.
 
-The program file contains structures like if statements, for loops, assignments, calls (e.g. renderFrame) etc., commands like setPixelcolor and variables like ledCount:
+The program file contains structures like if statements, for loops, assignments, calls (e.g. renderFrame) etc., commands like setPixelcolor and variables like ledCount. Example:
 
-`program ColorRandom`
-
-`{`
-
-   `function renderFrame() {`
-
-      `for (i = 0; i < ledCount; i = i + 1) {`
-
-         `color = random()`
-
-         `setPixelColor(i, color)`
-
-      `}`
-
-   `}`
-
-`}`
-
-More examples can be found [here](https://github.com/ewoudwijma/ARTI/tree/main/wled/Examples).
+![Example](https://github.com/MoonModules/WLED-Effects/blob/master/Images/Custom%20Effects%20program%20example.PNG?raw=true)
 
 # User interface
 
@@ -59,11 +41,13 @@ As this is new functionality the existing WLED user interface is used without mo
 
 The following steps are needed to run a Custom Effect:
 
-* Upload files to /edit: The definition file wled.json and default.wled should be uploaded at minimal. Make sure you have the latest version of wled.json  (you can find them [here](https://github.com/ewoudwijma/ARTI/tree/main/wled))
+* Download the latest Custom Effects files from [here](https://github.com/MoonModules/WLED-Effects/tree/master/CustomEffects/wled)
+
+* Upload files to /edit: The definition file wled.json and default.wled should be uploaded at minimal. 
 
 ![Slash Edit](https://github.com/ewoudwijma/ARTI/blob/main/Images/SlashEditPNG.PNG?raw=true)
 
-* Upload [presets.json](https://github.com/ewoudwijma/ARTI/tree/main/wled) to /edit to get presets for current examples pre loaded (change "stop" from 50 to the number of leds you have connected) (delete old presets.json in /edit first. Reboot to make them visible in the UI)
+* Upload presets.json to /edit to get presets for current examples pre loaded (change "stop" from 50 to the number of leds you have connected) (delete old presets.json in /edit first. Reboot to make them visible in the UI), or copy paste each api command in the file to a preset manually
 * Select one of the presets. Result should be visible on the led-strip
 
 ![Examples presets](https://github.com/ewoudwijma/ARTI/blob/main/Images/ExamplesPreset.PNG?raw=true)
@@ -81,14 +65,14 @@ To change or add effects:
 ![Preset](https://github.com/ewoudwijma/ARTI/blob/main/Images/Preset.PNG?raw=true)
 
 # Update from previous version
-If you have uploaded files to /edit before and a new version is published, follow this (files are [here](https://github.com/ewoudwijma/ARTI/tree/main/wled)):
+If you have uploaded files to /edit before and a new version is published, follow this:
 
 mandatory
 - remove wled.json and upload new wled.json
 
 desirable (to get newest effects)
 
-- remove presets.json and upload new presets.json (change the stop to the nr of leds you have) 
+- remove presets.json and upload new presets.json (change the stop to the nr of leds you have), or copy paste each api command in the file to a preset manually  
 - remove all the .wled files and upload the newest wled files.
 
 # Current status
@@ -100,16 +84,15 @@ November 2021
 * Run only simple programs. As this tool is developed step by step, more complex programs can be run later.
 
 # Programming your own effects
-(WIP)
 
-A wled program looks like this:
+A wled program typically looks like this:
 
 ![Example](https://github.com/MoonModules/WLED-Effects/blob/master/Images/Custom%20Effects%20program%20example.PNG?raw=true)
 
 ## Components
 * program: Once every effect. Can contain global variables and internal functions. There are 2 special internal functions: renderFrame and renderLed
 
-* global variables: Once every effect, reused between functions. Variables (global and local) are defined by using an assignment e.g. x = 1
+* global variables: Once every effect, reused between functions. Variables (global and local) are defined by using an assignment e.g. t=0
 
 * renderFrame: Once every frame
 
@@ -117,10 +100,11 @@ A wled program looks like this:
 
 ## external variables and functions
 
-External variables and functions are WLED specific. Currently only the most basic are defined but more will be added along the way
+External variables and functions are WLED specific. Currently only the most basic are defined but more will be added along the way. They can be found in wled.json:
+
 ![External functions](https://github.com/MoonModules/WLED-Effects/blob/master/Images/External%20functions.PNG?raw=true)
 
-Remarks
+Details:
 * ledcount: number of leds within(!) a segment 
 * setpixelColor: currently the second parameter is color from palette!
 * leds: one or 2 dimensional array: One index for led strips and 2 indexes for panels. If the leds variable is used an implicit setPixels(leds) will be done each frame! 
