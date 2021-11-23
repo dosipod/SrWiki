@@ -3,7 +3,7 @@
 - [User interface](#user-interface)
 - [Update from previous version](#update-from-previous-version)
 - [Current status](#current-status)
-- [Programming your own effects](#programming-your-own-effects)
+- [Create your own Custom Effects](#Create-your-own-Custom-Effects)
 - [How it works in detail](#how-it-works-in-detail)
 - [More](#more)
 - [Preset API command](#preset-api-command)
@@ -83,7 +83,7 @@ November 2021
 * No sliders
 * Run only simple programs. As this tool is developed step by step, more complex programs can be run later.
 
-# Programming your own effects
+# Create your own Custom Effects
 
 A wled program typically looks like this:
 
