@@ -133,10 +133,9 @@ Remarks
 * all other functions can be found in the WLED code
 
 
-## implementation of variables and functions
+## Implementation of variables and functions
+Technical details about external variables and functions can be found in arti_wled.h. Look for arti_external_function, arti_set_external_variable and arti_get_external_variable. Some examples:
 ![Function implementation](https://github.com/MoonModules/WLED-Effects/blob/master/Images/Function%20implementation.PNG?raw=true)
-
-See arti_wled.h
 
 ## Current limitations
 (which will be added in the future)
