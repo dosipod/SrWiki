@@ -107,26 +107,42 @@ A wled program looks like this:
 ![Example](https://github.com/MoonModules/WLED-Effects/blob/master/Images/Custom%20Effects%20program%20example.PNG?raw=true)
 
 ## Components
-* program: Once every effect
+* program: Once every effect. Can contain global variables and internal functions. There are 2 special internal functions: renderFrame and renderLed
+
+* global variables: Once every effect, reused between functions. Variables (global and local) are defined by using an assignment e.g. x = 1
 
 * renderFrame: Once every frame
 
 * renderLed: Once every led within a frame
 
 ## external variables and functions
-![External functions](https://github.com/MoonModules/WLED-Effects/blob/master/Images/External%20functions.PNG?raw=true)
-* leds
 
-* ledcount
+External variables and functions are WLED specific. Currently only the most basic are defined but more will be added along the way
+![External functions](https://github.com/MoonModules/WLED-Effects/blob/master/Images/External%20functions.PNG?raw=true)
+
+Remarks
+* ledcount: number of leds within(!) a segment 
+* setpixelColor: currently the second parameter is color from palette!
+* leds: one or 2 dimensional array: One index for led strips and 2 indexes for panels. If the leds variable is used an implicit setPixels(leds) will be done each frame! 
+* shift: shift all leds left or right (using delta)
+* circle2D: puts a dot on a circle using the angle. Used to show a 2D clock, see clock2D.wled
+* random: 16 bit random nr
+* sin/cos: value between -1 and 1
+* hour/minute/second: current time (set in time preferences)
+* printf: currently no real printf: prints numbers, max 3
+* all other functions can be found in the WLED code
+
 
 ## implementation of variables and functions
 ![Function implementation](https://github.com/MoonModules/WLED-Effects/blob/master/Images/Function%20implementation.PNG?raw=true)
 
 See arti_wled.h
 
-## status
-
-Language definition can change
+## Current limitations
+(which will be added in the future)
+* no unary operators like - (use 0-1) and +=, -=
+* no && and || operators (for && use nested ifs)
+* Language definition can change
 
 # How it works in detail
 
