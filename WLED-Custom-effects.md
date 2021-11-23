@@ -92,13 +92,13 @@ A wled program typically looks like this:
 ## Components
 * program: Once every effect. Can contain global variables and internal functions. There are 2 special internal functions: renderFrame and renderLed
 
-* global variables: Once every effect, reused between functions. Variables (global and local) are defined by using an assignment e.g. t=0
+* Global variables: Once every effect, reused between functions. Variables (global and local) are defined by using an assignment e.g. t=0
 
 * renderFrame: Once every frame
 
 * renderLed: Once every led within a frame
 
-## external variables and functions
+## External variables and functions
 
 External variables and functions are WLED specific. Currently only the most basic are defined but more will be added along the way. They can be found in wled.json:
 
@@ -123,22 +123,23 @@ Technical details about external variables and functions can be found in arti_wl
 
 ## Current limitations
 (which will be added in the future)
-* no unary operators like - (use 0-1) and +=, -=
+* no unary operators like - (use 0-1) and ++, --
+* no +=, -=
 * no && and || operators (for && use nested ifs)
 * Language definition can change
 
 # How it works in detail
 
-The program file contains commands which adhere to a standard. These commands are specified in a definition file called [wled.json](https://github.com/ewoudwijma/ARTI/tree/main/wled). By this we can create and further develop our own WLED language.
+The program file contains commands which adhere to a standard. These commands are specified in a definition file called wled.json.
 
 To run this, a tool called Arduino Real Time Interpreter ([ARTI](https://github.com/ewoudwijma/ARTI)) is used. Actually this tool has been made to make Custom effects possible in WLED but can also be used without WLED. The tool is build using compiler technology and can support not only the WLED definition file but 'any' definition file. 
 
-Arti will run the following steps sequentially: Lexer, Parser, Semantic Analyzer and Interpreter. The first 3 steps are done once if an affect is selected (SEGENV.call == 0). Interpreter will be executed one time to initialize global variables and functions and then run in a loop executing the function 'renderFrame'. [See fx.cpp in the ARTI Github repo](https://github.com/ewoudwijma/ARTI/tree/main/wled).
+Arti will run the following steps sequentially: Lexer, Parser, Analyzer, Optimizer and Interpreter. The steps are done once if an affect is selected (SEGENV.call == 0). Interpreter will be executed one time to initialize global variables and functions and then run in a loop executing the function 'renderFrame' and 'renderLed'.
 
-Another definition file can be created if you want to run commands in another coding language. In the Arti Github repository, pas.json is added as a demo to show an example of another definition file. See [below](#definition-files) how to create another definition file.
+Another definition file can be created if you want to run commands in another coding language. In the Arti Github repository, pas.json is added as a demo to show an example of another definition file. See [below](#Definition-files) how to create another definition file.
 
-# More
-* Currently this has been added in the WLED Soundreactive / dev branch. As this is not limited to the Soundreactive fork, it could also be added to it's upstream repo: WLED AC. This might be a future step. At this moment, Custom effects do not support Soundreactive specific functions (it supports hardly anything at all ;-) ). It probably will support it in the future. Real time constraints for sound require some performance tuning to be done first.
+# Soundreactive
+* Currently this has been added in the WLED Soundreactive / dev branch. As this is not limited to the Soundreactive fork, it could also be added to it's upstream repo: WLED AC. This might be a future step. 
 
 # Preset API command
 
@@ -173,7 +174,7 @@ To create a new custom effect, insert the following API command in a new preset 
 * Submit a pull request from your clone to the upstream ARTI repository
 
 # Definition files
-Definition files define the syntax and semantics of the programming language you want to use. ARTI supports 'any' language as long as it has functions, calls, variables, for, if etc. ... [wled.json](https://github.com/ewoudwijma/ARTI/tree/main/wled)) is an example of this. Any new definition file should contain the following parts:
+Definition files define the syntax and semantics of the programming language you want to use. ARTI supports 'any' language as long as it has functions, calls, variables, for, if etc. ... wled.json is an example of this. Any new definition file should contain the following parts:
 
 `{`
   `"meta": {"version": "0.0.4", "start":"program"},`
