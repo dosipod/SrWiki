@@ -119,7 +119,7 @@ Details:
 
 ## Implementation of variables and functions
 
-All variables and values are internally stored as doubles and where needed converted to (unsigned) integers, e.g. to WLED functions or % operator.
+All variables and values are internally stored as doubles and where needed converted to (unsigned) integers, e.g. to WLED functions or operators like %.
 
 Technical details about external variables and functions can be found in arti_wled.h. Look for arti_external_function, arti_set_external_variable and arti_get_external_variable. Some examples:
 
