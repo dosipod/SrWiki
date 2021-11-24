@@ -3,9 +3,13 @@
 - [User interface](#user-interface)
 - [Update from previous version](#update-from-previous-version)
 - [Current status](#current-status)
-- [Create your own Custom Effects](#Create-your-own-Custom-Effects)
+- [Create your own Custom Effects](#create-your-own-custom-effects)
+  * [Components](#components)
+  * [External variables and functions](#external-variables-and-functions)
+  * [Implementation of variables and functions](#implementation-of-variables-and-functions)
+  * [Current limitations](#current-limitations)
 - [How it works in detail](#how-it-works-in-detail)
-- [More](#more)
+- [Soundreactive](#soundreactive)
 - [Preset API command](#preset-api-command)
 - [Contribute to further development](#contribute-to-further-development)
   * [Run on Windows](#run-on-windows)
@@ -16,6 +20,7 @@
   * [References](#references)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 
 # Custom effects
 
