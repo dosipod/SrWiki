@@ -118,15 +118,18 @@ Details:
 
 
 ## Implementation of variables and functions
+
+All variables and values are internally stored as doubles and where needed converted to (unsigned) integers, e.g. to WLED functions or % operator.
+
 Technical details about external variables and functions can be found in arti_wled.h. Look for arti_external_function, arti_set_external_variable and arti_get_external_variable. Some examples:
+
 ![Function implementation](https://github.com/MoonModules/WLED-Effects/blob/master/Images/Function%20implementation.PNG?raw=true)
 
 ## Current limitations
-(which will be added in the future)
 * no unary operators like - (use 0-1) and ++, --
 * no +=, -=
 * no && and || operators (for && use nested ifs)
-* Language definition can change
+* no strings
 
 # How it works in detail
 
