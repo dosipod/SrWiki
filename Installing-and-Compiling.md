@@ -2,12 +2,12 @@
 
 
 ## Flashing From Binary
+The Sound Reactive WLED binaries for ESP32 and Wemos D1 Mini are located [here.](https://github.com/atuline/WLED/releases/latest)
 
+### Flashing ESP8266
 
+1.  Download for your plateform [NodeMCU-PyFlasher](https://github.com/marcelstoer/nodemcu-pyflasher/releases).
 
-The following instructions show you how to flash the original (not sound reactive) WLED binary to a WeMOS D1 Mini. 
-
-See: https://www.youtube.com/watch?v=4EXefD6INos
 
 1.  The Sound Reactive WLED binaries for ESP32 and Wemos D1 Mini are located [here.](https://github.com/atuline/WLED/releases/latest)
 1.  The Original WLED binaries are located [here.](https://github.com/Aircoookie/WLED/releases/latest)
