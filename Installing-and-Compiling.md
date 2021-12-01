@@ -1,7 +1,9 @@
 ***IMPORTANT:*** _Before attempting to compile this fork of WLED, make sure you can compile the [original WLED.](https://github.com/Aircoookie/WLED) If you are unable to compile WLED, please consider flashing your device with [binaries](https://github.com/atuline/WLED/releases/latest) instead._
 
 
-## Flashing from binary
+## Flashing From Binary
+
+
 
 The following instructions show you how to flash the original (not sound reactive) WLED binary to a WeMOS D1 Mini. 
 
