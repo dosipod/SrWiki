@@ -10,7 +10,7 @@
     + [Math](#math)
     + [Time](#time)
     + [Pixelblase support](#pixelblase-support)
-    + [serial output](#serial-output)
+    + [serial output](#Serial-output)
     + [Details](#details)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
