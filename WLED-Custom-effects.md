@@ -1,96 +1,54 @@
 - [Custom effects](#custom-effects)
-- [How it works](#how-it-works)
-- [User interface](#user-interface)
-- [Update from previous version](#update-from-previous-version)
-- [Current status](#current-status)
+- [Quick start](#quick-start)
+- [Running examples](#running-examples)
 - [Create your own Custom Effects](#create-your-own-custom-effects)
   * [Components](#components)
-  * [External variables and functions](#external-variables-and-functions)
-  * [Implementation of variables and functions](#implementation-of-variables-and-functions)
-  * [Current limitations](#current-limitations)
-- [How it works in detail](#how-it-works-in-detail)
-- [Soundreactive](#soundreactive)
-- [Preset API command](#preset-api-command)
-- [Contribute to further development](#contribute-to-further-development)
-  * [Run on Windows](#run-on-windows)
-  * [Deploy on windows](#deploy-on-windows)
-  * [Deploy on Arduino](#deploy-on-arduino)
-  * [Contribute](#contribute)
-- [Definition files](#definition-files)
-  * [References](#references)
+  * [Functions and variables](#functions-and-variables)
+    + [WLED general](#wled-general)
+    + [WLED SR](#wled-sr)
+    + [Custom Effects](#custom-effects)
+    + [Math](#math)
+    + [Time](#time)
+    + [Pixelblase support](#pixelblase-support)
+    + [serial output](#serial-output)
+    + [Details](#details)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
-
 # Custom effects
 
-Custom effects are effects which are not hard coded in the WLED repository but specified by a file (program file).
+Custom effects are effects which are not compiled in the WLED repository but specified by a file (program file) which is interpreted in real time.
 
-The big advantage of this is that effects are not limited by what is made by WLED programmers but anybody can create effects without releasing a new version of WLED.
+The big advantage of this is that effects are not limited by what is made by WLED programmers but anybody can create effects without releasing a new version of WLED. Furthermore any change in the effect code is instantly shown on leds allowing fast developing of effects.
 
-A disadvantage is that the file needs to be loaded, examined and then run in real time. This takes more time then coding it directly into the WLED code.
+A disadvantage is that the file needs to be loaded, examined and then run in real-time which is 'per definition' slower then pre-compiled code, although performance is promising already and will get better over time.
 
-Another disadvantage is that this software is currently (November, 2021) 'experimental' meaning that it has just been released and is not finished by far. But, as it is open source, everybody can help to develop this further ;-)
+# Quick start
+To get your first Custom Effect running, perform the following steps
 
-# How it works
-
-Program files are uploaded to the file system of WLED (/edit) and after selecting effect '⚙️ Custom Effect', the file is opened, it’s content is examined and executed. If you want to change the effect, you change the file and upload and run it again.
-
-The program file contains structures like if statements, for loops, assignments, calls (e.g. renderFrame) etc., commands like setPixelcolor and variables like ledCount. Example:
-
-![Example](https://github.com/MoonModules/WLED-Effects/blob/master/Images/Custom%20Effects%20program%20example.PNG?raw=true)
-
-# User interface
-
-As this is new functionality the existing WLED user interface is used without modifications. In the future changes can be made to make things easier. Currently, Custom effects are build in [WLED Soundreactive, latest dev version](https://github.com/atuline/WLED/tree/dev). See [here](https://github.com/MoonModules/WLED/wiki/Hardware#software) how to compile or install a precompiled bin.
-
-The following steps are needed to run a Custom Effect:
-
-* Download the latest Custom Effects files from [here](https://github.com/MoonModules/WLED-Effects/tree/master/CustomEffects/wled)
-
-* Upload files to /edit: The definition file wled.json and default.wled should be uploaded at minimal. 
-
-![Slash Edit](https://github.com/ewoudwijma/ARTI/blob/main/Images/SlashEditPNG.PNG?raw=true)
-
-* Upload presets.json to /edit to get presets for current examples pre loaded (change "stop" from 50 to the number of leds you have connected) (delete old presets.json in /edit first. Reboot to make them visible in the UI), or copy paste each api command in the file to a preset manually
-* Select one of the presets. Result should be visible on the led-strip
-
-![Examples presets](https://github.com/ewoudwijma/ARTI/blob/main/Images/ExamplesPreset.PNG?raw=true)
-
-To change or add effects:
-
-* Select effect ‘⚙️ Custom Effect’ in the effects tab. The default effect (default.wled) will be executed if present in /edit.
+* In tab effects, select '⚙️ Custom Effect'
 
 ![Custom effect](https://github.com/ewoudwijma/ARTI/blob/main/Images/CustomEffect.PNG?raw=true)
 
-* Change a Custom Effect: Go to the Segments tab. The name of the segment defines the filename of the effect to run. the program file (without .wled) you want to run, if no name is given the default effect default(.wled) will be used 
+* In tab Segments, give the segment a name, this will be the name of the Custom Effect
 
-![Segment name](https://github.com/ewoudwijma/ARTI/blob/main/Images/SegmentName.PNG?raw=true)
+![Segment name](https://github.com/ewoudwijma/ARTI/blob/main/Images/SegmentName.jpg?raw=true)
 
-![Preset](https://github.com/ewoudwijma/ARTI/blob/main/Images/Preset.PNG?raw=true)
+* Click on Custom Effect Editor
 
-# Update from previous version
-If you have uploaded files to /edit before and a new version is published, follow this:
+![Segment name](https://github.com/ewoudwijma/ARTI/blob/main/Images/CustomEffectsEditor.jpg?raw=true)
 
-mandatory
-- remove wled.json and upload new wled.json
+* Click on Download wled.json to enable Custom Effects for WLED (needed each time a new version of CE is published)
+* Click on Load template to get a 'hello world' example
+* Press save and the template will be executed
 
-desirable (to get newest effects)
+# Running examples
 
-- remove presets.json and upload new presets.json (change the stop to the nr of leds you have), or copy paste each api command in the file to a preset manually  
-- remove all the .wled files and upload the newest wled files.
-
-# Current status
-
-November 2021
-* first release on WLED SR / dev branch
-* Only 1 segment
-* No sliders
-* Run only simple programs. As this tool is developed step by step, more complex programs can be run later.
+* Download the latest Custom Effects files from [here](https://github.com/MoonModules/WLED-Effects/tree/master/CustomEffects/wled)
 
 # Create your own Custom Effects
 
-A wled program typically looks like this:
+A Custom Effects program typically looks like this:
 
 ![Example](https://github.com/MoonModules/WLED-Effects/blob/master/Images/Custom%20Effects%20program%20example.PNG?raw=true)
 
@@ -103,13 +61,73 @@ A wled program typically looks like this:
 
 * renderLed: Once every led within a frame
 
-## External variables and functions
+## Functions and variables
 
-External variables and functions are WLED specific. Currently only the most basic are defined but more will be added along the way. They can be found in wled.json:
+Functions and variables give access to the WLED functionality. The list of functions and variables will grow as we go.
+A function has parameters (even empty parameters) e.g. setPixelColor(x,y), variables haven't e.g. ledCount.
 
-![External functions](https://github.com/MoonModules/WLED-Effects/blob/master/Images/External%20functions.PNG?raw=true)
+### WLED general
 
-Details:
+    "ledCount": {},
+    "setPixelColor": {"pixelNr":"int", "color":"int"},
+    "leds": {},
+    "setPixels": {"leds": "array"},
+    "hsv": {"h":"uint8", "s":"uint8", "v":"uint8"},
+
+    "setRange": {"from":"uint16", "to":"uint16", "color":"uint32"},
+    "fill": {"color":"uint32"},
+    "colorBlend": {"color1":"uint32", "color2":"uint32", "blend":"uint16"},
+    "colorWheel": {"pos":"uint8"},
+    "colorFromPalette": {"index":"uint8", "brightness":"uint8"},
+
+    "segcolor": {"index":"uint8"},
+    "speedSlider": {"return":"uint8"},
+    "intensitySlider": {"return":"uint8"},
+
+### WLED SR
+    "beatSin": { "bpm":"uint16", "lowest":"uint8", "highest":"uint8", "timebase":"uint32", "phase_offset":"uint8"},
+    "fadeToBlackBy": {"fadeBy":"uint8"},
+    "iNoise": {"x":"uint32", "y":"uint32"},
+    "fadeOut": {"rate":"uint8"},
+
+    "custom1Slider": {"return":"uint8"},
+    "custom2Slider": {"return":"uint8"},
+    "custom3Slider": {"return":"uint8"},
+    "sampleAvg": {"return": "double"},
+
+### Custom Effects
+    "counter": {"return": "uint32"},
+
+    "shift": {"delta": "int"},
+    "circle2D": {"degrees": "int"}, 
+
+### Math
+    "constrain": {"amt":"any", "low":"any", "high":"any"},
+    "map": {"x":"int", "in_min":"int", "in_max":"int", "out_min":"int", "out_max":"int"},
+    "seed": {"seed": "uint16"},
+    "random": {"return": "uint16"},
+    "sin": {"degrees": "double", "return": "double"},
+    "cos": {"degrees": "double", "return": "double"},
+    "abs": {"value": "double", "return": "double"},
+    "min": {"value1": "double", "value2": "double", "return": "double"},
+    "max": {"value1": "double", "value2": "double", "return": "double"},
+
+### Time
+    "hour": {"return":"uint8"},
+    "minute": {"return":"uint8"},
+    "second": {"return":"uint8"},
+    "millis": {"return": "uint32"},
+
+### Pixelblase support
+    "time": {"inVal":"double", "return": "double"},
+    "triangle": {"t":"double", "return": "double"},
+    "wave": {"v":"double", "return": "double"},
+    "square": {"v":"double", "t":"double", "return": "double"},
+
+### serial output
+    "printf": {"args": "__VA_ARGS__"}
+
+### Details
 * ledcount: number of leds within(!) a segment 
 * setpixelColor: currently the second parameter is color from palette!
 * leds: one or 2 dimensional array: One index for led strips and 2 indexes for panels. If the leds variable is used an implicit setPixels(leds) will be done each frame! 
@@ -120,114 +138,3 @@ Details:
 * hour/minute/second: current time (set in time preferences)
 * printf: currently no real printf: prints numbers, max 3
 * all other functions can be found in the WLED code
-
-
-## Implementation of variables and functions
-
-All variables and values are internally stored as doubles and where needed converted to (unsigned) integers, e.g. to WLED functions or operators like %.
-
-Technical details about external variables and functions can be found in arti_wled.h. Look for arti_external_function, arti_set_external_variable and arti_get_external_variable. Some examples:
-
-![Function implementation](https://github.com/MoonModules/WLED-Effects/blob/master/Images/Function%20implementation.PNG?raw=true)
-
-## Current limitations
-* no unary operators like - (use 0-1) and ++, --
-* no +=, -=
-* no && and || operators (for && use nested ifs)
-* no strings
-
-# How it works in detail
-
-The program file contains commands which adhere to a standard. These commands are specified in a definition file called wled.json.
-
-To run this, a tool called Arduino Real Time Interpreter ([ARTI](https://github.com/ewoudwijma/ARTI)) is used. Actually this tool has been made to make Custom effects possible in WLED but can also be used without WLED. The tool is build using compiler technology and can support not only the WLED definition file but 'any' definition file. 
-
-Arti will run the following steps sequentially: Lexer, Parser, Analyzer, Optimizer and Interpreter. The steps are done once if an affect is selected (SEGENV.call == 0). Interpreter will be executed one time to initialize global variables and functions and then run in a loop executing the function 'renderFrame' and 'renderLed'.
-
-Another definition file can be created if you want to run commands in another coding language. In the Arti Github repository, pas.json is added as a demo to show an example of another definition file. See [below](#Definition-files) how to create another definition file.
-
-# Soundreactive
-* Currently this has been added in the WLED Soundreactive / dev branch. As this is not limited to the Soundreactive fork, it could also be added to it's upstream repo: WLED AC. This might be a future step. 
-
-# Preset API command
-
-To create a new custom effect, insert the following API command in a new preset and replace "ColorFade" with the prefix of the filename of the Custom Effect (In this example the filename is ColorFade.wled)
-
-`{"on":true,"bri":128,"transition":7,"mainseg":0,"seg":[{"id":0,"start":0,"stop":30,"grp":1,"spc":0,"of":0,"on":true,"bri":255,"n":"ColorFade","col":[[255,160,0],[0,0,0],[0,0,0]], "fx":187,"sx":128,"ix":128,"f1x":128,"f2x":128,"f3x":128,"pal":0,"sel":true,"rev":false,"rev2D":false,"mi":false,"rot2D":false},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0},{"stop":0}]}`
-
-(fx:187 is id of the Custom Effect)
-
-# Contribute to further development
-
-## Run on Windows
-* Clone the ARTI repository
-* Run on Windows using CompileAndRunGCC.bat
-* Set the right effect in arti_test.cpp e.g. default.wled
-* Check created parsetree and log file e.g. default.wled.json and default.wled.log
-* Can run on Mac/Linux if CompileAndRunGCC.sh is created
-
-## Deploy on windows
-* Use Visual Studio
-* Open the repo folder
-* Modify code
-* Run on windows using CompileAndRunGCC.sh
-
-## Deploy on Arduino
-* Use Visual Studio
-* Download latest [WLED SR dev repository](https://github.com/atuline/WLED/tree/dev)
-* Copy your arti.h / arti_wled_plugin.h to the repository (wled00/src/dependencies/arti). Upload your wled.json or <effect>.wled to /edit
-* Build on arduino. See [link](https://github.com/MoonModules/WLED/wiki/Hardware#software).
-
-## Contribute
-* Submit a pull request from your clone to the upstream ARTI repository
-
-# Definition files
-Definition files define the syntax and semantics of the programming language you want to use. ARTI supports 'any' language as long as it has functions, calls, variables, for, if etc. ... wled.json is an example of this. Any new definition file should contain the following parts:
-
-`{`
-  `"meta": {"version": "0.0.4", "start":"program"},`
-  `"program": ["PROGRAM","ID","block"],`
-  `"block": ...,`
-
-  `"TOKENS":`
-  `{`
-    `"ID": "ID",`
-    `"INTEGER_CONST": "INTEGER_CONST",`
-    `"REAL_CONST": "REAL_CONST",`
-    `"PROGRAM": "PROGRAM",`
-  `},`
-
-  `"SEMANTICS":`
-  `{`
-    `"program": {"id":"Program", "name":"ID", "block": "block"},`
-    `"variable": {"id":"Var", "name":"ID", "type": "type"},`
-    `"assign": {"id":"Assign", "name":"varleft", "indices":"indices", "value":"expr"},`
-    `"function": {"id":"Function", "name":"ID", "formals": "formals", "block": "block"},`
-    `"formal": {"id":"Formal", "name":"ID", "type": "type"},`
-    `"call": {"id":"Call", "name":"ID", "actuals": "actuals"},`
-    `"for": {"id":"For", "from":"assign", "condition":"expr", "increment": "increment", "block":"block"},`
-    `"if": {"id":"If", "condition":"expr", "true":"block", "false": "elseBlock"},`
-    `"expr": {"id":"Expr"},`
-    `"term": {"id":"Term"},`
-    `"varref": {"id":"VarRef", "name":"ID"}`
-  `},`
-
-  `"EXTERNALS":`
-  `{`
-    `"setPixelColor": {"pixelNr":"int", "color":"int"},`
-    `"printf": {"args": "__VA_ARGS__"},`
-    `"ledCount": {}`
-  `}`
-
-`}`
-
-* a meta tag containing version and start, current version of arti.h requires minimal version 0.0.4. Start is the first part of your program. A program is specified by [BNF](https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form)-like statements in the form of "symbol": "expression". Expression can contain special directives: ? is optional, + is one or more, * is 0 or more.
-* SEMANTICS: tells arti how to recognize different parts of the syntax
-* EXTERNALS: define predefined functions and variables. They should be defined in arti_<definition>_plugin.h
-* For any new definition, arti.h should have an include statement of the plugin file
-
-## References
-
-* https://github.com/rspivak/lsbasi
-* https://compilers.iecc.com/crenshaw/
-* https://github.com/ewoudwijma/ARTI
