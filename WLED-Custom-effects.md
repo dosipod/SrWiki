@@ -32,11 +32,11 @@ To get your first Custom Effect running, perform the following steps
 
 * In tab Segments, give the segment a name, this will be the name of the Custom Effect
 
-![Segment name](https://github.com/ewoudwijma/ARTI/blob/main/Images/SegmentName.jpg?raw=true)
+![Segment name](https://github.com/MoonModules/WLED-Effects/blob/master/Images/SegmentName.jpg?raw=true)
 
 * Click on Custom Effect Editor
 
-![Segment name](https://github.com/ewoudwijma/ARTI/blob/main/Images/CustomEffectsEditor.jpg?raw=true)
+![Segment name](https://github.com/MoonModules/WLED-Effects/blob/master/Images/CustomEffectsEditor.jpg?raw=true)
 
 * Click on Download wled.json to enable Custom Effects for WLED (needed each time a new version of CE is published)
 * Click on Load template to get a 'hello world' example
