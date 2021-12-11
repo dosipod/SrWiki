@@ -28,7 +28,7 @@ To get your first Custom Effect running, perform the following steps
 
 * In tab effects, select '⚙️ Custom Effect'
 
-![Custom effect](https://github.com/ewoudwijma/ARTI/blob/main/Images/CustomEffect.PNG?raw=true)
+![Custom effect](https://github.com/MoonModules/WLED-Effects/blob/master/Images//CustomEffect.PNG?raw=true)
 
 * In tab Segments, give the segment a name, this will be the name of the Custom Effect
 
@@ -44,10 +44,11 @@ To get your first Custom Effect running, perform the following steps
 
 # Running examples
 
-Custom Effects examples are stored in a [Github repository](https://github.com/MoonModules/WLED-Effects/tree/master/CustomEffects/wled)
+Custom Effects examples are stored in [Github repository](https://github.com/MoonModules/WLED-Effects/tree/master/CustomEffects/wled)
+
 If you develop effects which you want to share, ask for access on Github.
 
-These effects can be loaded easily within WLED: Name a Custom Effects segment the same as an effect in this repository (case sensitive, without .wled), click on Custom Effect Editor and click Download 'effect'.wled and press Save.
+These effects can be loaded easily within WLED: Give a Custom Effects segment name the same name as an effect in this repository (case sensitive, without .wled), click on Custom Effect Editor and click Download 'effect'.wled and press Save.
 
 Alternatively, if you want all the effects in this folder at once, go to the Custom Effect Editor and click Download presets.json (this will overwrite any existing presets you have). Refresh the WLED page or reboot to see the new presets.
 
