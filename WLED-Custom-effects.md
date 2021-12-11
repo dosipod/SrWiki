@@ -36,7 +36,7 @@ To get your first Custom Effect running, perform the following steps
 
 * Click on Custom Effect Editor
 
-![Segment name](https://github.com/MoonModules/WLED-Effects/blob/master/Images/CustomEffectsEditor.jpg?raw=true)
+![Segment name](https://github.com/MoonModules/WLED-Effects/blob/master/Images/CustomEffectsEditor.PNG?raw=true)
 
 * Click on Download wled.json to enable Custom Effects for WLED (needed each time a new version of CE is published)
 * Click on Load template to get a 'hello world' example
@@ -44,7 +44,12 @@ To get your first Custom Effect running, perform the following steps
 
 # Running examples
 
-* Download the latest Custom Effects files from [here](https://github.com/MoonModules/WLED-Effects/tree/master/CustomEffects/wled)
+Custom Effects examples are stored in a [Github repository](https://github.com/MoonModules/WLED-Effects/tree/master/CustomEffects/wled)
+If you develop effects which you want to share, ask for access on Github.
+
+These effects can be loaded easily within WLED: Name a Custom Effects segment the same as an effect in this repository (case sensitive, without .wled), click on Custom Effect Editor and click Download 'effect'.wled and press Save.
+
+Alternatively, if you want all the effects in this folder at once, go to the Custom Effect Editor and click Download presets.json (this will overwrite any existing presets you have). Refresh the WLED page or reboot to see the new presets.
 
 # Create your own Custom Effects
 
@@ -124,7 +129,7 @@ A function has parameters (even empty parameters) e.g. setPixelColor(x,y), varia
     "wave": {"v":"double", "return": "double"},
     "square": {"v":"double", "t":"double", "return": "double"},
 
-### serial output
+### Serial output
     "printf": {"args": "__VA_ARGS__"}
 
 ### Details
@@ -138,3 +143,7 @@ A function has parameters (even empty parameters) e.g. setPixelColor(x,y), varia
 * hour/minute/second: current time (set in time preferences)
 * printf: currently no real printf: prints numbers, max 3
 * all other functions can be found in the WLED code
+
+# trouble shooting
+
+* effect crashes: most likely too deeply nested commands (e.g. pixbri = (sin(startVal + millis()/(255- freq)) + 1) * 128), try to split up in more lines.
