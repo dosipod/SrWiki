@@ -10,8 +10,11 @@
     + [Math](#math)
     + [Time](#time)
     + [Pixelblase support](#pixelblase-support)
-    + [Serial output](#Serial-output)
+    + [Serial output](#serial-output)
     + [Details](#details)
+  * [Implementation of variables and functions](#implementation-of-variables-and-functions)
+- [Current limitations](#current-limitations)
+- [trouble shooting](#trouble-shooting)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
@@ -50,13 +53,17 @@ If you develop effects which you want to share, ask for access on Github.
 
 These effects can be loaded easily within WLED: Give a Custom Effects segment name the same name as an effect in this repository (case sensitive, without .wled), click on Custom Effect Editor and click Download 'effect'.wled and press Save.
 
-Alternatively, if you want all the effects in this folder at once, go to the Custom Effect Editor and click Download presets.json (this will overwrite any existing presets you have). Refresh the WLED page or reboot to see the new presets.
+Alternatively, if you want all the effects in this folder at once, go to the Custom Effect Editor and click Download presets.json (Segment stop is set to 50! This will overwrite any existing presets you have). Refresh the WLED page or reboot to see the new presets.
+
+![Examples presets](https://github.com/MoonModules/WLED-Effects/blob/master/Images//ExamplesPreset.PNG?raw=true)
 
 # Create your own Custom Effects
 
 A Custom Effects program typically looks like this:
 
 ![Example](https://github.com/MoonModules/WLED-Effects/blob/master/Images/Custom%20Effects%20program%20example.PNG?raw=true)
+
+A program contains structures like if statements, for loops, assignments, calls (e.g. renderFrame) etc., commands like setPixelcolor and variables like ledCount.
 
 ## Components
 * program: Once every effect. Can contain global variables and internal functions. There are 2 special internal functions: renderFrame and renderLed
@@ -143,7 +150,21 @@ A function has parameters (even empty parameters) e.g. setPixelColor(x,y), varia
 * sin/cos: value between -1 and 1
 * hour/minute/second: current time (set in time preferences)
 * printf: currently no real printf: prints numbers, max 3
-* all other functions can be found in the WLED code
+
+## Implementation of variables and functions
+
+All variables and values are internally stored as doubles and where needed converted to (unsigned) integers, e.g. to WLED functions or operators like %.
+
+Technical details about external variables and functions can be found in arti_wled.h. Look for arti_external_function, arti_set_external_variable and arti_get_external_variable. Some examples:
+
+![Function implementation](https://github.com/MoonModules/WLED-Effects/blob/master/Images/Function%20implementation.PNG?raw=true)
+
+# Current limitations
+
+* Only 1 segment
+* no unary operators like - (use 0-1) and ++, --
+* no strings
+
 
 # trouble shooting
 
