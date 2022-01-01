@@ -7,6 +7,7 @@ If you'd like some help with your device, these are the types of things we would
 * Is it just sound reactivity that doesn't work? Is there a specific animation?
 * Is it an ESP32? An ESP8266? Please provide the link that you downloaded the files from.
 * How exactly did you flash the device?
+* If flashing a binary ESP32, make sure you review the 'installing and compiling' page.
 * Are you compiling from IDE? If so, which one?
 * Make sure your microphone is powered by the 3V pin and NOT Vin or 5V . . and that your LED's are NOT connected to that 3V pin either (source: experience).
 * If you had previously used a 5V pin for your microphone, you may have blown that analog pin.
