@@ -28,7 +28,7 @@ The Sound Reactive WLED binaries for ESP32 and Wemos D1 Mini are located [here.]
 1. Open a Command prompt on your computer.
 1. Assuming you copied esptool and both binaries to the same directory, you could burn the bootloader with:
 1. esptool.exe write_flash 0x0 esp32_bootloader_v4.bin
-1. Once complete, you can now burn the sound reactive binary with:
+1. Once complete, you can now burn the sound reactive binary with (the -p COM6 is optional):
 1. esptool.exe -p COM6 write_flash 0x010000 soundReactive_WLED_0.13.0-b4_ESP32.bin
 
 
