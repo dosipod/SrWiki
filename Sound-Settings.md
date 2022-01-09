@@ -2,6 +2,22 @@
 
 In order to accommodate a wide range of audio inputs, ambient environments and string lengths, we have added user configurable squelch (noise reduction) and gain controls on the LED settings page for the volume reactive animations.
 
+## Analog Input Pins
+
+We typically recommend using GPIO 36, aka VP or ADC1_CH0 for analog input, however the following pins should also work:
+
+GPIO 32 => ADC1_CH4
+GPIO 33 => ADC1_CH5
+GPIO 34 => ADC1_CH6
+GPIO 35 => ADC1_CH7
+GPIO 36 => ADC1_CH0
+GPIO 37 => ADC1_CH1
+GPIO 38 => ADC1_CH2
+GPIO 39 => ADC1_CH3
+
+Do NOT use any of the pins from ADC2, as they will conflict with the WiFi.
+
+
 ## Squelch
 Adjust this value on the LED Settings page so that the leds are only activated above a certain 'background noise' level.
 
