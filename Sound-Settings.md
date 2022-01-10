@@ -22,7 +22,7 @@ GPIO 38 => ADC1_CH2
 
 GPIO 39 => ADC1_CH3
 
-Do NOT use any of the pins from ADC2, as they will conflict with the WiFi.
+Do NOT use any of the pins from ADC2, as they will conflict with the WiFi and with I2S sampling.
 
 
 ## Squelch
