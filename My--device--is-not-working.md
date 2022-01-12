@@ -4,15 +4,14 @@ If you'd like some help with your device, these are the types of things we would
 * Please provide a comprehensive, but clear and concise description of the symptoms and your environment.
 * How about posting a crystal clear close-up photo of your wiring, or better yet, a block diagram.
 * Don't just perform a reset. Actually, cycle the power (reference: IT Crowd).
+* If something doesn't work as a result of an upgrade, did you roll back to ensure it still works?
 * If you are referring to code, please provide a link to the version you are referring to.
 * Is it just sound reactivity that doesn't work? Is there a specific animation?
 * Is it an ESP32? An ESP8266? Please provide the link that you downloaded the files from.
-* How exactly did you flash the device?
-* If flashing a binary ESP32, make sure you review the 'installing and compiling' page.
-* Are you compiling from IDE? If so, which one?
+* How exactly did you flash the device? See https://github.com/atuline/WLED/wiki/Installing-and-Compiling
+* Are you compiling from IDE? We are no longer supporting the Arduino IDE.
 * Make sure your microphone is powered by the 3V pin and NOT Vin or 5V . . and that your LED's are NOT connected to that 3V pin either (source: experience).
 * If you had previously used a 5V pin for your microphone, you may have blown that analog pin.
-* Buy spares. . . of everything.
 * Have you gone through [initial settings](https://github.com/atuline/WLED/wiki/Running-Sound-Reactive-WLED)?
 * Is your audio all wired up OK? [See here](https://github.com/atuline/WLED/wiki/Analog-Audio-Input-Options).
 * Which microphone/input are you using and how is it configured?
@@ -21,14 +20,14 @@ If you'd like some help with your device, these are the types of things we would
 * You have an INMP441 or ICS-43434? Try the [basic digital sound sampling sketch](https://github.com/atuline/WLED/wiki/Digital-Sound-Sampling-Sketch-Example).
 * What are the results of that sketch? Does it respond to your speech? A MAX4466 and INMP401 should average about 1875 on an ESP32, a MAX9814 about 1350 for all gain settings.
 * Try a different pin when using that sketch if you're still not seeing good results.
-* Have spares. They're cheap and they break. (source: experience)
+* Have spares of everything. They're cheap and they break. (source: experience)
 * How about power? Lots of LED's require lots of power and a common ground for everything.
 * Does the [latest release from WLED](https://github.com/Aircoookie/WLED/releases/latest) work?
 * Are you using our most recent 'MASTER' release?
 * Have you tried flashing [our latest release](https://github.com/atuline/WLED/releases/latest)?
 * Is your device working in AP mode?
 
-* You may need to re-flash/clear the device completely (ie using NodeMCU Pyflasher), especially after a major update.
+* You may need to re-flash/clear the device completely especially after a major update.
 * Alternatively, try a factory reset from the Security & Updates page.
 * Got too much noise? Try lowering the current draw/brightness and clean up the wiring.
 * If it's a compile error, can you provide the errors?
