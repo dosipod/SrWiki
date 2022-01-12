@@ -3,8 +3,11 @@ If you'd like some help with your device, these are the types of things we would
 * The latest version of SR WLED for the ESP32 has a sound pin configurator. Please review yours.
 * Please provide a comprehensive, but clear and concise description of the symptoms and your environment.
 * How about posting a crystal clear close-up photo of your wiring, or better yet, a block diagram.
-* Don't just perform a reset. Actually, cycle the power (reference: IT Crowd).
 * If something doesn't work as a result of an upgrade, did you roll back to ensure it still works?
+* Don't just reboot the device. Actually, cycle the power (reference: IT Crowd).
+* You may need to re-flash/clear the device completely especially after a major update. Perform a 'Factory reset'.
+
+
 * If you are referring to code, please provide a link to the version you are referring to.
 * Is it just sound reactivity that doesn't work? Is there a specific animation?
 * Is it an ESP32? An ESP8266? Please provide the link that you downloaded the files from.
@@ -27,8 +30,6 @@ If you'd like some help with your device, these are the types of things we would
 * Have you tried flashing [our latest release](https://github.com/atuline/WLED/releases/latest)?
 * Is your device working in AP mode?
 
-* You may need to re-flash/clear the device completely especially after a major update.
-* Alternatively, try a factory reset from the Security & Updates page.
 * Got too much noise? Try lowering the current draw/brightness and clean up the wiring.
 * If it's a compile error, can you provide the errors?
 * Have you made any changes to the source?
