@@ -10,17 +10,17 @@ The Sound Reactive WLED binaries for ESP32 and Wemos D1 Mini are located [here.]
 
 ### Flashing ESP8266 Binaries
 
-1.  Download for your plateform [NodeMCU-PyFlasher](https://github.com/marcelstoer/nodemcu-pyflasher/releases).
+1.  Download for your platform [NodeMCU-PyFlasher](https://github.com/marcelstoer/nodemcu-pyflasher/releases).
 1.  Plug the WeMOS D1 Mini (or other ESP8266 device) into your computer.
 1.  Run NodeMCU-PyFlasher.
 1.  Load the binary.
 1.  Select the Com port.
-1.  Select 'yes, wipes all data'
-1.  Press Flash NodeMCU
+1.  Select 'yes, wipes all data'.
+1.  Press Flash NodeMCU.
 
 ### Flashing ESP32 Binaries
 
-Warning: We had to change the partition size on the ESP32 in order to 'fit' all the new features. This means that the 'old way' of upgrading/flashing, etc no longer work unfortunately.
+Warning: We had to change the partition size on the ESP32 in order to 'fit' all the new features. This means that the 'old way' of upgrading/flashing, no longer work unfortunately.
 
 1. Download [esptool](https://github.com/espressif/esptool).
 1. Download the ESP32 bootloader, such as https://github.com/Aircoookie/WLED/releases/download/v0.13.0-b5/esp32_bootloader_v4.bin
