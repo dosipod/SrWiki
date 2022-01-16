@@ -20,7 +20,7 @@ The Sound Reactive WLED binaries for ESP32 and Wemos D1 Mini are located [here.]
 
 ### Flashing ESP32 Binaries
 
-Warning: We have had to change the partition size on the ESP32 in order to 'fit' all the new features. This means that the 'old way' of upgrading/flashing, etc no longer work unfortunately.
+Warning: We had to change the partition size on the ESP32 in order to 'fit' all the new features. This means that the 'old way' of upgrading/flashing, etc no longer work unfortunately.
 
 1. Download [esptool](https://github.com/espressif/esptool).
 1. Download the ESP32 bootloader, such as https://github.com/Aircoookie/WLED/releases/download/v0.13.0-b5/esp32_bootloader_v4.bin
