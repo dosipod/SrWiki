@@ -6,7 +6,7 @@ Download the CH340 drivers at https://www.wemos.cc/en/latest/ch340_driver.html
 
 
 ## Flashing From Binary
-The Sound Reactive WLED binaries for ESP32 and Wemos D1 Mini are located [here.](https://github.com/atuline/WLED/releases/latest)
+The Sound Reactive WLED binaries for ESP32 and Wemos D1 Mini are located [here.](https://github.com/atuline/WLED/releases)
 
 ### Flashing ESP8266 Binaries
 
