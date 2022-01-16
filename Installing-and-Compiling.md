@@ -29,8 +29,10 @@ Warning: We had to change the partition size on the ESP32 in order to 'fit' all 
 1. Determine which Com port it uses. You could use NodeMCU-PyFlasher to do this, but don't flash the binary with it.
 1. Open a Command prompt on your computer.
 1. Assuming you copied esptool and both binaries to the same directory, you could burn the bootloader with:
+
     `esptool.exe write_flash 0x0 esp32_bootloader_v4.bin`
 1. Once complete, you can now burn the sound reactive binary with:
+
     `esptool.exe write_flash 0x010000 soundReactive_WLED_0.13.0-bX_ESP32.bin`
 1. You can optionally add the port, such as '-p COM6'.
 
