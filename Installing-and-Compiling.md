@@ -24,7 +24,7 @@ Warning: We had to change the partition size on the ESP32 in order to 'fit' all 
 
 1. Download [esptool](https://github.com/espressif/esptool).
 1. Download the ESP32 bootloader, such as https://github.com/Aircoookie/WLED/releases/download/v0.13.0-b5/esp32_bootloader_v4.bin
-1. Download the sound reactive binary, such as https://github.com/atuline/WLED/releases/download/v0.13.0-b4/soundReactive_WLED_0.13.0-b4_ESP32.bin
+1. Download the sound reactive binary, such as https://github.com/atuline/WLED/releases
 1. Plug the ESP32 board into your computer.
 1. Determine which Com port it uses. You could use NodeMCU-PyFlasher to do this, but don't flash the binary with it.
 1. Open a Command prompt on your computer.
