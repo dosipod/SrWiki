@@ -39,7 +39,7 @@ Warning: We had to change the partition size on the ESP32 in order to 'fit' all 
     `esptool.exe write_flash 0x010000 soundReactive_WLED_0.13.0-bX_ESP32.bin`
 
 1. You can optionally add the port, such as '-p COM6'.
-1. In addition, if this is the first time you've used this version, you need to go to the "Security & Updates" settings page and tick the "Factory reset" box, then select "Save & Reboot".
+1. In addition, if this is the first time you've used this version, you need to go to the "Security & Updates" settings page and tick the "Factory reset" box, then select "Save & Reboot". Caveat: May not be necessary if you ran 'erase_flash' above.
 1. This will reset the EEPROM and remove any settings or presets you may have saved.
 
 
