@@ -29,7 +29,7 @@ Microphone Wiring Example (MAX9814) | Line In Wiring Example
 --- | ---
 ![Simple Mic Schematic](https://github.com/atuline/WLED/blob/assets/media/WLED_Simple_Mic_Wiring.png) | ![Line In Schematic](https://github.com/atuline/WLED/blob/assets/media/WLED_Line_In_Wiring.png)
 
-Some folks have mentioned that they don't need this circuit, which is fine. Here's an explanation of that circuit.
+Some folks have mentioned that they don't need this line-in circuit, which is fine. Here's an explanation of that circuit.
 
 The 680 ohm resistors provide termination so that you don't get reflection on the incoming signals. The 100nf capacitors remove any DC offset from the incoming signal. Remember that the ESP goes from 0V to 3.3V. Beyond that lay dragons. Finally, the 1M resistors provide DC centering of the incoming (now) AC only signal halfway between 0 and 3.3V.
 
