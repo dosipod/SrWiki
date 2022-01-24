@@ -19,7 +19,11 @@ If the LED's are active when the ambient volume is low while running volume only
 
 **Note 3:** On the ESP32, the ADC pin used is pin 36 (also known as VP), while the ESP8266 uses A0.
 
-**Note 4:** On the ESP32, the ADC and I2S pins are defined in audio_reactive.h.
+**Note 4:** If your ESP32 doesn't have pin 36, any of the other ADC1 (and not ADC2) pins should work.
+
+**Note 5:** On the ESP32, the ADC and I2S pins are defined in audio_reactive.h. You can also select them in the sound settings UI.
+
+
 
 ***
 
