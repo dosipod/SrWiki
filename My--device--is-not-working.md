@@ -7,7 +7,8 @@ If you'd like some help with your device, these are the types of things we would
 * How about posting a crystal clear close-up photo of your wiring, or better yet, a block diagram.
 * If something doesn't work as a result of an upgrade, did you roll back to ensure it still works?
 * Don't just reboot the device. Actually, cycle the power (reference: IT Crowd).
-* You may need to re-flash/clear the device completely especially after a major update. Perform a 'Factory reset'.
+* You may need to re-flash/clear the device completely especially after a major update.
+* SR WLED had to change from the default 'partition size' because we outgrew the default 1MB. As a result, you need to perform a 'Factory reset' after flashing it.
 
 
 * If you are referring to code, please provide a link to the version you are referring to.
