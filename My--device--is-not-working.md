@@ -1,6 +1,7 @@
 If you'd like some help with your device, these are the types of things we would be asking:
 
 * The latest version of SR WLED for the ESP32 has a sound pin configurator. Please review yours.
+* Don't forget to check the pin on the LED settings page.
 * Please provide a comprehensive, but clear and concise description of the symptoms and your environment.
 * That includes things like exactly what board you're using, how many led's, are you using a level shifter and so on. . .
 * How about posting a crystal clear close-up photo of your wiring, or better yet, a block diagram.
