@@ -3,13 +3,14 @@ If you'd like some help with your device, these are the types of things we would
 * The latest version of SR WLED for the ESP32 has a sound pin configurator. Please review yours.
 * Don't forget to check the pin on the LED settings page.
 * Please provide a comprehensive, but clear and concise description of the symptoms and your environment.
-* That includes things like exactly what board you're using, how many led's, are you using a level shifter and so on. . .
+* That includes things like exactly what board you're using, how many led's, are you using a level shifter
+* Also, the exact steps you took to flash a binary and the steps you took after doing so.
 * How about posting a crystal clear close-up photo of your wiring, or better yet, a block diagram.
 * If something doesn't work as a result of an upgrade, did you roll back to ensure it still works?
 * Don't just reboot the device. Actually, cycle the power (reference: IT Crowd).
 * You may need to re-flash/clear the device completely especially after a major update.
 * SR WLED had to change from the default 'partition size' because we outgrew the default 1MB. As a result, you need to perform a 'Factory reset' after flashing it.
-
+* Does the regular version of WLED work, while this one doesn't?
 
 * If you are referring to code, please provide a link to the version you are referring to.
 * Is it just sound reactivity that doesn't work? Is there a specific animation?
