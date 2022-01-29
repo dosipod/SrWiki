@@ -11,7 +11,7 @@ If you'd like some help with your device, these are the types of things we would
 * You may need to re-flash/clear the device completely especially after a major update.
 * SR WLED had to change from the default 'partition size' because we outgrew the default 1MB. As a result, you need to perform a 'Factory reset' after flashing it.
 * Does the regular version of WLED work, while this one doesn't?
-* We have disabled (and do not support) extra services such as IR and so on. In order to enable them, you'll need to go into the code, enable the service and then compile/upload.
+* We have disabled (and do not support) extra services such as IR and so on. In order to enable them, you'll need to go into the code, enable the service (see wled.h) and then compile/upload.
 
 * If you are referring to code, please provide a link to the version you are referring to.
 * Is it just sound reactivity that doesn't work? Is there a specific animation?
