@@ -1,6 +1,7 @@
 If you'd like some help with your device, these are the types of things we would be asking:
 
 * If you require support, please engage the Discord community as linked to in the readme.md. Github issues are more for actual bugs in the firmware.
+
 *** When asking for support on Discord or on another forum, please provide details up front and not way down a threaded list of messages. Edit your original question if you have some clarifications or more information to provide.**
 * The latest version of SR WLED for the ESP32 has a sound pin configurator. Please review yours.
 * Don't forget to check the pin on the LED settings page.
