@@ -1,11 +1,11 @@
 # WLED Sound Reactive Introduction
 This is a FORK of the original WLED code as found at [wled.me](http://wled.me). It provides basic sound reactivity for both the [ESP8266](https://github.com/atuline/WLED/tree/ESP8266) and [ESP32](https://github.com/atuline/WLED) platforms as well as FFT sound reactivity for the ESP32.
 
-Due to the performance limitations of the ESP8266, we decided to separate the ESP8266 and ESP32 code in order to provide a more stable build for the ESP8266. Beginning with version 0.10.2 and moving forward, ESP8266 support has been removed from the master branch and will continue to be supported in the [ESP8266 Branch](https://github.com/atuline/WLED/tree/ESP8266).
+Due to the performance limitations of the ESP8266, we decided to separate the ESP8266 and ESP32 code in order to provide a more stable build for the ESP8266. Beginning with version 0.10.2 and moving forward, ESP8266 support has been removed from the master branch. It receives very limited support and updates and is located at [ESP8266 Branch](https://github.com/atuline/WLED/tree/ESP8266).
 
 We have also disabled functionality for other interfaces, such as Alexa, Blynk, Cronixie, Huesync, Infrared. If you would like to enable them, you will need to modify wled.h, compile and upload to your device. If you have any issues, please engage the Discord community, as we only support functionality for the web interface.
 
-In addition to new animations, we've made numerous changes to the UI of WLED, and are unable to merge it with the original at this time. Our fork includes:
+We do our best to perform upstream merges with the original WLED. Our fork includes:
 
 * Several volume reactive effects.
 * Several FFT (frequency) reactive effects.
@@ -15,6 +15,8 @@ In addition to new animations, we've made numerous changes to the UI of WLED, an
 * Additional sliders for controlling effects.
 * Multiple panels of 2D led's.
 * 2D segments.
+* Dynamic naming and visibility of sliders.
+* An interpreter.
 * Configuration setting for 2D, panels, noise squelch, gain, and UDP sound synchronization.
 
 Please consider joining the [WLED Discord group](https://discord.gg/RNgqKpZ) where we have a dedicated channel to discuss this project and answer any questions you may have.
@@ -41,9 +43,8 @@ https://github.com/GrumpyMeow/WLED/tree/sound/wled00
 Other members of the WLED Discord group have provided code and testing support as well. Thanks all!
 
 ## Knowledge pre-requisites
-You MUST be familiar with how to install the ESP8266/ESP32 board drivers as well as multiple libraries (if using the Arduino IDE). There are some [instructions here](https://github.com/atuline/WLED/wiki/Installing-and-Compiling) on how to do this with the Arduino IDE, however, they are provided **WITHOUT** support.
 
-Before attempting to compile this fork of WLED, make sure you CAN compile the one from [wled.me](http://wled.me).
+Before attempting to compile this fork of WLED with Platform IO (the Arduino IDE is no longer viable for this project), make sure you CAN compile the one from [wled.me](http://wled.me).
 
 If you are unable to compile WLED, please consider flashing your device with binaries instead.
 
