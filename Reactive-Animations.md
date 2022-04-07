@@ -31,7 +31,7 @@ See [ScottrBaileys GIF visualizer](https://github.com/scottrbailey/WLED-Utils/bl
 | * Puddles | Blast coloured puddles based on volume.| **Speed:** Fade rate <br /> **Intensity:** Size of puddle
 | * Ripple Peak | Peak detection triggers ripples. | **Intensity:** Max number of ripples.<br /> **FFT High:** 256 freq bin select on ESP32<br /> **FFT Custom:** Volume comparator on ESP32
 | * Waterfall | A volume AND FFT version of a Waterfall that has 'beat' support.| **Speed:** Speed <br /> **Intensity:** Adjust colour
-| ** 2D CenterBars | A 16x16 spectral analysis routine emanating from the center | **Speed:** Bar Speed <br /> **Intensity:** Ripple time<br /> **FFT Custom1:** Number of bands
+| ** 2D CenterBars | A 16x16 spectral analysis routine emanating from the center | **Speed:** Bar Speed <br /> **Intensity:** Ripple time<br /> **FFT Custom1:** Center horizontally<br /> **FFT Custom2:** Center vertically<br /> **FFT Custom3:** Color vertically
 | ** 2D Funky Plank | A 2D wall of reactivity running from bottom to top | **Speed:** Scroll Speed <br /> **FFT Custom1:** Number of bands
 | ** 2D GEQ | A 16x16 graphic equalizer. | **Speed:** Bar Speed <br /> **Intensity:** Ripple time<br />**FFT Custom1:** Number of bands
 | ** Binmap | Map bins 3-255 throughout the length of the LEDs. This does not work with UDP sync.<br />Values are not normalized.| **Intensity:** Max volume 
