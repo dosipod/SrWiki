@@ -38,7 +38,7 @@ https://github.com/GrumpyMeow/WLED/tree/sound/wled00
 * **Sound reactive ESP32 FFT, 2D:** Andreas Pleschutznig (aka apleschu)
 * **General contributor, documentation, versioning:** Chris Reese (aka THATDONFC)
 * **General contributor, UDP Sound Sync, INMP441 I2S:** Chris Hultin (aka spedione)
-* **Panels, 2D, segments, animations and code cleanup:** Ewoud Wijma (aka ewowi)
+* **Panels, 2D, segments, animations, custom effects (interpreter) and code cleanup:** Ewoud Wijma (aka ewowi)
 * **Sound processing:** softhack007
 
 Other members of the WLED Discord group have provided code and testing support as well. Thanks all!
