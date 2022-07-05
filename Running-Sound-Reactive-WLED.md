@@ -4,7 +4,7 @@ When you first connect to a WLED device in AP mode, there is some really annoyin
 ### Initial Sound Reactive Settings
 On the _"Sound Settings"_ page, configure the Squelch for a value (default is 10) to reduce your background noise for volume reactive effects. Volume reactive effects start with a single '*'. Typically, values between 10 and 20 should suffice. The higher the number, the greater the background noise is suppressed.   
   
-Configure the Gain setting (default is 60) to change the "perceived volume" of the input signal. More info on [Squelch and Gain here](https://github.com/atuline/WLED/wiki/Squelch-and-Gain).
+Configure the Gain setting (default is 60) to change the "perceived volume" of the input signal. More info on [Squelch and Gain here](https://github.com/atuline/WLED/wiki/Sound-Settings#squelch).
 
 ### Initial 2D Settings - ESP32 Only
 When changing any values in the LED settings page, you'll need to update the 2D settings. If not using a 2D matrix, you can set them to 1 x <number of LED's> or vice versa.  If using a 2D matrix, configure these values for width x height. A value of less than 4 in either dimension will not work with some of the 2D animations.
