@@ -1,11 +1,13 @@
 ### Microphone Input
 
-Below are a number of popular Arduino compatible microphones that have been tested.
+Generally we recommend using a [digital I2S microphone](https://github.com/atuline/WLED/wiki/Digital-Microphone-Hookup), like INMP441, SPH0645, or PDM microphones. 
+
+Below are a number of popular Arduino compatible analog microphones that have been tested.
 
 Model | Compatibility | Notes
 --- | --- | ---
 *INMP401* | Good | Some Chinese ones are not reliable.
-*MAX4466* | Good | No problems found.
+*MAX4466* | Fair | Is very sensitive to 3.3V noise and voltage dropout due to Wifi activity. Avoid powering your LED stripe from ESP32, as the stripe causes a lot of noise on the 3.3V/5V power lines.
 *MAX9812* | Good | Only 20dB gain, but worked OK.
 *MAX9814* | Good | Best to set the gain to 40dB.
 
