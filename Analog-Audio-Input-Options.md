@@ -1,6 +1,6 @@
 ### Microphone Input
 
-Generally we recommend using a [digital I2S microphone](https://github.com/atuline/WLED/wiki/Digital-Microphone-Hookup), like INMP441, SPH0645, or PDM microphones. 
+Generally we recommend using a [digital I2S microphone](https://github.com/atuline/WLED/wiki/Digital-Microphone-Hookup), like INMP441, SPH0645,  ICS-43434, or PDM I2S microphones. 
 
 Below are a number of popular Arduino compatible analog microphones that have been tested.
 
