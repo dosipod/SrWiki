@@ -53,5 +53,5 @@ From faulty microphones to flaky wiring, to WiFi related issues, particularly in
 ## Digital Input (I2S)
 _to be written_
 
-## AGC - improved autonomous gain control
+## AGC - improved Autonomous Gain Control
 _to be written_
