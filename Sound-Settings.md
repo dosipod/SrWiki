@@ -1,6 +1,6 @@
 ## Introduction
 
-In order to accommodate a wide range of audio inputs, ambient environments and string lengths, we have added user configurable squelch (noise reduction) and gain controls on the LED settings page for the volume reactive animations.
+In order to accommodate a wide range of audio inputs, ambient environments and string lengths, we have added user configurable squelch (noise reduction/suppression) and gain controls on the sound settings page that apply to all volume reactive animations.
 
 ## Analog Input Pins
 
@@ -29,17 +29,17 @@ Do NOT use any of the pins from ADC2, as they will conflict with the WiFi and wi
 Adjust this value on the LED Settings page so that the leds are only activated above a certain 'background noise' level.
 
 ## Gain
-Line-in signals are typically much lower than that of some of the microphones. Rather than use an auto gain function, you can manually adjust the gain from 0 to 255, which translate up to almost 6.0 gain.
+Line-in signals are typically much lower than that of some of the microphones. Rather than use an auto gain function, you can manually adjust the gain from 1 to 255, which translates to 0.1 up to almost 6.0 gain.
 
-In addition, the 'Intensity' slider can sometimes adjust an animation to simulate increased gain.
+In addition, the 'Intensity' and "input level" sliders can sometimes adjust an animation to simulate increased gain.
 
 ## How To
 Here's a method to setup squelch and gain for your SR WLED Device.
 
-1. Start out with the routine '*Gravcenter' with default sliders in the middle.
+1. Start out with the routine '*Gravimeter' with default sliders in the middle.
 2. Go to the sound settings configuration page.
-3. Increase gain to a high value, let's say 25 (or higher) and set the squelch to '0' and save.
-4. Depending on your input, you should now see the led's flashing.
+3. Increase gain to a high value, let's say 234 (or higher) and set the squelch to '1' and save.
+4. Depending on your input, you should now see the led's flashing, even when the wind blows.
 5. In a quiet environment, increase and occasionally save the squelch incrementally until the led's are no longer flashing.
 6. Once that's done, make noise appropriate to your 'noisy' environment and number of led's. Then adjust/save the gain so that the led's are responding appropriately.
 7. Note that some of the animations allow further sensitivity adjustment with the 'Intensity' setting.
@@ -48,3 +48,10 @@ Here's a method to setup squelch and gain for your SR WLED Device.
 
 ## Voltage Fluctuation
 From faulty microphones to flaky wiring, to WiFi related issues, particularly in AP mode, getting reliable and spike free sound sampling with WLED and in particular analog sampling has been a challenge. Digital microphones such as the INMP441, the ICS-43434 provide the best results.
+
+
+## Digital Input (I2S)
+_to be written_
+
+## AGC - improved autonomous gain control
+_to be written_
