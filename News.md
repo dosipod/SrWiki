@@ -3,7 +3,9 @@ What's possibly on the horizon (no dates given):
 * Add 2D orientation settings, but no multi-SEGMENT 2D orientation support.
 * Yes, we'd love dynamic controls for each animation, but we think that may interfere with future releases from Aircoookie.
 * We are working on adding multiple panels.
-* Automatic gain control. It's a challenge because each animation uses sound variables differently.
+* Automatic gain control. It's a challenge because each animation uses sound variables differently. And yes, it will be there 👍 in the upcoming release.
+* Improvements to our audio processing algorithms. More awesomeness for your LEDs.
+* More and improved sound reactive effects.
 
 ### May 15, 2021
 
