@@ -38,7 +38,7 @@ Here's a method to setup squelch and gain for your SR WLED Device.
 
 1. Start out with the routine '*Gravimeter' with default sliders in the middle.
 2. Go to the sound settings configuration page.
-3. Increase gain to a high value, let's say 234 (or higher) and set the squelch to '1' and save.
+3. Increase gain to a high value, let's say 234 (or higher) and set the squelch to '1', AGC off, then save.
 4. Depending on your input, you should now see the led's flashing, even when the wind blows.
 5. In a quiet environment, increase and occasionally save the squelch incrementally until the led's are no longer flashing.
 6. Once that's done, make noise appropriate to your 'noisy' environment and number of led's. Then adjust/save the gain so that the led's are responding appropriately.
