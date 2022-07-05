@@ -44,7 +44,7 @@ Analog input ([Microphone or Line-in](https://github.com/atuline/WLED/wiki/Analo
 
 Finally Analog Microphones often work best when placed close to the sound source, while digital ones like the INMP441 can easily pick up sound from several meters apart. With the analog MAX4466, we found that 30-50cm is an optimal distance. 
 
-Automatic gain control (AGC) is not enabled by default in SR WLED, because of so many different input types and ambient noise in different environments. We don't know what your 'quiet' is. In addition, the LED's should NOT be reacting when it IS quiet, so it's up to you to first make those adjustments. In addition, sensitivity can be further adjusted with either the Intensity or Speed slider in many of the animations.
+Automatic gain control (iAGC) is not enabled by default in SR WLED, because of so many different input types and ambient noise in different environments. We don't know what your 'quiet' is. In addition, the LED's should NOT be reacting when it IS quiet, so it's up to you to first make those adjustments. In addition, sensitivity can be further adjusted with either the Intensity or Speed slider in many of the animations.
 
 While improved autonomous gain control (AGC) is available since [version 0.13.1](https://github.com/atuline/WLED/releases/tag/v0.13.1), it is still very important that you _first_ find a good _Squelch_ setting for your environment. Afterwards you can enable AGC and let the controller adjust input levels automatically. 
 
