@@ -72,7 +72,7 @@ There are solutions available for line-in via I2S. For example, boards/modules w
 <br/>
 
 ## AGC - improved Autonomous Gain Control
-We have recently improved the AGC (automatic gain control) algorithm in WLED-SR. It's not enabled by default, however we encourage you to give it a try - all sound reactive effects now support AGC, including 2D and frequency-based effects. The only prerequisite for using AGC is that you first adjust "Squelch" to match your environment while AGC is off - [see previous section](https://github.com/atuline/WLED/wiki/Sound-Settings/_edit#how-to).
+We have recently improved the AGC (automatic gain control) algorithm in WLED-SR. It's not enabled by default, however we encourage you to give it a try - all sound reactive effects now support AGC, including 2D and frequency-based effects. The only prerequisite for using AGC is that you first adjust "Squelch" to define 'silence' in your environment - [see previous section](https://github.com/atuline/WLED/wiki/Sound-Settings/_edit#how-to).
 
 ![WLEDSR-Sound-Setings-AGC_only](https://user-images.githubusercontent.com/91616163/177599946-055ee5f1-34b9-4a23-a408-4d21500c31e7.png)
 
