@@ -69,6 +69,7 @@ _to be extended soon_
 ### I2S Line-in
 There are solutions available for line-in via I2S. For example, boards/modules with "es7243" chip already work and we're investigating "es8388".
 
+<br/>
 
 ## AGC - improved Autonomous Gain Control
 
