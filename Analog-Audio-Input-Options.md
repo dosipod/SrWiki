@@ -56,10 +56,10 @@ Connect the output of the capacitor to the ADC pin for your board.
 On the ESP32, the ADC pin used is pin 36 (also known as VP), while the ESP8266 uses A0. Power is connected to the 3.3V pin. These pins are defined in wled00/audio_reactive.h.
 
 ### Squelch
-The volume reactive routines (starting with a single *), support a squelch or background noise suppression. This can be configured near the bottom of the LED Settings page.
+The volume and frequency reactive routines (starting with a single or double *), support a squelch or background noise suppression. This can be configured on the Sound Settings page.
 
 ### Gain
-Line-in signals are typically much lower than that of some of the microphones. Rather than use an auto gain function, you can manually adjust the gain from 0 to 255, which translate to a gain from 0.1 up to 5.0 gain.
+Line-in signals are typically much lower than that of some of the microphones. Rather than use an auto gain function, you can manually adjust the gain from 1 to 255, which translate to a gain factor from 0.1 up to 5.0 gain.
 
 ### Problems Encountered
 We've often seen spikes when using an analog microphone in conjunction with WLED. There's an article that should shed light on the issue at [ESP32 microcontroller generates noise on microphone](https://electronics.stackexchange.com/questions/368867/esp32-microcontroller-generates-noise-on-microphone).
