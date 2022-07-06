@@ -65,7 +65,7 @@ For more information, see our **[Analog Audio Input Options](https://github.com/
 * See [[Digital Microphone Hookup]] for pins used
 * (You can change the pins used by adding definitions in your PlatformIO config or editing audio_reactive.h)
 
-### Discussion and Support
+## Discussion and Support
 Please consider joining the WLED Discord groups where we have dedicated channels to discuss this project, your projects, 
 and answer any questions you may have.
 
@@ -82,7 +82,7 @@ Are you looking for some MSGEQ7 support? If so, there's a fork for the ESP8266 t
 How about INMP441 support using [Constant Q Transform](https://en.wikipedia.org/wiki/Constant-Q_transform) instead of FFT at: https://github.com/GrumpyMeow/WLED/tree/sound/wled00
 
 
-## Support Forums
+### Support Forums
 
 * WLED on Reddit:	https://reddit.com/r/WLED/
 * r/soundreactive on Reddit:	https://www.reddit.com/r/soundreactive
