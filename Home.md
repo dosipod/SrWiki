@@ -5,6 +5,8 @@ Due to the performance limitations of the ESP8266, we decided to separate the ES
 
 We have also disabled functionality for other interfaces, such as Alexa, Blynk, Cronixie, Huesync, Infrared. If you would like to enable them, you will need to modify wled.h, compile and upload to your device. If you have any issues, please engage the Discord community, as we only support functionality for the web interface.
 
+### Features
+
 We do our best to perform upstream merges with the original WLED. Our fork includes:
 
 * Several volume reactive effects.
@@ -38,7 +40,7 @@ Are you looking for some MSGEQ7 support? If so, there's a fork for the ESP8266 t
 How about INMP441 support using [Constant Q Transform](https://en.wikipedia.org/wiki/Constant-Q_transform) instead of FFT at: https://github.com/GrumpyMeow/WLED/tree/sound/wled00
 
 
-### Sound Reactive WLED fork Team:
+### Sound Reactive WLED Fork Team:
 
 * **A bit of everything (mainly FastLED animations):** Andrew Tuline (aka johnny5canuck)
 * **Sound reactive ESP32 FFT, 2D:** Andreas Pleschutznig (aka apleschu)
@@ -50,7 +52,7 @@ How about INMP441 support using [Constant Q Transform](https://en.wikipedia.org/
 
 Other members of the WLED Discord group have provided code and testing support as well. Thanks all!
 
-## Knowledge pre-requisites
+### Knowledge and Pre-Requisites
 
 Before attempting to compile this fork of WLED with Platform IO (the Arduino IDE is no longer viable for this project), make sure you CAN compile the one from [wled.me](http://wled.me).
 
@@ -84,6 +86,8 @@ For more information, see our **[Analog Audio Input Options](https://github.com/
 ## Support Forums
 
 * WLED on Reddit:	https://reddit.com/r/WLED/
+* r/soundreactive on Reddit:	https://www.reddit.com/r/soundreactive
 * WLED Discord:         https://discordapp.com/channels/473448917040758787/473448917543944193
+* WLED Soundreactive Discord:         https://discord.gg/4CQRmfR
 * WLED on Discourse:    https://wled.discourse.group/
 * FastLED on Reddit:	https://reddit.com/r/FastLED
