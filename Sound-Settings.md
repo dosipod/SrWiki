@@ -63,7 +63,11 @@ Currently the following I2S options are available:
 
 ![WLEDSR-Sound-Setings-Digital_Part2](https://user-images.githubusercontent.com/91616163/177543015-2e862675-274d-45fa-822e-bea763ad9432.png)
 
-_to be written_
+
+_to be extended soon_
+
+### I2S Line-in
+There are solutions available for line-in via I2S. For example, boards/modules with "es7243" chip already work and we're investigating "es8388".
 
 
 ## AGC - improved Autonomous Gain Control
