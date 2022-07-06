@@ -76,7 +76,7 @@ We have recently improved the AGC (automatic gain control) algorithm in WLED-SR.
 
 ![WLEDSR-Sound-Setings-AGC_only](https://user-images.githubusercontent.com/91616163/177599946-055ee5f1-34b9-4a23-a408-4d21500c31e7.png)
 
-AGC will automatically perform sound input amplification, based on current loudness in your environment. 
+AGC will automatically perform sound input amplification, based on current sound loudness. 
 For example, if you play music and then increase the speaker volume, WLED-SR will adjust its internal gain factor accordingly to follow your music. Forget about manually changing "gain" settings. Just relax and let WLED-SR do it autonomously.
 
 Currently WLED-SR offers four different AGC presets that can be selected in sound settings:
