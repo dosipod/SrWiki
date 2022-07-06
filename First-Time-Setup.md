@@ -10,22 +10,25 @@ The sound reactive version of WLED provides all of the functionality of WLED wit
 * Connectors!! Dupont connectors are notoriously flaky. I use JST-SM connectors for the LED's and (so far) just soldered the microphones.
 
 ## First Steps
-After uploading WLED to the Esp, use your phone and connect to the WLED-AP using the password 'wled1234'.
+#### First Contact (after uploading)
+After uploading WLED to the ESP, use your phone and connect to the WLED-AP using the password 'wled1234'.
 Click 'Login to network' when the notification about this shows up. You are then transfered to the WLED's start page, and here we should click "WIFI SETTINGS" to connect to the local network. Fill in the settings for your local Wifi network, and then click 'Save & Connect'. The device will reboot and if everything worked it will now be connected to the local network. Finding it's IP-address can be done via the network routers administration page, or via an mobile app like Fing were you can find a new device called "wled-WLED". Open this IP in a webbrowser to access WLED's control page.
 
-
+#### Wifi and LEDs
 1. On the WiFi Setup page, it is highly recommended that you connect your SR WLED strip to an existing network.
 2. At the bottom of the WiFi Setup page, check on 'Disable WiFi sleep'. This may not be necessary if you're not experiencing noise or UDP Sync lag issues.
 3. On the LED Preferences page, configure the length of your led strip.
 3. On the LED Preference page, configure the 2D matrix size, i.e. 1x30 or 16x16, etc. If you have not configured this, 2D routines may not work.
+
+#### Sound
 4. On the Sound Setting page, set the Squelch setting to '1', the Gain > 200, and AGC = Off.
 5. On the Effects page, set the animation to '*Gravcenter' or '*Gravimeter'.
 6. Back on the Sound Settings page, increase/save Squelch setting until strip no longer reacts to the ambient noise.
 7. On the Sound Settings page, reduce/adjust the Gain setting until the leds react reasonably with your voice.
 8. You might also want to run a [Pink Noise](https://www.youtube.com/watch?v=ZXtimhT-ff4) video and fine tune the values from there.
+<br/>
 
-
-### Sound Settings: getting started with common microphones
+## Sound Settings: getting started with common microphones
 Here's a starting point table of Squelch and Gain settings for different input types:
 
 | Input | Squelch | Gain
@@ -38,7 +41,6 @@ Here's a starting point table of Squelch and Gain settings for different input t
 | ICS-43434  (I2S digital) | 20 | 30
 
 We recommend using an [I2S digital microphone](https://github.com/atuline/WLED/wiki/Digital-Microphone-Hookup), like INMP441, SPH0645, or PDM microphones.
-
 
 Analog input ([Microphone or Line-in](https://github.com/atuline/WLED/wiki/Analog-Audio-Input-Options)) is also possible, however you might need to solve power (3.3V) stability and noise issues when using these. Analog devices are handled by the "ADC1" unit of your ESP32. Problems can be expected when connecting "analog buttons" (Potentiometer) to the same ADC1 unit. 
 
