@@ -1,6 +1,7 @@
 ### Microphone Input
 
-Generally we recommend using an [I2S digital microphone](https://github.com/atuline/WLED/wiki/Digital-Microphone-Hookup), like INMP441, SPH0645,  ICS-43434, or PDM I2S microphones. This includes available(and working) solutions for line-in via I2S. For example, boards/modules with "es7243" already work and we're investigating "es8388".
+Generally we recommend using an [I2S digital microphone](https://github.com/atuline/WLED/wiki/Digital-Microphone-Hookup), like INMP441, SPH0645,  ICS-43434, or PDM I2S microphones. 
+Additionally there are solutions for line-in via I2S. For example, boards/modules with "es7243" already work and we're investigating "es8388".
 
 <br/>
 
