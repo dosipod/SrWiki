@@ -22,24 +22,6 @@ We do our best to perform upstream merges with the original WLED. Our fork inclu
 * Configuration setting for 2D, panels, noise squelch, gain, and UDP sound synchronization.
 
 
-### Support and Discussions
-Please consider joining the WLED Discord groups where we have dedicated channels to discuss this project, your projects, 
-and answer any questions you may have.
-
-<a href="https://discord.gg/4CQRmfR"><img src="https://discordapp.com/api/guilds/700041398778331156/widget.png?style=banner2" width="25%" align="middle"></a>
-Join Discord to discuss beta testing of our [sound reactive fork](https://discord.gg/4CQRmfR) of WLED. 
-
-<a href="https://discord.gg/KuqP7NE"><img src="https://discordapp.com/api/guilds/473448917040758787/widget.png?style=banner2" width="25%" align="middle"></a>
-Join Discord to discuss [AirCookie's WLED](https://discord.gg/KuqP7NE).
-
-
-We can also be found on reddit at [r/soundreactive](https://www.reddit.com/r/soundreactive).
-
-Are you looking for some MSGEQ7 support? If so, there's a fork for the ESP8266 that provides this over at: https://github.com/NeariX67/WLED_MSGEQ7
-
-How about INMP441 support using [Constant Q Transform](https://en.wikipedia.org/wiki/Constant-Q_transform) instead of FFT at: https://github.com/GrumpyMeow/WLED/tree/sound/wled00
-
-
 ### Sound Reactive WLED Fork Team:
 
 * **A bit of everything (mainly FastLED animations):** Andrew Tuline (aka johnny5canuck)
@@ -82,6 +64,23 @@ For more information, see our **[Analog Audio Input Options](https://github.com/
 * GPIO36 (or VP) for the ESP32 (audio-in pin)
 * See [[Digital Microphone Hookup]] for pins used
 * (You can change the pins used by adding definitions in your PlatformIO config or editing audio_reactive.h)
+
+### Discussion and Support
+Please consider joining the WLED Discord groups where we have dedicated channels to discuss this project, your projects, 
+and answer any questions you may have.
+
+<a href="https://discord.gg/4CQRmfR"><img src="https://discordapp.com/api/guilds/700041398778331156/widget.png?style=banner2" width="25%" align="middle"></a>
+Join Discord to discuss beta testing of our [sound reactive fork](https://discord.gg/4CQRmfR) of WLED. 
+
+<a href="https://discord.gg/KuqP7NE"><img src="https://discordapp.com/api/guilds/473448917040758787/widget.png?style=banner2" width="25%" align="middle"></a>
+Join Discord to discuss [AirCookie's WLED](https://discord.gg/KuqP7NE).
+
+We can also be found on reddit at [r/soundreactive](https://www.reddit.com/r/soundreactive).
+
+Are you looking for some MSGEQ7 support? If so, there's a fork for the ESP8266 that provides this over at: https://github.com/NeariX67/WLED_MSGEQ7
+
+How about INMP441 support using [Constant Q Transform](https://en.wikipedia.org/wiki/Constant-Q_transform) instead of FFT at: https://github.com/GrumpyMeow/WLED/tree/sound/wled00
+
 
 ## Support Forums
 
