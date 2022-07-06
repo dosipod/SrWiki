@@ -63,7 +63,7 @@ For more information, see our **[Analog Audio Input Options](https://github.com/
 * A0 for ESP8266 (audio-in pin)
 * GPIO36 (or VP) for the ESP32 (audio-in pin)
 * See [[Digital Microphone Hookup]] for pins used
-* (You can change the pins used by adding definitions in your PlatformIO config or editing audio_reactive.h)
+* In SR-WLED 0.12.0 or newer, you can use the web UI to change pins. In older versions, you can change the pins used by adding definitions in your PlatformIO config or editing audio_reactive.h.
 
 ## Discussion and Support
 Please consider joining the WLED Discord groups where we have dedicated channels to discuss this project, your projects, 
