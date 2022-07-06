@@ -16,7 +16,7 @@ We do our best to perform upstream merges with the original WLED. Our fork inclu
 * Multiple panels of 2D led's.
 * 2D segments.
 * Dynamic naming and visibility of sliders.
-* An interpreter.
+* An interpreter - for creating your own custom effects.
 * Configuration setting for 2D, panels, noise squelch, gain, and UDP sound synchronization.
 
 Please consider joining the [WLED Discord group](https://discord.gg/RNgqKpZ) where we have a dedicated channel to discuss this project and answer any questions you may have.
@@ -39,7 +39,8 @@ https://github.com/GrumpyMeow/WLED/tree/sound/wled00
 * **General contributor, documentation, versioning, keep us up to date:** Chris Reese (aka THATDONFC)
 * **General contributor, UDP Sound Sync, INMP441 I2S:** Chris Hultin (aka spedione)
 * **Panels, 2D, segments, animations, custom effects (interpreter) and code cleanup:** Ewoud Wijma (aka ewowi)
-* **Sound processing:** softhack007
+* **Sound processing and FFT:** Frank Möhle (aka softhack007)
+* **I2S Sound input and processing:** Florian Heilmann (aka Haribo / FHeilmann)
 
 Other members of the WLED Discord group have provided code and testing support as well. Thanks all!
 
