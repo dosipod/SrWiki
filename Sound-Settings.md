@@ -72,7 +72,18 @@ There are solutions available for line-in via I2S. For example, boards/modules w
 <br/>
 
 ## AGC - improved Autonomous Gain Control
+We have recently improved the AGC (automatic gain control) algorithm in WLED-SR. It's not enabled by default, however we encourage you to give it a try - all sound reactive effects now support AGC, including 2D and frequency-based effects. The only prerequisite for using AGC is that you first adjust "Squelch" to match your environment while AGC is off - [see previous section](https://github.com/atuline/WLED/wiki/Sound-Settings/_edit#how-to).
 
-![WLEDSR-Sound-Setings-AGC](https://user-images.githubusercontent.com/91616163/177542643-9ddf4c36-aedf-436f-803d-f3e5889f1d54.png)
+![WLEDSR-Sound-Setings-AGC_only](https://user-images.githubusercontent.com/91616163/177599946-055ee5f1-34b9-4a23-a408-4d21500c31e7.png)
 
-_to be written_
+AGC will automatically perform sound input amplification, based on current loudness in your environment. 
+For example, if you play music and then increase the speaker volume, WLED-SR will adjust its internal gain factor accordingly to follow your music. Forget about manually changing "gain" settings. Just relax and let WLED-SR do it autonomously.
+
+Currently WLED-SR offers four different AGC presets that can be selected in sound settings:
+* Off    - AGC off. WLED will strictly use the gain preset from sound settings. 
+* Normal - AGC tries to smoothly follow changes in sound input volume. Recommended as a balanced option for general use.
+* Vivid  - AGC will quickly adjust to changes in sound input volume. Recommended in case you want "more blinken from your LEDs".
+* Lazy   - AGC will take some more time before internal gain is adjusted. Recommended for GEQ effects, or when listening to music that features strong "dynamics".
+
+
+_to be extended soon_
