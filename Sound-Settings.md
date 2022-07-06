@@ -2,7 +2,7 @@
 
 In order to accommodate a wide range of audio inputs, ambient environments and string lengths, we have added user configurable squelch (noise reduction/suppression) and gain controls on the sound settings page that apply to all volume reactive animations.
 
-![WLEDSR-Sound-Setings-Part1](https://user-images.githubusercontent.com/91616163/177539747-6b2f0d92-bae4-4425-9b74-bc1aa2760725.png)
+![WLEDSR-Sound-Setings-start](https://user-images.githubusercontent.com/91616163/177560722-99b24ea6-7590-49a7-951c-81fcd5c53910.png)
 
 
 ## Analog Input Pins
