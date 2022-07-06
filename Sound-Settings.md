@@ -2,7 +2,12 @@
 
 In order to accommodate a wide range of audio inputs, ambient environments and string lengths, we have added user configurable squelch (noise reduction/suppression) and gain controls on the sound settings page that apply to all volume reactive animations.
 
+![WLEDSR-Sound-Setings-Part1](https://user-images.githubusercontent.com/91616163/177539747-6b2f0d92-bae4-4425-9b74-bc1aa2760725.png)
+
+
 ## Analog Input Pins
+
+![WLEDSR-Sound-Setings-Analog](https://user-images.githubusercontent.com/91616163/177540059-0fde407b-6740-4ae3-8ae5-6b2cbc09d9ea.png)
 
 We typically recommend using GPIO 36, aka VP or ADC1_CH0 for analog input, however the following pins should also work:
 
@@ -51,7 +56,18 @@ From faulty microphones to flaky wiring, to WiFi related issues, particularly in
 
 
 ## I2S Digital Input
+
+![WLEDSR-Sound-Setings-Part2](https://user-images.githubusercontent.com/91616163/177542281-1a2ab7b7-48db-4e5e-8658-cd68fd8ead38.png)
+
+Currently the following I2S options are available:
+
+![WLEDSR-Sound-Setings-Digital_Part2](https://user-images.githubusercontent.com/91616163/177543015-2e862675-274d-45fa-822e-bea763ad9432.png)
+
 _to be written_
 
+
 ## AGC - improved Autonomous Gain Control
+
+![WLEDSR-Sound-Setings-AGC](https://user-images.githubusercontent.com/91616163/177542643-9ddf4c36-aedf-436f-803d-f3e5889f1d54.png)
+
 _to be written_
