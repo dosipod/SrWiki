@@ -50,7 +50,7 @@ Here's a method to setup squelch and gain for your SR WLED Device.
 From faulty microphones to flaky wiring, to WiFi related issues, particularly in AP mode, getting reliable and spike free sound sampling with WLED and in particular analog sampling has been a challenge. Digital microphones such as the INMP441, the ICS-43434 provide the best results.
 
 
-## Digital Input (I2S)
+## I2S Digital Input
 _to be written_
 
 ## AGC - improved Autonomous Gain Control
