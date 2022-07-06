@@ -9,8 +9,8 @@ We do our best to perform upstream merges with the original WLED. Our fork inclu
 
 * Several volume reactive effects.
 * Several FFT (frequency) reactive effects.
-* One or more new non-reactive 1D effects.
-* 2D effects.
+* Some new non-reactive 1D effects.
+* Many 2D effects, including a highly configurable "graphical equalizer" effect.
 * UDP sync for volume and FFT reactive effects.
 * Additional sliders for controlling effects.
 * Multiple panels of 2D led's.
@@ -19,17 +19,23 @@ We do our best to perform upstream merges with the original WLED. Our fork inclu
 * An interpreter - for creating your own custom effects.
 * Configuration setting for 2D, panels, noise squelch, gain, and UDP sound synchronization.
 
-Please consider joining the [WLED Discord group](https://discord.gg/RNgqKpZ) where we have a dedicated channel to discuss this project and answer any questions you may have.
+
+### Support and Discussions
+Please consider joining the WLED Discord groups where we have dedicated channels to discuss this project, your projects, 
+and answer any questions you may have.
+
+<a href="https://discord.gg/4CQRmfR"><img src="https://discordapp.com/api/guilds/700041398778331156/widget.png?style=banner2" width="25%" align="middle"></a>
+Join Discord to discuss beta testing of our [sound reactive fork](https://discord.gg/4CQRmfR) of WLED. 
+
+<a href="https://discord.gg/KuqP7NE"><img src="https://discordapp.com/api/guilds/473448917040758787/widget.png?style=banner2" width="25%" align="middle"></a>
+Join Discord to discuss [AirCookie's WLED](https://discord.gg/KuqP7NE).
+
 
 We can also be found on reddit at [r/soundreactive](https://www.reddit.com/r/soundreactive).
 
-Are you looking for some MSGEQ7 support? If so, there's a fork for the ESP8266 that provides this over at:
+Are you looking for some MSGEQ7 support? If so, there's a fork for the ESP8266 that provides this over at: https://github.com/NeariX67/WLED_MSGEQ7
 
-https://github.com/NeariX67/WLED_MSGEQ7
-
-How about INMP441 support using [Constant Q Transform](https://en.wikipedia.org/wiki/Constant-Q_transform) instead of FFT at:
-
-https://github.com/GrumpyMeow/WLED/tree/sound/wled00
+How about INMP441 support using [Constant Q Transform](https://en.wikipedia.org/wiki/Constant-Q_transform) instead of FFT at: https://github.com/GrumpyMeow/WLED/tree/sound/wled00
 
 
 ### Sound Reactive WLED fork Team:
