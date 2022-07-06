@@ -77,10 +77,6 @@ Join Discord to discuss [AirCookie's WLED](https://discord.gg/KuqP7NE).
 
 We can also be found on reddit at [r/soundreactive](https://www.reddit.com/r/soundreactive).
 
-Are you looking for some MSGEQ7 support? If so, there's a fork for the ESP8266 that provides this over at: https://github.com/NeariX67/WLED_MSGEQ7
-
-How about INMP441 support using [Constant Q Transform](https://en.wikipedia.org/wiki/Constant-Q_transform) instead of FFT at: https://github.com/GrumpyMeow/WLED/tree/sound/wled00
-
 
 ### Support Forums
 
