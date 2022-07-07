@@ -33,10 +33,13 @@ Here's a starting point table of Squelch and Gain settings for different input t
 
 | Input | Squelch | Gain
 | ----- | ------- | ----
-| INMP411  (analog) | 20 | 80
-| MAX4466  (analog) | 16 | 120
-| MAX9814 @40dB  (analog) | 10 | 80
-| Line-In (analog) | 4 | 120
+| INMP441 (I2S digital) | 6 | 60
+| ICS-43434  (I2S digital) | 20 | 30
+| ES7243  (I2S LIne-in) | tbd | tbd
+| SPH0645 (I2S digital) | tbd | tbd
+
+| Input | Squelch | Gain
+| ----- | ------- | ----
 | INMP441 (I2S digital) | 6 | 60
 | ICS-43434  (I2S digital) | 20 | 30
 | ES7243  (I2S LIne-in) | tbd | tbd
