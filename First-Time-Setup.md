@@ -39,6 +39,8 @@ Here's a starting point table of Squelch and Gain settings for different input t
 | Line-In (analog) | 4 | 120
 | INMP441 (I2S digital) | 6 | 60
 | ICS-43434  (I2S digital) | 20 | 30
+| ES7243  (I2S LIne-in) | tbd | tbd
+| SPH0645 (I2S digital) | tbd | tbd
 
 We recommend using an [I2S digital microphone](https://github.com/atuline/WLED/wiki/Digital-Microphone-Hookup), like INMP441, SPH0645, or PDM microphones.
 
