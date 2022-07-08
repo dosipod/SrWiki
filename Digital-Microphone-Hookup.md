@@ -17,7 +17,7 @@ Since 0.12.0, you can change the pins in the [Sound Settings](https://github.com
 
 In older releases, you need to change pins used by defining `I2S_WS`, `I2S_SD`, and `I2S_SCK` in your PlatformIO config, or by editing the values in audio_reactive.h. 
 
-Note that 'Other' is supposed to represent the GY-SPH0645 I²S, which did not function correctly during testing with the INMP441 setup.
+Note that 'Other' is supposed to represent the GY-SPH0645 I²S, which did not function correctly in older releases of WLED-SR when testing with the INMP441 setup.
 
 We do not have these digital microphones running on an ESP8266.
 
