@@ -1,6 +1,6 @@
 ## Introduction
 
-_Disclaimer: The information below is for the coming release version of WLED-SR ( [current `dev` branch](https://github.com/atuline/WLED/tree/dev) ). <br/>_
+_Disclaimer: The information below is for the coming release version of WLED-SR ( [current `dev` branch](https://github.com/atuline/WLED/tree/dev) )_. 
 _If you use an older release, you will not have all options._
 
 In order to accommodate a wide range of audio inputs, ambient environments and string lengths, we have added user configurable squelch (noise reduction/suppression) and gain controls on the sound settings page that apply to all sound reactive animations.
