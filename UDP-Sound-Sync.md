@@ -1,9 +1,11 @@
 UDP Sound Sync is a feature to synchronize (share) the sound input of a 'master' device with one or more 'slave' devices. All devices must be running the same version of SR WLED, and they must be in the same network. Sound Sync is not availeable in "upstream" WLED by Aircookie. Sound Sync is also different from direct LEDs control using protocols like E1.31, DMX, or AdaLight.
 
+UDP Sound Sync does not sync the actual animations, but rather transmits summary audio sampling information to several devices that still run their own animations locally.
+
 ## Setup
 Before configuring UDP Sound Sync, make sure you have gone into the WiFi Preferences and clicked on 'Disable WiFi sleep' at the bottom of the page. It has caused us innumerable problems in the past.
 
-In order to configure UDP sound sync, the ‘master’ needs to be an ESP32 along with an audio input.
+In order to configure UDP sound sync, the ‘master’ needs to be an ESP32 along with an [audio input](https://github.com/atuline/WLED/wiki/Sound-Settings).
 
 You would then to go the ‘Sync Interfaces’ page and configure the 'Audio Sync' at the bottom of the page. Transmit for the ESP32 and receive for devices without an audio input (either ESP32's or ESP8266's). Make sure the UDP port is the same.
 
