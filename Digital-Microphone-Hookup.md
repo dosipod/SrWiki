@@ -1,6 +1,6 @@
 The INMP441 is a high-performance, low power, digital output, omnidirectional MEMS microphone and consists of a MEMS sensor, signal conditioning, an analog-to-digital converter, anti-aliasing filters, power management, and an industry-standard 24-bit I²S interface. The I²S interface allows the INMP441 to connect directly to an ESP32 (but NOT an ESP8266). The recently tested ICS-43434 (thanks to Serg74) also works well.
 
-On an ESP32 (only), if a digital microphone is not detected during startup, Sound Reactive WLED will fall back to analog read.
+<br/>
 
 | INMP441 | Other | ESP32 Pin | ESP32 Mini
 | ---- | ---- | ---- | ----
@@ -11,7 +11,9 @@ On an ESP32 (only), if a digital microphone is not detected during startup, Soun
 | VDD | VDD | 3.3V | 3.3V
 | GND | GND | Gnd | Gnd
 
-(You can change the pins used by defining `I2S_WS`, `I2S_SD`, and `I2S_SCK` in your PlatformIO config, or by editing the values in audio_reactive.h). In 0.12.0, you can change the pins in the Sound Settings interface. You'll need to reboot when done.
+<br/>
+
+Since 0.12.0, you can change the pins in the Sound Settings interface. You'll need to reboot when done. In older releases, you need to change pins used by defining `I2S_WS`, `I2S_SD`, and `I2S_SCK` in your PlatformIO config, or by editing the values in audio_reactive.h. 
 
 Note that 'Other' is supposed to represent the GY-SPH0645 I²S, which did not function correctly during testing with the INMP441 setup.
 
