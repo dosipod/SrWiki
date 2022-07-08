@@ -13,7 +13,7 @@ The INMP441 is a high-performance, low power, digital output, omnidirectional ME
 
 <br/>
 
-Since 0.12.0, you can change the pins in the Sound Settings interface. You'll need to reboot when done. In older releases, you need to change pins used by defining `I2S_WS`, `I2S_SD`, and `I2S_SCK` in your PlatformIO config, or by editing the values in audio_reactive.h. 
+Since 0.12.0, you can change the pins in the [Sound Settings](https://github.com/atuline/WLED/wiki/Sound-Settings) interface. You'll need to reboot when done. In older releases, you need to change pins used by defining `I2S_WS`, `I2S_SD`, and `I2S_SCK` in your PlatformIO config, or by editing the values in audio_reactive.h. 
 
 Note that 'Other' is supposed to represent the GY-SPH0645 I²S, which did not function correctly during testing with the INMP441 setup.
 
