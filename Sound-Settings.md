@@ -83,7 +83,7 @@ AGC will automatically perform sound input amplification, based on current sound
 For example, if you play music and then increase the speaker volume, WLED-SR will adjust internal gain factors to follow your music. Forget about manually changing "gain" settings. Just relax and let WLED-SR do it autonomously.
 
 Currently WLED-SR offers four different AGC presets that can be selected in sound settings:
-* **Off**    - AGC off. WLED will strictly use the gain preset from sound settings. 
+* **Off**    - AGC off. WLED will strictly use the _Gain_ value from sound input settings, without any adjustments.
 * **Normal** - AGC tries to smoothly follow changes in sound input volume. Recommended as a balanced option for general use.
 * **Vivid**  - AGC will quickly adjust to changes in sound input volume. Recommended in case you want "more blinken from your LEDs".
 * **Lazy**   - AGC will take some more time before internal gain is adjusted. Recommended for GEQ effects, or when listening to music that features strong "dynamics".
