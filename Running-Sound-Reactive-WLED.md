@@ -12,7 +12,9 @@ When changing any values in the LED settings page, you'll need to update the 2D 
 The serpentine parameter configures whether the LED's are wired up in a continuous/serpentine layout or top to bottom and repeat.
 
 ### Initial UDP Sync Settings
-Devices can be configured as 'disabled', 'transmit' or 'receive' UDP sound. This is completely independent of the 'Sync' button, which synchronizes effects. As a result, you can run multiple types of sound reactive animations when this feature is enabled. This feature provides a subset of the FFT data to 'slave' devices, and as a result, some FFT enabled routines will not function in this mode. You must RESET the ESP32 after you enable/disable this on the Sync settings page.
+Devices can be configured as 'disabled', 'transmit' or 'receive' [UDP sound](https://github.com/atuline/WLED/wiki/UDP-Sound-Sync). This is completely independent of the 'Sync' button, which synchronizes effects. 
+
+As a result, you can run multiple types of sound reactive animations when [UDP Sound Sync](https://github.com/atuline/WLED/wiki/UDP-Sound-Sync) is enabled. This feature provides a subset of the sound and FFT data to several 'slave' devices. As a result, some FFT enabled routines will not function in this mode. You must RESET the ESP32 after you enable/disable this on the Sync settings page.
 
 
 
