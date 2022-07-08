@@ -11,15 +11,18 @@ The INMP441 is a high-performance, low power, digital output, omnidirectional ME
 | VDD | VDD | 3.3V | 3.3V
 | GND | GND | Gnd | Gnd
 
-We do not have these digital microphones running on an ESP8266.
+**Important**: please make sure that your I2S device provides sound input on the **LEFT audio channel**! For the INMP441 this is achieved by wiring the 'L/R' connection to GND (ground).
 
 <br/>
 
-Since 0.12.0, you can change I2S pins in the [Sound Settings](https://github.com/atuline/WLED/wiki/Sound-Settings) interface; on ESP32 any available GPIO can be used for I²S. The 'SD' signal can also be mapped to an input-only (GPI) pin. You'll need to reboot when done with pin assignment. 
+Since 0.12.0, you can change I2S pins in the [Sound Settings](https://github.com/atuline/WLED/wiki/Sound-Settings) interface; on ESP32 any available GPIO can be used for I²S. The 'SD' signal can also be mapped to an input-only (GPI) pin. You'll need to reboot when done with pin assignment - don't forget to "save". To reboot, please press 'reset' on your ESP32. Unfortunately a restart by software ("soft reboot") is not always sufficient to activate new driver settings.
+
 
 In older releases, you need to change pins used by defining `I2S_WS`, `I2S_SD`, and `I2S_SCK` in your PlatformIO config, or by editing the values in audio_reactive.h. 
 
 Note that 'Other' is supposed to represent the GY-SPH0645 I²S, which did not function correctly in older releases of WLED-SR when testing with the INMP441 setup.
+
+We do not have these digital microphones running on an ESP8266.
 
 In addition to I2S microphones, there are solutions availeable for line-in via I2S. We already have driver support for Boards/Shields with "es7243" chip, and we're investigating "es8388". In addition, other I2S ADC (analog-to-digital-converter) devices with a [standard I2S interface](https://en.m.wikipedia.org/wiki/I%C2%B2S) may already work with WLED-SR. However please keep in mind that WLED-SR is a spare-time open source project - we focus on creating generic drivers but cannot test all available devices.
 
