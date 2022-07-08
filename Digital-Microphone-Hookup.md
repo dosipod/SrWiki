@@ -15,7 +15,7 @@ We do not have these digital microphones running on an ESP8266.
 
 <br/>
 
-Since 0.12.0, you can change I2S pins in the [Sound Settings](https://github.com/atuline/WLED/wiki/Sound-Settings) interface; on ESP32 any available GPIO can be assigned to I²S. The 'SD' signal can also be mapped to an input-only (GPI) pin. You'll need to reboot when done with pin assignment. 
+Since 0.12.0, you can change I2S pins in the [Sound Settings](https://github.com/atuline/WLED/wiki/Sound-Settings) interface; on ESP32 any available GPIO can be used for I²S. The 'SD' signal can also be mapped to an input-only (GPI) pin. You'll need to reboot when done with pin assignment. 
 
 In older releases, you need to change pins used by defining `I2S_WS`, `I2S_SD`, and `I2S_SCK` in your PlatformIO config, or by editing the values in audio_reactive.h. 
 
