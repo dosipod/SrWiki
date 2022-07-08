@@ -2,7 +2,7 @@ The INMP441 is a high-performance, low power, digital output, omnidirectional ME
 
 <br/>
 
-| INMP441 | Other | ESP32 Pin | ESP32 Mini
+| INMP441 | Other | ESP32 Pin | ESP32 D1 Mini
 | ---- | ---- | ---- | ----
 | L/R | SEL | Gnd | Gnd
 | SD | DOUT | 32 | 16
@@ -18,8 +18,6 @@ Since 0.12.0, you can change the pins in the [Sound Settings](https://github.com
 In older releases, you need to change pins used by defining `I2S_WS`, `I2S_SD`, and `I2S_SCK` in your PlatformIO config, or by editing the values in audio_reactive.h. 
 
 Note that 'Other' is supposed to represent the GY-SPH0645 I²S, which did not function correctly during testing with the INMP441 setup.
-
-Alternatively, for an ESP32 in a D1 Mini form factor, you should be able to use GPIO pins 16, 18 and 22.
 
 We do not have these digital microphones running on an ESP8266.
 
