@@ -9,7 +9,7 @@
 [Sound Reactive Animations](https://github.com/atuline/WLED/wiki/Reactive-Animations)  
 [Non-Reactive Animations](https://github.com/atuline/WLED/wiki/Non-Reactive-Animations)    
 [Custom Effects](https://github.com/atuline/WLED/wiki/WLED-Custom-effects)    
-[UDP Sound Sync](https://github.com/atuline/WLED/wiki/UDP-Sound-Sync)
+[UDP Sound Sync](https://github.com/atuline/WLED/wiki/UDP-Sound-Sync)   
 [Analog Audio Input Options](https://github.com/atuline/WLED/wiki/Analog-Audio-Input-Options)   
 [Digital Microphone Hookup](https://github.com/atuline/WLED/wiki/Digital-Microphone-Hookup)  
 [Using my PC for the Sound](https://github.com/atuline/WLED/wiki/Using-my-PC-for-the-Sound)  
