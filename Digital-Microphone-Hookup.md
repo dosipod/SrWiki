@@ -26,7 +26,7 @@ We do not have these digital microphones running on an ESP8266.
 
 In addition to I2S microphones, there are solutions availeable for line-in via I2S. We already have driver support for Boards/Shields with "es7243" chip, and we're investigating "es8388". 
 
-In addition, other I2S ADC (analog-to-digital-converter) devices and microphones that have a [standard I2S interface](https://en.m.wikipedia.org/wiki/I%C2%B2S) may already work with WLED-SR, by using one of the "Generic I2S" drivers (`Generic I2S`, `Generic I2S PDM`, or `Generic I2S with Mclk`). It is important however that sound input is availeable on the **LEFT audio channel**. Please keep in mind that WLED-SR is a spare-time open source project - we do our best to make generic drivers but we cannot test with all available devices.
+In addition, other I2S ADC (analog-to-digital-converter) devices and microphones that have a [standard I2S interface](https://en.m.wikipedia.org/wiki/I%C2%B2S) may already work with WLED-SR, by using one of the "Generic I2S" drivers (`Generic I2S`, `Generic I2S PDM`, or `Generic I2S with Mclk`). It is important however that sound input is availeable on the **LEFT audio channel**. Please keep in mind that this is a spare-time open source project - we do our best to make generic drivers but we cannot test with all available devices.
 
 Having problems getting the INMP441 running with WLED? Here's a test sketch (which you can compile with the Arduino IDE): https://pastebin.com/Ua7s7LYF
 . If you are still having a problem with that sketch, change the line with ONLY_LEFT to ONLY_RIGHT. If that works, you'll need to go into audio_source.h and change that line.
