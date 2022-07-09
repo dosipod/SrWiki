@@ -25,7 +25,6 @@
 [Modifying Sound Reactive WLED](https://github.com/atuline/WLED/wiki/Modifying-Sound-Reactive-WLED)  
 [Contributing Code to SR WLED](https://github.com/atuline/WLED/wiki/Contributing-Code-to-SR-WLED)   
 [Future Directions](https://github.com/atuline/WLED/wiki/Future-Directions)  
-
 [Adding a new Settings Page](https://github.com/atuline/WLED/wiki/Adding-a-Sound-Settings-page-to-the-UI)  
 [On Lossy Colours](https://github.com/atuline/WLED/wiki/On-Lossy-Colours)  
 [Sliders in WLED](https://github.com/atuline/WLED/wiki/Adding-Sliders)  
