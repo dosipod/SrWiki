@@ -30,11 +30,12 @@ If you'd like to contribute, you would need to be able to perform a significant 
 * Can other members of the team support this added functionality in the future?
 * Is the code clear and concise?
 
-In addition:
+## In addition:
 
+* Good communication with team members is very important. Join our [discord](https://discord.gg/4CQRmfR).
+* Pull Requests and any changes should first go into our `dev` branch! Do not create a PR for `master` unless there is a very good reason.
 * Keep any git update to a limited topic for ease of testing/rollback.
-* Good communication with team members is very important.
-* Keep the Wiki documentation in good order.'
+* Keep the Wiki documentation in 'good order'.
 * Technical support for a long enough period of time to ensure your code is fully tested, the UI is fine, and supportable by others.
 * Commitment. You're really keen on WLED and have a long term commitment to support the community.
 
@@ -53,6 +54,6 @@ In conclusion, the most important factors are commitment, teamwork, communicatio
 
 ## Can I help?
 
-This is a community project, and contributions are be welcome! We're always up for a good PR (pull request).
+Yes! This is a community project, and contributions are welcome! We're always up for a good PR(see above).
 
 Just remember that any code you add will need to be maintained when we attempt to incorporate future versions of WLED. It's easy to add new code; maintaining it across multiple versions of WLED is a whole other matter. Be sparing with your additions.
