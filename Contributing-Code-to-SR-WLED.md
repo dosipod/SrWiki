@@ -40,7 +40,7 @@ If you'd like to contribute, you would need to be able to perform a significant 
 * Commitment. You're really keen on WLED and have a long term commitment to support the community.
 
 
-## Knowledge required:
+## Knowledge That Helps:
 
 * Github versioning, commits, branching, merging.
 * FastLED (for animations), combined with NeoPixelBus.
