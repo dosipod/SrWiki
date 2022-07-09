@@ -1,4 +1,4 @@
-We learned a long time ago that a adding new code can make for a LOT of testing. If you offer to help out with this fork, please keep in mind that we support:
+We learned a long time ago that adding new code can make for a LOT of testing. If you offer to help out with this fork, please keep in mind that we support:
 
 * Several different analog microphones and some in different configurations (ie MAX9814), each of which need to be tested.
 * Line-in, with different possible line-in levels.
