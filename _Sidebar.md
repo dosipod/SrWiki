@@ -21,11 +21,11 @@
 [Connectivity Issues](https://github.com/atuline/WLED/wiki/Connectivity-Issues)  
 
 ### Coding and Testing
+[WLED Programming Notes](https://github.com/atuline/WLED/wiki/WLED-Programming-Notes)  
 [Modifying Sound Reactive WLED](https://github.com/atuline/WLED/wiki/Modifying-Sound-Reactive-WLED)  
 [Contributing to SR WLED](https://github.com/atuline/WLED/wiki/Contributing-to-SR-WLED)   
 [Future Directions](https://github.com/atuline/WLED/wiki/Future-Directions)  
 
-[WLED Programming Notes](https://github.com/atuline/WLED/wiki/WLED-Programming-Notes)  
 [Adding a new Settings Page](https://github.com/atuline/WLED/wiki/Adding-a-Sound-Settings-page-to-the-UI)  
 [On Lossy Colours](https://github.com/atuline/WLED/wiki/On-Lossy-Colours)  
 [Sliders in WLED](https://github.com/atuline/WLED/wiki/Adding-Sliders)  
