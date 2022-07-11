@@ -8,17 +8,19 @@ Download the CH340 drivers at https://www.wemos.cc/en/latest/ch340_driver.html
 ## Flashing From Binary
 The Sound Reactive WLED binaries for ESP32 and Wemos D1 Mini are located [here.](https://github.com/atuline/WLED/releases)
 
-### Flashing ESP8266 Binaries
+<br/>
 
-1.  Download for your platform [NodeMCU-PyFlasher](https://github.com/marcelstoer/nodemcu-pyflasher/releases).
-1.  Plug the WeMOS D1 Mini (or other ESP8266 device) into your computer.
-1.  Run NodeMCU-PyFlasher.
-1.  Load the binary.
-1.  Select the Com port.
-1.  Select 'yes, wipes all data'.
-1.  Press Flash NodeMCU.
+### unofficial development binaries - here be dragons
+You can find some unofficial SR WLED binaries, including intermediate development builds for ESP32, here:
+* https://github.com/wled-install/wled-install.github.io
+* https://wled-install.github.io
+* https://install.wled.me
 
-### Flashing ESP32 Binaries
+Please keep in mind that these sites are not actively maintained by the SR WLED team. 
+You may find old outdated binaries, in particular for SR development versions. So please compare dates before installing one of these.
+
+
+### Flashing ESP32 Binaries with esptool
 
 Warning: We had to change the partition size on the ESP32 in order to 'fit' all the new features. This means that the 'old way' of upgrading/flashing, no longer work unfortunately. You cannot use ESPHome Flasher, and you cannot use OTA from a build prior to b5.
 
@@ -45,6 +47,17 @@ Warning: We had to change the partition size on the ESP32 in order to 'fit' all 
 Note: If you Flash via another method, you will definitely need to perform a Factory Reset. Cycling the power is also a requirement if you're doing anything with I2S.
 
 
+### Flashing ESP8266 Binaries
+
+1.  Download for your platform [NodeMCU-PyFlasher](https://github.com/marcelstoer/nodemcu-pyflasher/releases).
+1.  Plug the WeMOS D1 Mini (or other ESP8266 device) into your computer.
+1.  Run NodeMCU-PyFlasher.
+1.  Load the binary.
+1.  Select the Com port.
+1.  Select 'yes, wipes all data'.
+1.  Press Flash NodeMCU.
+
+
 ## Compiling from Platform IO
 
 Note: We have long since stopped compiling WLED with the Arduino IDE.
@@ -55,3 +68,4 @@ Additional compile guidelines
 * If you get .py errors, install Python (wait for the VSCode popup to install Python)
 * If you do not install the Arduino IDE (Why should you if you have PlatformIO) and your board is not recognised if you compile to board, install the [USB to UART bridge VSP Drivers](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers)
 * For the sound reactive ESP32 firmware, the board type should be env:soundreactive_esp32dev. This is because we have modified the build partitions in order to go beyond the original compile size limits of WLED.
+
