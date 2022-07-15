@@ -29,7 +29,7 @@ We do our best to perform upstream merges with the original WLED. Our fork inclu
 * **General contributor, documentation, versioning, keep us up to date:** Chris Reese (aka THATDONFC)
 * **General contributor, UDP Sound Sync, INMP441 I2S:** Chris Hultin (aka spedione)
 * **Panels, 2D, segments, animations, custom effects (interpreter) and code cleanup:** Ewoud Wijma (aka ewowi)
-* **Sound processing and FFT:** Frank Möhle (aka softhack007)
+* **Sound processing, FFT, and code cleanup:** Frank Möhle (aka softhack007)
 * **I2S Sound input and processing:** Florian Heilmann (aka Haribo / FHeilmann)
 
 Other members of the WLED Discord group have provided code and testing support as well. Thanks all!
