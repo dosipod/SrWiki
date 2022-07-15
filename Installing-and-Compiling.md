@@ -13,6 +13,7 @@ The Sound Reactive WLED binaries for ESP32 and Wemos D1 Mini are located [here.]
 ### unofficial development binaries - here be dragons
 You can find some unofficial SR WLED binaries, including intermediate development builds for ESP32, here:
 * https://github.com/wled-install/wled-install.github.io
+* https://github.com/srg74/WLED-wemos-shield/tree/master/resources/Firmware/Sound_reactive 
 * https://wled-install.github.io
 * https://install.wled.me
 
