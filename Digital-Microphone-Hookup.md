@@ -15,7 +15,7 @@ The INMP441 is a high-performance, low power, digital output, omnidirectional ME
 
 <br/>
 
-Since 0.12.0, you can change I2S pins in the [Sound Settings](https://github.com/atuline/WLED/wiki/Sound-Settings) interface; on ESP32 any available GPIO can be used for I²S. The 'SD' signal can also be mapped to an input-only (GPI) pin _(*)_. You'll need to reboot when done with pin assignment - don't forget to "save". To reboot, please press 'reset' on your ESP32. Unfortunately a restart by software ("soft reboot") is not always sufficient to activate new driver settings.
+Since 0.12.0, you can change I2S pins in the [Sound Settings](https://github.com/atuline/WLED/wiki/Sound-Settings) interface; on ESP32 any available GPIO can be used for I²S. The 'SD' signal could also be mapped to an input-only (GPI) pin _(*)_, if you are low on GPIO pins. You'll need to reboot when done with pin assignment - don't forget to "save". To reboot, please press 'reset' on your ESP32. Unfortunately a restart by software ("soft reboot") is not always sufficient to activate new driver settings.
 
 **Important:** _(*)_ Due to a problem that was fixed very recently, its not possible to use input-only GPI pins in older releases of SR WLED. There will be no warning if you try to do so. This problem is solved in the coming release version of WLED-SR _( [current `dev` branch](https://github.com/atuline/WLED/tree/dev) )_.
 
