@@ -23,7 +23,7 @@ You may find old outdated binaries, or binaries that might not work on generic E
 
 ### Flashing ESP32 Binaries with esptool
 
-Warning: We had to change the partition size on the ESP32 in order to 'fit' all the new features. This means that the 'old way' of upgrading/flashing, no longer work unfortunately. You cannot use ESPHome Flasher, and you cannot use OTA from a build prior to b5.
+_Warning_: We had to change the partition size on the ESP32 in order to 'fit' all the new features. This means that the 'old way' of upgrading/flashing, no longer work unfortunately. **You cannot use ESPHome Flasher**, and you cannot use OTA from a build prior to b5.
 
 1. Download [esptool](https://github.com/espressif/esptool).
 1. Download the ESP32 bootloader, such as https://github.com/Aircoookie/WLED/releases/download/v0.13.1/esp32_bootloader_v4.bin
