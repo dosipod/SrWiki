@@ -17,7 +17,7 @@ You can find some unofficial SR WLED binaries, including intermediate developmen
 * https://wled-install.github.io
 * https://install.wled.me
 
-Please keep in mind that these sites are not actively maintained by the SR WLED team. 
+Please keep in mind that these sites are not maintained by the SR WLED team. 
 You may find old outdated binaries, or binaries that might not work on generic ESP32 hardware. So please compare dates and read descriptions before installing one of these.
 
 
