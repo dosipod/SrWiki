@@ -38,7 +38,7 @@ When an ESP32 or ESP8266 is configured to receive audio data from another device
 
 * The default UDP Multicast IP is 239.0.0.1, and the default port is 11988.
 
-* UDP multicast is generally not very reliable with typical "consumer grade hardware". Some user found that creating a "port forwarding rule" on their local Wifi router helps. For example, you could create a "dynamic port forwarding rule" for UDP port 11988.
+* UDP multicast is generally not very reliable with typical "consumer grade hardware". Some users found that creating a "port forwarding rule" on their local Wifi router helps. For example, you could create a "dynamic port forwarding rule" for UDP port 11988.
 
 
 UDP Sound sync brought to you by @spedione on Discord.
