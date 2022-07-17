@@ -37,7 +37,7 @@ Do NOT use any of the pins from ADC2, as they will conflict with the WiFi and wi
 Adjust this value on the Sound Settings page so that the leds are only activated above a certain 'background noise' level.
 
 ## Gain
-Line-in signals are typically much lower than that of some of the microphones. Rather than use an auto gain function, you can manually adjust the gain from 1 to 255, which translates to 0.1 up to almost 6.0 gain.
+Line-in signals are typically much lower than that of some of the microphones. Rather than use an auto gain function, you can manually adjust the gain from 1 to 255, which translates to 0.1 up to almost 6.5 gain. That's equivalent to a range of _-20dB_ up to _+16dB_.
 
 In addition, the 'Intensity' and "input level" sliders can sometimes adjust an animation to simulate increased gain.
 
