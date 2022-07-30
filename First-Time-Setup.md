@@ -30,7 +30,7 @@ Click 'Login to network' when the notification about this shows up. You are then
 
 ## Sound Settings: getting started with common microphones
 
-_Disclaimer: The information below is for the coming release version of WLED-SR ( [current `dev` branch](https://github.com/atuline/WLED/tree/dev) )._ 
+_Disclaimer: The information below is for the [latest release version of SR WLED](https://github.com/atuline/WLED/releases)._ 
 _If you use an older release, please divide _Gain_ values by 4._
 
 Here's a starting point table of Squelch and Gain settings for different input types:
