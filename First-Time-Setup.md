@@ -24,7 +24,7 @@ Click 'Login to network' when the notification about this shows up. You are then
 4. On the Sound Setting page, set the Squelch setting to '1', the Gain > 200, and AGC = Off.
 5. On the Effects page, set the animation to '*Gravcenter' or '*Gravimeter'.
 6. Back on the Sound Settings page, increase/save Squelch setting until strip no longer reacts to the ambient noise.
-7. On the Sound Settings page, reduce/adjust the Gain setting until the leds react reasonably with your voice.
+7. On the Sound Settings page, set the Gain to 40. Then reduce/adjust the Gain setting until the leds react reasonably with your voice.
 8. You might also want to run a [Pink Noise](https://www.youtube.com/watch?v=ZXtimhT-ff4) video and fine tune the values from there.
 <br/>
 
