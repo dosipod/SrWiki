@@ -14,9 +14,11 @@ Model | Compatibility | Notes
 *MAX9812* | Good | Only 20dB gain, but worked OK.
 *MAX9814* | Good | Best to set the gain to 40dB.
 
-If you are using the [MAX9814](https://learn.adafruit.com/adafruit-agc-electret-microphone-amplifier-max9814/), you need to connect gain to vdd to set the gain to 40dB as the default 60db has far too much background noise. The inexpensive sound sensors you can buy from Aliexpress or elsewhere (such as LM393 or KY-038) typically have an on/off output only (detecting "sound" or "silence") and may or may not work adequately. For more information on our microphone test results, see our [Arduino Compatible Microphones document](https://github.com/atuline/WLED/blob/assets/docs/Microphones.pdf).
+If you are using the [MAX9814](https://learn.adafruit.com/adafruit-agc-electret-microphone-amplifier-max9814/), you need to connect gain to vdd to set the gain to 40dB as the default 60db has far too much background noise. 
 
-If the LED's are active when the ambient volume is low while running volume only effects beginning with a single '*', you can increase the background noise filtering (or squelch) by navigating to the 'Config | LED Preferences | Sound' and increase the Squelch value. You can also make it more sensitive by lowering that Squelch value. In addition, there is a gain setting, which is required especially for the much lower signal level provided by the line-in configuration. Gain, Squelch and AGC are affecting all soundreactive, volumereactive and frequency (FFT) reactive effects.
+Important: there are some inexpensive sound sensors you can buy from Aliexpress or elsewhere (such as LM393 or KY-038). Typically these have an on/off output only (detecting "sound" or "silence") and they may or may not work adequately. For more information on our microphone test results, see our [Arduino Compatible Microphones document](https://github.com/atuline/WLED/blob/assets/docs/Microphones.pdf).
+
+If the LED's are active when the ambient volume is low while running volume only effects beginning with a single '*', you can increase the background noise filtering (or squelch) by navigating to the 'Config | Sound Settings' and [increase the Squelch value](https://github.com/atuline/WLED/wiki/Sound-Settings#how-to). You can also make it more sensitive by lowering that Squelch value. In addition, there is a gain setting, which is required especially for the much lower signal level provided by the line-in configuration. Gain, Squelch and AGC are affecting all soundreactive, volumereactive and frequency (FFT) reactive effects.
 
 **Note 1:** Do NOT connect input devices to 5V (or Vin). The power should be connected to the 3.3V pin.
 
