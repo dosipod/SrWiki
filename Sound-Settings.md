@@ -32,6 +32,7 @@ GPIO 39 => ADC1_CH3
 
 Do NOT use any of the pins from ADC2, as they will conflict with the WiFi and with I2S sampling.
 
+Mire More information about analog inputs on our [analog microphones](https://github.com/atuline/WLED/wiki/Analog-Audio-Input-Options) page.
 
 ## Squelch
 Adjust this value on the Sound Settings page so that the leds are only activated above a certain 'background noise' level.
@@ -66,6 +67,7 @@ Currently the following I2S options are available:
 
 ![WLEDSR-Sound-Setings-Digital_Part2](https://user-images.githubusercontent.com/91616163/177543015-2e862675-274d-45fa-822e-bea763ad9432.png)
 
+Some more information can be found on our [I2S digital microphones](https://github.com/atuline/WLED/wiki/Digital-Microphone-Hookup) page.
 
 _to be extended soon_
 
