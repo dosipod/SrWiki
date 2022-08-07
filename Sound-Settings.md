@@ -10,7 +10,7 @@ In order to accommodate a wide range of audio inputs, ambient environments and s
 <br/>
 
 ### Press reset key after changing sound source
-After changing the sound source (either GPIO pins or Microphone type), is is important to press the "reset" button on your ESP32. WLED cannot change the sound input configuration "on the fly", due to a known hardware problem of ESP32. See https://github.com/espressif/esp-idf/issues/7442 "only a hard CPU reset can disconnect the I2S signal from built-in ADC". 
+After changing the sound source (either GPIO pins or Microphone type), it is important to press the "reset" button on your ESP32 - don't forget to "save" first. WLED cannot change the sound input configuration "on the fly", due to a known hardware problem of ESP32. See https://github.com/espressif/esp-idf/issues/7442 "only a hard CPU reset can disconnect the I2S signal from built-in ADC". 
 
 <br/>
 
@@ -37,6 +37,8 @@ GPIO 38 => ADC1_CH2
 GPIO 39 => ADC1_CH3
 
 Do NOT use any of the pins from ADC2, as they will conflict with the WiFi and with I2S sampling.
+
+Remember to [press Reset](https://github.com/atuline/WLED/wiki/Sound-Settings#press-reset-key-after-changing-sound-source) after saving your new analog input configuration.
 
 More information about analog inputs on our [analog microphones](https://github.com/atuline/WLED/wiki/Analog-Audio-Input-Options) page.
 
