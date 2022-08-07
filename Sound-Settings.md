@@ -40,7 +40,7 @@ Do NOT use any of the pins from ADC2, as they will conflict with the WiFi and wi
 
 <br/>
 
-We have observed problems when using "analog buttons" (potentiometer) together with ADC analog sound input. It seems that different drivers (I2S for sound, analogRed() for potentiometer) are getting into conflict. If you plan to attach a potentiometer to your WLED device, we recommend to use an [I2S digital microphone](https://github.com/atuline/WLED/wiki/Digital-Microphone-Hookup) to avoid these problems.
+We have observed problems when using "analog buttons" (potentiometer) together with ADC analog sound input. It seems that different drivers (I2S for sound, analogRead() for potentiometer) are getting into conflict. If you plan to attach a potentiometer to your WLED device, we recommend to use an [I2S digital microphone](https://github.com/atuline/WLED/wiki/Digital-Microphone-Hookup) to avoid these problems.
 
 
 Remember to [press Reset](https://github.com/atuline/WLED/wiki/Sound-Settings#press-reset-key-after-changing-sound-source) after saving your new analog input configuration.
