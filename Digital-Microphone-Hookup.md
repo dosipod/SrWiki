@@ -1,4 +1,4 @@
-The INMP441 is a high-performance, low power, digital output, omnidirectional MEMS microphone and consists of a MEMS sensor, signal conditioning, an analog-to-digital converter, anti-aliasing filters, power management, and an industry-standard 24-bit I²S interface. The I²S interface allows the INMP441 to connect directly to an ESP32 (but NOT an ESP8266). The recently tested ICS-43434 (thanks to Serg74) also works well.
+The INMP441 is a high-performance, low power, digital output, omni-directional MEMS microphone and consists of a MEMS sensor, signal conditioning, an analog-to-digital converter, anti-aliasing filters, power management, and an industry-standard 24-bit I²S interface. The I²S interface allows the INMP441 to connect directly to an ESP32 (but NOT an ESP8266). The recently tested ICS-43434 (thanks to Serg74) also works well.
 
 <br/>
 
@@ -11,7 +11,7 @@ The INMP441 is a high-performance, low power, digital output, omnidirectional ME
 | VDD | VDD | 3.3V | 3.3V
 | GND | GND | Gnd | Gnd
 
-**Important**: please make sure that your I2S device provides sound input on the **LEFT audio channel**! For the INMP441 this is achieved by wiring the 'L/R' connection to GND (ground).
+**Important**: please make sure that your I2S device provides sound input on the **LEFT audio channel**! For the INMP441 this is achieved by wiring the 'L/R' connection to GND (ground). Only exception is the "ES7243" driver, which is always using the _RIGHT_ audio channel.
 
 <br/>
 
@@ -22,7 +22,7 @@ Since 0.12.0, you can change I2S pins in the [Sound Settings](https://github.com
 
 In older releases, you need to change pins used by defining `I2S_WS`, `I2S_SD`, and `I2S_SCK` in your PlatformIO config, or by editing the values in audio_reactive.h. 
 
-In addition to I2S microphones, there are solutions availeable for line-in via I2S. We already have driver support for Boards/Shields with "es7243" chip, and we're investigating "es8388". 
+In addition to I2S microphones, there are solutions available for line-in via I2S. We already have driver support for Boards/Shields with "es7243" chip, and we're investigating "es8388". 
 
 Other I2S ADC (analog-to-digital-converter) devices and microphones that have a [standard I2S interface](https://en.m.wikipedia.org/wiki/I%C2%B2S) may already work with WLED-SR, by using one of the I2S "Generic" drivers (`Generic I2S`, `Generic I2S PDM`, or `Generic I2S with Mclk`). It is important however that sound input comes on the **LEFT audio channel**. Please keep in mind that this is a spare-time open source project - we do our best to make generic drivers but we cannot test with all available devices.
 
