@@ -2,14 +2,14 @@ The INMP441 is a high-performance, low power, digital output, omni-directional M
 
 <br/>
 
-| INMP441 | Other<br/>incl. SPH0645 | ESP32 GPIO | ESP32 D1 Mini GPIO
-| ---- | ---- | ---- | ----
-| L/R | SEL | Gnd | Gnd
-| SD | DOUT | 32 | 16
-| WS | LRCL | 15 | 22
-| SCK | BCLK | 14 | 18
-| VDD | VDD | 3.3V | 3.3V
-| GND | GND | Gnd | Gnd
+| INMP441 <br/> and ICS-43434 | Other<br/>incl. SPH0645 | ESP32 GPIO | ESP32 D1 Mini GPIO | |
+| ---- | ---- | ---- | ---- | --- |
+| L/R | SEL | Gnd | Gnd | ground => left channel
+| SD | DOUT | 32 | 16 | serial data
+| WS | LRCL | 15 | 22 | left right clock
+| SCK | BCLK | 14 | 18 | serial clock
+| VDD | VDD | 3.3V | 3.3V | power don't use 5V!
+| GND | GND | Gnd | Gnd | ground, 0V
 
 **Important**: please make sure that your I2S device provides sound input on the **LEFT audio channel**! For the INMP441 this is achieved by wiring the 'L/R' connection to GND (ground). Only exception is the "ES7243" driver, which is always using the _RIGHT_ audio channel.
 
