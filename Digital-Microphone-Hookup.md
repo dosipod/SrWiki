@@ -31,8 +31,22 @@ We do not have these digital microphones running on an ESP8266.
 Having problems getting the INMP441 running with WLED? Here's a test sketch (which you can compile with the Arduino IDE): https://pastebin.com/Ua7s7LYF
 . If you are still having a problem with that sketch, change the line with ONLY_LEFT to ONLY_RIGHT. If that works, you'll need to go into audio_source.h and change that line.
 
+Initial I2S support by @spedione
+
+<hr/>
+
+## Some I2S audio boards
+
 Here's the first board I've seen with the ICS-43434 at: https://www.tindie.com/products/serg74/digital-i2s-microphone-ics-43434-add-on/
 
 Looking to add line-in with I2S support? Try https://www.akm.com/content/dam/documents/products/audio/audio-adc/ak5720vt/ak5720vt-en-datasheet.pdf
 
-I2S support by @spedione
+
+ES7243 based boards:
+* [ESP32 Lyra-T mini](https://docs.espressif.com/projects/esp-adf/en/latest/design-guide/dev-boards/board-esp32-lyrat-mini-v1.2.html#esp32-lyrat-mini-v1-2-hardware-reference)
+
+ES8388 based boards, with I2S on-board microphone and line-in (**SR WLED support not available yet**, but being devoloped)
+* [ESP32 Lyra-T](https://docs.espressif.com/projects/esp-adf/en/latest/design-guide/dev-boards/board-esp32-lyrat-v4.3.html)
+* [Ai-Thinker ESP32 Audio Kit](https://docs.ai-thinker.com/en/esp32-audio-kit)
+
+See also https://github.com/atuline/WLED/issues/118.
