@@ -45,7 +45,7 @@ Looking to add line-in with I2S support? Try https://www.akm.com/content/dam/doc
 ES7243 based boards:
 * [ESP32 Lyra-T mini](https://docs.espressif.com/projects/esp-adf/en/latest/design-guide/dev-boards/board-esp32-lyrat-mini-v1.2.html#esp32-lyrat-mini-v1-2-hardware-reference)
 
-ES8388 based boards, with I2S on-board microphone and line-in (**SR WLED support not available yet**, but being devoloped)
+ES8388 based boards, with I2S on-board microphone and I2S Line-In (**SR WLED support not available yet**, but being devoloped)
 * [ESP32 Lyra-T](https://docs.espressif.com/projects/esp-adf/en/latest/design-guide/dev-boards/board-esp32-lyrat-v4.3.html)
 * [Ai-Thinker ESP32 Audio Kit](https://docs.ai-thinker.com/en/esp32-audio-kit)
 
