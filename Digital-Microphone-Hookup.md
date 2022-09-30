@@ -44,11 +44,13 @@ Looking to add line-in with I2S support? You might want to try I2S ADC boards th
 * [AKM AK5720](https://www.akm.com/eu/en/products/audio/audio-adc/ak5720et/) ([datasheet](https://www.akm.com/content/dam/documents/products/audio/audio-adc/ak5720vt/ak5720vt-en-datasheet.pdf))
 * [Ti PCM1808](https://www.ti.com/product/PCM1808) or [Ti PCM1802](https://www.ti.com/product/PCM1802)
 
+Many I2S ADC boards also expect a MCLK (master clock aka system clock) signal. For these boards, use our `Generic I2S with MCLK` input driver, and connect MCLK to GPIO pin 0, 1, or 3.
 
-ES7243 based boards:
+### ES7243 based boards
 * [ESP32 Lyra-T mini](https://docs.espressif.com/projects/esp-adf/en/latest/design-guide/dev-boards/board-esp32-lyrat-mini-v1.2.html#esp32-lyrat-mini-v1-2-hardware-reference)
 
-ES8388 based boards, with I2S on-board microphone and I2S Line-In (**SR WLED support not available yet**, but being devoloped)
+### ES8388 based boards
+with I2S on-board microphone and I2S Line-In (**SR WLED support not available yet**, but being devoloped)
 * [ESP32 Lyra-T](https://docs.espressif.com/projects/esp-adf/en/latest/design-guide/dev-boards/board-esp32-lyrat-v4.3.html)
 * [Ai-Thinker ESP32 Audio Kit](https://docs.ai-thinker.com/en/esp32-audio-kit)
 
