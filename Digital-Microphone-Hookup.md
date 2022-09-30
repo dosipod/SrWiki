@@ -39,7 +39,10 @@ Initial I2S support by @spedione
 
 Here's the first board I've seen with the ICS-43434 at: https://www.tindie.com/products/serg74/digital-i2s-microphone-ics-43434-add-on/
 
-Looking to add line-in with I2S support? Try https://www.akm.com/content/dam/documents/products/audio/audio-adc/ak5720vt/ak5720vt-en-datasheet.pdf
+Looking to add line-in with I2S support? You might want to try I2S ADC boards that use one of these chips: 
+* [CirrusLogic wm8782](https://www.cirrus.com/products/wm8782/)
+* [AKM AK5720](https://www.akm.com/content/dam/documents/products/audio/audio-adc/ak5720vt/ak5720vt-en-datasheet.pdf)
+* [Ti PCM1808](https://www.ti.com/product/PCM1808)
 
 
 ES7243 based boards:
