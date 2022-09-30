@@ -89,7 +89,7 @@ Some more information can be found on our [I2S digital microphones](https://gith
 _to be extended soon_
 
 ### I2S Line-in
-There are solutions available for line-in via I2S. For example, boards/shields with "es7243" chip should work already (we have a special driver for these), and we're investigating "es8388". Please check our [I2S digital microphone hookup](https://github.com/atuline/WLED/wiki/Digital-Microphone-Hookup) page for more information.
+There are solutions available for line-in via I2S. For example, boards/shields with "es7243" chip should work already (we have a special driver for these), and we're investigating "es8388". Please check our [I2S digital microphone hookup - I2S audio boards/modules](https://github.com/atuline/WLED/wiki/Digital-Microphone-Hookup#some-i2s-audio-boards) page for more information.
 <br/>
 
 ## AGC - improved Autonomous Gain Control
