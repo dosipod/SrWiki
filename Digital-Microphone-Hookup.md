@@ -47,11 +47,17 @@ Looking to add line-in with I2S support? You might want to try I2S ADC boards th
 Many I2S ADC boards expect a MCLK (master clock aka system clock) signal. For these boards, use our `Generic I2S with MCLK` input driver, and connect MCLK to GPIO pin 0, 1, or 3.
 
 ### ES7243 based boards
-* [ESP32 Lyra-T mini](https://docs.espressif.com/projects/esp-adf/en/latest/design-guide/dev-boards/board-esp32-lyrat-mini-v1.2.html#esp32-lyrat-mini-v1-2-hardware-reference)
+* [ESP32 Lyra-T mini](https://docs.espressif.com/projects/esp-adf/en/latest/design-guide/dev-boards/board-esp32-lyrat-mini-v1.2.html#esp32-lyrat-mini-v1-2-hardware-reference) 
+<img src="https://user-images.githubusercontent.com/91616163/193413316-00bc6d61-ec7a-4bc4-83a4-59071e71db57.png" width="25%" height="25%" />
+
 
 ### ES8388 based boards
 with I2S on-board microphone and I2S Line-In (**SR WLED support not available yet**, but being devoloped)
-* [ESP32 Lyra-T](https://docs.espressif.com/projects/esp-adf/en/latest/design-guide/dev-boards/board-esp32-lyrat-v4.3.html)
-* [Ai-Thinker ESP32 Audio Kit](https://docs.ai-thinker.com/en/esp32-audio-kit)
+* [ESP32 Lyra-T](https://docs.espressif.com/projects/esp-adf/en/latest/design-guide/dev-boards/board-esp32-lyrat-v4.3.html) 
+<img src="https://user-images.githubusercontent.com/91616163/193413089-6f71193c-d8db-4185-9de3-c8b4005431c1.jpg" align="right" width="30%" height="30%" />
+
+* [Ai-Thinker ESP32 Audio Kit](https://docs.ai-thinker.com/en/esp32-audio-kit) 
+<img src="https://user-images.githubusercontent.com/91616163/193413239-e3fd9567-a64d-464c-bdc6-2a2ce69c0df5.png" align="right" width="30%" height="30%" />
+
 
 See also https://github.com/atuline/WLED/issues/118.
