@@ -35,7 +35,7 @@ Initial I2S support by @spedione
 
 <hr/>
 
-## Some I2S audio boards
+## Some I2S audio modules and boards
 
 
 ### IMNP441 
