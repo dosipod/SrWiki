@@ -37,19 +37,41 @@ Initial I2S support by @spedione
 
 ## Some I2S audio boards
 
-Here's the first board I've seen with the ICS-43434 at: https://www.tindie.com/products/serg74/digital-i2s-microphone-ics-43434-add-on/
 
+### IMNP441 
+This is the IMNP441; you can find it in many shops including Amazon and Aliexpress. It works very well with SR WLED. 
+
+<img src="https://user-images.githubusercontent.com/91616163/193432850-70c37da6-a295-4bb2-ad7c-e975fcca7c87.jpg" width="20%" height="20%" />
+
+<p> &nbsp; </p>
+
+### ICS-43434
+Here's the first board I've seen with the ICS-43434 at: https://www.tindie.com/products/serg74/digital-i2s-microphone-ics-43434-add-on/ 
+
+ <img src="https://user-images.githubusercontent.com/91616163/193432714-fba36bde-72b3-4f0b-b66d-32f7dd7e5ee4.jpg" width="20%" height="20%" />
+
+<p> &nbsp; </p>
+
+### I2S ADC for Line-In
 Looking to add line-in with I2S support? You might want to try I2S ADC boards that use one of these chips: 
 * [CirrusLogic WM8782](https://www.cirrus.com/products/wm8782/)
 * [AKM AK5720](https://www.akm.com/eu/en/products/audio/audio-adc/ak5720et/) ([datasheet](https://www.akm.com/content/dam/documents/products/audio/audio-adc/ak5720vt/ak5720vt-en-datasheet.pdf))
 * [Ti PCM1808](https://www.ti.com/product/PCM1808) or [Ti PCM1802](https://www.ti.com/product/PCM1802)
 
+
+<img src="https://user-images.githubusercontent.com/91616163/193432571-fb48bbff-e611-4235-bb47-5418f88c2c8d.jpg" width="20%" height="20%" />   &nbsp; &nbsp;
+ <img src="https://user-images.githubusercontent.com/91616163/193432590-176d20e8-2432-4eca-86f9-86cda91aa873.jpg" width="40%" height="40%" /> 
+
+
 Many I2S ADC boards expect a MCLK (master clock aka system clock) signal. For these boards, use our `Generic I2S with MCLK` input driver, and connect MCLK to GPIO pin 0, 1, or 3.
+
+<p> &nbsp; </p>
 
 ### ES7243 based boards
 * [ESP32 Lyra-T mini](https://docs.espressif.com/projects/esp-adf/en/latest/design-guide/dev-boards/board-esp32-lyrat-mini-v1.2.html#esp32-lyrat-mini-v1-2-hardware-reference) 
 <img src="https://user-images.githubusercontent.com/91616163/193413316-00bc6d61-ec7a-4bc4-83a4-59071e71db57.png" width="30%" height="30%" />
 
+<p> &nbsp; </p>
 
 ### ES8388 based boards
 with I2S on-board microphone and I2S Line-In (**SR WLED support not available yet**, but being devoloped)
@@ -59,7 +81,3 @@ with I2S on-board microphone and I2S Line-In (**SR WLED support not available ye
 * [Ai-Thinker ESP32 Audio Kit](https://docs.ai-thinker.com/en/esp32-audio-kit) 
 <img src="https://user-images.githubusercontent.com/91616163/193413239-e3fd9567-a64d-464c-bdc6-2a2ce69c0df5.png" width="40%" height="40%" />
 
-
-
-
-See also https://github.com/atuline/WLED/issues/118.
