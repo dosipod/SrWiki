@@ -35,19 +35,20 @@ _If you use an older release, please divide _Gain_ values by 4._
 
 Here's a starting point table of Squelch and Gain settings for different input types:
 
-| Input (ADC analog)  | _Squelch_ | _Gain_ | _Type_ 
-| ------------------- | --------- | ------ | ------- 
-| INMP411 | 20 | 80  | Generic Analog
-| MAX4466 | 16 | 120 | Generic Analog
-| MAX9814 @40dB | 10 | 80 | Generic Analog
-| Line-In | 4 | 120 | Generic Analog
-
 | Input (I2S digital) | _Squelch_ | _Gain_ | _Type_ 
 | ------------------- | --------- | ------ | -------
 | INMP441 | 6 | 60 | Generic I2S
 | ICS-43434 | 16 | 30  | Generic I2S
 | SPH0654 | tbd | tbd  | SPH0654
 | ES7243 (I2S Line-In) | tbd | tbd  | ES7243
+
+
+| Input (ADC analog)  | _Squelch_ | _Gain_ | _Type_ 
+| ------------------- | --------- | ------ | ------- 
+| MAX9814 @40dB | 10 | 80 | Generic Analog
+| Line-In | 8 | 120 | Generic Analog
+| INMP411 | 20 | 80  | Generic Analog
+| MAX4466 | 16 | 120 | Generic Analog
 
 We recommend using an [I2S digital microphone](https://github.com/atuline/WLED/wiki/Digital-Microphone-Hookup), like INMP441, ICS-43434, or PDM microphones.
 
