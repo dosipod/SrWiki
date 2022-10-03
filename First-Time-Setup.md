@@ -45,7 +45,7 @@ Here's a starting point table of Squelch and Gain settings for different input t
 | Input (I2S digital) | _Squelch_ | _Gain_ | _Type_ 
 | ------------------- | --------- | ------ | -------
 | INMP441 | 6 | 60 | Generic I2S
-| ICS-43434 | 20 | 30  | Generic I2S
+| ICS-43434 | 16 | 30  | Generic I2S
 | SPH0654 | tbd | tbd  | SPH0654
 | ES7243 (I2S Line-In) | tbd | tbd  | ES7243
 
