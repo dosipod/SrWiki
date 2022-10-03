@@ -35,12 +35,13 @@ _If you use an older release, please divide _Gain_ values by 4._
 
 Here's a starting point table of Squelch and Gain settings for different input types:
 
-| Input (I2S digital) | _Squelch_ | _Gain_ | _Type_ 
-| ------------------- | --------- | ------ | -------
-| INMP441 | 6 | 60 | Generic I2S
-| ICS-43434 | 16 | 30  | Generic I2S
-| SPH0654 | tbd | tbd  | SPH0654
-| ES7243 (I2S Line-In) | tbd | tbd  | ES7243
+| Input (I2S digital) | _Squelch_ | _Gain_ | _Type_ | _seen in_
+| ------------------- | --------- | ------ | -------| ------
+| INMP441 | 6 | 60 | Generic I2S | 
+| ICS-43434 | 16 | 30  | Generic I2S | 
+| SPM1423 | _tbd_ | _tbd_  | Generic I2S PDM | M5StickC, M5AtomU
+| SPH0654 | _tbd_ | _tbd_  | SPH0654 | 
+| ES7243 | _tbd_ | _tbd_  | ES7243 | ESP32 Lyra-T Mini
 
 
 | Input (ADC analog)  | _Squelch_ | _Gain_ | _Type_ 
