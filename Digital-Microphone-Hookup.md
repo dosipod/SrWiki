@@ -42,6 +42,8 @@ Initial I2S support by @spedione
 This is the IMNP441; you can find it in many shops including Amazon and Aliexpress. It works very well with SR WLED. 
 
 <img src="https://user-images.githubusercontent.com/91616163/193432850-70c37da6-a295-4bb2-ad7c-e975fcca7c87.jpg" width="20%" height="20%" />
+ &nbsp; 
+<img src="https://user-images.githubusercontent.com/91616163/193670167-79d4d54d-0226-428d-b010-5c0c4c2d6703.jpg" width="15%" height="15%" />
 
 <p> &nbsp; </p>
 
