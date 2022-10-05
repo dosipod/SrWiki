@@ -15,13 +15,13 @@ Download the CH340 drivers at https://www.wemos.cc/en/latest/ch340_driver.html
 
 ## Flashing From Binary
 
-The Sound Reactive WLED binaries for ESP32 and Wemos D1 Mini are located [here.](https://github.com/atuline/WLED/releases)
+The Sound Reactive WLED binaries for ESP32 are located [here.](https://github.com/atuline/WLED/releases)
 
 SR WLED releases are also included in this web-based installer: https://wled-install.github.io
  
 ## Flashing ESP32 Binaries with esptool
 
-_Warning_: We had to change the partition size on the ESP32 in order to 'fit' all the new features. This means that the 'old way' of upgrading/flashing, no longer work unfortunately. **You cannot use ESPHome Flasher**, and you cannot use OTA from a build prior to b5.
+_Warning_: We had to change the partition size on the ESP32 in order to 'fit' all the new features. This means that the 'old way' of upgrading/flashing, no longer work unfortunately. **You cannot use ESPHome Flasher**, and you cannot use OTA from a build prior to v0.13.0-b5.
 
 1. Download [esptool](https://github.com/espressif/esptool).
 1. Download the ESP32 bootloader, such as https://github.com/Aircoookie/WLED/releases/download/v0.13.1/esp32_bootloader_v4.bin
