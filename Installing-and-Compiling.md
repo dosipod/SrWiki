@@ -98,7 +98,7 @@ Note: We have long since stopped compiling WLED with the Arduino IDE.
 ### Disabled Feature of WLED
 Some features of "standard WLED" are by default disabled in SR WLED. These extended features have shown negative impacts on performance and stability - we need all available "power" to run sound analysis. For example, they possibly use too much memory (FLASH or RAM), can lead to lags in animations, or may cause slow responses to sound input. 
 
-The same is true for many WLED usermods: they might work (like 4LineDisplay), but could have bad side-effects on our sound reactive features so we disabled them in our "official" firmware builds.
+The same is true for many WLED usermods: they might work (like 4LineDisplay), but could have side-effects on our sound reactive features so we disabled them in our "official" firmware builds.
 
 
 #### How to Shoot Yourself in the Foot
