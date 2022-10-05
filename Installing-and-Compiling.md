@@ -116,12 +116,14 @@ Add to your [wled00/my_config.h](https://github.com/atuline/WLED/blob/master/wle
 ```C++
 
 
-// re-activate Alexa support. Yes I know this is not supported officially. I don't mind if animations will sometimes "stutter" and lag behind the sound.
+// re-activate Alexa support. Yes I know this is not supported officially. 
+// I don't mind if animations will sometimes "stutter" and lag behind the sound.
 #ifdef WLED_DISABLE_ALEXA
   #undef WLED_DISABLE_ALEXA
 #endif
 
-// re-activate MQTT support. Yes I know this is not supported officially. I am ready to take good care of my hung, non-responsive device if necessary.
+// re-activate MQTT support. Yes I know this is not supported officially. 
+// I am ready to take good care of my hung, non-responsive device if necessary.
 #ifndef WLED_ENABLE_MQTT
   #define WLED_ENABLE_MQTT
   #ifdef WLED_DISABLE_MQTT
@@ -129,7 +131,8 @@ Add to your [wled00/my_config.h](https://github.com/atuline/WLED/blob/master/wle
   #endif
 #endif
 
-// re-activate IR receiver support. Yes I know this is not supported officially. I can live with my LEDs flickering sometimes, and effects stuttering randomly.
+// re-activate IR receiver support. 
+// Yes I know this is not supported officially. I can live with my LEDs flickering sometimes, and effects stuttering randomly.
 #ifdef WLED_DISABLE_INFRARED
   #undef WLED_DISABLE_INFRARED
 #endif
