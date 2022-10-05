@@ -74,6 +74,7 @@ Note: If you Flash via another method, you will definitely need to perform a Fac
   &rarr; read config.h, add your own settings to my_config.h <br/>
   &rarr; create your own compile environment(s) using platformio_override.ini
 
+SoundReactive has some additional compile time options - see `wled00/audio_reactive.h` and `wled00/audio_source.h`.
 
 ### Additional compile guidelines
 * If you get .py errors, install Python (wait for the VSCode popup to install Python)
