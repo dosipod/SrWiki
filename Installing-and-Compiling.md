@@ -114,6 +114,8 @@ If you're still to insisting to have one of these disabled WLED features in your
 
 Add to your [wled00/my_config.h](https://github.com/atuline/WLED/blob/master/wled00/my_config_sample.h#L4)
 ```C++
+
+
 // re-activate Alexa support. Yes I know this is not supported officially. I don't mind if animations will sometimes "stutter" and lag behind the sound.
 #ifdef WLED_DISABLE_ALEXA
   #undef WLED_DISABLE_ALEXA
@@ -131,4 +133,6 @@ Add to your [wled00/my_config.h](https://github.com/atuline/WLED/blob/master/wle
 #ifdef WLED_DISABLE_INFRARED
   #undef WLED_DISABLE_INFRARED
 #endif
+
+
 ```
