@@ -128,7 +128,7 @@ in [wled00/my_config.h](https://github.com/atuline/WLED/blob/master/wled00/my_co
 #endif
 
 // re-activate IR receiver support. Yes I know this is not supported officially. I can live with my LEDs flickering sometimes, and effects stuttering or lag behind the sound.
-#ifdef WLED_DISABLE_ALEXA
-  #undef WLED_DISABLE_ALEXA
+#ifdef WLED_DISABLE_INFRARED
+  #undef WLED_DISABLE_INFRARED
 #endif
 ```
