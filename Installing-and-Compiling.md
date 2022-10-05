@@ -83,7 +83,7 @@ You may find old outdated binaries, or binaries that might not work on generic E
   &rarr; use source code from https://github.com/atuline/WLED/tree/master<br/>
   &rarr; start with one of the sound reactive compile environments, like  [`env:soundReactive_esp32dev`](https://github.com/atuline/WLED/blob/3752b78d3b845f722ba043d92007cc79aa811561/platformio.ini#L444)<br/>
   &rarr; read [`wled00/wled.h`](https://github.com/atuline/WLED/blob/master/wled00/wled.h#L16), add your own settings to [`wled00/my_config.h`](https://github.com/atuline/WLED/blob/master/wled00/my_config_sample.h#L4) <br/>
-  &rarr; create your own compile environment(s) using platformio_override.ini
+  &rarr; put your own compile environment(s) into [platformio_override.ini](https://github.com/atuline/WLED/blob/master/platformio_override.ini.sample).
 
 SoundReactive has some additional compile time options - see [`wled00/audio_reactive.h`](https://github.com/atuline/WLED/blob/master/wled00/audio_reactive.h#L27) and [`wled00/audio_source.h`](https://github.com/atuline/WLED/blob/3752b78d3b845f722ba043d92007cc79aa811561/wled00/audio_source.h#L20).
 
