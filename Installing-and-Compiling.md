@@ -88,10 +88,47 @@ Note: If you Flash via another method, you will definitely need to perform a Fac
 
 SoundReactive has some additional compile time options - see [`wled00/audio_reactive.h`](https://github.com/atuline/WLED/blob/master/wled00/audio_reactive.h#L27) and [`wled00/audio_source.h`](https://github.com/atuline/WLED/blob/3752b78d3b845f722ba043d92007cc79aa811561/wled00/audio_source.h#L20).
 
-### Additional compile guidelines
+
+### Additional Compile Guidelines
 * If you get .py errors, install Python (wait for the VSCode popup to install Python)
 * If you do not install the Arduino IDE (Why should you if you have PlatformIO) and your board is not recognised if you compile to board, install the [USB to UART bridge VSP Drivers](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers)
 * For the sound reactive ESP32 firmware, the board type should be env:soundreactive_esp32dev. This is because we have modified the build partitions in order to go beyond the original compile size limits of WLED.
 
-
 Note: We have long since stopped compiling WLED with the Arduino IDE.
+
+### Disabled Feature of WLED
+Some features of "standard WLED" are by default disabled in SR WLED. These extended features have shown negative impacts on performance and stability - we need all available "power" to run sound analysis. For example, they possibly use too much memory (FLASH or RAM), can lead to lags in animations, or may cause slow responses to sound input. 
+
+The same is true for many WLED usermods: they might work (like 4LineDisplay), but could have bad side-effects on our sound reactive features so we disabled them in our "official" firmware builds.
+
+
+#### How to Shoot Yourself in the Foot
+
+If you're still to insisting to have one of these disabled WLED features in your personal build of SR-WLED:
+
+1. check if there is a `-D DISABLE_... flag in your build environment (platformio.ini, or platformio_override.ini), and comment it out or remove it.
+2. check if the feature is disabled explicitly in [wled00/wled.h](https://github.com/atuline/WLED/blob/master/wled00/wled.h#L34).
+3. If a feature has been disabled explicitly in wled.h, then there is usually a good technical reason for that decision. Please don't write bug reports for such functions.
+
+4. If you still want that feature, you can un-disable it like this 
+
+in [wled00/my_config.h](https://github.com/atuline/WLED/blob/master/wled00/my_config_sample.h#L4)
+```C++
+// re-activate Alexa support. Yes I know this is not supported officially. I don't mind if animations will sometimes "stutter" and lag behind the sound.
+#ifdef WLED_DISABLE_ALEXA
+  #undef WLED_DISABLE_ALEXA
+#endif
+
+// re-activate MQTT support. Yes I know this is not supported officially. I am ready to take good care of my hung, non-responsive device if necessary.
+#ifndef WLED_ENABLE_MQTT
+  #define WLED_ENABLE_MQTT
+  #ifdef WLED_DISABLE_MQTT
+  #undef WLED_DISABLE_MQTT
+  #endif
+#endif
+
+// re-activate IR receiver support. Yes I know this is not supported officially. I can live with my LEDs flickering sometimes, and effects stuttering or lag behind the sound.
+#ifdef WLED_DISABLE_ALEXA
+  #undef WLED_DISABLE_ALEXA
+#endif
+```
