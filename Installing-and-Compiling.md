@@ -107,7 +107,7 @@ If you're keen to use a disabled WLED features, in your personal build of SR-WLE
 
 1. check if there is a `-D DISABLE_...` flag in your build environment (platformio.ini, or platformio_override.ini), and comment it out or remove it.
 2. check if the feature is disabled explicitly in [wled00/wled.h](https://github.com/atuline/WLED/blob/master/wled00/wled.h#L34).
-3. If a feature has been disabled explicitly in wled.h, then there is usually a good technical reason for that decision. Please don't write bug reports for such functions.
+3. If a feature has been disabled explicitly in wled.h, then there is usually a good technical reason for that decision. Please don't write bug reports for feature that were disabled explicitly.
 
 4. If you still want that feature, you can un-disable it like this 
 
