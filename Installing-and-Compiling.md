@@ -2,6 +2,8 @@
 
 ***IMPORTANT:*** _Before attempting to compile this fork of WLED, make sure you can compile the [original WLED.](https://github.com/Aircoookie/WLED) If you are unable to compile WLED, please consider flashing your device with [binaries](https://github.com/atuline/WLED/releases/latest) instead._
 
+If you managed to compile original WLED, test your new skills and (compile the soundreactive fork of WLED)[https://github.com/atuline/WLED/wiki/Installing-and-Compiling#getting-started]
+
 
 # Installing pre-built binaries
 
@@ -11,18 +13,20 @@ Download the CH340 drivers at https://www.wemos.cc/en/latest/ch340_driver.html
 
 
 ## Flashing From Binary
-The Sound Reactive WLED binaries for ESP32 and Wemos D1 Mini are located [here.](https://github.com/atuline/WLED/releases)
+* The Sound Reactive WLED binaries for ESP32 and Wemos D1 Mini are located [here.](https://github.com/atuline/WLED/releases)
+* SR WLED releases are also available here: https://wled-install.github.io
+* 
 
 <br/>
 
 ### unofficial development binaries - here be dragons
 You can find some unofficial SR WLED binaries, including intermediate development builds for ESP32, here:
 
-Installation services
+#### Installation services
 * https://wled-install.github.io
 * https://install.wled.me
 
-Firmware Binaries
+#### Firmware Binaries
 * https://github.com/srg74/WLED-wemos-shield/tree/master/resources/Firmware/Sound_reactive 
 * https://github.com/wled-install/wled-install.github.io
 
