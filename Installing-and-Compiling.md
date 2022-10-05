@@ -19,26 +19,7 @@ The Sound Reactive WLED binaries for ESP32 and Wemos D1 Mini are located [here.]
 
 SR WLED releases are also included in this web-based installer: https://wled-install.github.io
  
-
-<br/>
-
-### unofficial development binaries - here be dragons
-You can find some unofficial SR WLED binaries, including intermediate development builds for ESP32, here:
-
-#### Installation services
-* https://wled-install.github.io
-* https://install.wled.me
-
-#### Firmware Binaries
-* https://github.com/srg74/WLED-wemos-shield/tree/master/resources/Firmware/Sound_reactive 
-* https://github.com/wled-install/wled-install.github.io
-
-
-Please keep in mind that these sites are not maintained by the SR WLED team. 
-You may find old outdated binaries, or binaries that might not work on generic ESP32 hardware. So please compare build number and dates, and read descriptions before installing one of these.
-
-
-### Flashing ESP32 Binaries with esptool
+## Flashing ESP32 Binaries with esptool
 
 _Warning_: We had to change the partition size on the ESP32 in order to 'fit' all the new features. This means that the 'old way' of upgrading/flashing, no longer work unfortunately. **You cannot use ESPHome Flasher**, and you cannot use OTA from a build prior to b5.
 
@@ -64,7 +45,6 @@ _Warning_: We had to change the partition size on the ESP32 in order to 'fit' al
 
 Note: If you Flash via another method, you will definitely need to perform a Factory Reset. Cycling the power is also a requirement if you're doing anything with I2S.
 
-
 ### Flashing ESP8266 Binaries
 
 1.  Download for your platform [NodeMCU-PyFlasher](https://github.com/marcelstoer/nodemcu-pyflasher/releases).
@@ -74,6 +54,25 @@ Note: If you Flash via another method, you will definitely need to perform a Fac
 1.  Select the Com port.
 1.  Select 'yes, wipes all data'.
 1.  Press Flash NodeMCU.
+
+
+<br/>
+
+## unofficial development binaries - here be dragons
+You can find some unofficial SR WLED binaries, including intermediate development builds for ESP32, here:
+
+### Installation services
+* https://wled-install.github.io
+* https://install.wled.me
+
+### Firmware Binaries
+* https://github.com/srg74/WLED-wemos-shield/tree/master/resources/Firmware/Sound_reactive 
+* https://github.com/wled-install/wled-install.github.io
+
+Please keep in mind that these sites are not maintained by the SR WLED team. 
+You may find old outdated binaries, or binaries that might not work on generic ESP32 hardware. So please compare build number and dates, and read descriptions before installing one of these.
+
+<br/>
 
 
 # Compiling from Platform IO
