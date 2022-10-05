@@ -103,7 +103,7 @@ The same is true for many WLED usermods: they might work (like 4LineDisplay), bu
 
 #### How to Shoot Yourself in the Foot
 
-If you're keen to use a disabled WLED features, in your personal build of SR-WLED:
+If you're keen to use a disabled WLED feature, in your personal build of SR-WLED:
 
 1. check if there is a `-D DISABLE_...` flag in your build environment (platformio.ini, or platformio_override.ini), and comment it out or remove it.
 2. check if the feature is disabled explicitly in [wled00/wled.h](https://github.com/atuline/WLED/blob/master/wled00/wled.h#L34).
