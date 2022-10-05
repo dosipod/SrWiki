@@ -81,7 +81,7 @@ Note: If you Flash via another method, you will definitely need to perform a Fac
 ### Getting started
 
 <b>&rAarr; first read https://kno.wled.ge/advanced/compiling-wled/ </b> <br/>
-  &rarr; source code from https://github.com/atuline/WLED/tree/master<br/>
+  &rarr; suse ource code from https://github.com/atuline/WLED/tree/master<br/>
   &rarr; start with one of the sound reactive compile environments, like  [`env:soundReactive_esp32dev`](https://github.com/atuline/WLED/blob/3752b78d3b845f722ba043d92007cc79aa811561/platformio.ini#L444)<br/>
   &rarr; read [`wled00/wled.h`](https://github.com/atuline/WLED/blob/master/wled00/wled.h#L16), add your own settings to [`wled00/my_config.h`](https://github.com/atuline/WLED/blob/master/wled00/my_config_sample.h#L4) <br/>
   &rarr; create your own compile environment(s) using platformio_override.ini
