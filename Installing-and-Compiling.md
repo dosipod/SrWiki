@@ -1,4 +1,9 @@
+
+
 ***IMPORTANT:*** _Before attempting to compile this fork of WLED, make sure you can compile the [original WLED.](https://github.com/Aircoookie/WLED) If you are unable to compile WLED, please consider flashing your device with [binaries](https://github.com/atuline/WLED/releases/latest) instead._
+
+
+# Installing pre-built binaries
 
 ## Downloading USB Drivers
 
@@ -64,17 +69,17 @@ Note: If you Flash via another method, you will definitely need to perform a Fac
 1.  Press Flash NodeMCU.
 
 
-## Compiling from Platform IO
+# Compiling from Platform IO
 
-###  Getting started
+### Getting started
 
 <b>&rAarr; first read https://kno.wled.ge/advanced/compiling-wled/ </b> <br/>
   &rarr; source code from https://github.com/atuline/WLED/tree/master<br/>
-  &rarr; start with one of the sound reactive compile environments, like  `env:soundReactive_esp32dev`<br/>
-  &rarr; read config.h, add your own settings to my_config.h <br/>
+  &rarr; start with one of the sound reactive compile environments, like  [`env:soundReactive_esp32dev`](https://github.com/atuline/WLED/blob/3752b78d3b845f722ba043d92007cc79aa811561/platformio.ini#L444)<br/>
+  &rarr; read wled00/config.h, add your own settings to wled00/my_config.h <br/>
   &rarr; create your own compile environment(s) using platformio_override.ini
 
-SoundReactive has some additional compile time options - see `wled00/audio_reactive.h` and `wled00/audio_source.h`.
+SoundReactive has some additional compile time options - see [`wled00/audio_reactive.h`](https://github.com/atuline/WLED/blob/master/wled00/audio_reactive.h#L27) and [`wled00/audio_source.h`](https://github.com/atuline/WLED/blob/3752b78d3b845f722ba043d92007cc79aa811561/wled00/audio_source.h#L20).
 
 ### Additional compile guidelines
 * If you get .py errors, install Python (wait for the VSCode popup to install Python)
