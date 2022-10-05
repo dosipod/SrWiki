@@ -66,12 +66,19 @@ Note: If you Flash via another method, you will definitely need to perform a Fac
 
 ## Compiling from Platform IO
 
-Note: We have long since stopped compiling WLED with the Arduino IDE.
+###  Getting started
 
-https://github.com/Aircoookie/WLED/wiki/Compiling-WLED
+<b>&rAarr; first read https://kno.wled.ge/advanced/compiling-wled/ </b> <br/>
+  &rarr; source code from https://github.com/atuline/WLED/tree/master<br/>
+  &rarr; start with one of the sound reactive compile environments, like  `env:soundReactive_esp32dev`<br/>
+  &rarr; read `config.h`, add your own settings to `my_config.h`<br/>
+  &rarr; create your own compile environment(s) using `platformio_override.ini`
 
-Additional compile guidelines
+
+### Additional compile guidelines
 * If you get .py errors, install Python (wait for the VSCode popup to install Python)
 * If you do not install the Arduino IDE (Why should you if you have PlatformIO) and your board is not recognised if you compile to board, install the [USB to UART bridge VSP Drivers](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers)
 * For the sound reactive ESP32 firmware, the board type should be env:soundreactive_esp32dev. This is because we have modified the build partitions in order to go beyond the original compile size limits of WLED.
 
+
+Note: We have long since stopped compiling WLED with the Arduino IDE.
