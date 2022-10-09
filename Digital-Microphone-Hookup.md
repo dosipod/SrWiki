@@ -27,14 +27,18 @@ The INMP441 is a high-performance, low power, digital output, omni-directional M
 
 Since 0.12.0, you can change I2S GPIO pins in the [Sound Settings](https://github.com/atuline/WLED/wiki/Sound-Settings) interface; on ESP32 any available GPIO can be used for I²S. The 'SD' signal could also be mapped to an input-only (GPI) pin _(*)_, if you are low on GPIO pins. You'll need to reboot when done with pin assignment - don't forget to "save". To reboot, please press 'reset' on your ESP32. Unfortunately a restart by software ("soft reboot") is not always sufficient to activate new driver settings.
 
-**Important:** _(*)_ Due to a problem that was fixed very recently, its not possible to use input-only GPI pins in older releases of SR WLED. There will be no warning if you try to do so. This problem is solved in the [latest release version of SR WLED](https://github.com/atuline/WLED/releases).
-
-
-In older releases, you need to change pins used by defining `I2S_WS`, `I2S_SD`, and `I2S_SCK` in your PlatformIO config, or by editing the values in audio_reactive.h. 
-
 In addition to I2S microphones, there are solutions available for line-in via I2S. We already have driver support for Boards/Shields with "es7243" chip, and we're investigating "es8388". 
 
 Other I2S ADC (analog-to-digital-converter) devices and microphones that have a [standard I2S interface](https://en.m.wikipedia.org/wiki/I%C2%B2S) may already work with WLED-SR, by using one of the I2S "Generic" drivers (`Generic I2S`, `Generic I2S PDM`, or `Generic I2S with Mclk`). It is important however that sound input comes on the **LEFT audio channel**. Please keep in mind that this is a spare-time open source project - we do our best to make generic drivers but we cannot test with all available devices.
+
+### Notes for older releases of SR WLED (before 0.13.2)
+
+* _(*)_ Due to a problem that was fixed very recently, its not possible to use input-only GPI pins in older releases of SR WLED. There will be no warning if you try to do so. This problem is solved in the [latest release version of SR WLED](https://github.com/atuline/WLED/releases).
+
+* In old releases, you need to change GPIO pins used by defining `I2S_WS`, `I2S_SD`, and `I2S_SCK` in your PlatformIO config, or by editing the values in audio_reactive.h. 
+
+
+### Still having problems?
 
 We do not have these digital microphones running on an ESP8266.
 
