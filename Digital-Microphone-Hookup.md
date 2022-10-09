@@ -1,4 +1,4 @@
-The INMP441 is a high-performance, low power, digital output, omni-directional MEMS microphone and consists of a MEMS sensor, signal conditioning, an analog-to-digital converter, anti-aliasing filters, power management, and an industry-standard 24-bit I²S interface. The I²S interface allows the INMP441 to connect directly to an ESP32 (but NOT an ESP8266). The recently tested ICS-43434 (thanks to Serg74) also works well, and just requires a slightly higher squelch setting (~10).
+The INMP441 is a high-performance, low power, digital output, omni-directional MEMS microphone and consists of a MEMS sensor, signal conditioning, an analog-to-digital converter, anti-aliasing filters, power management, and an industry-standard 24-bit [I²S interface](https://en.m.wikipedia.org/wiki/I%C2%B2S). The I²S interface allows the INMP441 to connect directly to an ESP32 (but NOT an ESP8266). The recently tested ICS-43434 (thanks to Serg74) also works well, and just requires a slightly higher squelch setting (~10).
 
 <br/>
 
@@ -10,6 +10,16 @@ The INMP441 is a high-performance, low power, digital output, omni-directional M
 | SCK | -- | BCLK | 14 | serial clock
 | VDD | 3V3 | VDD | 3.3V | power don't use 5V!
 | GND | GND | GND | Gnd | ground, 0V
+
+<br/>
+
+**Microphone type** (SR-WLED sound settings)
+* use `Generic I2S` for INMP441, ICS-43434, and other non-PDM devices
+* use `Generic I2S PDM` for PDM microphones like SPM1423
+* use `SPH0645` for adafruit SPH0645
+* use `ES7243` for Lyra-T mini, and other board that have the ES7243 chip
+* use `Generic I2S with Mclk` only for devices that have an addition pin for 'master clock'
+
 
 **Important**: please make sure that your I2S device provides sound input on the **LEFT audio channel**! For the INMP441 this is achieved by wiring the 'L/R' connection to GND (ground). Only exception is the "ES7243" driver, which is always using the _RIGHT_ audio channel.
 
