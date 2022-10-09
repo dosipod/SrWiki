@@ -2,7 +2,7 @@ The INMP441 is a high-performance, low power, digital output, omni-directional M
 
 <br/>
 
-| from INMP441, ICS-43434 | from PDM | from SPH0645, Other | to ESP32 GPIO | |
+| from INMP441, ICS-43434 | from PDM (e.g. SPM1423) | from SPH0645, Other | to ESP32 GPIO | |
 | --- | --- | -- | --- | --- |
 | L/R | SEL | SEL | Gnd | ground => left channel
 | SD | DATA | DOUT | 32 | serial data
