@@ -13,7 +13,7 @@ The INMP441 is a high-performance, low power, digital output, omni-directional M
 
 <br/>
 
-**Microphone type** (SR-WLED sound settings)
+**Microphone type** ([SR-WLED sound settings](https://github.com/atuline/WLED/wiki/Sound-Settings#i2s-digital-input))
 * use `Generic I2S` for INMP441, ICS-43434, and other non-PDM devices
 * use `Generic I2S PDM` for PDM microphones like SPM1423
 * use `SPH0645` for adafruit SPH0645
