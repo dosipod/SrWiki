@@ -9,10 +9,10 @@ Below are a number of popular Arduino compatible analog microphones that have be
 
 Model | Compatibility | Notes
 --- | --- | ---
-*INMP401* | Good | Some Chinese ones are not reliable.
-*MAX4466* | Fair | Is very sensitive to 3.3V noise and voltage dropout due to Wifi activity. Avoid powering your LED stripe from ESP32, as the stripe causes a lot of noise on the 3.3V/5V power lines.
+*MAX9814* | Good+ | Best to set the gain to 40dB.
 *MAX9812* | Good | Only 20dB gain, but worked OK.
-*MAX9814* | Good | Best to set the gain to 40dB.
+*MAX4466* | Fair | Is very sensitive to 3.3V noise and voltage dropout due to Wifi activity. Avoid powering your LED stripe from ESP32, as the stripe causes a lot of noise on the 3.3V/5V power lines.
+*INMP401* | Good | Some Chinese ones are not reliable.
 
 If you are using the [MAX9814](https://learn.adafruit.com/adafruit-agc-electret-microphone-amplifier-max9814/), you need to connect gain to vdd to set the gain to 40dB as the default 60db has far too much background noise. 
 
