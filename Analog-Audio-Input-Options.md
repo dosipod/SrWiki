@@ -58,7 +58,7 @@ Connect the output of the capacitor to the ADC pin for your board.
 ![Dual Input Wiring](https://github.com/atuline/WLED/blob/assets/media/WLED_Reactive_Adv_Wiring.png)
 
 ### Pins Used
-On the ESP32, the ADC pin used is pin 36 (also known as VP), while the ESP8266 uses A0. Power is connected to the 3.3V pin. These pins are defined in wled00/audio_reactive.h.
+On the ESP32, the default ADC pin used is GPI36 (also known as VP), while the ESP8266 uses A0. Power is connected to the 3.3V pin. On ESP32 The ADC pin can be configured on the sound settings page; any GPIO associated with `ADC1` (i.e. GPIO32 to GPI39) can be used.
 
 ### Squelch
 The volume and frequency reactive routines (starting with a single or double *), support a squelch or background noise suppression. This can be configured on the Sound Settings page.
