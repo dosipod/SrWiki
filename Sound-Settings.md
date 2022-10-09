@@ -24,17 +24,17 @@ GPIO 32 => ADC1_CH4
 
 GPIO 33 => ADC1_CH5
 
-GPIO 34 => ADC1_CH6
+GPI&nbsp; 34 => ADC1_CH6
 
-GPIO 35 => ADC1_CH7
+GPI&nbsp; 35 => ADC1_CH7
 
-GPIO 36 => ADC1_CH0
+GPI&nbsp; 36 => ADC1_CH0, VP
 
-GPIO 37 => ADC1_CH1
+GPI&nbsp; 37 => ADC1_CH1
 
-GPIO 38 => ADC1_CH2
+GPI&nbsp; 38 => ADC1_CH2
 
-GPIO 39 => ADC1_CH3
+GPI&nbsp; 39 => ADC1_CH3, VN
 
 Do NOT use any of the pins from ADC2, as they will conflict with the WiFi and with I2S sampling.
 
