@@ -7,7 +7,7 @@ The INMP441 is a high-performance, low power, digital output, omni-directional M
 | L/R | SEL | SEL | Gnd | ground => left channel
 | SD | DATA | DOUT | 32 | serial data
 | WS | CLK | LRCK | 15 | left right clock
-| SCK | - | BCLK | 14 | serial clock
+| SCK | -- | BCLK | 14 | serial clock
 | VDD | 3V3 | VDD | 3.3V | power don't use 5V!
 | GND | GND | GND | Gnd | ground, 0V
 
