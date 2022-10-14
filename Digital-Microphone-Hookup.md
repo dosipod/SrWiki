@@ -98,7 +98,8 @@ with I2S on-board microphone and I2S Line-In (**SR WLED support not available ye
 * [Ai-Thinker ESP32 Audio Kit](https://docs.ai-thinker.com/en/esp32-audio-kit) 
 <img src="https://user-images.githubusercontent.com/91616163/193413239-e3fd9567-a64d-464c-bdc6-2a2ce69c0df5.png" width="40%" height="40%" />
 
-<br/>
+<p> &nbsp; </p>
+
 
 ## Other Ideas (needs some work to make it work)
 
