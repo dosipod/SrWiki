@@ -110,7 +110,7 @@ In principle, its possible to have a second ESP32 that provides sound input to W
 
 ![I2S networks](https://diyi0t.com/wp-content/uploads/2020/08/I2S-Network-Components.png)
 
-* [A Simple Arduino Bluetooth Music Receiver and Sender for the ESP32](https://github.com/pschatzmann/ESP32-A2DP)
+* pschatzmann has created [A Simple Arduino Bluetooth Music Receiver and Sender for the ESP32](https://github.com/pschatzmann/ESP32-A2DP)
 * the library from pschatzmann has examples for how to connect an I2S DAC for playing music from Bluetooth on a speaker. The main difference for SR-WLED should be to put the "bluetooth ESP" into "I2S slave" mode (instead of being the "I2S Master"). There is some information on this website: https://www.eevblog.com/forum/microcontrollers/esp32-as-i2s-(audio)-slave
 
 * make sure the "I2S slave" device is sending 24bit or 32bit *Phillips Standard* data format.
