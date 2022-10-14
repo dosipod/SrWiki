@@ -106,7 +106,8 @@ with I2S on-board microphone and I2S Line-In (**SR WLED support not available ye
 
 ### use a second esp32 as bluetooth audio to I2S device
 
-In principle, its possible to have a second ESP32 that provides sound input to WLED via I2S. Some useful pieces:
+In principle, its possible to have a second ESP32 that provides sound input to WLED via I2S.
+
 * some interesting explanations on the I2S bus: https://diyi0t.com/i2s-sound-tutorial-for-esp32
 
 ![I2S networks](https://diyi0t.com/wp-content/uploads/2020/08/I2S-Network-Components.png)
