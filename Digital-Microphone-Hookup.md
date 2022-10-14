@@ -80,7 +80,7 @@ Looking to add line-in with I2S support? You might want to try I2S ADC boards th
  <img src="https://user-images.githubusercontent.com/91616163/193432590-176d20e8-2432-4eca-86f9-86cda91aa873.jpg" width="40%" height="40%" /> 
 
 
-Many I2S ADC boards expect a MCLK (master clock aka system clock) signal. For these boards, use our `Generic I2S with MCLK` input driver, and connect MCLK to GPIO pin 0, 1, or 3.
+Some I2S ADC boards expect a MCLK (Master Clock aka Memory Clock) signal. For these boards, use our `Generic I2S with MCLK` input driver, and connect MCLK to GPIO pin 0, 1, or 3.
 
 <p> &nbsp; </p>
 
