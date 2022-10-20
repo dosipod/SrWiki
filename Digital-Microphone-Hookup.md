@@ -71,6 +71,7 @@ Here's the first board I've seen with the ICS-43434 at: https://www.tindie.com/p
 ### I2S ADC for Line-In
 Looking to add line-in with I2S support? You might want to try I2S ADC boards that use one of these chips: 
 * [CirrusLogic WM8782](https://www.cirrus.com/products/wm8782/)
+* [CirrusLogic CS5343](https://www.cirrus.com/products/cs5343-44/)
 * [AKM AK5720](https://www.akm.com/eu/en/products/audio/audio-adc/ak5720et/) ([datasheet](https://www.akm.com/content/dam/documents/products/audio/audio-adc/ak5720vt/ak5720vt-en-datasheet.pdf))
 * [Ti PCM1808](https://www.ti.com/product/PCM1808) or [Ti PCM1802](https://www.ti.com/product/PCM1802)
 
