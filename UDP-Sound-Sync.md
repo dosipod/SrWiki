@@ -41,7 +41,7 @@ UDP_SYNC_HEADER is a versioning number that's defined in audio_reactive.h
 #define UDP_SYNC_HEADER_V2 "00002"
 // new "V2" AC 0.14.0 audiosync struct - 40 Bytes
 struct audioSyncPacket_v2 {
-      char    header[6] = UDP_SYNC_HEADER_V2; // 06 bytes
+      char    header[6] = UDP_SYNC_HEADER_V2; // 06 bytes, last byte is '\0' as string terminator.
       float   sampleRaw;      //  04 Bytes  - either "sampleRaw" or "rawSampleAgc" depending on soundAgc setting
       float   sampleSmth;     //  04 Bytes  - either "sampleAvg" or "sampleAgc" depending on soundAgc setting
       uint8_t samplePeak;     //  01 Bytes  - 0 no peak; >=1 peak detected. In future, this will also provide peak Magnitude
