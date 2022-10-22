@@ -59,7 +59,7 @@ SR-WLED 0.13.3 still sends out V1 format, however it is able to receive and deco
 
 ## What else ?
 
-You might want to take a look at this library, which allows to [send and receive WLED Audio Sync data](https://github.com/netmindz/WLED-sync) independent from WLED.
+You might want to take a look at [this](https://github.com/netmindz/WLED-sync) library, which allows to [send and receive WLED Audio Sync data](https://github.com/netmindz/WLED-sync) independent from WLED.
 
 
 When an ESP32 or ESP8266 is configured to receive audio data from another device, the receiver will disable any onboard microphone sampling and FFT processing, in favor of audio data received from the network.  Any time a UDP Multicast packet is received from a transmitter, it will be treated as a discrete microphone sample and stored in memory the same way it would be if it were a local microphone.
