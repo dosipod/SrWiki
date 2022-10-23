@@ -1,14 +1,14 @@
 ### Home
 [Introduction](https://github.com/atuline/WLED/wiki)   
+[Installing and Compiling](https://github.com/atuline/WLED/wiki/Installing-and-Compiling)       
 [First Time Setup](https://github.com/atuline/WLED/wiki/First-Time-Setup)  
 [Running Sound Reactive WLED](https://github.com/atuline/WLED/wiki/Running-Sound-Reactive-WLED)  
 [2D Support](https://github.com/atuline/WLED/wiki/2D-Support)  
+
 [Sound Settings](https://github.com/atuline/WLED/wiki/Sound-Settings)  
 [2D LED Preferences](https://github.com/atuline/WLED/wiki/LED-Preferences)  
 [Custom Effects](https://github.com/atuline/WLED/wiki/WLED-Custom-effects)    
 [UDP Sound Sync](https://github.com/atuline/WLED/wiki/UDP-Sound-Sync)   
-
-[Installing and Compiling](https://github.com/atuline/WLED/wiki/Installing-and-Compiling)       
 [Sound Reactive Animations](https://github.com/atuline/WLED/wiki/Reactive-Animations)  
 [Non-Reactive Animations](https://github.com/atuline/WLED/wiki/Non-Reactive-Animations)    
 
