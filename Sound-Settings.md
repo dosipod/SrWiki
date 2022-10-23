@@ -10,7 +10,7 @@ In order to accommodate a wide range of audio inputs, ambient environments and s
 <br/>
 
 ### Press reset key after changing sound source
-After changing the sound source (either GPIO pins or Microphone type), it is important to press the "reset" button on your ESP32 - don't forget to "save" first. WLED cannot change the sound input configuration "on the fly", due to a known hardware problem of ESP32. See https://github.com/espressif/esp-idf/issues/7442 "only a hard CPU reset can disconnect the I2S signal from built-in ADC". 
+After changing the sound source (either GPIO pins or Microphone type), it is important to press the "reset" (RST) button on your ESP32 - don't forget to "save" first. WLED cannot change the sound input configuration "on the fly", due to a known hardware problem of ESP32. See https://github.com/espressif/esp-idf/issues/7442 "only a hard CPU reset can disconnect the I2S signal from built-in ADC". 
 
 <br/>
 
