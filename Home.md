@@ -71,10 +71,10 @@ For more information, see our **[Analog Audio Input Options](https://github.com/
 Please consider joining the WLED Discord groups where we have dedicated channels to discuss this project, your projects, 
 and answer any questions you may have.
 
-<a href="https://discord.gg/4CQRmfR"><img src="https://discordapp.com/api/guilds/700041398778331156/widget.png?style=banner2" width="65%" align="middle"></a>
+<a href="https://discord.gg/4CQRmfR"><img src="https://discordapp.com/api/guilds/700041398778331156/widget.png?style=banner2" width="50%"  align="middle"></a>
 Join Discord to discuss beta testing of our [sound reactive fork](https://discord.gg/4CQRmfR) of WLED. 
 
-<a href="https://discord.gg/KuqP7NE"><img src="https://discordapp.com/api/guilds/473448917040758787/widget.png?style=banner2" width="45%" align="middle"></a>
+<a href="https://discord.gg/KuqP7NE"><img src="https://discordapp.com/api/guilds/473448917040758787/widget.png?style=banner2" width="50%" align="middle"></a>
 Join Discord to discuss [AirCookie's WLED](https://discord.gg/KuqP7NE).
 
 We can also be found on reddit at [r/soundreactive](https://www.reddit.com/r/soundreactive).
