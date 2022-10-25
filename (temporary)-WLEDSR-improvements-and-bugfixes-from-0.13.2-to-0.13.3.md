@@ -1,13 +1,19 @@
 ### User Interface
 * Info Page: status info for soundreactive (similar to upstream 0.14.0)
 * Info Page: basic hardware info added (similar to MoonModules 0.14.0)
+* 4 Line Display and 4LD_alt usermod: always use fast I2C hardware driver
+
 
 ### Audio Processing
+* Analog input: Some improvements - might help in case you could not get analog input to work in SR 0.13.2
+* New sound processing core (ArduinoFFT) is 10 times faster!
+* * NB: This also improves co-existence with other usermods and with additional features like MQTT
 
-(tbw softhack007)
 
 ### UDP sound sync
+* improve performance/reliability of UDP sound sync
 * Support for receiving "V2" format, which is sent by upstream 0.14.0 
+
 
 ### Effects
 * Minor bugfixes, like missed pixels in "Stream" effects
@@ -16,13 +22,19 @@
 
 
 ### Custom Effects, 2D/3D, live preview
+
 * Fix setPixelColor when using grid+Serpentine
 
 (tbw ewowi)
 
 
-## various bugfixes from upstream 0.14.0
+## various bugfixes, and fixes from upstream 0.14.0
 * auto-reboot after cfg.json restore (to avoid that WLED directly overwrites them after upload)
+* Time Zones: added PKT (Pakistian), fixed NZ and AEST (australia) timezones
+* buttons: fix for ShortPressAction; ensure that buttons remain responsive also with _long_ LED strings
+* analog buttons: don't do analogRead() when the GPIO does not support analog input
+* udp driver(udp.cpp): small bugfixes
+* PlatformIO.ini: upgrade to fixed ESPAsyncWebServer (>= 2.0.7); use 80MHz FLASH speed in all "Sondreactive" build environments.
 
 (tbw softhack007)
 
