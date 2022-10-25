@@ -23,9 +23,9 @@
 
 ### Custom Effects, 2D/3D, live preview
 
-* Fix setPixelColor when using grid+Serpentine
+--> (tbw ewowi)
 
-(tbw ewowi)
+* Fix setPixelColor when using grid+Serpentine
 
 
 ## various bugfixes, and fixes from upstream 0.14.0
@@ -34,9 +34,8 @@
 * buttons: fix for ShortPressAction; ensure that buttons remain responsive also with _long_ LED strings
 * analog buttons: don't do analogRead() when the GPIO does not support analog input
 * udp driver(udp.cpp): small bugfixes
-* PlatformIO.ini: upgrade to fixed ESPAsyncWebServer (>= 2.0.7); use 80MHz FLASH speed in all "Sondreactive" build environments.
+* PlatformIO.ini: upgrade to fixed ESPAsyncWebServer (>= 2.0.7); use 80MHz FLASH speed for all "Sondreactive" build environments.
 
-(tbw softhack007)
 
 ## Changes from upstream v0.13.3
 * Fixed flickering
