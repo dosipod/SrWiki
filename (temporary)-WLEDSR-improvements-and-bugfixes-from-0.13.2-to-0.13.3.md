@@ -30,7 +30,7 @@
 
 ## various bugfixes, and fixes from upstream 0.14.0
 * auto-reboot after cfg.json restore (to avoid that WLED directly overwrites them after upload)
-* Time Zones: added PKT (Pakistian), fixed NZ and AEST (australia) timezones
+* Time Zones: added PKT (Pakistan), fixed NZ and AEST (Australia) time zones
 * buttons: fix for ShortPressAction; ensure that buttons remain responsive also with _long_ LED strings
 * analog buttons: don't do analogRead() when the GPIO does not support analog input
 * udp driver(udp.cpp): small bugfixes
