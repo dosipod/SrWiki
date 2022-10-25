@@ -3,6 +3,7 @@
 * Info Page: basic hardware info added (similar to MoonModules 0.14.0)
 
 ### Audio Processing
+
 (tbw softhack007)
 
 ### UDP sound sync
@@ -15,11 +16,13 @@
 
 
 ### Custom Effects, 2D/3D, live preview
+
 (tbw ewowi)
 
 
 ## various bugfixes from upstream 0.14.0
 * auto-reboot after cfg.json restore (to avoid that WLED directly overwrites them after upload)
+
 (tbw softhack007)
 
 ## Changes from upstream v0.13.3
