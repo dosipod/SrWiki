@@ -16,6 +16,7 @@
 
 
 ### Custom Effects, 2D/3D, live preview
+* Fix setPixelColor when using grid+Serpentine
 
 (tbw ewowi)
 
