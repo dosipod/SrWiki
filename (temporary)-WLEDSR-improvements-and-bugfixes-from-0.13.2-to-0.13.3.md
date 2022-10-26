@@ -17,7 +17,7 @@
 
 
 ### Effects
-* Minor bugfixes, like missed pixels in "Stream" effects
+* Minor bugfixes, like missed pixels in "Stream" effects, and a few speedups
 * Sanity check added in setPixelColor(), to avoid memory errors due to negative pixel index
 * * NB: this change also affects realtime modes (DDP, DMX, E13.1, LedFx, ...)
 
