@@ -45,4 +45,4 @@
 * Fixed flickering
 * Fixed boot issues on new installs
 * Added support for LPD6803
-* experimental: optional watchdog feature, to reset a "hung" device. Compile with `-D WLED_WATCHDOG_TIMEOUT=30` to activate
+* experimental: optional watchdog feature, to auto-reset a "hung" device. Compile with `-D WLED_WATCHDOG_TIMEOUT=30` to activate
