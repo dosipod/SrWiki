@@ -2,7 +2,6 @@
 * Info Page: status info for soundreactive (similar to upstream 0.14.0)
 * Info Page: basic hardware info added (similar to MoonModules 0.14.0)
 * 4 Line Display and 4LD_alt usermod: always use fast I2C hardware driver
-* Changing global brightness now triggers autosave usermod
 
 
 ### Audio Processing
@@ -24,7 +23,7 @@
 
 ### Custom Effects, 2D/3D, live preview
 
---> (tbw ewowi)
+--> (tbc ewowi)
 * support HB effects 
 * Liveviewws2D: show playlist / preset id (for HB playlist animations)
 * Custom Effects 3.0.1: add rgbw, sPC for 2D, colorFromPalette out of sPC
@@ -32,14 +31,14 @@
 * Fix setPixelColor when using grid+Serpentine
 
 
-
-## various bugfixes, and fixes from upstream 0.14.0
+## misc. bugfixes, and fixes from upstream WLED 0.14.0
 * auto-reboot after cfg.json restore (to avoid that WLED directly overwrites them after upload)
 * Time Zones: added PKT (Pakistan), fixed NZ and AEST (Australia) time zones
 * buttons: fix for ShortPressAction; ensure that buttons remain responsive also with _long_ LED strings
 * analog buttons: don't do analogRead() when the GPIO does not support analog input
 * udp driver(udp.cpp): small bugfixes
-* PlatformIO.ini: upgrade to fixed ESPAsyncWebServer (>= 2.0.7); use 80MHz FLASH speed for all "Sondreactive" build environments.
+* PlatformIO.ini: upgrade to fixed ESPAsyncWebServer (>= 2.0.7); 
+* PlatformIO.ini: use 80MHz FLASH speed for all "Sondreactive" build environments.
 
 
 ## Changes from upstream v0.13.3
