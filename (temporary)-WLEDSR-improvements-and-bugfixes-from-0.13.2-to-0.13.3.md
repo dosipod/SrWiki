@@ -7,6 +7,7 @@
 ### Audio Processing
 * Analog input: Some improvements - might help in case you could not get analog input to work in SR 0.13.2
 * New sound processing core (ArduinoFFT) is 10 times faster!
+* * improves performance of both analog and I2S digital audio input
 * * NB: This also improves co-existence with other usermods and with additional features like MQTT
 
 
