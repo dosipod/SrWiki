@@ -1,7 +1,8 @@
-### User Interface
+### User Interface and generic features
 * Info Page: status info for soundreactive (similar to upstream 0.14.0)
 * Info Page: basic hardware info added (similar to MoonModules 0.14.0)
 * 4 Line Display and 4LD_alt usermod: always use fast I2C hardware driver
+* Changing global brightness now triggers autosave usermod
 
 
 ### Audio Processing
@@ -24,8 +25,12 @@
 ### Custom Effects, 2D/3D, live preview
 
 --> (tbw ewowi)
-
+* support HB effects 
+* Liveviewws2D: show playlist / preset id (for HB playlist animations)
+* Custom Effects 3.0.1: add rgbw, sPC for 2D, colorFromPalette out of sPC
+* Peek1D for strip repaired. Peek3D for cubes added (experimental)
 * Fix setPixelColor when using grid+Serpentine
+
 
 
 ## various bugfixes, and fixes from upstream 0.14.0
