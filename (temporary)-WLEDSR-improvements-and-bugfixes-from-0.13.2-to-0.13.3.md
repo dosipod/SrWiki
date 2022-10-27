@@ -24,7 +24,6 @@
 
 ### Custom Effects, 2D/3D, live preview
 
---> (tbc ewowi)
 * Liveviewws2D: show playlist / preset id (for HB playlist animations)
 * Custom Effects 3.0.1: add rgbw, sPC for 2D, colorFromPalette out of sPC
 * Peek1D for strip repaired. Peek3D for cubes added (experimental)
