@@ -1,4 +1,4 @@
-The INMP441 is a high-performance, low power, digital output, omni-directional MEMS microphone and consists of a MEMS sensor, signal conditioning, an analog-to-digital converter, anti-aliasing filters, power management, and an industry-standard 24-bit [I²S interface](https://en.m.wikipedia.org/wiki/I%C2%B2S). The I²S interface allows the INMP441 to connect directly to an ESP32 (but NOT an ESP8266). The recently tested ICS-43434 (thanks to Serg74) also works well, and just requires a slightly higher squelch setting (~10).
+I2S digital sound modules utilize the industry-standard 24-bit [I²S interface](https://en.m.wikipedia.org/wiki/I%C2%B2S). The I²S interface allows to connect them directly to an ESP32 (but NOT an ESP8266). The IMNP441, and also the recently tested ICS-43434 (thanks to Serg74) work very well with SR WLED, and they perform much better than any analog device at a comparable price.
 
 <br/>
 
