@@ -11,6 +11,9 @@ The INMP441 is a high-performance, low power, digital output, omni-directional M
 | VDD | 3V3 | VDD | 3.3V | power don't use 5V!
 | GND | GND | GND | Gnd | ground, 0V
 
+
+See also &rArr; [Sound setting examples for common microphones](https://github.com/atuline/WLED/wiki/First-Time-Setup#sound-settings-getting-started-with-common-microphones)
+
 <br/>
 
 **Microphone type** ([SR-WLED sound settings](https://github.com/atuline/WLED/wiki/Sound-Settings#i2s-digital-input))
