@@ -71,4 +71,7 @@ The volume and frequency reactive routines (starting with a single or double *),
 Line-in signals are typically much lower than that of some of the microphones. Rather than use an auto gain function, you can manually adjust the gain from 1 to 255, which translate to a gain factor from 0.1 up to 6.5 gain. That's equivalent to a range of _-20dB_ up to _+16dB_.
 
 ### Problems Encountered
-We've often seen spikes when using an analog microphone in conjunction with WLED. There's an article that should shed light on the issue at [ESP32 microcontroller generates noise on microphone](https://electronics.stackexchange.com/questions/368867/esp32-microcontroller-generates-noise-on-microphone).
+
+* **Noise** - [Some recommendations to reduce noise](https://github.com/atuline/WLED/wiki/First-Time-Setup#noise-and-spikes)
+
+* **Spikes** - We've often seen spikes when using an analog microphone in conjunction with WLED. There's an article that should shed light on the issue at [ESP32 microcontroller generates noise on microphone](https://electronics.stackexchange.com/questions/368867/esp32-microcontroller-generates-noise-on-microphone).
