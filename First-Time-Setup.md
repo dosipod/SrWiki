@@ -6,8 +6,11 @@ The sound reactive version of WLED provides all of the functionality of WLED wit
 * We recommend using SR WLED in STA mode, instead of the standalone AP mode (aka WLED-AP). It generates more noise.
 * If you have problems with the LED's, make sure you can successfully run the latest version of standard WLED.
 * Start out with a small strip of ~30 LED's before setting up a large installation.
+
+
 * Grounding may also be a problem. For example, my line-in setup picked up a lot of noise when my ESP32 board was connected to the USB port on my PC, but NO noise when powered by a USB power bank.
 * Connectors!! Dupont connectors are notoriously flaky. I use JST-SM connectors for the LED's and (so far) just soldered the microphones.
+
 
 ## First Steps
 #### First Contact (after uploading)
@@ -35,13 +38,14 @@ _If you use an older release, please divide _Gain_ values by 4._
 
 Here's a starting point table of Squelch and Gain settings for different input types:
 
-| Input (I2S digital) | _Squelch_ | _Gain_ | _Type_ | _seen in_
+| Input (I2S digital) | _Squelch_ | _Gain_ | _Type_ | _comments_
 | ------------------- | --------- | ------ | -------| ------
 | INMP441 | 6 | 60 | Generic I2S | 
 | ICS-43434 | 16 | 30  | Generic I2S | 
 | SPM1423 | _tbd_ | _tbd_  | Generic I2S PDM | M5StickC, M5AtomU
 | SPH0654 | _tbd_ | _tbd_  | SPH0654 | 
 | ES7243 | _tbd_ | _tbd_  | ES7243 | ESP32 Lyra-T Mini
+| Line-In CS5343 | _tbd_ | _tbd_  | Generic I2S with Mclk | _MCLK_ to GPIO0
 
 
 | Input (ADC analog)  | _Squelch_ | _Gain_ | _Type_ 
