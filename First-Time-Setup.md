@@ -55,12 +55,15 @@ Here's a starting point table of Squelch and Gain settings for different input t
 | INMP411 | 20 | 80  | Generic Analog
 | MAX4466 | 16 | 120 | Generic Analog
 
+### Ananlog or I2S digital?
+
 We recommend using an [I2S digital microphone](https://github.com/atuline/WLED/wiki/Digital-Microphone-Hookup), like INMP441, ICS-43434, or PDM microphones.
 
 Analog input ([Microphone or Line-in](https://github.com/atuline/WLED/wiki/Analog-Audio-Input-Options)) is also possible, however you might have power fluctuation (3.3V) and noise issues when using these. Analog devices are handled by the "ADC1" unit of your ESP32. Problems can be expected when connecting "analog buttons" (Potentiometer) to the same ADC1 unit. 
 
 Finally Analog Microphones often work best when placed close to the sound source, while digital ones like the INMP441 can easily pick up sound from several meters apart. With the analog MAX4466, we found that 30-50cm is an optimal distance. 
 
+### AGC
 Automatic gain control (AGC) is not enabled by default in SR WLED, because of so many different input types and ambient noise in different environments. We don't know what your 'quiet' is. In addition, the LED's should NOT be reacting when it IS quiet, so it's up to you to first make those adjustments. In addition, sensitivity can be further adjusted with either the Intensity or Speed slider in many of the animations.
 
 While an improved autonomous gain control (iAGC) feature is available since [version 0.13.1](https://github.com/atuline/WLED/releases/tag/v0.13.1), it is still very important that you _first_ find a good _Squelch_ setting for your environment. Afterwards you can enable AGC and let the controller adjust input levels automatically. 
