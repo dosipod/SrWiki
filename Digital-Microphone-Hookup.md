@@ -94,7 +94,7 @@ Some I2S ADC boards expect a MCLK ("Master Clock" aka "Memory Clock" aka "System
 * [ESP32 Lyra-T mini V1.2](https://docs.espressif.com/projects/esp-adf/en/latest/design-guide/dev-boards/board-esp32-lyrat-mini-v1.2.html#esp32-lyrat-mini-v1-2-hardware-reference)
 
  
-<img src="https://user-images.githubusercontent.com/91616163/193413316-00bc6d61-ec7a-4bc4-83a4-59071e71db57.png" width="30%" height="30%" />
+<img src="https://user-images.githubusercontent.com/91616163/193413316-00bc6d61-ec7a-4bc4-83a4-59071e71db57.png" width="40%" height="40%" />
 
 <p> &nbsp; </p>
 
