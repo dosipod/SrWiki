@@ -101,10 +101,12 @@ Many I2S ADC boards expect an additional MCLK signal ("Main Clock" aka "System C
 ### ES8388 based boards - not yet supported
 with I2S on-board microphone and I2S Line-In (**SR WLED support not available yet**, but being developed)
 * [ESP32 Lyra-T V4.3](https://docs.espressif.com/projects/esp-adf/en/latest/design-guide/dev-boards/board-esp32-lyrat-v4.3.html) 
-<img src="https://user-images.githubusercontent.com/91616163/193413089-6f71193c-d8db-4185-9de3-c8b4005431c1.jpg" width="40%" height="40%" />
+<img src="https://user-images.githubusercontent.com/91616163/193413089-6f71193c-d8db-4185-9de3-c8b4005431c1.jpg" width="40%" height="40%" /><br>
+
 
 * [Ai-Thinker ESP32 Audio Kit v2.2](https://docs.ai-thinker.com/en/esp32-audio-kit) 
 <img src="https://user-images.githubusercontent.com/91616163/193413239-e3fd9567-a64d-464c-bdc6-2a2ce69c0df5.png" width="40%" height="40%" />
+
 
 <p> &nbsp; </p>
 
