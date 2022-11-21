@@ -3,7 +3,7 @@ I2S digital sound modules utilize the industry-standard 24-bit [I²S interface](
 
 <br/>
 
-| from INMP441, ICS-43434 | from PDM (e.g. SPM1423) | from SPH0645, Other | to ESP32 GPIO | |
+| from INMP441, ICS-43434 | from PDM (e.g. SPM1423) | from Other | to ESP32 GPIO | |
 | --- | --- | -- | --- | --- |
 | L/R | SEL | SEL | Gnd | ground => left channel
 | SD | DATA | DOUT | 32 | serial data
