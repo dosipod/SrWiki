@@ -9,7 +9,7 @@ I2S digital sound modules utilize the industry-standard 24-bit [I²S interface](
 | SD | DATA | DOUT | 32 | serial data
 | WS | CLK | LRCK | 15 | left right clock
 | SCK | -- | BCLK | 14 | serial clock
-| -- | -- | MCLK | 0  | master clock (not needed for microphones)
+| -- | -- | MCLK | 0  | master clock (normally not needed)
 | VDD | 3V3 | VDD | 3.3V | power don't use 5V!
 | GND | GND | GND | Gnd | ground, 0V
 
