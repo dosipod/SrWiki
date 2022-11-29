@@ -1,3 +1,7 @@
+This page has moved to https://moonmodules.github.io/WLED-Docs/2D/introduction/
+
+Do not edit below!!
+
 ## Introduction
 
 In order to accommodate 2D effects we have modified how Segment settings are used and added 2D Matrix and panel variables on the [Led Preferences](https://github.com/atuline/WLED/wiki/LED-Preferences) settings.
