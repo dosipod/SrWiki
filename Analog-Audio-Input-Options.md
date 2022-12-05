@@ -15,8 +15,11 @@ Model | Compatibility | Notes
 *INMP401* | Good | Some Chinese ones are not reliable.
 
 
-See also &rArr; [Sound setting examples for common microphones](https://github.com/atuline/WLED/wiki/First-Time-Setup#sound-settings-getting-started-with-common-microphones)
+See also 
 
+&rArr; [Sound setting examples for common microphones](https://github.com/atuline/WLED/wiki/First-Time-Setup#sound-settings-getting-started-with-common-microphones)
+
+&rArr; [noise and spikes on analog microphones](https://github.com/atuline/WLED/wiki/Noise-and-Spikes#both-platforms)
 
 If you are using the [MAX9814](https://learn.adafruit.com/adafruit-agc-electret-microphone-amplifier-max9814/), you need to connect gain to vdd to set the gain to 40dB as the default 60db has far too much background noise. 
 
