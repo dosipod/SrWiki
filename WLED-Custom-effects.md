@@ -1,7 +1,3 @@
-Please see https://moonmodules.github.io/WLED-Docs/WLEDSR/Home for this information.
-
-This wiki is now deprecated. Please consider contributing to MoonModules/WLEDSR Docs by making improvements as a pull request. Thank you
-
 ![unknown](https://user-images.githubusercontent.com/91616163/197343053-f7deb257-5fd3-40f2-8ffd-31c06f02f12a.png)
 
 

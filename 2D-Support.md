@@ -1,7 +1,3 @@
-Please see https://moonmodules.github.io/WLED-Docs/WLEDSR/Home/ for this information.
-
-This wiki is now deprecated. Please consider contributing to MoonModules/WLEDSR Docs by making improvements as a pull request. Thank you
-
 ## Introduction
 
 In order to accommodate 2D effects we have modified how Segment settings are used and added 2D Matrix and panel variables on the [Led Preferences](https://github.com/atuline/WLED/wiki/LED-Preferences) settings.
