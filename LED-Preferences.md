@@ -1,6 +1,7 @@
-This page has moved to https://moonmodules.github.io/WLED-Docs/2D/2d-settings/
+Please see https://moonmodules.github.io/WLED-Docs/WLEDSR/ for this information.
 
-Do not edit below!!
+This wiki is now deprecated. Please consider contributing to MoonModules/WLEDSR Docs by making improvements as a pull request. Thank you
+
 
 ## LED Preferences for Sound Reactive WLED
 
