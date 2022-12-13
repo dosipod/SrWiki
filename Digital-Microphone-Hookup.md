@@ -1,4 +1,4 @@
-Please see https://moonmodules.github.io/WLED-Docs/WLEDSR/Sound-Settings/ for this information.
+Please see https://moonmodules.github.io/WLED-Docs/WLEDSR/Home/ for this information.
 
 This wiki is now deprecated. Please consider contributing to MoonModules/WLEDSR Docs by making improvements as a pull request. Thank you
 
