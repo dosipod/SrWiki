@@ -55,7 +55,7 @@ More information about analog inputs on our [analog microphones](https://github.
 ## Squelch
 Adjust this value on the Sound Settings page so that the leds are only activated above a certain 'background noise' level.
 
-In order to accommodate a wide range of audio inputs, ambient environments and string lengths, we have added user configurable squelch (noise reduction/suppression) and gain controls on the LED settings page for the volume reactive animations.
+We don't know what your 'quiet' is. LED's should NOT be reacting when it IS quiet, so it's up to you to first make those adjustments.
 
 See also 
 
