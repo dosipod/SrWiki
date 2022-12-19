@@ -73,10 +73,10 @@ Here's a method to setup squelch and gain for your SR WLED Device.
 
 1. Start out with the routine '*Gravimeter' with default sliders in the middle.
 2. Go to the sound settings configuration page.
-3. Increase gain to a high value, let's say 234 (or higher) and set the squelch to '1', AGC off, then save.
+3. Increase gain to a high value, let's say 234 (or higher) and set the `squelch` to '1', `AGC off`, then save.
 4. Depending on your input, you should now see the led's flashing, even when the wind blows.
 5. In a quiet environment, increase and occasionally save the "squelch" incrementally until the led's are no longer flashing.
-6. Once that's done, set "gain" to 40. Make noise appropriate to your 'noisy' environment and number of led's. Then adjust/save the gain so that the led's are responding appropriately.
+6. Once that's done, set "gain" to 40. Make noise appropriate to your 'noisy' environment and number of led's. Then adjust/save the gain so that the led's are responding appropriately. When it looks good, you can set `AGC` to `default`.
 7. Note that some of the animations allow further sensitivity adjustment with the 'Intensity' setting.
 8. Check out the '[Sound Reactive Animations](https://github.com/atuline/WLED/wiki/Reactive-Animations)' page to see what controls are available for each animation.
 
