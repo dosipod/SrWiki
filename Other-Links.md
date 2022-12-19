@@ -1,6 +1,11 @@
 ## SR WLED interfacing
 * https://github.com/netmindz/WLED-sync
 
+
+## Microphone debugging
+* https://github.com/atomic14/esp32_audio/tree/master/i2s_sampling
+
+
 ## FFT related
 
 * https://www.instructables.com/Faster-Than-the-Fastest-FFT-for-Arduino/
