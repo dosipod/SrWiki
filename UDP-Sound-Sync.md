@@ -68,6 +68,7 @@ When an ESP32 or ESP8266 is configured to receive audio data from another device
 
 * The UDP &nbsp;<em>Multicast</em>&nbsp; IP is `239.0.0.1`, and the default UDP port is `11988`.
 * UDP port can be changed in WLED config pages, for example to have several groups of devices by assigning different UDP ports to each group.
+* the software sends/receives one packet every 20 milliseconds (approx). An external sender may be slower, but not faster than 20ms = 50fps.
 
 * UDP multicast is generally not very reliable with typical "consumer grade hardware". Some users found that creating a "port forwarding rule" on their local Wifi router helps. For example, you could create a "dynamic port forwarding rule" for UDP port 11988.
 
