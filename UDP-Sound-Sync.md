@@ -7,7 +7,7 @@ Before configuring UDP Sound Sync, make sure you have gone into the WiFi Prefere
 
 In order to configure UDP sound sync, the ‘master’ needs to be an ESP32 along with an [audio input](https://github.com/atuline/WLED/wiki/Sound-Settings).
 
-You would then to go the ‘Sync Interfaces’ page and configure the 'Audio Sync' at the bottom of the page. `Transmit` for the ESP32 and `Receive` for devices without an audio input (either ESP32's or ESP8266's). Make sure the UDP port is the same on all devices.
+You would then to go the ‘Sync Interfaces’ page and configure the 'Audio Sync' at the bottom of the page. `Transmit` (Send) for the ESP32 and `Receive` for devices without an audio input (either ESP32's or ESP8266's). Make sure the UDP port is the same on all devices.
 
 This does not sync the actual animations, but rather just the transmission of summary audio sampling information (as best we can).
 
