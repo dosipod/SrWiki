@@ -9,7 +9,7 @@ In order to configure UDP sound sync, the ‘master’ needs to be an ESP32 alon
 
 You would then to go the ‘Sync Interfaces’ page and configure the 'Audio Sync' at the bottom of the page. `Transmit` (Send) for the ESP32 and `Receive` for devices without an audio input (either ESP32's or ESP8266's). Make sure the UDP port is the same on all devices.
 
-This does not sync the actual animations, but rather just the transmission of summary audio sampling information (as best we can).
+This does not sync the actual animations, but rather just the transmission of summary audio sampling information (as best we can) at 10-50 fps.
 
 In order to change the UDP Sync Mode (Disabled/Transmit/Receive), you need to power-cycle the ESP32/ESP8266.
 
