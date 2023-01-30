@@ -57,7 +57,7 @@ Here's a starting point table of Squelch and Gain settings for different input t
 
 ### Analog or I2S Digital?
 
-We recommend using an [I2S digital microphone](https://github.com/atuline/WLED/wiki/Digital-Microphone-Hookup) for use with ESP32 boards - like INMP441, ICS-43434, or PDM microphones.
+We recommend using an [I2S digital microphone](https://github.com/atuline/WLED/wiki/Digital-Microphone-Hookup) with ESP32 boards - like INMP441, ICS-43434, or PDM microphones.
 
 Analog input ([Microphone or Line-in](https://github.com/atuline/WLED/wiki/Analog-Audio-Input-Options)) is also possible, however you might have power fluctuation (3.3V) and noise issues when using these. Analog devices are handled by the "ADC1" unit of your ESP32. Problems can be expected when connecting "analog buttons" (Potentiometer) to the same ADC1 unit. 
 
