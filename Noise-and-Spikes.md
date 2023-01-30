@@ -20,8 +20,12 @@ On both platforms, we encountered significant spikes when using the analog ADC w
 
 Here's some [test results](https://github.com/atuline/WLED/blob/assets/docs/Noise%20and%20Spikes.pdf) with the analog input, including strong spikes observed very frequently.
 
-![ADC_analog_spikes](https://user-images.githubusercontent.com/91616163/205752648-03136605-eb61-4eb9-8427-f6740f53485d.jpg)
+<img src="https://user-images.githubusercontent.com/91616163/205752648-03136605-eb61-4eb9-8427-f6740f53485d.jpg" alt="MAX4466 spikes" width="37%" height="37%" /> 
+&nbsp;
 
+<img src="https://user-images.githubusercontent.com/91616163/215522306-85390960-0421-4fe8-baac-03f2eedde659.png" alt="MAX9814 spikes" width="40%" height="40%" />
+
+<br>
 
 Here's some references:
 
