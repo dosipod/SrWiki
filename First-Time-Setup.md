@@ -57,7 +57,7 @@ Here's a starting point table of Squelch and Gain settings for different input t
 
 ### Analog or I2S Digital?
 
-We recommend using an [I2S digital microphone](https://github.com/atuline/WLED/wiki/Digital-Microphone-Hookup), like INMP441, ICS-43434, or PDM microphones.
+We recommend using an [I2S digital microphone](https://github.com/atuline/WLED/wiki/Digital-Microphone-Hookup) for use with ESP32 boards - like INMP441, ICS-43434, or PDM microphones.
 
 Analog input ([Microphone or Line-in](https://github.com/atuline/WLED/wiki/Analog-Audio-Input-Options)) is also possible, however you might have power fluctuation (3.3V) and noise issues when using these. Analog devices are handled by the "ADC1" unit of your ESP32. Problems can be expected when connecting "analog buttons" (Potentiometer) to the same ADC1 unit. 
 
@@ -71,7 +71,7 @@ While an improved autonomous gain control (iAGC) feature is available since [ver
 ## Noise and Spikes
 While providing a lot of functionality, the ESP8266 and the ESP32 boards (typical ones) we have been using, have experienced a lot of spurious noise on their ADC pins. This has also been discussed at length on various ESP related forums. Methods that may help remediate this include:
 
-* Use an I2S microphone, such as the INMP441, SPH0645 or ICS-43434.
+* On ESP32, use an I2S microphone, such as the INMP441, SPH0645 or ICS-43434.
 * Use a separate WiFi antenna.
 * Don't use AP mode.
 * Disable the WiFi sleep mode.
