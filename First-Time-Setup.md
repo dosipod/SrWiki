@@ -50,7 +50,7 @@ Here's a starting point table of Squelch and Gain settings for different input t
 
 | Input (ADC analog)  | _Squelch_ | _Gain_ | _Type_ 
 | ------------------- | --------- | ------ | ------- 
-| MAX9814 @40dB | 10 | 80 | Generic Analog
+| [MAX9814 @40dB](https://github.com/atuline/WLED/wiki/Analog-Audio-Input-Options#the-following-schematics-are-provided-as-an-example-only-there-are-many-ways-to-achieve-the-same-results-these-are-only-a-few-of-those-ways) | 10 | 80 | Generic Analog
 | Line-In | 8 | 120 | Generic Analog
 | INMP411 | 20 | 80  | Generic Analog
 | MAX4466 | 16 | 120 | Generic Analog
