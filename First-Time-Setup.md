@@ -2,7 +2,7 @@
 The sound reactive version of WLED provides all of the functionality of WLED with a few caveats:
 
 * #### Some of the default services supported by WLED such as IR, Alexa and Blynk are disabled by default. To enable them, update the definitions in wled.h and re-compile.
-* Spurious noise and spikes have been problematic during the development of SR WLED. See 'Noise and Spikes' below for further discussion on this topic.
+* Spurious noise and spikes have been problematic during the development of SR WLED. See [Noise and Spikes](https://github.com/atuline/WLED/wiki/First-Time-Setup#noise-and-spikes) below for further discussion on this topic.
 * We recommend using SR WLED in STA mode, instead of the standalone AP mode (aka WLED-AP). It generates more noise.
 * If you have problems with the LED's, make sure you can successfully run the latest version of standard WLED.
 * Start out with a small strip of ~30 LED's before setting up a large installation.
@@ -62,7 +62,7 @@ There are some inexpensive "clap sensors" such as LM393, KY-038 or KY-037. These
 
 We recommend using an [I2S digital microphone](https://github.com/atuline/WLED/wiki/Digital-Microphone-Hookup) with ESP32 boards - like INMP441, ICS-43434, or PDM microphones.
 
-Analog input ([Microphone or Line-in](https://github.com/atuline/WLED/wiki/Analog-Audio-Input-Options)) is also possible, however you might have power fluctuation (3.3V) and noise issues when using these. Analog devices are handled by the "ADC1" unit of your ESP32. Problems can be expected when connecting "analog buttons" (Potentiometer) to the same ADC1 unit. 
+Analog input ([Microphone or Line-in](https://github.com/atuline/WLED/wiki/Analog-Audio-Input-Options)) is also possible, however you might have [power fluctuation (3.3V) and noise issues](https://github.com/atuline/WLED/wiki/Noise-and-Spikes#both-platforms) when using these. Analog devices are handled by the "ADC1" unit of your ESP32. Problems can be expected when connecting "analog buttons" (Potentiometer) to the same ADC1 unit. 
 
 Finally Analog Microphones often work best when placed very close to the sound source, while digital ones like the INMP441 can easily pick up sound from several meters apart. With the analog MAX4466, we found that 30-50cm is an optimal distance. 
 
