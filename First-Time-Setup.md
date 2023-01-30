@@ -55,7 +55,8 @@ Here's a starting point table of Squelch and Gain settings for different input t
 | INMP411 | 20 | 80  | Generic Analog
 | MAX4466 | 16 | 120 | Generic Analog
 
-There are some inexpensive "clap sensors" such as LM393, KY-038 or KY-037. These will not work with our firmware.
+
+Some inexpensive "clap sensors", such as LM393, KY-038 or KY-037, will not work with our firmware.
 
 
 ### Analog or I2S Digital?
