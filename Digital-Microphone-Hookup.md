@@ -59,8 +59,8 @@ Initial I2S support by @spedione
 ## Some I2S audio modules and boards
 
 
-### IMNP441 
-This is the IMNP441; you can find it in many shops including Amazon and Aliexpress. It works very well with SR WLED. 
+### INMP441 
+This is the INMP441; you can find it in many shops including Amazon and Aliexpress. It works very well with SR WLED. 
 
 <img src="https://user-images.githubusercontent.com/91616163/193432850-70c37da6-a295-4bb2-ad7c-e975fcca7c87.jpg" width="20%" height="20%" />
  &nbsp; 
