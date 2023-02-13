@@ -24,8 +24,9 @@ SR WLED releases are also included in this web-based installer: https://wled-ins
 _Warning_: We had to change the partition size on the ESP32 in order to 'fit' all the new features. This means that the 'old way' of upgrading/flashing, no longer work unfortunately. **You cannot use ESPHome Flasher**, and you cannot use OTA from a build prior to v0.13.0-b5.
 
 1. Download [esptool](https://github.com/espressif/esptool/releases) binary for your PC or MAC.
-1. Download the ESP32 bootloader, such as https://github.com/espressif/arduino-esp32/blob/2.0.4/tools/sdk/esp32/bin/bootloader_dio_80m.bin
-
+1. Download the ESP32 bootloader, such as 
+   * https://github.com/Aircoookie/WLED/releases/download/v0.13.3/esp32_bootloader_v4.bin
+   * or https://github.com/espressif/arduino-esp32/blob/2.0.4/tools/sdk/esp32/bin/bootloader_dio_80m.bin
 1. Download the sound reactive binary, such as https://github.com/atuline/WLED/releases
 1. Plug the ESP32 board into your computer.
 1. Optionally determine which Com port it uses. You could use NodeMCU-PyFlasher to do this, but don't flash the binary with it.
