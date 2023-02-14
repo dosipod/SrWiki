@@ -5,7 +5,7 @@ I2S digital sound modules utilize the industry-standard 24-bit [I²S interface](
 
 | from INMP441, ICS-43434 | from PDM (e.g. SPM1423) | from Other | to ESP32 GPIO | |
 | --- | --- | -- | --- | --- |
-| L/R | SEL | SEL | Gnd | ground => left channel
+| L/R | SEL | SEL | Gnd | ground => left channel. Don't leave this pin unconnected!
 | SD | DATA | DOUT | 32 | serial data
 | WS | CLK | LRCK | 15 | left right clock
 | SCK | -- | BCLK | 14 | serial clock
@@ -13,9 +13,15 @@ I2S digital sound modules utilize the industry-standard 24-bit [I²S interface](
 | VDD | 3V3 | VDD | 3.3V | power don't use 5V!
 | GND | GND | GND | Gnd | ground, 0V
 
-ESP32 pins in the table are just examples. In fact **any** available GPIO can be used for I²S on ESP32. 
-* SD can be either an in/out pin (gpio < 34) or an input-only pin (>= 34), 
-* while WS and SCK *must* be in/out pins < 34.
+***
+> <picture>
+>   <source media="(prefers-color-scheme: light)" srcset="https://github.com/Mqxx/GitHub-Markdown/blob/main/blockquotes/badge/light-theme/tip.svg">
+>   <img alt="Tip" src="https://github.com/Mqxx/GitHub-Markdown/blob/main/blockquotes/badge/dark-theme/tip.svg">
+> </picture><br />
+> 
+> ESP32 pins in the table are just examples. In fact **any** available GPIO can be used for I²S on ESP32. 
+>    * SD can be either an in/out pin (gpio < 34) or an input-only pin (gpi >= 34), 
+>    * while WS and SCK *must* be in/out pins (gpio < 34).
 
 
 See also &rArr; [Sound setting examples for common microphones](https://github.com/atuline/WLED/wiki/First-Time-Setup#sound-settings-getting-started-with-common-microphones)
