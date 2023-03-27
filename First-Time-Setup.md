@@ -2,6 +2,8 @@
 The sound reactive version of WLED provides all of the functionality of WLED with a few caveats:
 
 * #### Some of the default services supported by WLED such as IR, Alexa and Blynk are disabled by default. To enable them, update the definitions in wled.h and re-compile.
+
+
 * Spurious noise and spikes have been problematic during the development of SR WLED. See [Noise and Spikes](https://github.com/atuline/WLED/wiki/First-Time-Setup#noise-and-spikes) below for further discussion on this topic.
 * We recommend using SR WLED in STA mode, instead of the standalone AP mode (aka WLED-AP). It generates more noise.
 * If you have problems with the LED's, make sure you can successfully run the latest version of standard WLED.
@@ -76,12 +78,13 @@ While an improved autonomous gain control (iAGC) feature is available since [ver
 While providing a lot of functionality, the ESP8266 and the ESP32 boards (typical ones) we have been using, have experienced a lot of spurious noise on their ADC pins. This has also been discussed at length on various ESP related forums. Methods that may help remediate this include:
 
 * On ESP32, use an I2S microphone, such as the INMP441, SPH0645 or ICS-43434.
+* Don't power your LED stripe from the ESP32 3.3v or 5v pins.
 * Use a separate WiFi antenna.
 * Don't use AP mode.
 * Disable the WiFi sleep mode.
 
 * Use shielded wiring for your analog sampling pin.
 * Isolate the power between the LED strips and the controller.
-* Don't power your LED stripe from the ESP32 3.3v or 5v pins.
 * Don't use USB power from your PC.
+
 * Some batches of analog microphones are just no good.
