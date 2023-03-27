@@ -44,7 +44,7 @@ Here's a starting point table of Squelch and Gain settings for different input t
 | ------------------- | --------- | ------ | -------| ------
 | INMP441 | 6 | 60 | Generic I2S | 
 | ICS-43434 | 16 | 30  | Generic I2S | 
-| SPM1423 | _tbd_ | _tbd_  | Generic I2S PDM | M5StickC, M5AtomU
+| SPM1423 | 4 | 75 | Generic I2S PDM | M5StickC, M5AtomU
 | SPH0654 | _tbd_ | _tbd_  | SPH0654 | 
 | ES7243 | _tbd_ | _tbd_  | ES7243 | ESP32 Lyra-T Mini
 | Line-In CS5343 | _tbd_ | _tbd_  | Generic I2S with Mclk | _MCLK_ to GPIO0
@@ -75,7 +75,7 @@ Automatic gain control (AGC) is not enabled by default in SR WLED, because of so
 While an improved autonomous gain control (iAGC) feature is available since [version 0.13.1](https://github.com/atuline/WLED/releases/tag/v0.13.1), it is still very important that you _first_ find a good _Squelch_ setting for your environment. Afterwards you can enable AGC and let the controller adjust input levels automatically. 
 
 ## Noise and Spikes
-While providing a lot of functionality, the ESP8266 and the ESP32 boards (typical ones) we have been using, have experienced a lot of spurious noise on their ADC pins. This has also been discussed at length on various ESP related forums. Methods that may help remediate this include:
+While providing a lot of functionality, the ESP8266 and the ESP32 boards (typical ones) we have been using, have experienced a lot of [spurious noise on their ADC pins](https://github.com/atuline/WLED/wiki/Noise-and-Spikes#both-platforms). This has also been discussed at length on various ESP related forums. Methods that may help remediate this include:
 
 * On ESP32, use an I2S microphone, such as the INMP441, SPH0645 or ICS-43434.
 * Don't power your LED stripe from the ESP32 3.3v or 5v pins.
