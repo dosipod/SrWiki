@@ -7,7 +7,7 @@
 
 [Sound Settings](https://github.com/atuline/WLED/wiki/Sound-Settings)  
 [2D LED Preferences](https://github.com/atuline/WLED/wiki/LED-Preferences)  
-[Custom Effects](https://github.com/atuline/WLED/wiki/WLED-Custom-effects)    
+[ARTI-FX](https://github.com/atuline/WLED/wiki/WLED-ARTI-FX)    
 [UDP Sound Sync](https://github.com/atuline/WLED/wiki/UDP-Sound-Sync)   
 [Sound Reactive Animations](https://github.com/atuline/WLED/wiki/Reactive-Animations)  
 [Non-Reactive Animations](https://github.com/atuline/WLED/wiki/Non-Reactive-Animations)    
