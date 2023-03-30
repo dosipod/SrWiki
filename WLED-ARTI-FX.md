@@ -1,0 +1,1 @@
+Moved to [mm.kno.wled.ge](https://mm.kno.wled.ge/moonmodules/arti-fx/)
