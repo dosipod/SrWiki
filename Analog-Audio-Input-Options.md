@@ -33,13 +33,11 @@ If the LED's are active when the ambient volume is low while running volume only
 
 **Note 1:** Do NOT connect input devices to 5V (or Vin). The power should be connected to the 3.3V pin.
 
-**Note 2:** A piezo vibration sensor (from aliexpress) was successfully hooked up and tested.
+**Note 2:** On the ESP32, the default ADC pin is GPI36 (also known as VP), while the ESP8266 uses A0. On ESP32, any GPIO related to ADC1 can be used - see next note.
 
-**Note 3:** On the ESP32, the default ADC pin is GPI36 (also known as VP), while the ESP8266 uses A0. On ESP32, any GPIO related to ADC1 can be used - see next note.
+**Note 3:** If your ESP32 doesn't have pin 36, any of the other ADC1 (and not ADC2) pins should work.
 
-**Note 4:** If your ESP32 doesn't have pin 36, any of the other ADC1 (and not ADC2) pins should work.
-
-**Note 5:** On the ESP32, the ADC and I2S pins are defined in audio_reactive.h. You can also select them in the sound settings UI.
+**Note 4:** On the ESP32, the ADC and I2S pins are defined in audio_reactive.h. You can also select them in the sound settings UI.
 
 
 
