@@ -51,6 +51,8 @@ struct audioSyncPacket_v2 {
       float  FFT_MajorPeak;   //  04 Bytes  - frequency of strongest peak in FFT
 };
 ```
+Caution: this is a C language "struct". Due to padding performed by gcc, the actual package is slightly bigger; it includes "padding bytes" for aligning struct members to word boundaries.
+
 
 The V2 format expects that AGC is performed by the sender, so there is no need to transmit "AGC" and "non-AGC" samples separately. To save bandwidth, the `myvals[]` array was removed, and all numbers are either `float` or `uint8_t`.
 
