@@ -13,6 +13,7 @@ Model | Compatibility | Notes
 *MAX9812* | Fair | Only 20dB gain, but worked OK.
 *MAX4466* | bad | Is very sensitive to 3.3V noise and voltage dropout due to Wifi activity. Avoid powering your LED strip from ESP32, as the strip causes a lot of noise on the 3.3V/5V power lines.
 *INMP401* | Good | Some Chinese ones are not reliable.
+*Clap Sensors* (LM393, KY-038, KY-037) | unusable | these sensors may have an "analogue output" but the signal quality is extremely poor. Don't use them as a microphone, they were designed for other purposes.
 
 
 See also 
