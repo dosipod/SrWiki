@@ -10,8 +10,8 @@ Below are a number of popular Arduino compatible analog microphones that have be
 Model | Compatibility | Notes
 --- | --- | ---
 *MAX9814* | Good+ | Best to set the gain to 40dB.
-*MAX9812* | Good | Only 20dB gain, but worked OK.
-*MAX4466* | Fair | Is very sensitive to 3.3V noise and voltage dropout due to Wifi activity. Avoid powering your LED strip from ESP32, as the strip causes a lot of noise on the 3.3V/5V power lines.
+*MAX9812* | Fair | Only 20dB gain, but worked OK.
+*MAX4466* | bad | Is very sensitive to 3.3V noise and voltage dropout due to Wifi activity. Avoid powering your LED strip from ESP32, as the strip causes a lot of noise on the 3.3V/5V power lines.
 *INMP401* | Good | Some Chinese ones are not reliable.
 
 
