@@ -2,119 +2,72 @@
 
 * Use the Arduino Serial plotter to view the output and compare your results to those found [here](https://github.com/atuline/WLED/blob/assets/docs/Microphones.pdf).
 * Make sure you have set the baud rate on your Serial plotter to 115200 (as defined in the sketch).
+* ESP32 I2S Noise Level Example.
+* This example calculates a mean noise level.
+* Tie the L/R pin to ground. Other pins are listed below.
+* VDD goes to 3.3V
+* GND goes to Gnd 
+* Sep 12 2023 :Updated sketch source is https://github.com/atomic14/esp32-i2s-mic-test  as old sketch no longer works 
+  
 
 ```C
-/* 
- * ESP32 I2S Noise Level Example.
- * 
- * By: maspetsberger
- * 
- * Updated by: Andrew Tuline
- * 
- * This example calculates a mean noise level.
- * 
- * Tie the L/R pin to ground. Other pins are listed below.
- * VDD goes to 3.3V
- * GND goes to Gnd 
- * 
- */
- 
+/*
+
 #include <driver/i2s.h>
- 
-#define I2S_WS  15         // aka LRCL
-#define I2S_SD  32         // aka DOUT
-#define I2S_SCK 14         // aka BCLK
- 
-const i2s_port_t I2S_PORT = I2S_NUM_0;
-const int BLOCK_SIZE = 64;
-const int SAMPLE_RATE = 10240;
- 
-float mean = 0;
-bool INMP_flag = 0;
- 
-void setup() {
- 
+
+// you shouldn't need to change these settings
+#define SAMPLE_BUFFER_SIZE 512
+#define SAMPLE_RATE 8000
+// most microphones will probably default to left channel but you may need to tie the L/R pin low
+#define I2S_MIC_CHANNEL I2S_CHANNEL_FMT_ONLY_LEFT
+// either wire your microphone to the same pins or change these to match your wiring
+
+#define I2S_MIC_SERIAL_CLOCK GPIO_NUM_14      // aka BCLK
+#define I2S_MIC_LEFT_RIGHT_CLOCK GPIO_NUM_15  // aka LRCL
+#define I2S_MIC_SERIAL_DATA GPIO_NUM_32       // aka DOUT
+
+// don't mess around with this
+i2s_config_t i2s_config = {
+    .mode = (i2s_mode_t)(I2S_MODE_MASTER | I2S_MODE_RX),
+    .sample_rate = SAMPLE_RATE,
+    .bits_per_sample = I2S_BITS_PER_SAMPLE_32BIT,
+    .channel_format = I2S_CHANNEL_FMT_ONLY_LEFT,
+    .communication_format = I2S_COMM_FORMAT_I2S,
+    .intr_alloc_flags = ESP_INTR_FLAG_LEVEL1,
+    .dma_buf_count = 4,
+    .dma_buf_len = 1024,
+    .use_apll = false,
+    .tx_desc_auto_clear = false,
+    .fixed_mclk = 0};
+
+// and don't mess around with this
+i2s_pin_config_t i2s_mic_pins = {
+    .bck_io_num = I2S_MIC_SERIAL_CLOCK,
+    .ws_io_num = I2S_MIC_LEFT_RIGHT_CLOCK,
+    .data_out_num = I2S_PIN_NO_CHANGE,
+    .data_in_num = I2S_MIC_SERIAL_DATA};
+
+void setup()
+{
+  // we need serial output for the plotter
   Serial.begin(115200);
- 
-  Serial.println("Configuring I2S...");
-  esp_err_t i2s_err;
- 
-  // The I2S config as per the example
-  const i2s_config_t i2s_config = {
-      .mode = i2s_mode_t(I2S_MODE_MASTER | I2S_MODE_RX), // Receive, not transfer
-      .sample_rate = SAMPLE_RATE,                         // 16KHz
-      .bits_per_sample = I2S_BITS_PER_SAMPLE_32BIT, // could only get it to work with 32bits
-      .channel_format = I2S_CHANNEL_FMT_ONLY_LEFT, // LEFT when pin is tied to ground.
-      .communication_format = i2s_comm_format_t(I2S_COMM_FORMAT_I2S | I2S_COMM_FORMAT_I2S_MSB),
-      .intr_alloc_flags = ESP_INTR_FLAG_LEVEL1,     // Interrupt level 1
-      .dma_buf_count = 8,                           // number of buffers
-      .dma_buf_len = BLOCK_SIZE                     // samples per buffer
-  };
- 
-  // The pin config as per the setup
-  const i2s_pin_config_t pin_config = {
-      .bck_io_num = I2S_SCK,       // BCLK aka SCK
-      .ws_io_num = I2S_WS,        // LRCL aka WS
-      .data_out_num = -1,         // not used (only for speakers)
-      .data_in_num = I2S_SD       // DOUT aka SD
-  };
- 
-  // Configuring the I2S driver and pins.
-  // This function must be called before any I2S driver read/write operations.
-  i2s_err = i2s_driver_install(I2S_PORT, &i2s_config, 0, NULL);
-  if (i2s_err != ESP_OK) {
-    Serial.printf("Failed installing driver: %d\n", i2s_err);
-    while (true);
-  }
-  i2s_err = i2s_set_pin(I2S_PORT, &pin_config);
-  if (i2s_err != ESP_OK) {
-    Serial.printf("Failed setting pin: %d\n", i2s_err);
-    while (true);
-  }
-  Serial.println("I2S driver installed.");
- 
-  delay(1000);                        // Enough time to see these messages. This need to be BEFORE the INMP test.
-  
-  getINMP();
-  if (mean != 0.0) {
-    Serial.println("INMP is present.");
-    INMP_flag = 1;
-  }
- 
-} // setup()
- 
- 
- 
-void loop() {
- 
-  if (INMP_flag) {
-    getINMP();
-    Serial.print(abs(mean)); Serial.print(" ");
-    Serial.println(1600);
-    
-  } else {
-    // Analog Read here!!
-  }
-  
-} // loop()
- 
- 
- 
-void getINMP() {
-  // Read multiple samples at once and calculate the sound pressure
-  int32_t samples[BLOCK_SIZE];
-  int num_bytes_read = i2s_read_bytes(I2S_PORT, 
-                                      (char *)samples, 
-                                      BLOCK_SIZE,     // the doc says bytes, but its elements.
-                                      portMAX_DELAY); // no timeout
-  
-  int samples_read = num_bytes_read / 8;
-  if (samples_read > 0) {
- 
-    for (int i = 0; i < samples_read; ++i) {
-      mean += samples[i];
-    }
-    mean = mean/BLOCK_SIZE/16384;
-  }  
+  // start up the I2S peripheral
+  i2s_driver_install(I2S_NUM_0, &i2s_config, 0, NULL);
+  i2s_set_pin(I2S_NUM_0, &i2s_mic_pins);
 }
+
+int32_t raw_samples[SAMPLE_BUFFER_SIZE];
+void loop()
+{
+  // read from the I2S device
+  size_t bytes_read = 0;
+  i2s_read(I2S_NUM_0, raw_samples, sizeof(int32_t) * SAMPLE_BUFFER_SIZE, &bytes_read, portMAX_DELAY);
+  int samples_read = bytes_read / sizeof(int32_t);
+  // dump the samples out to the serial channel.
+  for (int i = 0; i < samples_read; i++)
+  {
+    Serial.printf("%ld\n", raw_samples[i]);
+  }
+}
+
 ```
